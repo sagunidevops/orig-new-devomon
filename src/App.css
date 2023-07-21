@@ -7,10 +7,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* === FONT FAMILY === */
 
 @layer base {
-  
+  body {
+    background-color: #0d1014;
+  }
+
   @font-face {
     font-family: notosans;
     src: url("./assets/font/NotoSansCJKkr-Regular.ttf");
@@ -18,5 +20,46 @@
 
   .noto_sans {
     font-family: notosans;
+  }
+
+  .popup_shadow {
+    box-shadow: 11px 11px 15px #2253f54d !important;
+  }
+
+  .contact_form_bg {
+    background: rgba(34, 83, 245, 0.1);
+    border: 1px solid #2253f5;
+    backdrop-filter: blur(7px);
+    border-radius: 13px;
+  }
+
+  .form_input {
+    background: rgba(34, 83, 245, 0.1);
+    backdrop-filter: blur(100px);
+
+    border-radius: 5px;
+  }
+
+  .contact_border {
+    background: linear-gradient(270deg,
+        rgba(34, 83, 245, 0) 3.61%,
+        #2253f5 53.31%,
+        rgba(34, 83, 245, 0) 96.53%);
+    height: 3px;
+  }
+  .team-layer {
+    background: #2253f5;
+    filter: blur(250px);
+  }
+
+  @media (min-width: 576px) {
+    .popup_shadow {
+      box-shadow: 11px 11px 15px 0px #2253f54d;
+    }
+  }
+  @media (max-width: 375px) {
+    .recaptcha-box {
+      transform: scale(0.7);
+    }
   }
 }

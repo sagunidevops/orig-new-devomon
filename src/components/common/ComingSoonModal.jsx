@@ -12,7 +12,7 @@ const ComingSoonModal = ({
       <Transition appear show={isOpenComingSoonModal} as={Fragment}>
         <Dialog
           as="div"
-          className="relative z-[99999999] "
+          className="relative z-[99999999]"
           onClose={() => {
             setIsOpenComingSoonModal(false);
           }}
