@@ -6,20 +6,20 @@ import Header from "./components/common/Header";
 // import About from "./components/homepage/About";
 // import TouchForm from "./components/homepage/TouchForm";
 // import ComingSoon from "./components/common/ComingSoon";
-import AboutCard from './components/homepage/AboutCard';
+import AboutCard from "./components/homepage/AboutCard";
 
 function App() {
   return (
     <>
-    <BrowserRouter>
-    <Header/> 
-      {/* <Hero/>
+      <BrowserRouter>
+        <Header />
+        {/* <Hero/>
       <About/>
       <TouchForm/> */}
-      {/* <ComingSoon/> */}
-      <AboutCard />
-      <Footer/> 
-    </BrowserRouter>
+        {/* <ComingSoon/> */}
+        <AboutCard />
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
