@@ -63,6 +63,25 @@ import energeticTeam2 from "../../assets/images/webp/energeticteam5.webp";
 import energeticTeam3 from "../../assets/images/webp/energeticTeamgirl.webp";
 import energeticTeam4 from "../../assets/images/webp/energeticTeam4.webp";
 import Game_Dev_Lead from "../../assets/images/webp/Game_Dev_Lead.webp";
+// =====================================================================================
+import gamefi_bg from "../../assets/images/homepageImages/webp/gamefi_bg.webp";
+import evozone_bg from "../../assets/images/homepageImages/webp/evozone_bg.webp";
+import nft_bg from "../../assets/images/homepageImages/webp/nft_bg.webp";
+import dashboard_bg from "../../assets/images/homepageImages/webp/dashboard_bg.webp";
+import evoVerse_bg from "../../assets/images/homepageImages/webp/evoVerse_bg.webp";
+import manga_bg from "../../assets/images/homepageImages/webp/manga_bg.webp";
+import anime_bg from "../../assets/images/homepageImages/webp/anime_bg.webp";
+import merch_bg from "../../assets/images/homepageImages/webp/merch_bg.webp";
+import coming_soon_bg from "../../assets/images/homepageImages/webp/coming_soon_bg.webp";
+// ================
+import gamefi_character from "../../assets/images/homepageImages/webp/gamefi.webp";
+import evozone_character from "../../assets/images/homepageImages/webp/evozone.webp";
+import nft_character from "../../assets/images/homepageImages/webp/nft.webp";
+import dashboard_character from "../../assets/images/homepageImages/webp/dashboard.webp";
+import evoVerse_character from "../../assets/images/homepageImages/webp/evoVerse.webp";
+import manga_character from "../../assets/images/homepageImages/webp/manga.webp";
+import anime_character from "../../assets/images/homepageImages/webp/anime.webp";
+import merch_character from "../../assets/images/homepageImages/webp/merch.webp";
 
 export const tureOnwership = [
   {
@@ -250,7 +269,7 @@ export const footerLinksFirst = [
     url: "#",
     icon: <HeaderArw />,
     footer: [
-      { text: "Advisors",  },
+      { text: "Advisors" },
       { text: "Streaming Partners", path: "/", soon: "" },
     ],
   },
@@ -662,7 +681,7 @@ export const HeaderData = [
     text: "Team",
     header: [
       { text: "Core Team", path: "/team" },
-      { text: "Advisor",  },
+      { text: "Advisor" },
       { text: "Streaming Partners", path: "/", soon: "" },
     ],
     icon: <HeaderArw />,
@@ -716,5 +735,72 @@ export const energeticTeamData = [
     desc: "Rocky and Metamon are an energetic duo that never stops fighting. They charge directly at their enemies and are not stopped by anything. Metamon's true strength lies in the earth, so one should be careful before a violent quake erupts. Their immense strength and unshakeable determination make them an unbeatable team, ready for any challenge.",
     smallImg: User5,
     bigImg: energeticTeam4,
+  },
+];
+
+// ====================================================== ABOUT CARDS ========================================================
+
+export const AboutCardData = [
+  {
+    id: 1,
+    card_bg: gamefi_bg,
+    title: "GameFi",
+    character_img: gamefi_character,
+    className: "w-[29%] right-[6%]",
+  },
+  {
+    id: 2,
+    card_bg: evozone_bg,
+    title: "Evozone",
+    character_img: evozone_character,
+    className: "w-[40%] left-[0%]",
+  },
+  {
+    id: 3,
+    card_bg: nft_bg,
+    title: "NFT",
+    character_img: nft_character,
+    className: "w-[18%] right-[6.5%]",
+  },
+  {
+    id: 4,
+    card_bg: dashboard_bg,
+    title: "Dashboard",
+    character_img: dashboard_character,
+    className: "w-[38%] -left-[3%]",
+  },
+  {
+    id: 5,
+    card_bg: evoVerse_bg,
+    title: "EvoVerse",
+    character_img: evoVerse_character,
+    className: "w-[19%] right-[10%]",
+  },
+  {
+    id: 6,
+    card_bg: manga_bg,
+    title: "manga",
+    character_img: manga_character,
+    className: "w-[19%] left-[8%]",
+  },
+  {
+    id: 7,
+    card_bg: anime_bg,
+    title: "Anime",
+    character_img: anime_character,
+    className: "w-[22%] right-[8%]",
+  },
+  {
+    id: 8,
+    card_bg: merch_bg,
+    title: "Merch",
+    character_img: merch_character,
+    className: "w-[43%] left-[2%]",
+  },
+  {
+    id: 9,
+    card_bg: coming_soon_bg,
+    title: "coming soon",
+    className: "hidden",
   },
 ];

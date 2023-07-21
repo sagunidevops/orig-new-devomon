@@ -5,7 +5,8 @@ import Header from "./components/common/Header";
 // import Hero from "./components/homepage/Hero";
 // import About from "./components/homepage/About";
 // import TouchForm from "./components/homepage/TouchForm";
-import ComingSoon from "./components/common/ComingSoon";
+// import ComingSoon from "./components/common/ComingSoon";
+import AboutCard from './components/homepage/AboutCard';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <Hero/>
       <About/>
       <TouchForm/> */}
-      <ComingSoon/>
+      {/* <ComingSoon/> */}
+      <AboutCard />
       <Footer/> 
     </BrowserRouter>
     </>
