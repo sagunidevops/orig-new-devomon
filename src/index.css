@@ -1,0 +1,16 @@
+/* ============================== ABOUT-US ========================================= */
+.about_card_underline {
+    background: linear-gradient(90deg, rgba(250, 144, 19, 0.00) 0%, #FEA800 48.44%, rgba(254, 168, 0, 0.00) 100%);
+}
+
+.about_card_bg:hover .about_card_underline {
+    opacity: 1 !important;
+}
+
+.about_card_bg:hover .gamefi_character {
+    transform: translateY(0);
+}
+
+.about_card_bg:hover .about_card_img {
+    transform: scale(1.15);
+}
