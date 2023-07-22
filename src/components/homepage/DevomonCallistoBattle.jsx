@@ -158,7 +158,7 @@ const DevomonCallistoBattle = ({ NftRef }) => {
                 <Left_arrow />
               </button>
               <button
-                className=" rotate-180 rounded-full translate-x-[50%] lg:translate-x-[100%]"
+                className=" rotate-180 rounded-full translate-x-[60%] lg:translate-x-[100%]"
                 onClick={() => slider.current.slickNext()}>
                 <Right_arrow />
               </button>
