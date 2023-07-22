@@ -32,32 +32,32 @@ const LatestNews = () => {
           <p className="text-center text-white font-bold text-4xl pb-[30px] xl:pb-[51px]">
             Latest news
           </p>
-          <div className="flex flex-col xl:flex-row items-center rounded-[12px] xl:h-[460px] bg-latestNews_bg_color pt-10 xl:pt-0 px-3 md:px-0">
+          <div className="flex flex-col xl:flex-row items-center rounded-[12px] xl:h-[456px] bg-latestNews_bg_color pt-10 xl:pt-0 px-3 md:px-0">
             <div className="max-w-[350px] sm:max-w-[505px]">
               <Slider {...settings}>
                 <img
-                  className="max-w-[485px] px-1"
+                  className="max-w-[485px]"
                   src={latest_news}
                   alt="news-slider-img"
                 />
                 <img
-                  className="max-w-[485px] px-1"
+                  className="max-w-[485px]"
                   src={latest_news}
                   alt="news-slider-img"
                 />
                 <img
-                  className="max-w-[485px] px-1"
+                  className="max-w-[485px]"
                   src={latest_news}
                   alt="news-slider-img"
                 />
                 <img
-                  className="max-w-[485px] px-1"
+                  className="max-w-[485px]"
                   src={latest_news}
                   alt="news-slider-img"
                 />
               </Slider>
             </div>
-            <div className="mx-auto w-full lg:w-3/4 xl:w-full md:px-4 mt-10 xl:mt-0  xl:h-[527px] pt-[10px]">
+            <div className="mx-auto w-full lg:w-3/4 xl:w-full md:px-4 mt-10 xl:mt-0  xl:h-[470px] pt-[10px]">
               {Latest_news_faq_data.map((item, index) => (
                 <div
                   key={index}
