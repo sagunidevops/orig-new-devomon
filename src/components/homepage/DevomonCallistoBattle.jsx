@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Slider from "react-slick";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { CallistoBattle } from "../common/Helper";
+import { Left_arrow, Right_arrow } from "../common/Icons";
 
 const DevomonCallistoBattle = ({ NftRef }) => {
   gsap.registerPlugin(ScrollTrigger);
@@ -73,6 +74,8 @@ const DevomonCallistoBattle = ({ NftRef }) => {
       }
     );
   }, []);
+
+  const slider = useRef(null);
   var settings = {
     dots: true,
     infinite: true,
@@ -105,10 +108,13 @@ const DevomonCallistoBattle = ({ NftRef }) => {
       },
     ],
   };
-       
+
   return (
     <>
-      <section ref={NftRef} className="h_lg_screen relative bg-devomonCallistoBattelBg bg-no-repeat bg-cover py-16 sm:py-20 md:py-[105px] lg:py-0 overflow-x-hidden flex justify-center items-center mt-[44px] sm:mt-[70px] lg:mt-[81px]" id="nft_collection">
+      <section
+        ref={NftRef}
+        className="h_lg_screen relative bg-devomonCallistoBattelBg bg-no-repeat bg-cover py-16 sm:py-20 md:py-[105px] lg:py-0 overflow-x-hidden flex justify-center items-center mt-[44px] sm:mt-[70px] lg:mt-[81px]"
+        id="nft_collection">
         <div className="container relative z-20 py-5">
           <div className="md:pt-6 ">
             <h3 className="font-raleway parnter_left whitespace-normal break-words uppercase  font-bold text-center  text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">
@@ -126,9 +132,9 @@ const DevomonCallistoBattle = ({ NftRef }) => {
             of the portals. Become the ultimate Devomon master and uncover the
             hidden secrets of this mystical world.
           </p>
-  
+
           <div className="onwership-slider ownership_zoom">
-            <Slider {...settings}>
+            <Slider ref={slider} {...settings}>
               {CallistoBattle &&
                 CallistoBattle.length > 0 &&
                 CallistoBattle.map((obj, index) => {
@@ -145,14 +151,25 @@ const DevomonCallistoBattle = ({ NftRef }) => {
                   );
                 })}
             </Slider>
-          </div> 
+            <div className=" px-0 justify-between -translate-y-[380%] xl:-translate-y-[300%] gap-3 hidden md:flex">
+              <button
+                className=" rounded-full -translate-x-[60%]  lg:-translate-x-[100%]"
+                onClick={() => slider.current.slickPrev()}>
+                <Left_arrow />
+              </button>
+              <button
+                className=" rotate-180 rounded-full translate-x-[60%] lg:translate-x-[100%]"
+                onClick={() => slider.current.slickNext()}>
+                <Right_arrow />
+              </button>
+            </div>
+          </div>
           <div className="flex justify-center mt-12">
-          <button
-             type="submit"
-             className=" blue-btn-shadow hover:scale-105 transition-all ease-in-out duration-300 py-[5px] px-[21px] bg-[#F8C112] border border-[4px] border-[#CEA20C] rounded-[39px] text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins"
-             >
+            <button
+              type="submit"
+              className=" blue-btn-shadow hover:scale-105 transition-all ease-in-out duration-300 py-[5px] px-[21px] bg-[#F8C112] border border-[4px] border-[#CEA20C] rounded-[39px] text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins">
               View all
-          </button>
+            </button>
           </div>
         </div>
       </section>
