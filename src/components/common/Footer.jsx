@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import footerLogo from "../../assets/images/svg/footer_logo.svg";
 import priceLogo from "../../assets/images/svg/price_logo.svg";
+import saguniLogo from "../../assets/images/svg/SaguniLogo.svg";
 import { Link, useNavigate } from "react-router-dom";
 
 import {
@@ -344,18 +345,19 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className=" xl:w-5/12 max-[475px]:w-2/5 min-[475px]:w-1/3 md:w-2/5 lg:w-1/2 flex flex-col gap-2">
+                  <img className="max-w-[96px]" src={saguniLogo} alt="saguniLogo img" />
                   <div className="flex items-center - group">
-                    <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 ">
+                    <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 font-poppins font-bold">
                       Saguni Tech LLC
                     </p>
                   </div>
                   <div className="flex items-center - group">
-                    <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 ">
+                    <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 font-poppins ">
                       2203520
                     </p>
                   </div>
                   <div className="flex items-center - group">
-                    <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 ">
+                    <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 font-poppins ">
                       Business Center 1, M Floor, The Meydan Hotel, Nad AI
                       Sheba, Dubai, U.A.E
                     </p>

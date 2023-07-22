@@ -23,6 +23,8 @@ export default {
         aboutBgImg: "url('./assets/images/png/about_bg_img.png')",
         comingSoonBgImg: "url('./assets/images/svg/coming_soon_logo.svg')",
         coming_soon_bg_img: "url('./assets/images/png/coming_soon_bg_img.png')",
+        devomonCallistoBattelBg:
+        "url('./assets/images/webp/devomon-callisto-battle-bg.webp')",
       },
       fontFamily: {
         poppins: ['"Poppins", sans-serif'],

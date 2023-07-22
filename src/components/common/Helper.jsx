@@ -135,7 +135,7 @@ export const tureOnwership = [
     desicription: "Brightland Steppes",
   },
 ];
-export const callistoBattle = [
+export const CallistoBattle = [
   {
     img: CallistoBattle1,
   },
