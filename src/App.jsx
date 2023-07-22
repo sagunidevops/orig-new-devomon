@@ -12,7 +12,7 @@ import Footer from "./components/common/Footer";
 // import Partner from "./components/homepage/Partner";
 import CoreTeam from "./components/homepage/CoreTeam";
 // import ComingSoon from "./components/common/ComingSoon";
-// import DevomonCallistoBattle from "./components/homepage/DevomonCallistoBattle";
+import DevomonCallistoBattle from "./components/homepage/DevomonCallistoBattle";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
         <TouchForm />
         <Partner/> */}
         {/* <ComingSoon /> */}
-        {/* <DevomonCallistoBattle/> */}
+        <DevomonCallistoBattle/>
         <CoreTeam/>
         <Footer />
       </BrowserRouter>

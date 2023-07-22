@@ -1,11 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useEffect } from "react";
-import Slider from "react-slick";
 import TeamCard from "../common/TeamCard";
-import TeamSliderCard from "../common/TeamSliderCard";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { TeamData, teamSliderData } from "../common/Helper";
+import { TeamData} from "../common/Helper";
 
 // eslint-disable-next-line no-unused-vars
 const CoreTeam = ({ teamToRef2 }) => {
@@ -100,7 +98,7 @@ const CoreTeam = ({ teamToRef2 }) => {
     ],
   };
   return (
-    <section className="relative pt-20  sm:pt-28 md:pt-36 pb-[35px] sm:pb-[42px] md:pb-16">
+    <section className="relative pt-20 sm:pt-28 md:pt-36 pb-[35px] sm:pb-[42px] md:pb-16">
       <div className="team-layer w-[269px] h-[257px] absolute right-0 top-0"></div>
       <div className="team-layer w-[269px] h-[257px] absolute left-0 bottom-1/4"></div>
 
@@ -119,16 +117,6 @@ const CoreTeam = ({ teamToRef2 }) => {
             TeamData.map((obj, index) => (
               <TeamCard obj={obj} key={index} index={index} />
             ))}
-        </div>
-        {/* TEAM SLIDER START */}
-        <div className="team-slider  focus:outline-none team_zoom">
-          <Slider {...settings}>
-            {teamSliderData &&
-              teamSliderData.length > 0 &&
-              teamSliderData.map((obj, index) => (
-                <TeamSliderCard key={index} obj={obj} index={index} />
-              ))}
-          </Slider>
         </div>
       </div>
     </section>
