@@ -53,7 +53,7 @@ const Header = () => {
              ></div>
           </div>
         </div>
-        <div className="px-3 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 bg-[#000000f8] fixed top-0 w-full">
+        <div className="px-4 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 bg-[#000000f8] fixed top-0 w-full">
           <div className="flex justify-between items-center relative">
             <ul>
               <li className="cursor-pointer flex items-center">

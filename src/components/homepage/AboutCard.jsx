@@ -1,4 +1,3 @@
-import React from "react";
 import { AboutCardData } from "../common/Helper";
 
 const AboutCard = () => {
