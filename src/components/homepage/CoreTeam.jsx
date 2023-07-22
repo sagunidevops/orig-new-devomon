@@ -59,7 +59,7 @@ const CoreTeam = ({ teamToRef2 }) => {
       <div className="team-layer w-[269px] h-[257px] absolute left-0 bottom-1/4"></div>
       <div className="container">
         <div className="pb-5 mb-5">
-          <h3 className="font-raleway team_left uppercase  font-bold text-center  text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">
+          <h3 className="font-raleway team_left uppercase font-bold text-center  text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">
             team
           </h3>
           <div className="text-center sm:mb-8">
@@ -67,7 +67,7 @@ const CoreTeam = ({ teamToRef2 }) => {
           </div>
         </div>
         {/* TEAM CARD START */}
-        <div className="flex flex-wrap justify-center space-x-3 ">
+        <div className="flex flex-wrap justify-center space-x-3">
           {TeamData &&
             TeamData.map((obj, index) => (
               <TeamCard obj={obj} key={index} index={index} />

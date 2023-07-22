@@ -185,8 +185,8 @@ const Footer = () => {
                       />
                     </svg>
                   </div>
-                  <div className="flex cursor-pointer items-center group relative">
-                    <div className="footer_hover absolute translate-x-16 bg-[#0d1015df] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3">
+                  <div className="flex cursor-pointer items-center group relative scroll_hidden">
+                    <div className="footer_hover absolute translate-x-16 bg-[#0d1015df] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3 scroll_hidden">
                     <a href="">
                         <p className="text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                         NFTs
