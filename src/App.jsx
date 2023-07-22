@@ -1,5 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import Footer from "./components/common/Footer";
 import Header from "./components/common/Header";
 import Hero from "./components/homepage/Hero";
@@ -8,6 +10,7 @@ import TouchForm from "./components/homepage/TouchForm";
 import ComingSoon from "./components/common/ComingSoon";
 import AboutCard from "./components/homepage/AboutCard";
 import LatestNews from "./components/homepage/LatestNews";
+import DevomonCallistoBattle from "./components/homepage/DevomonCallistoBattle";
 
 function App() {
   return (
@@ -16,10 +19,11 @@ function App() {
         <Header />
         <Hero />
         <About />
+        <AboutCard />
         <TouchForm />
         <ComingSoon />
-        <AboutCard />
         <LatestNews />
+        <DevomonCallistoBattle/>
         <Footer />
       </BrowserRouter>
     </>

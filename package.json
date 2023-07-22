@@ -26,7 +26,8 @@
     "react-slick": "^0.29.0",
     "react-vimeo": "^2.0.0",
     "slick-carousel": "^1.8.1",
-    "sweetalert2": "^11.7.18"
+    "sweetalert2": "^11.7.18",
+    "vue-gsap-scrolltrigger-detector": "^1.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",

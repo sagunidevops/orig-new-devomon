@@ -2,7 +2,7 @@ import Video  from "../../assets/video/devomon.mp4";
 const About = () => {
   return (
     <>
-    <section className="relative py-16 lg:py-[100px] play-earn about_bg_img bg-aboutBgImg bg-no-repeat sm:-translate-y-[100px] -translate-y-[50px] -mb-[90px] sm:-mb-[200px] z-10">
+    <section className="relative py-16 lg:py-[100px] play-earn about_bg_img bg-aboutBgImg bg-no-repeat sm:-translate-y-[100px] -translate-y-[50px] mb-[-50px] sm:-mb-[100px] z-10 bg-cover">
         <div className="container">
             <div className='sm:my-12 lg:mt-12'>
                 <h2 className="font-raleway uppercase font-bold text-center text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">About Devomon</h2>
