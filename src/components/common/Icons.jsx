@@ -720,23 +720,24 @@ export const Right_arrow = () => {
       viewBox="0 0 64 63"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
-      <g filter="url(#filter0_dd_1694_989)">
+      <g filter="url(#filter0_dd_1694_993)">
         <rect
+          x="17.3223"
+          y="17"
           width="29"
           height="29"
           rx="14.5"
-          transform="matrix(-1 0 0 1 46.6777 17)"
           fill="#2253F5"
         />
         <path
-          d="M36.4028 25.3922C35.9499 25.9246 33.9248 28.2233 32.4153 29.9506L31.3084 31.2104L32.4782 32.561C33.1197 33.3013 34.3524 34.7168 35.2204 35.7039C36.0757 36.6909 36.6543 37.4182 36.4908 37.3402C36.3399 37.2493 34.4657 36.0026 32.3524 34.548C30.2267 33.1065 28.277 31.7948 28.0128 31.6259C27.7613 31.4701 27.5474 31.2883 27.5474 31.2363C27.5474 31.1324 36.365 25.1064 36.6543 25.0025C36.7298 24.9766 36.6166 25.1584 36.4028 25.3922Z"
+          d="M27.5972 25.3922C28.0501 25.9246 30.0752 28.2233 31.5847 29.9506L32.6916 31.2104L31.5218 32.561C30.8803 33.3013 29.6476 34.7168 28.7796 35.7039C27.9243 36.6909 27.3457 37.4182 27.5092 37.3402C27.6601 37.2493 29.5343 36.0026 31.6476 34.548C33.7733 33.1065 35.723 31.7948 35.9872 31.6259C36.2387 31.4701 36.4526 31.2883 36.4526 31.2363C36.4526 31.1324 27.635 25.1064 27.3457 25.0025C27.2702 24.9766 27.3834 25.1584 27.5972 25.3922Z"
           fill="white"
         />
       </g>
       <defs>
         <filter
-          id="filter0_dd_1694_989"
-          x="0.677734"
+          id="filter0_dd_1694_993"
+          x="0.322266"
           y="0"
           width="63"
           height="63"
@@ -753,7 +754,7 @@ export const Right_arrow = () => {
             radius="5"
             operator="dilate"
             in="SourceAlpha"
-            result="effect1_dropShadow_1694_989"
+            result="effect1_dropShadow_1694_993"
           />
           <feOffset />
           <feComposite in2="hardAlpha" operator="out" />
@@ -764,7 +765,7 @@ export const Right_arrow = () => {
           <feBlend
             mode="normal"
             in2="BackgroundImageFix"
-            result="effect1_dropShadow_1694_989"
+            result="effect1_dropShadow_1694_993"
           />
           <feColorMatrix
             in="SourceAlpha"
@@ -781,13 +782,13 @@ export const Right_arrow = () => {
           />
           <feBlend
             mode="normal"
-            in2="effect1_dropShadow_1694_989"
-            result="effect2_dropShadow_1694_989"
+            in2="effect1_dropShadow_1694_993"
+            result="effect2_dropShadow_1694_993"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect2_dropShadow_1694_989"
+            in2="effect2_dropShadow_1694_993"
             result="shape"
           />
         </filter>
