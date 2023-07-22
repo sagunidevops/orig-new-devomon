@@ -9,7 +9,7 @@ import About from "./components/homepage/About";
 import TouchForm from "./components/homepage/TouchForm";
 import AboutCard from "./components/homepage/AboutCard";
 import LatestNews from "./components/homepage/LatestNews";
-// import ComingSoon from "./components/common/ComingSoon";
+import ComingSoon from "./components/common/ComingSoon";
 // import DevomonCallistoBattle from "./components/homepage/DevomonCallistoBattle";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <AboutCard />
         <LatestNews />
         <TouchForm />
-        {/* <ComingSoon /> */}
+        <ComingSoon />
         {/* <DevomonCallistoBattle/> */}
         <Footer />
       </BrowserRouter>
