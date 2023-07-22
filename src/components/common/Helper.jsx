@@ -20,6 +20,16 @@ import Team1 from "../../assets/images/webp/team1.webp";
 import Team2 from "../../assets/images/webp/team2.webp";
 import Team3 from "../../assets/images/webp/team3.webp";
 import Team4 from "../../assets/images/webp/team4.webp";
+
+import devomon_team1 from "../../assets/images/webp/devomon_team1.webp";
+import devomon_team2 from "../../assets/images/webp/devomon_team2.webp";
+import devomon_team3 from "../../assets/images/webp/devomon_team3.webp";
+import devomon_team4 from "../../assets/images/webp/devomon_team4.webp";
+import devomon_team5 from "../../assets/images/webp/devomon_team5.webp";
+import devomon_team6 from "../../assets/images/webp/devomon_team6.webp";
+import devomon_team7 from "../../assets/images/webp/devomon_team7.webp";
+import devomon_team8 from "../../assets/images/webp/devomon_team8.webp";
+
 // import InvoZoneGames from "../../assets/images/webp/invogames_logo.webp";
 import GameLofiHub from "../../assets/images/png/gamefi_org.png";
 import AfterMathIslands from "../../assets/images/webp/aftermath-islands.webp";
@@ -432,60 +442,60 @@ export const ourPartner = [
 export const TeamData = [
   {
     name: "Güven Alkan",
-    img: Team1,
+    img: devomon_team1,
     title: "Ceo",
     url: "https://www.linkedin.com/in/gueven-al/",
     desc: "With experience in project management and an entrepreneurial spirit. Known for his visionary approach, strong analytical, organizational and  communication skills, and ability to work well under pressure. A passionate anime fan and gamer, Güven brings a unique perspective to the team and believes it will be key to the project's success. He is confident in his ability to deliver exceptional results and is excited to be a part of this dynamic project team.",
   },
   {
     name: "Sammy Grund- Advisor",
-    img: Team2,
+    img: devomon_team2,
     title: "Co Founder",
     url: "https://www.linkedin.com/in/sammy-g/",
     desc: "Anime fan and skilled business professional with a strong finance background, excels in calculations and presenting data clearly. He also brings passion and understanding of cryptocurrency, web3 and Metaverse to the team, excited to contribute to their evolutionthrough this project .",
   },
   {
     name: "Dominik Bialek",
-    img: Team3,
+    img: devomon_team3,
     title: "Senior DI Artist",
     url: "https://www.imdb.com/name/nm4633335/?ref_=nv_sr_srsg_0",
-    desc: "Dominik is a highly experienced Digital Intermediate Artist who has been working in the gaming industry for years, as well as on titles for Netflix and Amazon. He has an exceptional eye for detail and is an expert in color grading and visual effects. Dominik is proficient in the latest tools and technologies and is renowned for delivering high-quality results within tight deadlines.",
+    desc: "A Senior Digital Intermediate Artist with over 10 years of experience in the film and video industry. He has worked on a wide range of projects, from independent films to large-scale Hollywood productions. John has a keen eye for detail and is an expert in color grading and visual effects. He has a strong understanding of the latest digital intermediate tools and technologies and is able to deliver high-quality results under tight deadline.",
   },
   {
     name: "Selina Aley",
-    img: Team4,
-    title: "CSM",
+    img: devomon_team4,
+    title: "Chief Strategic Manager",
     url: "https://www.linkedin.com/in/selina-aley-7a2557248/",
     desc: "Her experience in developing strategies for various companies will have a positive impact on Devomon. Furthermore, her strong analytical, organizational, and communication abilities will guarantee the successful execution of the project's operational initiatives and growth .",
   },
   {
-    name: "GDO",
-    img: Game_Dev_Lead,
-    title: "CSM",
+    name: "Jeff Nowak",
+    img: devomon_team5,
+    title: "CEO Maven Capital",
     url: "https://www.linkedin.com/in/selina-aley-7a2557248/",
-    desc: "Martin has been a game developer for 8 years and he has senior levels in Unreal Engine.",
+    desc: "Blandit viverra varius hendrerit hendrerit varius cras. Velit lorem id malesuada vitae velit odio semper. Feugiat tincidunt nunc velit sit lacinia ultrices quisque. Facilisi nec pharetra interdum quisque tincidunt sit netus diam cum. Tellus faucibus lacus viverra ultrices.",
   },
-  // {
-  //   name: "Dr. -Ing. Ismail Doğan Külcü",
-  //   img: Team5,
-  //   title: "COO",
-  //   url: "https://www.linkedin.com/in/ismail-do%C4%9Fan-k%C3%BClc%C3%BC-53765b254/",
-  //   desc: "As the Chief Operating Officer, Dr. Külcü  is responsible for managing the day-to-day operations of the business. His responsibilities span across all departments ensuring efficiency and quality in delivery.",
-  // },
-  // {
-  //   name: "Serhat Yanar",
-  //   img: Team6,
-  //   title: "Partnership Director",
-  //   url: "https://www.linkedin.com/in/serhatyanar/",
-  //   desc: "Serhat is a co-founder of a successful crypto launchpad, and he was instrumental in raising funds for various projects. He manages partnerships at Devomon by leveraging his extensive network of crypto and NFT industry contacts, venture capitalists, and key opinion leaders",
-  // },
-  // {
-  //   name: "Wisha Butt",
-  //   img: Team7,
-  //   title: "Project Co. Management",
-  //   url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
-  //   desc: "Enthusiastic Project Manager, Scrum Master and a chief responsible to effectively and efficientlymanage the development sprints from planning to execution to review in an agile development environment .",
-  // },
+  {
+    name: "Serhat Yanar- Advisor",
+    img: devomon_team6,
+    // title: "COO",
+
+    desc: "Serhat is a co-founder of a successful crypto launchpad, and he was instrumental in raising funds for various projects. He manages partnerships at Devomon by leveraging his extensive network of crypto and NFT industry contacts, venture capitalists, and key opinion leaders.",
+  },
+  {
+    name: "martin s.-Advisor",
+    img: devomon_team7,
+    title: "Chief Gaming Officer",
+    url: "https://www.linkedin.com/in/serhatyanar/",
+    desc: "Martin boasts a track record of eight years as a seasoned game developer, demonstrating exceptional proficiency in Unreal Engine at senior levels.",
+  },
+  {
+    name: "Saban Özden- Advisor",
+    img: devomon_team8,
+    title: "Chief Technology Officer",
+    url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
+    desc: "Saban Özden is a skilled software engineer and academic expert in Computer Science. With a proven track record in software development, he leads international teams and executes complex projects with precision. As a vital asset to our company, Saban's deep technical expertise and passion for innovative technologies contribute significantly to our success. He has also advised the United Nations on blockchain technology.",
+  },
 ];
 
 export const HeaderData = [

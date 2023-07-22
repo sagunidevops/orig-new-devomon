@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import TeamCard from "../common/TeamCard";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { TeamData} from "../common/Helper";
+import { TeamData } from "../common/Helper";
 
 // eslint-disable-next-line no-unused-vars
 const CoreTeam = ({ teamToRef2 }) => {
@@ -62,8 +62,8 @@ const CoreTeam = ({ teamToRef2 }) => {
           <h3 className="font-raleway team_left uppercase  font-bold text-center  text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">
             team
           </h3>
-          <div className="text-center sm:mb-8">
-            <span className="contact_border md:w-[471px] w-full inline-block"></span>
+          <div className=" sm:mb-8">
+            <span className=" md:w-[471px] w-full inline-block"></span>
           </div>
         </div>
         {/* TEAM CARD START */}
