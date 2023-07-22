@@ -23,6 +23,7 @@ export default {
         aboutBgImg: "url('./assets/images/png/about_bg_img.png')",
         comingSoonBgImg: "url('./assets/images/svg/coming_soon_logo.svg')",
         coming_soon_bg_img: "url('./assets/images/png/coming_soon_bg_img.png')",
+        latestNews_bg_img: "url('./assets/images/homepageImages/webp/latest_news.webp')"
       },
       fontFamily: {
         poppins: ['"Poppins", sans-serif'],

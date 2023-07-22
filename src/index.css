@@ -14,3 +14,16 @@
 .about_card_bg:hover .about_card_img {
     transform: scale(1.15);
 }
+
+/* ====================================== NEWS SLIDER ============================== */
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: white !important;
+}
+
+.slick-dots li button:before {
+    color: #2253F5 !important;
+    opacity: 1 !important;
+    font-size: 17px;
+    top: -40px !important;
+}
