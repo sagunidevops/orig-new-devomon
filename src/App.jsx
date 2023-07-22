@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "./components/common/Footer";
 import Header from "./components/common/Header";
@@ -12,26 +12,40 @@ import LatestNews from "./components/homepage/LatestNews";
 import Partner from "./components/homepage/Partner";
 // import StreamPartner from "./components/homepage/StreamPartner";
 import CoreTeam from "./components/homepage/CoreTeam";
-// import ComingSoon from "./components/common/ComingSoon";
-// import DevomonCallistoBattle from "./components/homepage/DevomonCallistoBattle";
+import BackToTop from "./components/common/BackToTop";
+import Preloader from "./components/common/Preloader";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+    if (loading) {
+      document.body.classList.add("overflow_hidden");
+    } else {
+      document.body.classList.remove("overflow_hidden");
+    }
+  }, [loading]);
   return (
     <>
       <BrowserRouter>
+        {loading && <Preloader />}
+        <BackToTop />
         <Header />
         <Hero />
         <About />
         <AboutCard />
         <LatestNews />
-        <Partner/>
+        <Partner />
         <TouchForm />
 
         {/* <StreamPartner/> */}
 
         {/* <ComingSoon /> */}
         {/* <DevomonCallistoBattle/> */}
-        <CoreTeam/>
+        <CoreTeam />
         <Footer />
       </BrowserRouter>
     </>
