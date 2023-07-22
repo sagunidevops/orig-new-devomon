@@ -810,26 +810,21 @@ export const Latest_news_faq_data = [
   {
     heading: "Condimentum eros praesent condimentum nunc elementum.",
     para: "Register, connect your wallet and install the game.",
-    className: "mb-4",
   },
   {
     heading: "Morbi lorem quisque non rutrum quisque blandit tellus.",
     para: "Usually 3, in some cases up to 6.",
-    className: "mb-4",
   },
   {
     heading: "Mattis enim eleifend  vulputate bibendum netus amet.",
     para: "You can start round-based battles, explore and decorate your island. Communicate with friends.",
-    className: "mb-4",
   },
   {
     heading: "Scelerisque congue proin turpis bibendum duis nulla.",
     para: "These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
-    className: "mb-4",
   },
   {
     heading: "Aenean tristique suscipit diam mi gravida aenean non.",
     para: "When your fire-type evomon battles a plant-type evomon, you will. ",
-    className: "mb-0",
   },
 ];

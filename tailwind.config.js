@@ -25,7 +25,8 @@ export default {
         coming_soon_bg_img: "url('./assets/images/png/coming_soon_bg_img.png')",
         devomonCallistoBattelBg:
         "url('./assets/images/webp/devomon-callisto-battle-bg.webp')",
-        latestNews_bg_img: "url('./assets/images/homepageImages/webp/latest_news.webp')"
+        latestNews_bg_img: "url('./assets/images/homepageImages/webp/latest_news.webp')",
+        latestNews_bg_color: "url('./assets/images/homepageImages/svg/latest_news_bg.svg')"
       },
       fontFamily: {
         poppins: ['"Poppins", sans-serif'],
