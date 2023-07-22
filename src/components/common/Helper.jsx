@@ -16,10 +16,6 @@ import MavenCapital from "../../assets/images/svg/MavenCapital.svg";
 import ChainLink from "../../assets/images/svg/chainlink.svg";
 // import salad from "../../assets/images/svg/salad.svg";
 import magic from "../../assets/images/svg/magic.svg";
-import Team1 from "../../assets/images/webp/team1.webp";
-import Team2 from "../../assets/images/webp/team2.webp";
-import Team3 from "../../assets/images/webp/team3.webp";
-import Team4 from "../../assets/images/webp/team4.webp";
 
 import devomon_team1 from "../../assets/images/webp/devomon_team1.webp";
 import devomon_team2 from "../../assets/images/webp/devomon_team2.webp";
@@ -54,7 +50,6 @@ import energeticTeam from "../../assets/images/webp/energeticTeam1.webp";
 import energeticTeam2 from "../../assets/images/webp/energeticteam5.webp";
 import energeticTeam3 from "../../assets/images/webp/energeticTeamgirl.webp";
 import energeticTeam4 from "../../assets/images/webp/energeticTeam4.webp";
-import Game_Dev_Lead from "../../assets/images/webp/Game_Dev_Lead.webp";
 // =====================================================================================
 import gamefi_bg from "../../assets/images/homepageImages/webp/gamefi_bg.webp";
 import evozone_bg from "../../assets/images/homepageImages/webp/evozone_bg.webp";
