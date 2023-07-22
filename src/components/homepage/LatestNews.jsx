@@ -27,7 +27,7 @@ const LatestNews = () => {
   };
   return (
     <>
-      <div className="bg-latestNews_bg_img bg-no-repeat bg-cover py-10 xl:pt-[120px] xl:pb-[205px] overflow-hidden">
+      <div className="bg-latestNews_bg_img bg-no-repeat bg-cover py-10 xl:pt-[120px] xl:pb-[205px] overflow-hidden scroll_hidden">
         <div className="container">
           <p className="text-center text-white font-bold text-4xl pb-[30px] xl:pb-[51px]">
             Latest news
@@ -40,10 +40,10 @@ const LatestNews = () => {
                     return (
                       <div
                         key={index}
-                        className="w-[300px] sm:w-[490px] mx-auto"
+                        className="w-[250px] xs:w-[300px] sm:w-[490px] mx-auto"
                       >
                         <img
-                          className="w-[300px] sm:w-[490px] mx-auto"
+                          className="w-[250px] xs:w-[300px] sm:w-[490px] mx-auto"
                           src={item.img}
                           alt="news-slider-img"
                         />
@@ -63,7 +63,7 @@ const LatestNews = () => {
                     }`}
                   >
                     <div
-                      className={`flex items-center justify-between text-lg sm:text-xl font-semibold font-raleway`}
+                      className={`flex items-center justify-between text-base sm:text-lg font-semibold font-raleway`}
                     >
                       {item.heading}
                       <span
@@ -98,7 +98,7 @@ const LatestNews = () => {
                               },
                             }}
                           >
-                            <p className="text-xs sm:text-sm md:text-base mt-1 lg:mt-3">
+                            <p className="text-xs sm:text-sm md:text-base mt-1 lg:mt-3 font-raleway">
                               {item.para}
                             </p>
                           </motion.div>
