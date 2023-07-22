@@ -138,6 +138,13 @@
     bottom: 0px !important;
   }
 
+  .contact_border {
+    background: linear-gradient(270deg,
+        rgba(34, 83, 245, 0) 3.61%,
+        #2253f5 53.31%,
+        rgba(34, 83, 245, 0) 96.53%);
+    height: 3px;
+  }
   @media (max-width: 1280px) {
     .translate_y {
       transform: translateY(-300%) !important;

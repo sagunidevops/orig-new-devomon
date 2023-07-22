@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { ourPartner } from "../common/Helper";
+import Thunder from "../../assets/images/webp/Thunder.webp";
+import Gino from "../../assets/images/webp/Gino_-_New_evomon_44.webp";
 
 const Partner = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -144,6 +146,16 @@ const Partner = () => {
             );
           })}
       </div>
+      <img
+          className="absolute bottom-[-50px] sm:bottom-[-5%]  left-0 w-[100px] md:w-[150px] xl:w-[300px] z-[2]"
+          src={Gino}
+          alt="Gino"
+        />
+        <img
+          className="absolute bottom-[-50px] sm:bottom-[-8%]  right-0 w-[120px] md:w-[170px] xl:w-[300px] z-[2]"
+          src={Thunder}
+          alt="thunder"
+        />
     </section>
   );
 };
