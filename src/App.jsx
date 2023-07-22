@@ -33,6 +33,7 @@ function App() {
       <BrowserRouter>
         {loading && <Preloader />}
         <BackToTop />
+        
         <Header />
         <Hero />
         <About />

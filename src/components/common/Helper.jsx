@@ -413,18 +413,22 @@ export const ourPartner = [
       {
         icon: AfterMathIslands,
         url: "https://aftermathislands.io/",
+        className: "mb-2 pb-2",
       },
       {
         icon: Placewar,
         url: "https://placewar.io/",
+        className: "mb-2 pb-2",
       },
       {
         icon: RazeRacing,
         url: "https://www.razeracing.com/",
+        className: "sm:mt-2 sm:pt-2",
       },
       {
         icon: metafighter,
         url: "https://chain.link/",
+        className: "sm:mt-2 sm:pt-2",
       },
 
       // {
