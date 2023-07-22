@@ -7,10 +7,10 @@ import Header from "./components/common/Header";
 import Hero from "./components/homepage/Hero";
 import About from "./components/homepage/About";
 import TouchForm from "./components/homepage/TouchForm";
-import ComingSoon from "./components/common/ComingSoon";
 import AboutCard from "./components/homepage/AboutCard";
 import LatestNews from "./components/homepage/LatestNews";
-import DevomonCallistoBattle from "./components/homepage/DevomonCallistoBattle";
+// import ComingSoon from "./components/common/ComingSoon";
+// import DevomonCallistoBattle from "./components/homepage/DevomonCallistoBattle";
 
 function App() {
   return (
@@ -20,10 +20,10 @@ function App() {
         <Hero />
         <About />
         <AboutCard />
-        <TouchForm />
-        <ComingSoon />
         <LatestNews />
-        <DevomonCallistoBattle/>
+        <TouchForm />
+        {/* <ComingSoon /> */}
+        {/* <DevomonCallistoBattle/> */}
         <Footer />
       </BrowserRouter>
     </>
