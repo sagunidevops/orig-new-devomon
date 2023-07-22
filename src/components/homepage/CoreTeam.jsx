@@ -1,0 +1,138 @@
+/* eslint-disable react/prop-types */
+import { useEffect } from "react";
+import Slider from "react-slick";
+import TeamCard from "../common/TeamCard";
+import TeamSliderCard from "../common/TeamSliderCard";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { TeamData, teamSliderData } from "../common/Helper";
+
+// eslint-disable-next-line no-unused-vars
+const CoreTeam = ({ teamToRef2 }) => {
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    let teamLeft = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".team_left",
+        start: "top 70%",
+        end: "bottom top",
+        immediateRender: false,
+      },
+    });
+    teamLeft.fromTo(
+      ".team_left",
+      {
+        xPercent: -100,
+        autoAlpha: 0,
+      },
+      {
+        xPercent: 0,
+        autoAlpha: 1,
+        ease: "back(1)",
+        duration: 1,
+      }
+    );
+
+    let teamZoom = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".team_zoom",
+        start: "top 70%",
+        end: "bottom top",
+        immediateRender: false,
+      },
+    });
+    teamZoom.fromTo(
+      ".team_zoom",
+      {
+        scale: 0,
+        autoAlpha: 0,
+      },
+      {
+        scale: 1,
+        autoAlpha: 1,
+        ease: "back(1)",
+        duration: 1,
+      }
+    );
+  }, []);
+
+  var settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1401,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 641,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+  return (
+    <section className="relative pt-20  sm:pt-28 md:pt-36 pb-[35px] sm:pb-[42px] md:pb-16">
+      <div className="team-layer w-[269px] h-[257px] absolute right-0 top-0"></div>
+      <div className="team-layer w-[269px] h-[257px] absolute left-0 bottom-1/4"></div>
+
+      <div className="container">
+        <div className="pb-5 mb-5">
+          <h3 className="font-raleway team_left uppercase  font-bold text-center  text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">
+            team
+          </h3>
+          <div className="text-center sm:mb-8">
+            <span className="contact_border md:w-[471px] w-full inline-block"></span>
+          </div>
+        </div>
+        {/* TEAM CARD START */}
+        <div className="flex flex-wrap justify-center space-x-3 ">
+          {TeamData &&
+            TeamData.map((obj, index) => (
+              <TeamCard obj={obj} key={index} index={index} />
+            ))}
+        </div>
+        {/* TEAM SLIDER START */}
+        <div className="team-slider  focus:outline-none team_zoom">
+          <Slider {...settings}>
+            {teamSliderData &&
+              teamSliderData.length > 0 &&
+              teamSliderData.map((obj, index) => (
+                <TeamSliderCard key={index} obj={obj} index={index} />
+              ))}
+          </Slider>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CoreTeam;

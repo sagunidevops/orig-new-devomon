@@ -11,10 +11,10 @@ import OwnerShipImg2 from "../../assets/images/webp/ownership2.webp";
 import OwnerShipImg3 from "../../assets/images/webp/ownership3.webp";
 import OwnerShipImg4 from "../../assets/images/webp/ownership4.webp";
 import OwnerShipImg5 from "../../assets/images/webp/ownership5.webp";
-import XthiryIcon from "../../assets/images/svg/xthiry.svg";
+// import XthiryIcon from "../../assets/images/svg/xthiry.svg";
 import MavenCapital from "../../assets/images/svg/MavenCapital.svg";
 import ChainLink from "../../assets/images/svg/chainlink.svg";
-import salad from "../../assets/images/svg/salad.svg";
+// import salad from "../../assets/images/svg/salad.svg";
 import magic from "../../assets/images/svg/magic.svg";
 import Team1 from "../../assets/images/webp/team1.webp";
 import Team2 from "../../assets/images/webp/team2.webp";
@@ -39,13 +39,14 @@ import Team24 from "../../assets/images/webp/team24.webp";
 import Team25 from "../../assets/images/webp/team25.webp";
 import Team26 from "../../assets/images/webp/team26.webp";
 import TeamMaurat from "../../assets/images/webp/murat.webp";
-import InvoZoneGames from "../../assets/images/webp/invogames_logo.webp";
+// import InvoZoneGames from "../../assets/images/webp/invogames_logo.webp";
 import GameLofiHub from "../../assets/images/png/gamefi_org.png";
 import AfterMathIslands from "../../assets/images/webp/aftermath-islands.webp";
 import Placewar from "../../assets/images/webp/placewar.webp";
 import metafighter from "../../assets/images/webp/metafightzer.webp";
 import mystic from "../../assets/images/png/mystic.png";
 import RazeRacing from "../../assets/images/webp/raze_racing.webp";
+import bgaLogo from "../../assets/images/svg/bgaLogo.svg";
 import { AppStore, AppleStore, HeaderArw, WindowStore } from "./Icons";
 import CallistoBattle1 from "../../assets/images/webp/callisto-1.png";
 import CallistoBattle2 from "../../assets/images/webp/callisto-2.png";
@@ -369,6 +370,10 @@ export const ourPartner = [
         icon: ChainLink,
         url: "https://chain.link/",
       },
+      {
+        icon: bgaLogo,
+        url: "https://www.blockchaingamealliance.org/",
+      },
 
       // {
       //   icon: ChainLink,
@@ -402,20 +407,20 @@ export const ourPartner = [
         url: "https://mystic.io/",
       },
     ],
-    partnericon3: [
-      {
-        icon: InvoZoneGames,
-        url: "https://invogames.com/",
-      },
-      {
-        icon: salad,
-        url: "https://salad.com/",
-      },
-      {
-        icon: XthiryIcon,
-        url: "https://www.xthirty7.com/",
-      },
-    ],
+    // partnericon3: [
+    //   {
+    //     icon: InvoZoneGames,
+    //     url: "https://invogames.com/",
+    //   },
+    //   {
+    //     icon: salad,
+    //     url: "https://salad.com/",
+    //   },
+    //   {
+    //     icon: XthiryIcon,
+    //     url: "https://www.xthirty7.com/",
+    //   },
+    // ],
     partnericon4: [
       {
         icon: AfterMathIslands,
