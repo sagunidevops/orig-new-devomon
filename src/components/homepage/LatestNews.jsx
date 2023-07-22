@@ -32,18 +32,18 @@ const LatestNews = () => {
           <p className="text-center text-white font-bold text-4xl pb-[30px] xl:pb-[51px]">
             Latest news
           </p>
-          <div className="flex flex-col xl:flex-row items-center rounded-[12px] xl:h-[456px] bg-latestNews_bg_color pt-10 xl:pt-0 px-3 md:px-0">
-            <div className="max-w-[500px]">
+          <div className="flex flex-col xl:flex-row items-center rounded-[12px] xl:h-[475px] bg-latestNews_bg_color pt-10 xl:pt-0 px-3 md:px-0">
+            <div className="max-w-[508px] mt-2">
               <Slider {...settings}>
                 {Latest_slider_data &&
                   Latest_slider_data.map((item, index) => {
                     return (
                       <div
                         key={index}
-                        className="w-[250px] xs:w-[300px] sm:w-[490px] mx-auto"
+                        className="w-[250px] xs:w-[300px] sm:w-[510px] mx-auto"
                       >
                         <img
-                          className="w-[250px] xs:w-[300px] sm:w-[490px] mx-auto"
+                          className="w-[250px] xs:w-[300px] sm:w-[510px] mx-auto"
                           src={item.img}
                           alt="news-slider-img"
                         />
