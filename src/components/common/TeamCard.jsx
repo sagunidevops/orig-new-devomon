@@ -33,8 +33,7 @@ const TeamCard = ({ obj, index }) => {
     <>
       <div className="pt-16 mb-7 sm:mb-[70px] team_zoom">
         <div
-          className={` team_bg  border border-1 border-[#3B3B3B] rounded-3xl   relative   px-3 pb-4 max-w-[275px]  hover:scale-105  duration-300 ease-in-out transition-all `}
-        >
+          className={` team_bg  border border-1 border-[#3B3B3B] rounded-3xl   relative   px-3 pb-4 max-w-[275px]  hover:scale-105  duration-300 ease-in-out transition-all `}>
           <div className={` -mt-12 sm:-mt-16 flex justify-center `}>
             <img
               className="max-w-[120px] sm:max-w-[152px] mx-auto rounded-full"
@@ -49,8 +48,7 @@ const TeamCard = ({ obj, index }) => {
             {obj.title}
           </p>
           <div
-            className={` h-[119px] px-1 overflow-auto team-scrollbar text-xs opacity-70 text-white font-poppins sm:text-sm md:text-base mt-5`}
-          >
+            className={` h-[119px] px-1 overflow-auto team-scrollbar text-xs opacity-70 text-white font-poppins sm:text-sm md:text-base mt-5`}>
             <p className="text-center">{obj.desc}</p>
           </div>
 
@@ -60,8 +58,7 @@ const TeamCard = ({ obj, index }) => {
             rel="noopener noreferrer"
             aria-label="LinkedinAndIMD"
             aria-describedby="LinkedinAndIMD"
-            className="flex justify-center py-4 hover:scale-105  duration-300 ease-in-out transition-all"
-          >
+            className="flex justify-center py-4 hover:scale-105  duration-300 ease-in-out transition-all">
             {" "}
             {index === 2 ? (
               <img className="max-w-[30px]" src={imdb} alt="imdb" />
