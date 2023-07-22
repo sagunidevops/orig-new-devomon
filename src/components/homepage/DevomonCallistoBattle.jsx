@@ -6,6 +6,9 @@ import { gsap } from "gsap";
 import { CallistoBattle } from "../common/Helper";
 import { Left_arrow, Right_arrow } from "../common/Icons";
 
+// import left_arrow from "../../assets/images/png/left_arrow";
+// import right_arrow from "../../assets/images/png/right_arrow";
+
 const DevomonCallistoBattle = ({ NftRef }) => {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
@@ -151,16 +154,18 @@ const DevomonCallistoBattle = ({ NftRef }) => {
                   );
                 })}
             </Slider>
-            <div className=" px-0 justify-between -translate-y-[380%] xl:-translate-y-[300%] gap-3 hidden md:flex">
+            <div className=" px-0 justify-between translate_y -translate-y-[400%] xl:-translate-y-[350%] 2xl:-translate-y-[400%] gap-3 hidden  lg:flex">
               <button
-                className=" rounded-full -translate-x-[60%]  lg:-translate-x-[100%]"
+                className=" -translate-x-[60%]  lg:-translate-x-[100%]"
                 onClick={() => slider.current.slickPrev()}>
                 <Left_arrow />
+                {/* <img src={left_arrow} alt="left_arrow" /> */}
               </button>
               <button
-                className=" rotate-180 rounded-full translate-x-[60%] lg:translate-x-[100%]"
+                className=" translate-x-[60%] lg:translate-x-[100%]"
                 onClick={() => slider.current.slickNext()}>
                 <Right_arrow />
+                {/* <img src={right_arrow} alt="right_arrow" /> */}
               </button>
             </div>
           </div>
