@@ -53,50 +53,6 @@ const CoreTeam = ({ teamToRef2 }) => {
       }
     );
   }, []);
-
-  var settings = {
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToShow: 6,
-    slidesToScroll: 6,
-    arrows: true,
-    responsive: [
-      {
-        breakpoint: 1401,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1201,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 641,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 425,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
   return (
     <section className="relative pt-20 sm:pt-28 md:pt-36 pb-[35px] sm:pb-[42px] md:pb-16">
       <div className="team-layer w-[269px] h-[257px] absolute right-0 top-0"></div>
