@@ -435,7 +435,7 @@ export const TeamData = [
     img: Team1,
     title: "Ceo ",
     url: "https://www.linkedin.com/in/gueven-al/",
-    desc: "As a gaming fan, collector, and creator for 15 years, Güven has an entrepreneurial spirit and is a natural leader. He's known for his visionary approach, analytical skills, and ability to work well under pressure. With a passion for anime and gaming, he brings a unique perspective to the team and is confident in his ability to deliver exceptional results",
+    desc: "With experience in project management and an entrepreneurial spirit. Known for his visionary approach, strong analytical, organizational and  communication skills, and ability to work well under pressure. A passionate anime fan and gamer, Güven brings a unique perspective to the team and believes it will be key to the project's success. He is confident in his ability to deliver exceptional results and is excited to be a part of this dynamic project team.",
   },
   {
     name: "Sammy Grund",

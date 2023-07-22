@@ -11,7 +11,7 @@ import AboutCard from "./components/homepage/AboutCard";
 import LatestNews from "./components/homepage/LatestNews";
 import Partner from "./components/homepage/Partner";
 // import StreamPartner from "./components/homepage/StreamPartner";
-// import CoreTeam from "./components/homepage/CoreTeam";
+import CoreTeam from "./components/homepage/CoreTeam";
 // import ComingSoon from "./components/common/ComingSoon";
 // import DevomonCallistoBattle from "./components/homepage/DevomonCallistoBattle";
 
@@ -31,7 +31,7 @@ function App() {
 
         {/* <ComingSoon /> */}
         {/* <DevomonCallistoBattle/> */}
-        {/* <CoreTeam/> */}
+        <CoreTeam/>
         <Footer />
       </BrowserRouter>
     </>

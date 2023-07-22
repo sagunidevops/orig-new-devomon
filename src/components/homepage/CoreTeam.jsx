@@ -57,7 +57,6 @@ const CoreTeam = ({ teamToRef2 }) => {
     <section className="relative pt-20 sm:pt-28 md:pt-36 pb-[35px] sm:pb-[42px] md:pb-16">
       <div className="team-layer w-[269px] h-[257px] absolute right-0 top-0"></div>
       <div className="team-layer w-[269px] h-[257px] absolute left-0 bottom-1/4"></div>
-
       <div className="container">
         <div className="pb-5 mb-5">
           <h3 className="font-raleway team_left uppercase  font-bold text-center  text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">
