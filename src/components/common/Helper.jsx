@@ -83,6 +83,8 @@ import evoVerse_character from "../../assets/images/homepageImages/webp/evoVerse
 import manga_character from "../../assets/images/homepageImages/webp/manga.webp";
 import anime_character from "../../assets/images/homepageImages/webp/anime.webp";
 import merch_character from "../../assets/images/homepageImages/webp/merch.webp";
+// ======================================== faq=============================
+import latest_news_slider_img from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
 
 export const tureOnwership = [
   {
@@ -689,4 +691,12 @@ export const Latest_news_faq_data = [
     heading: "Aenean tristique suscipit diam mi gravida aenean non.",
     para: "When your fire-type evomon battles a plant-type evomon, you will. ",
   },
+];
+
+// ========================================== Latest news Slider img ===========================================
+export const Latest_slider_data = [
+  { img: latest_news_slider_img },
+  { img: latest_news_slider_img },
+  { img: latest_news_slider_img },
+  { img: latest_news_slider_img },
 ];

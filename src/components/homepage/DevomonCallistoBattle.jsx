@@ -139,8 +139,8 @@ const DevomonCallistoBattle = ({ NftRef }) => {
                 CallistoBattle.length > 0 &&
                 CallistoBattle.map((obj, index) => {
                   return (
-                    <div className="px-3 sm:px-0  group" key={index}>
-                      <div className="onwership-slider-bg ">
+                    <div className="px-3 sm:px-0 group" key={index}>
+                      <div className="onwership-slider-bg">
                         <img
                           className="w-full rounded-[4.54545px]"
                           src={obj.img}
