@@ -10,8 +10,8 @@ const SideSocialIcon = () => {
         <div
           className={
             open
-              ? "duration-300 relative"
-              : "translate-x-full duration-300 relative"
+              ? "translate-x-full duration-300 relative"
+              : "duration-300 relative"
           }
         >
           <div
