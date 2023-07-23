@@ -21,7 +21,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
-      setLoading(false);
+      setLoading(false);1
     }, 4000);
     if (loading) {
       document.body.classList.add("overflow_hidden");
