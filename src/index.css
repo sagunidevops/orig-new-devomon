@@ -40,6 +40,10 @@
     animation: preloader_scale 1.5s ease-in-out infinite alternate-reverse;
 }
 
+.scale_social_icon:hover .social_icon {
+    transform: translateX(-5px);
+}
+
 @keyframes preloader_scale {
     0% {
         transform: scale(0.85);

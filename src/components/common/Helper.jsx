@@ -1,6 +1,7 @@
 import Instagram from "../../assets/images/webp/instagram.webp";
 import Youtube from "../../assets/images/webp/youtube.webp";
 import Telegram from "../../assets/images/webp/telegram.webp";
+import Facebook from "../../assets/images/webp/facebook.webp";
 import Twitter from "../../assets/images/webp/twitter.webp";
 import Tiktok from "../../assets/images/webp/tiktok.webp";
 import Medium from "../../assets/images/webp/medium.webp";
@@ -684,4 +685,32 @@ export const Latest_slider_data = [
   { img: latest_news_slider_img },
   { img: latest_news_slider_img },
   { img: latest_news_slider_img },
+];
+// ============================================= Side social Icon ====================================================
+
+export const SideSocialIconData = [
+  {
+    img: Instagram,
+    para: "instagram",
+  },
+  {
+    img: Youtube,
+    para: "youtube",
+  },
+  {
+    img: Telegram,
+    para: "telegram",
+  },
+  {
+    img: Facebook,
+    para: "facebook",
+  },
+  {
+    img: Twitch,
+    para: "twitch",
+  },
+  {
+    img: Discord,
+    para: "discord",
+  },
 ];

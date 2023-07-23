@@ -15,6 +15,7 @@ import CoreTeam from "./components/homepage/CoreTeam";
 import BackToTop from "./components/common/BackToTop";
 import Preloader from "./components/common/Preloader";
 import { useEffect, useState } from "react";
+import SideSocialIcon from "./components/common/SideSocialIcon";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,7 +34,7 @@ function App() {
       <BrowserRouter>
         {loading && <Preloader />}
         <BackToTop />
-        
+        <SideSocialIcon />
         <Header />
         <Hero />
         <About />
