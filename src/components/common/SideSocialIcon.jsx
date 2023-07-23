@@ -18,7 +18,9 @@ const SideSocialIcon = () => {
             className="bg-black absolute -left-[30px] top-0 w-[30px] h-[52px] cursor-pointer flex items-center justify-center rounded-[5px]"
             onClick={() => setclose(!open)}
           >
-            <Social_arrow />
+            <span className={open ? "rotate-180" : ""}>
+              <Social_arrow />
+            </span>
           </div>
           <div className="bg-white py-6 pl-6 pr-9">
             {SideSocialIconData.map((obj, i) => {
