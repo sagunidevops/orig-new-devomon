@@ -139,12 +139,20 @@
   }
 
   .contact_border {
-    background: linear-gradient(270deg,
-        rgba(34, 83, 245, 0) 3.61%,
-        #2253f5 53.31%,
-        rgba(34, 83, 245, 0) 96.53%);
+    background: linear-gradient(
+      270deg,
+      rgba(34, 83, 245, 0) 3.61%,
+      #2253f5 53.31%,
+      rgba(34, 83, 245, 0) 96.53%
+    );
     height: 3px;
   }
+
+  .img_shadow {
+    box-shadow: 0px 0px 35px 0px rgba(34, 131, 245, 0.7);
+    border-radius: 117px;
+  }
+
   @media (max-width: 1280px) {
     .translate_y {
       transform: translateY(-300%) !important;

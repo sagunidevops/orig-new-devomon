@@ -36,12 +36,12 @@ const TeamCard = ({ obj, index }) => {
           className={`  relative   px-3 pb-4 max-w-[275px]  hover:scale-105  duration-300 ease-in-out transition-all `}>
           <div className={` -mt-12 sm:-mt-16  `}>
             <img
-              className="max-w-[120px] sm:max-w-[120px] "
+              className="max-w-[117px] sm:max-w-[117px] img_shadow  "
               src={obj.img}
               alt="team"
             />
           </div>
-          <div className=" flex items-center gap-3">
+          <div className=" flex items-center gap-3 pt-7">
             <a
               href={obj.url}
               target="_blank"
