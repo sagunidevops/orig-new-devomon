@@ -76,7 +76,11 @@ const Partner = () => {
                     obj.partnericon1.map((item, i) => {
                       return (
                         <div className="parnter_right " key={i}>
-                          <a target="_blank" rel="noopener noreferrer" href={item.url}>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={item.url}
+                          >
                             <img
                               className="hover:scale-105  max-w-[150px] w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 mt-10 filter-property"
                               src={item.icon}
@@ -87,17 +91,21 @@ const Partner = () => {
                       );
                     })}
                 </div>
-                <div className="flex justify-center items-center  sm:space-x-[40px]  mt-3 flex-wrap py-2 ">
+                <div className="flex justify-center items-center  sm:space-x-[40px] mt-3 flex-wrap py-2 ">
                   {obj &&
                     obj.partnericon2 &&
                     obj.partnericon2.map((item, i) => {
                       return (
                         <div className="sm:mx-4 mx-2 parnter_left " key={i}>
-                          <a target="_blank" rel="noopener noreferrer" href={item.url}>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={item.url}
+                          >
                             <img
                               className={`${
-                    i === 2 ? "" : "filter-property"
-                              } hover:scale-105 max-w-[150px]  h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 mt-10 `}
+                                i === 2 ? "" : "filter-property"
+                              } hover:scale-105 max-w-[150px]  h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 xl:mt-10 `}
                               src={item.icon}
                               alt=""
                             />
@@ -106,13 +114,17 @@ const Partner = () => {
                       );
                     })}
                 </div>
-                <div className="flex justify-center items-center sm:space-x-[40px]  mt-3 flex-wrap py-2 ">
+                <div className="justify-center items-center sm:space-x-[40px]  mt-3 flex-wrap py-2 hidden">
                   {obj &&
                     obj.partnericon3 &&
                     obj.partnericon3.map((item, i) => {
                       return (
                         <div className="sm:mx-4 mx-2 parnter_left " key={i}>
-                          <a target="_blank" rel="noopener noreferrer" href={item.url}>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={item.url}
+                          >
                             <img
                               className="hover:scale-105 [150px] h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all filter-property"
                               src={item.icon}
@@ -123,16 +135,23 @@ const Partner = () => {
                       );
                     })}
                 </div>
-                <div className="flex justify-center items-center sm:space-x-[40px]  mt-3 flex-wrap py-2 space-y-6 sm:space-y-0 ">
+                <div className="flex justify-center items-center sm:space-x-[40px]  mt-3 flex-wrap py-2 space-y-6 sm:space-y-0  mb-14">
                   {obj &&
                     obj.partnericon4 &&
                     obj.partnericon4.map((item, i) => {
                       return (
                         <div className="sm:mx-4 mx-2 parnter_left " key={i}>
-                          <a target="_blank" rel="noopener noreferrer" href={item.url}>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={item.url}
+                          >
                             <img
                               className={` hover:scale-1-w-[150px] h-full max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all ${
-                                i === 0||i==1 || i == 3 ? "" : "filter-property"
+                                (i === 0 || i == 1 || i == 3
+                                  ? ""
+                                  : "filter-property",
+                                item.className)
                               }`}
                               src={item.icon}
                               alt=""
@@ -147,15 +166,15 @@ const Partner = () => {
           })}
       </div>
       <img
-          className="absolute bottom-[-50px] sm:bottom-[-5%]  left-0 w-[100px] md:w-[150px] xl:w-[300px] z-[2]"
-          src={Gino}
-          alt="Gino"
-        />
-        <img
-          className="absolute bottom-[-50px] sm:bottom-[-8%]  right-0 w-[120px] md:w-[170px] xl:w-[300px] z-[2]"
-          src={Thunder}
-          alt="thunder"
-        />
+        className="absolute bottom-[-50px] sm:bottom-[-5%]  left-0 w-[100px] md:w-[150px] xl:w-[300px] z-[2]"
+        src={Gino}
+        alt="Gino"
+      />
+      <img
+        className="absolute bottom-[-50px] sm:bottom-[-8%]  right-0 w-[120px] md:w-[170px] xl:w-[300px] z-[2]"
+        src={Thunder}
+        alt="thunder"
+      />
     </section>
   );
 };
