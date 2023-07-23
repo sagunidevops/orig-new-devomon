@@ -36,7 +36,7 @@ const TeamCard = ({ obj, index }) => {
           className={`  relative   px-3 pb-4 max-w-[275px]  hover:scale-105  duration-300 ease-in-out transition-all `}>
           <div className={` -mt-12 sm:-mt-16  `}>
             <img
-              className="max-w-[120px] sm:max-w-[152px]"
+              className="max-w-[120px] sm:max-w-[120px] "
               src={obj.img}
               alt="team"
             />
@@ -48,7 +48,7 @@ const TeamCard = ({ obj, index }) => {
               rel="noopener noreferrer"
               aria-label="LinkedinAndIMD"
               aria-describedby="LinkedinAndIMD"
-              className=" py-4 hover:scale-105  duration-300 ease-in-out transition-all">
+              className=" hover:scale-105  duration-300 ease-in-out transition-all">
               {" "}
               {index === 2 ? (
                 <img className="max-w-[30px]" src={imdb_icon} alt="imdb" />
@@ -60,14 +60,14 @@ const TeamCard = ({ obj, index }) => {
               <h2 className="text-[#23CAFF] font-raleway font-bold text-xs sm:text-sm md:text-base">
                 {obj.name}
               </h2>
-              <p className=" text-xs font-raleway sm:text-sm md:text-base opacity-70 text-[#2253F5]">
+              <p className=" text-xs font-raleway font-medium  sm:text-sm  opacity-70 text-[#2253F5]">
                 {obj.title}
               </p>
             </div>
           </div>
 
           <div
-            className={` text-xs opacity-70 text-white font-poppins sm:text-sm mt-2 md:mt-5`}>
+            className={` text-xs opacity-70 text-white font-normal font-poppins sm:text-sm mt-2 md:mt-4`}>
             <p>{obj.desc}</p>
           </div>
         </div>
