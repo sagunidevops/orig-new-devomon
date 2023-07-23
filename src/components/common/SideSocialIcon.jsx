@@ -26,9 +26,10 @@ const SideSocialIcon = () => {
             {SideSocialIconData.map((obj, i) => {
               return (
                 <a
-                  href="#"
+                  href={obj.href}
                   key={i}
-                  className="flex items-center mb-4 inline-block scale_social_icon"
+                  target="_blank"
+                  className={`flex items-center inline-block scale_social_icon ${obj.className}`}
                 >
                   <span className="social_icon duration-200">
                     <img className="w-[22px]" src={obj.img} alt="social-icon" />
