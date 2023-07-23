@@ -18,15 +18,18 @@ const SideSocialIcon = () => {
             className="bg-black absolute -left-[30px] top-0 w-[30px] h-[52px] cursor-pointer flex items-center justify-center rounded-[5px]"
             onClick={() => setclose(!open)}
           >
-            <Social_arrow />
+            <span className={open ? "rotate-180" : ""}>
+              <Social_arrow />
+            </span>
           </div>
           <div className="bg-white py-6 pl-6 pr-9">
             {SideSocialIconData.map((obj, i) => {
               return (
                 <a
-                  href="#"
+                  href={obj.href}
                   key={i}
-                  className="flex items-center mb-4 inline-block scale_social_icon"
+                  target="_blank"
+                  className={`flex items-center inline-block scale_social_icon ${obj.className}`}
                 >
                   <span className="social_icon duration-200">
                     <img className="w-[22px]" src={obj.img} alt="social-icon" />

@@ -702,25 +702,36 @@ export const SideSocialIconData = [
   {
     img: Instagram,
     para: "instagram",
+    className: "mb-4",
+    href: "https://www.instagram.com/",
   },
   {
     img: Youtube,
     para: "youtube",
+    className: "mb-4",
+    href: "https://www.youtube.com/",
   },
   {
     img: Telegram,
     para: "telegram",
+    className: "mb-4",
+    href: "https://web.telegram.org/",
   },
   {
     img: Facebook,
     para: "facebook",
+    className: "mb-4",
+    href: "https://www.facebook.com/",
   },
   {
     img: Twitch,
     para: "twitch",
+    className: "mb-4",
+    href: "https://www.twitch.tv/",
   },
   {
     img: Discord,
     para: "discord",
+    href: "https://discord.com/",
   },
 ];
