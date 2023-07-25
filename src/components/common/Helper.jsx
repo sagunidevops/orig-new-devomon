@@ -478,7 +478,7 @@ export const TeamData = [
   {
     name: "Serhat Yanar- Advisor",
     img: devomon_team6,
-    className: items_start,
+    className: item_start,
     desc: "Serhat is a co-founder of a successful crypto launchpad, and he was instrumental in raising funds for various projects. He manages partnerships at Devomon by leveraging his extensive network of crypto and NFT industry contacts, venture capitalists, and key opinion leaders.",
   },
   {
