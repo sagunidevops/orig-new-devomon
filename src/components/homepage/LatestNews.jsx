@@ -33,7 +33,7 @@ const LatestNews = () => {
             Latest news
           </p>
           <div className="flex flex-col xl:flex-row items-center rounded-[12px] xl:h-[475px] bg-latestNews_bg_color pt-10 xl:pt-0 px-3 md:px-0">
-            <div className="max-w-[508px] mt-2">
+            <div className="max-w-[507.4px] mt-[6.5px]">
               <Slider {...settings}>
                 {Latest_slider_data &&
                   Latest_slider_data.map((item, index) => {
