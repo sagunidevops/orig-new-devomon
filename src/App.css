@@ -153,6 +153,10 @@
     border-radius: 117px;
   }
 
+  .items_start {
+    align-items: start !important;
+  }
+
   @media (max-width: 1280px) {
     .translate_y {
       transform: translateY(-300%) !important;

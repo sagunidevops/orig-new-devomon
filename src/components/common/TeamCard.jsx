@@ -41,7 +41,7 @@ const TeamCard = ({ obj, index }) => {
               alt="team"
             />
           </div>
-          <div className=" flex items-center gap-3 pt-7">
+          <div className={`${obj.className} flex items-center  gap-3 pt-7  `}>
             <a
               href={obj.url}
               target="_blank"
@@ -60,7 +60,7 @@ const TeamCard = ({ obj, index }) => {
               <h2 className="text-[#23CAFF] font-raleway font-bold text-xs sm:text-sm md:text-base">
                 {obj.name}
               </h2>
-              <p className=" text-xs font-raleway font-medium  sm:text-sm  opacity-70 text-[#2253F5]">
+              <p className=" text-xs  font-raleway font-medium  sm:text-sm  opacity-70 text-[#2253F5]">
                 {obj.title}
               </p>
             </div>
