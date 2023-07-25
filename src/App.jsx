@@ -23,12 +23,12 @@ function App() {
     setTimeout(() => {
       setLoading(false);
     }, 4000);
-    if (loading) {
-      document.body.classList.add("overflow_hidden");
-    } else {
-      document.body.classList.remove("overflow_hidden");
-    }
-  }, [loading]);
+      if (loading) {
+        document.body.classList.add("overflow_hidden");
+      } else {
+        document.body.classList.remove("overflow_hidden");
+      }
+    }, [loading]);
   return (
     <>
       <BrowserRouter>
