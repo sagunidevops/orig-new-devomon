@@ -41,7 +41,7 @@ const TeamCard = ({ obj, index }) => {
               alt="team"
             />
           </div>
-          <div className={`${obj.className} flex items-center  gap-3 pt-7 `}>
+          <div className={` ${obj.className} flex items-center  gap-3 pt-7 `}>
             <a
               href={obj.url}
               target="_blank"
