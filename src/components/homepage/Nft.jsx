@@ -6,10 +6,7 @@ import { gsap } from "gsap";
 import { CallistoBattle } from "../common/Helper";
 import { Left_arrow, Right_arrow } from "../common/Icons";
 
-// import left_arrow from "../../assets/images/png/left_arrow";
-// import right_arrow from "../../assets/images/png/right_arrow";
-
-const DevomonCallistoBattle = ({ NftRef }) => {
+const Nft = ({ NftRef }) => {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     let ownershipLeft = gsap.timeline({
@@ -159,13 +156,11 @@ const DevomonCallistoBattle = ({ NftRef }) => {
                 className=" -translate-x-[60%]  lg:-translate-x-[100%]"
                 onClick={() => slider.current.slickPrev()}>
                 <Left_arrow />
-                {/* <img src={left_arrow} alt="left_arrow" /> */}
               </button>
               <button
                 className=" translate-x-[60%] lg:translate-x-[100%]"
                 onClick={() => slider.current.slickNext()}>
                 <Right_arrow />
-                {/* <img src={right_arrow} alt="right_arrow" /> */}
               </button>
             </div>
           </div>
@@ -182,4 +177,4 @@ const DevomonCallistoBattle = ({ NftRef }) => {
   );
 };
 
-export default DevomonCallistoBattle;
+export default Nft;

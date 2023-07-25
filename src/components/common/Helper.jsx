@@ -23,7 +23,7 @@ import devomon_team2 from "../../assets/images/webp/devomon_team2.webp";
 import devomon_team3 from "../../assets/images/webp/devomon_team3.webp";
 import devomon_team4 from "../../assets/images/webp/devomon_team4.webp";
 import devomon_team5 from "../../assets/images/webp/devomon_team5.webp";
-import devomon_team6 from "../../assets/images/webp/devomon_team6.webp";
+// import devomon_team6 from "../../assets/images/webp/devomon_team6.webp";
 import devomon_team7 from "../../assets/images/webp/devomon_team7.webp";
 import devomon_team8 from "../../assets/images/webp/devomon_team8.webp";
 
@@ -475,13 +475,13 @@ export const TeamData = [
     url: "https://www.linkedin.com/in/selina-aley-7a2557248/",
     desc: "Blandit viverra varius hendrerit hendrerit varius cras. Velit lorem id malesuada vitae velit odio semper. Feugiat tincidunt nunc velit sit lacinia ultrices quisque. Facilisi nec pharetra interdum quisque tincidunt sit netus diam cum. Tellus faucibus lacus viverra ultrices.",
   },
-  {
-    name: "Serhat Yanar- Advisor",
-    img: devomon_team6,
-    // title: "COO",
+  // {
+  //   name: "Serhat Yanar- Advisor",
+  //   img: devomon_team6,
+  //   // title: "COO",
 
-    desc: "Serhat is a co-founder of a successful crypto launchpad, and he was instrumental in raising funds for various projects. He manages partnerships at Devomon by leveraging his extensive network of crypto and NFT industry contacts, venture capitalists, and key opinion leaders.",
-  },
+  //   desc: "Serhat is a co-founder of a successful crypto launchpad, and he was instrumental in raising funds for various projects. He manages partnerships at Devomon by leveraging his extensive network of crypto and NFT industry contacts, venture capitalists, and key opinion leaders.",
+  // },
   {
     name: "martin s.-Advisor",
     img: devomon_team7,
@@ -730,3 +730,4 @@ export const SideSocialIconData = [
     href: "https://discord.com/",
   },
 ];
+

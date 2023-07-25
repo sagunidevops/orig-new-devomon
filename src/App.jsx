@@ -1,22 +1,15 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes, } from "react-router-dom";
 import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Footer from "./components/common/Footer";
-import Header from "./components/common/Header";
-import Hero from "./components/homepage/Hero";
-import About from "./components/homepage/About";
-import TouchForm from "./components/homepage/TouchForm";
-import AboutCard from "./components/homepage/AboutCard";
-import LatestNews from "./components/homepage/LatestNews";
-import Partner from "./components/homepage/Partner";
-// import StreamPartner from "./components/homepage/StreamPartner";
-import CoreTeam from "./components/homepage/CoreTeam";
 import BackToTop from "./components/common/BackToTop";
 import Preloader from "./components/common/Preloader";
 import { useEffect, useState } from "react";
-import SideSocialIcon from "./components/common/SideSocialIcon";
-
+import ComingSoon from './components/common/ComingSoon';
+import CoreTeam from './components/homepage/CoreTeam';
+import StreamPartner from './components/homepage/StreamPartner';
+import Homepage from "./components/homepage/Homepage";
+import Nft from './components/homepage/Nft';
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -32,23 +25,15 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <Homepage/>
         {loading && <Preloader />}
         <BackToTop />
-        <SideSocialIcon />
-        <Header />
-        <Hero />
-        <About />
-        <AboutCard />
-        <LatestNews />
-        <Partner />
-        <TouchForm />
-
-        {/* <StreamPartner/> */}
-
-        {/* <ComingSoon /> */}
-        {/* <DevomonCallistoBattle/> */}
-        <CoreTeam />
-        <Footer />
+        <Routes>
+          <Route path="/coming-soon" element={<ComingSoon/>}/>
+          <Route path="/team" element={<CoreTeam/>}/>
+          <Route path="/stream-partner" element={<StreamPartner/>}/>
+          <Route path="/nft" element={<Nft/>}/>
+        </Routes>
       </BrowserRouter>
     </>
   );
