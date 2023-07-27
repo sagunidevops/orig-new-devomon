@@ -2,7 +2,6 @@ import { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import latest_news from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
 import { Latest_news_faq_data, Latest_slider_data } from "../common/Helper";
 import { motion, AnimatePresence } from "framer-motion";
 import { LatestNews_arrow } from "../common/Icons";
@@ -11,7 +10,7 @@ const LatestNews = () => {
   var settings = {
     dots: true,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     arrows: false,
     speed: 500,
     slidesToShow: 1,
@@ -27,9 +26,10 @@ const LatestNews = () => {
   };
   return (
     <>
+      <section id="news">
       <div className="bg-latestNews_bg_img bg-no-repeat bg-cover py-10 xl:pt-[120px] xl:pb-[205px] overflow-hidden scroll_hidden">
         <div className="container">
-          <p className="text-center text-white font-bold text-4xl pb-[30px] xl:pb-[51px]">
+          <p className="text-center text-white font-bold text-4xl pb-[30px] xl:pb-[51px] uppercase">
             Latest news
           </p>
           <div className="flex flex-col xl:flex-row items-center rounded-[12px] xl:h-[475px] bg-latestNews_bg_color pt-10 xl:pt-0 px-3 md:px-0">
@@ -122,6 +122,7 @@ const LatestNews = () => {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 };

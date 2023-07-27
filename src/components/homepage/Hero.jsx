@@ -3,15 +3,14 @@ import { useEffect, useState } from "react";
 import ThankyouModal from "../common/ThankyouModal";
 // import Subscribe from "../common/Subscribe";
 // import MailchimpSubscribe from "react-mailchimp-subscribe";
-import { useMediaQuery } from "@uidotdev/usehooks";
+import { useMediaQuery } from 'react-responsive'
 import { CrossIcon } from "../common/Icons";
 import { heroIcons } from "../common/Helper";
-// import { Vimeo } from '@u-wave/react-vimeo';
+import VimeoPlayer from "@u-wave/react-vimeo";
 
 const Hero = () => {
   const [comingSoon, setComingSoon] = useState(false);
   const [isOpenThankYouModal, setIsOpenThankYouModal] = useState(false);
-
   useEffect(() => {
     if (comingSoon) {
       document.body.classList.add("overflow-y-hidden");
@@ -19,16 +18,17 @@ const Hero = () => {
       document.body.classList.remove("overflow-y-hidden");
     }
   }, [comingSoon]);
-
+  const videoId =
+    "https://player.vimeo.com/video/823406218?playsinline=0&background=1&autoplay=1&muted=1";
   const ThankyouModalText = {
     heading: " Thank you!",
     title: "You have successfully subscribed.",
     para: "We’ll contact you via e-mail about our recent updates and the pre-sale rounds! You’ll have enough time to participate!”",
   };
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 768px)",
-  });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 767.99px)" });
+   const isDesktopOrLaptop = useMediaQuery({
+     query: "(min-width: 768px)",
+   });
+   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 767.99px)" });
 
   return (
     <>
@@ -57,10 +57,11 @@ const Hero = () => {
         ) : (
           ""
         )}
+
         {isDesktopOrLaptop && (
           
           <div className="video-container">
-            {/* <Vimeo
+            <VimeoPlayer
               className="vimvideo"
               autoplay
               loop
@@ -69,13 +70,13 @@ const Hero = () => {
               responsive={true}
               controls={false}
               playsInline
-              video="https://player.vimeo.com/video/823406218?playsinline=0&background=1&autoplay=1&muted=1"
-            /> */}
+              video={videoId}
+            />
           </div>
         )}
         {isTabletOrMobile && (
           <div className="video-container">
-            {/* <Vimeo
+            <VimeoPlayer
               className="vimvideo"
               autoplay
               loop
@@ -85,9 +86,22 @@ const Hero = () => {
               controls={false}
               playsInline
               video="https://player.vimeo.com/video/823406218?playsinline=0&background=1&autoplay=1&muted=1"
-            /> */}
+            />
           </div>
         )}
+        {/* <div className="video-container">
+          <VimeoPlayer
+            className="vimvideo"
+            autoplay
+            loop
+            muted
+            background={true}
+            responsive={true}
+            controls={false}
+            playsInline
+            video={videoId}
+          />
+        </div> */}
 
         <div className="absolute top-1/2  left-1/2 w-full container -translate-x-[50%] -translate-y-[50%] z-10 mt-10 ">
           <div className="text-center max-w-[300px] sm:max-w-full mx-auto">
@@ -122,11 +136,11 @@ const Hero = () => {
                 return (
                   <>
                     <div
+                      key={index}
                       onClick={() => setComingSoon(true)}
                       className="transition-all ease-in-out duration-300 hover:translate-y-[-8px] cursor-pointer"
                       target="_blank"
                       rel="noopener noreferrer"
-                      key={index}
                       // href={value.iconUrl}
                       aria-label="social"
                       aria-describedby="social"

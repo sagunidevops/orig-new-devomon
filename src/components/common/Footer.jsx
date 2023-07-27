@@ -187,11 +187,11 @@ const Footer = () => {
                   </div>
                   <div className="flex cursor-pointer items-center group relative scroll_hidden">
                     <div className="footer_hover absolute translate-x-16 bg-[#0d1015df] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3 scroll_hidden">
-                    <a href="">
+                    <Link to={"/nft"}>
                         <p className="text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                         NFTs
                         </p>
-                      </a>
+                    </Link>
                       <button onClick={() => setHide(!hide)} className="text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                       Dashboard
                       </button>
@@ -246,17 +246,19 @@ const Footer = () => {
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
                     <div className="absolute translate-x-16 bg-[#0d1015df] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1]">
-                    <a href="/team">
+                    <Link to={"/team"}>
                         <p className="text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                         Core Team
                         </p>
-                      </a>
+                      </Link>
                       <button onClick={() => setHide(!hide)} className="text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                       Advisor
                       </button>
-                      <button className="text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
+                      <Link to={"/stream-partner"}>
+                      <p className="text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
                       Streaming Partners
-                      </button>
+                      </p>
+                      </Link>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
                       Team
@@ -375,19 +377,19 @@ const Footer = () => {
             <div className="flex justify-between  gap-5 mt-2 md:mr-11 text-white">
               <Link
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="/cookie-policy"
+                to="https://www.devomon.io/cookie-policy"
               >
                 Cookie Policy
               </Link>
               <Link
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="/terms-and-conditions"
+                to="https://www.devomon.io/terms-and-conditions"
               >
                 Terms and Conditions
               </Link>
               <Link
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="/privacy-policy"
+                to="https://www.devomon.io/privacy-policy"
               >
                 Privacy Policy
               </Link>

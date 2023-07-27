@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { SideSocialIconData } from "./Helper";
 import { Social_arrow } from "./Icons";
 
@@ -29,7 +29,8 @@ const SideSocialIcon = () => {
                   href={obj.href}
                   key={i}
                   target="_blank"
-                  className={`flex items-center inline-block scale_social_icon ${obj.className}`}
+                  rel="noopener noreferrer"
+                  className={`flex items-center scale_social_icon ${obj.className}`}
                 >
                   <span className="social_icon duration-200">
                     <img className="w-[22px]" src={obj.img} alt="social-icon" />

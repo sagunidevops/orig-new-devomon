@@ -62,14 +62,22 @@ import anime_bg from "../../assets/images/homepageImages/webp/anime_bg.webp";
 import merch_bg from "../../assets/images/homepageImages/webp/merch_bg.webp";
 import coming_soon_bg from "../../assets/images/homepageImages/webp/coming_soon_bg.webp";
 // ================
-import gamefi_character from "../../assets/images/homepageImages/webp/gamefi.webp";
-import evozone_character from "../../assets/images/homepageImages/webp/evozone.webp";
-import nft_character from "../../assets/images/homepageImages/webp/nft.webp";
-import dashboard_character from "../../assets/images/homepageImages/webp/dashboard.webp";
-import evoVerse_character from "../../assets/images/homepageImages/webp/evoVerse.webp";
-import manga_character from "../../assets/images/homepageImages/webp/manga.webp";
-import anime_character from "../../assets/images/homepageImages/webp/anime.webp";
-import merch_character from "../../assets/images/homepageImages/webp/merch.webp";
+import gamefi_character from "../../assets/Images/abc.png";
+import evozone_character from "../../assets/Images/abc2.png";
+import nft_character from "../../assets/Images/abc3.png";
+import dashboard_character from "../../assets/Images/abc4.png";
+import evoVerse_character from "../../assets/Images/abc5.png";
+import manga_character from "../../assets/Images/abc6.png";
+import anime_character from "../../assets/images/abc7.png";
+import merch_character from "../../assets/images/abc8.png";
+// import gamefi_character from "../../assets/images/homepageImages/webp/gamefi.webp";
+// import evozone_character from "../../assets/images/homepageImages/webp/evozone.webp";
+// import nft_character from "../../assets/images/homepageImages/webp/nft.webp";
+// import dashboard_character from "../../assets/images/homepageImages/webp/dashboard.webp";
+// import evoVerse_character from "../../assets/images/homepageImages/webp/evoVerse.webp";
+// import manga_character from "../../assets/images/homepageImages/webp/manga.webp";
+// import anime_character from "../../assets/images/homepageImages/webp/anime.webp";
+// import merch_character from "../../assets/images/homepageImages/webp/merch.webp";
 // ======================================== faq=============================
 import latest_news_slider_img from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
 
@@ -597,66 +605,63 @@ export const energeticTeamData = [
 
 export const AboutCardData = [
   {
-    id: 1,
-    card_bg: gamefi_bg,
-    title: "GameFi",
-    character_img: gamefi_character,
-    className: "w-[29%] right-[6%]",
-  },
-  {
-    id: 2,
-    card_bg: evozone_bg,
-    title: "Evozone",
-    character_img: evozone_character,
-    className: "w-[40%] left-[0%]",
-  },
-  {
-    id: 3,
     card_bg: nft_bg,
     title: "NFT",
     character_img: nft_character,
-    className: "w-[18%] right-[6.5%]",
+    className: "w-[40%] xs:w-[30%] sm:w-[28%] md:w-[22%] xl:w-[18%] right-[6.5%]",
+    linkValue:"/nft"
   },
   {
-    id: 4,
     card_bg: dashboard_bg,
     title: "Dashboard",
     character_img: dashboard_character,
-    className: "w-[38%] -left-[3%]",
+    className: " w-[80%] xs:w-[70%] sm:w-[60%] md:w-[45%] xl:w-[40%] -left-[3%]",
   },
   {
-    id: 5,
-    card_bg: evoVerse_bg,
-    title: "EvoVerse",
-    character_img: evoVerse_character,
-    className: "w-[19%] right-[10%]",
-  },
-  {
-    id: 6,
-    card_bg: manga_bg,
-    title: "manga",
-    character_img: manga_character,
-    className: "w-[19%] left-[8%]",
-  },
-  {
-    id: 7,
-    card_bg: anime_bg,
-    title: "Anime",
-    character_img: anime_character,
-    className: "w-[22%] right-[8%]",
-  },
-  {
-    id: 8,
     card_bg: merch_bg,
-    title: "Merch",
+    title: "Land",
     character_img: merch_character,
-    className: "w-[43%] left-[2%]",
+    className: "w-[80%] xs:w-[70%] sm:w-[60%] md:w-[50%] lg:w-[45%] xl:w-[43%] -right-[15%]",
   },
   {
-    id: 9,
+    card_bg: gamefi_bg,
+    title: "DevoDex",
+    character_img: gamefi_character,
+    className: "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[27%] lg:w-[22%] xl:w-[19%] left-[6%]",
+  },
+  {
+    card_bg: anime_bg,
+    title: "Brand Shop",
+    character_img: anime_character,
+    className: "w-[35%] xs:w-[32%] sm:w-[35%] md:w-[30%] lg:w-[24%] xl:w-[22%] 2xl:w-[23%] right-[7%]",
+  },
+  {
+    card_bg: evozone_bg,
+    title: "Comic",
+    character_img: evozone_character,
+    className: "w-[90%] xs:w-[60%] sm:w-[55%] md:w-[45%] lg:w-[35%] 2xl:w-[40%] left-[0%]",
+    linkValue:"https://evozone-web.web.app/"
+  },
+
+  {
+    card_bg: evoVerse_bg,
+    title: "Anime",
+    character_img: evoVerse_character,
+    className: "w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[17%] 2xl:w-[19%] right-[10%]",
+  },
+  {
+    card_bg: manga_bg,
+    title: "Gallery",
+    character_img: manga_character,
+    className: "w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[17%] 2xl:w-[19%] left-[8%]",
+  },
+ 
+
+  {
     card_bg: coming_soon_bg,
     title: "coming soon",
     className: "hidden",
+    linkValue:"/coming-soon"
   },
 ];
 
@@ -698,19 +703,19 @@ export const SideSocialIconData = [
     img: Instagram,
     para: "instagram",
     className: "mb-4",
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/devomonofficial/?igshid=YmMyMTA2M2Y%3D",
   },
   {
     img: Youtube,
     para: "youtube",
     className: "mb-4",
-    href: "https://www.youtube.com/",
+    href: "https://www.youtube.com/channel/UC5fGdMMwZtNfVoi8BU0mYBQ",
   },
   {
     img: Telegram,
     para: "telegram",
     className: "mb-4",
-    href: "https://web.telegram.org/",
+    href: "https://t.me/officialdevomon",
   },
   {
     img: Facebook,
@@ -722,12 +727,12 @@ export const SideSocialIconData = [
     img: Twitch,
     para: "twitch",
     className: "mb-4",
-    href: "https://www.twitch.tv/",
+    href: "https://www.twitch.tv/devomonofficial",
   },
   {
     img: Discord,
     para: "discord",
-    href: "https://discord.com/",
+    href: "https://discord.com/invite/devomon",
   },
 ];
 

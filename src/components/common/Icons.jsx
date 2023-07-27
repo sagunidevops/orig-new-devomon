@@ -720,9 +720,9 @@ export const Social_arrow = () => {
       <path
         d="M6 1L1 6L6 11"
         stroke="white"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
