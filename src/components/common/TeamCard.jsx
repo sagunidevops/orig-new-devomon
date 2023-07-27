@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect } from "react";
 import imdb_icon from "../../assets/images/svg/imdb_icon.svg";
 import { LinkedIcon } from "./Icons";

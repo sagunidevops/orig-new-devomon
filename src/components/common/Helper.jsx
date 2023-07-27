@@ -456,7 +456,7 @@ export const TeamData = [
     desc: "With experience in project management and an entrepreneurial spirit. Known for his visionary approach, strong analytical, organizational and  communication skills, and ability to work well under pressure. A passionate anime fan and gamer, Güven brings a unique perspective to the team and believes it will be key to the project's success. He is confident in his ability to deliver exceptional results and is excited to be a part of this dynamic project team.",
   },
   {
-    name: "Sammy Grund",
+    name: "Sammy Grund- Advisor",
     img: devomon_team2,
     title: "Co Founder",
     url: "https://www.linkedin.com/in/sammy-g/",
@@ -493,7 +493,7 @@ export const TeamData = [
   },
 
   {
-    name: "Saban Özden",
+    name: "Saban Özden- Advisor",
     img: devomon_team8,
     title: "Chief Technology Officer",
     url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
