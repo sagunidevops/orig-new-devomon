@@ -4,7 +4,7 @@ const About = () => {
     <>
     <section className="relative pt-[100px] pb-[80px] xs:pb-[100px] lg:py-[100px] xl:pb-[50px] play-earn about_bg_img bg-aboutBgImg bg-no-repeat sm:-translate-y-[142px] -translate-y-[70px] mb-[-50px] 2xl:mb-16 z-10 bg-cover">
         <div className="container">
-            <div className='sm:my-12 lg:mt-12'>
+            <div className='sm:my-12 lg:mt-12 pb-16'>
                 <h2 className="font-raleway uppercase font-bold text-center text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">About Devomon</h2>
                 <div className="text-center">
                   <span className="contact_border md:w-[471px] w-full inline-block"></span>

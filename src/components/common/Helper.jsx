@@ -456,7 +456,7 @@ export const TeamData = [
     desc: "With experience in project management and an entrepreneurial spirit. Known for his visionary approach, strong analytical, organizational and  communication skills, and ability to work well under pressure. A passionate anime fan and gamer, Güven brings a unique perspective to the team and believes it will be key to the project's success. He is confident in his ability to deliver exceptional results and is excited to be a part of this dynamic project team.",
   },
   {
-    name: "Sammy Grund- Advisor",
+    name: "Sammy Grund",
     img: devomon_team2,
     title: "Co Founder",
     url: "https://www.linkedin.com/in/sammy-g/",
@@ -468,6 +468,14 @@ export const TeamData = [
     title: "Senior DI Artist",
     url: "https://www.imdb.com/name/nm4633335/?ref_=nv_sr_srsg_0",
     desc: "A Senior Digital Intermediate Artist with over 10 years of experience in the film and video industry. He has worked on a wide range of projects, from independent films to large-scale Hollywood productions. John has a keen eye for detail and is an expert in color grading and visual effects. He has a strong understanding of the latest digital intermediate tools and technologies and is able to deliver high-quality results under tight deadline.",
+  },
+  {
+    name: "Martin s.",
+    img: devomon_team7,
+    title: "Chief Gaming Officer",
+    url: "https://www.linkedin.com/in/serhatyanar/",
+    desc: "Martin boasts a track record of eight years as a seasoned game developer, demonstrating exceptional proficiency in Unreal Engine at senior levels.",
+    class:"hidden",
   },
   {
     name: "Selina Aley",
@@ -483,22 +491,9 @@ export const TeamData = [
     url: "https://www.linkedin.com/in/selina-aley-7a2557248/",
     desc: "Blandit viverra varius hendrerit hendrerit varius cras. Velit lorem id malesuada vitae velit odio semper. Feugiat tincidunt nunc velit sit lacinia ultrices quisque. Facilisi nec pharetra interdum quisque tincidunt sit netus diam cum. Tellus faucibus lacus viverra ultrices.",
   },
-  // {
-  //   name: "Serhat Yanar- Advisor",
-  //   img: devomon_team6,
-  //   // title: "COO",
 
-  //   desc: "Serhat is a co-founder of a successful crypto launchpad, and he was instrumental in raising funds for various projects. He manages partnerships at Devomon by leveraging his extensive network of crypto and NFT industry contacts, venture capitalists, and key opinion leaders.",
-  // },
   {
-    name: "martin s.-Advisor",
-    img: devomon_team7,
-    title: "Chief Gaming Officer",
-    url: "https://www.linkedin.com/in/serhatyanar/",
-    desc: "Martin boasts a track record of eight years as a seasoned game developer, demonstrating exceptional proficiency in Unreal Engine at senior levels.",
-  },
-  {
-    name: "Saban Özden- Advisor",
+    name: "Saban Özden",
     img: devomon_team8,
     title: "Chief Technology Officer",
     url: "https://www.linkedin.com/in/wisha-butt-42a646240/",

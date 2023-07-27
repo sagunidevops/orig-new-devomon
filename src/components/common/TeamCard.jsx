@@ -48,7 +48,8 @@ const TeamCard = ({ obj, index }) => {
               rel="noopener noreferrer"
               aria-label="LinkedinAndIMD"
               aria-describedby="LinkedinAndIMD"
-              className=" hover:scale-105  duration-300 ease-in-out transition-all">
+              className={`hover:scale-105  duration-300 ease-in-out transition-all ${obj.class}`}
+              >
               {" "}
               {index === 2 ? (
                 <img className="max-w-[30px]" src={imdb_icon} alt="imdb" />
