@@ -248,7 +248,7 @@ const [count, setCount] = useState(0);
              <a href="#" className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#2253F5] block"></a>
              </div>
         </div>
-      <div className="w-11/12 md:w-10/12 xl:w-1/2 xl:ps-8 h-[420px] overflow-x-hidden overflow-y-scroll mt-10 xl:mt-0">
+      <div className="w-11/12 md:w-10/12 xl:w-[53%] xl:ps-8 h-[420px] overflow-x-hidden overflow-y-scroll mt-10 xl:mt-0">
        {/* {array2.map((val,i)=>{
         return(
           <div key={i} className="ps-3" >
@@ -314,6 +314,14 @@ const [count, setCount] = useState(0);
     </AnimatePresence>
   </div>
 ))}
+<div className="xl:text-end text-center mt-5 lg:mt-8 xl:mt-4 pt-3 pb-6 xl:pb-0">
+     <button
+       type="submit"
+       className=" blue-btn-shadow hover:scale-105 transition-all ease-in-out duration-300 py-[5px] px-[21px] bg-[#F8C112] border border-[4px] border-[#CEA20C] rounded-[39px] text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins "
+     >
+       Show more
+     </button>
+</div>
        </div>
         </div>
   
