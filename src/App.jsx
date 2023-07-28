@@ -12,7 +12,7 @@ import StreamPartner from './components/homepage/StreamPartner';
 // import Footer from './components/common/Footer';
 import Homepage from "./components/homepage/Homepage";
 import Nft from './components/homepage/Nft';
-import { Slider } from 'react-slick';
+// import { Slider } from 'react-slick';
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -38,7 +38,7 @@ function App() {
           <Route path="/team" element={<CoreTeam/>}/>
           <Route path="/stream-partner" element={<StreamPartner/>}/>
           <Route path="/nft" element={<Nft/>}/>
-          <Route path="/slider" element={<Slider/>}/>
+          {/* <Route path="/slider" element={<Slider/>}/> */}
         </Routes>
         {/* <Footer/> */}
       </BrowserRouter>
