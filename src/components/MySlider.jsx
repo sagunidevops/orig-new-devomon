@@ -132,7 +132,7 @@ const [count, setCount] = useState(0);
       } else {
         setCount(count + 1);
       }
-    }, 2000);
+    }, 5000);
     for (let index = 0; index < array1.length; index++) {
       if (count === index) {
         setIndexValue(index)
@@ -238,10 +238,16 @@ const [count, setCount] = useState(0);
    <p className="text-center text-white font-bold text-4xl pb-[30px] xl:pb-[51px] uppercase">
           Latest news
         </p>
-        <div className="flex">
-        <div className="flex flex-col xl:flex-row items-center rounded-[12px]   xl:h-[475px] bg-latestNews_bg_color pt-6 sm:pt-7 lg:pt-9 xl:pt-10 px-3   md:px-0">
-           <img className="w-[250px] xs:w-[300px] sm:w-[510px] mx-auto" src={imageValue && imageValue.image} alt="" />
-      </div>
+        <div className="flex flex-col xl:flex-row bg-latestNews_bg_color items-center bg-cover rounded-lg">
+        <div className="flex flex-col xl:flex-row items-center rounded-[12px] sm:w-10/12 lg:w-[45%] xl:h-[475px] px-3 md:px-0 relative mt-4 md:mt-9 xl:mt-0">
+           <img className="w-full sm:w-[507px] rounded-[12px]" src={imageValue && imageValue.image} alt="" />
+           <div className="flex gap-4 items-center justify-center absolute bottom-0 left-1/2 -translate-x-[50%] mb-4">
+             <a href="#" className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#2253F5] block"></a>
+             <a href="#" className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#2253F5] block"></a>
+             <a href="#" className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#2253F5] block"></a>
+             <a href="#" className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#2253F5] block"></a>
+             </div>
+        </div>
       <div className="w-11/12 md:w-10/12 xl:w-1/2 xl:ps-8 h-[420px] overflow-x-hidden overflow-y-scroll mt-10 xl:mt-0">
        {/* {array2.map((val,i)=>{
         return(
