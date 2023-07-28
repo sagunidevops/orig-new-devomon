@@ -85,7 +85,7 @@ const LatestNews = () => {
           <p className="text-center text-white font-bold text-4xl pb-[30px] xl:pb-[51px] uppercase">
             Latest news
           </p>
-          <div className="flex flex-col xl:flex-row bg-latestNews_bg_color items-center bg-cover rounded-lg xl:h-[483px] 2xl:h-[564px]">
+          <div className="flex flex-col xl:flex-row bg-latestNews_bg_color items-center bg-cover rounded-lg xl:h-[481px] 2xl:h-[564px]">
             <div className="flex flex-col xl:flex-row items-center rounded-[12px] sm:w-10/12 lg:w-[45%] px-3 md:px-0 relative mt-4 md:mt-9 xl:mt-0">
               <img
                 className="w-full sm:w-[507px] xl:w-full rounded-[12px]"
