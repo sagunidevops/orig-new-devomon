@@ -58,7 +58,7 @@ const Footer = () => {
         <div className="container relative">
           <span className="inline-block">
             <a
-              href="https://devomon.io/"
+              href="https://new-devomon.web.app/"
               target="_blank"
               rel="noopener noreferrer"
             >

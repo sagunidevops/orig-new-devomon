@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import Instagram from "../../assets/images/webp/instagram.webp";
 import Youtube from "../../assets/images/webp/youtube.webp";
 import Telegram from "../../assets/images/webp/telegram.webp";
@@ -685,7 +686,7 @@ export const Latest_news_faq_data = [
 ];
 
 // ========================================== Latest news Slider img ===========================================
-export const Latest_slider_data = [
+export const Latest_slider_data_dev = [
   { img: latest_news_slider_img },
   { img: latest_news_slider_img },
   { img: latest_news_slider_img },
