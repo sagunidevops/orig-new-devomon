@@ -80,7 +80,7 @@ const LatestNews = () => {
 
   return (
     <section id="news">
-      <div className="bg-latestNews_bg_img bg-no-repeat bg-cover py-10 xl:pt-[120px] xl:pb-[205px] overflow-hidden scroll_hidden">
+      <div className="bg-latestNews_bg_img bg-no-repeat bg-cover py-14 xl:pt-[120px] xl:pb-[205px] overflow-hidden scroll_hidden">
         <div className="container">
           <p className="text-center text-white font-bold text-4xl pb-[30px] xl:pb-[51px] uppercase">
             Latest news

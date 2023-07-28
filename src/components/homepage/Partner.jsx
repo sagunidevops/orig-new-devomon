@@ -166,12 +166,12 @@ const Partner = () => {
           })}
       </div>
       <img
-        className="absolute bottom-[-50px] sm:bottom-[-5%]  left-0 w-[100px] md:w-[150px] xl:w-[300px] z-[2]"
+        className="absolute bottom-[-50px] xl:bottom-[-20%]  left-0 w-[100px] md:w-[150px] xl:w-[300px] z-[2]"
         src={Gino}
         alt="Gino"
       />
       <img
-        className="absolute bottom-[-50px] sm:bottom-[-8%]  right-0 w-[120px] md:w-[170px] xl:w-[300px] z-[2]"
+        className="absolute bottom-[-50px] xl:bottom-[-20%]  right-0 w-[120px] md:w-[170px] xl:w-[300px] z-[2]"
         src={Thunder}
         alt="thunder"
       />

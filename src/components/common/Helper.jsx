@@ -30,9 +30,12 @@ import devomon_team8 from "../../assets/images/webp/devomon_team8.webp";
 
 // import InvoZoneGames from "../../assets/images/webp/invogames_logo.webp";
 import GameLofiHub from "../../assets/images/png/gamefi_org.png";
+import UnixGaming_logo from "../../assets/images/png/UnixGaming_logo.png";
+import Vertical_Owned_logo from "../../assets/images/png/Vertical_Owned_logo.png";
 import AfterMathIslands from "../../assets/images/webp/aftermath-islands.webp";
 import Placewar from "../../assets/images/webp/placewar.webp";
 import metafighter from "../../assets/images/webp/metafightzer.webp";
+import Salad_Ventures_logo from "../../assets/images/svg/Salad_Ventures_BW_logo.svg";
 import mystic from "../../assets/images/png/mystic.png";
 import RazeRacing from "../../assets/images/webp/raze_racing.webp";
 import bgaLogo from "../../assets/images/svg/bgaLogo.svg";
@@ -397,6 +400,10 @@ export const ourPartner = [
         url: "https://gamefi.org/events/race-for-glory",
       },
       {
+        icon: UnixGaming_logo,
+        url: "https://gamefi.org/events/race-for-glory",
+      },
+      {
         icon: magic,
         url: "https://magic.io/",
       },
@@ -421,25 +428,34 @@ export const ourPartner = [
     // ],
     partnericon4: [
       {
+        icon: Vertical_Owned_logo,
+        url: "https://gamefi.org/events/race-for-glory",
+      },
+      {
         icon: AfterMathIslands,
         url: "https://aftermathislands.io/",
         className: "mb-2 pb-2",
       },
       {
-        icon: Placewar,
-        url: "https://placewar.io/",
+        icon: Salad_Ventures_logo,
+        url: "https://aftermathislands.io/",
         className: "mb-2 pb-2",
       },
-      {
-        icon: RazeRacing,
-        url: "https://www.razeracing.com/",
-        className: "sm:mt-2 sm:pt-2",
-      },
-      {
-        icon: metafighter,
-        url: "https://chain.link/",
-        className: "sm:mt-2 sm:pt-2",
-      },
+      // {
+      //   icon: Placewar,
+      //   url: "https://placewar.io/",
+      //   className: "mb-2 pb-2",
+      // },
+      // {
+      //   icon: RazeRacing,
+      //   url: "https://www.razeracing.com/",
+      //   className: "sm:mt-2 sm:pt-2",
+      // },
+      // {
+      //   icon: metafighter,
+      //   url: "https://chain.link/",
+      //   className: "sm:mt-2 sm:pt-2",
+      // },
 
       // {
       //   icon: Shoefy,
@@ -494,7 +510,7 @@ export const TeamData = [
   },
 
   {
-    name: "Saban Özden- Advisor",
+    name: "Saban Özden",
     img: devomon_team8,
     title: "Chief Technology Officer",
     url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
@@ -601,6 +617,19 @@ export const energeticTeamData = [
 
 export const AboutCardData = [
   {
+    card_bg: gamefi_bg,
+    title: "GameFi",
+    character_img: gamefi_character,
+    className: "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[27%] lg:w-[22%] xl:w-[19%] right-[6%]",
+  },
+  {
+    card_bg: evozone_bg,
+    title: "Evozone",
+    character_img: evozone_character,
+    className: "w-[90%] xs:w-[60%] sm:w-[55%] md:w-[45%] lg:w-[35%] 2xl:w-[40%] left-[0%]",
+    linkValue:"https://evozone-web.web.app/"
+  },
+  {
     card_bg: nft_bg,
     title: "NFT",
     character_img: nft_character,
@@ -614,45 +643,29 @@ export const AboutCardData = [
     className: " w-[80%] xs:w-[70%] sm:w-[60%] md:w-[45%] xl:w-[40%] -left-[3%]",
   },
   {
-    card_bg: merch_bg,
-    title: "Land",
-    character_img: merch_character,
-    className: "w-[80%] xs:w-[70%] sm:w-[60%] md:w-[50%] lg:w-[45%] xl:w-[43%] -right-[15%]",
-  },
-  {
-    card_bg: gamefi_bg,
-    title: "DevoDex",
-    character_img: gamefi_character,
-    className: "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[27%] lg:w-[22%] xl:w-[19%] left-[6%]",
-  },
-  {
-    card_bg: anime_bg,
-    title: "Brand Shop",
-    character_img: anime_character,
-    className: "w-[35%] xs:w-[32%] sm:w-[35%] md:w-[30%] lg:w-[24%] xl:w-[22%] 2xl:w-[23%] right-[7%]",
-  },
-  {
-    card_bg: evozone_bg,
-    title: "Comic",
-    character_img: evozone_character,
-    className: "w-[90%] xs:w-[60%] sm:w-[55%] md:w-[45%] lg:w-[35%] 2xl:w-[40%] left-[0%]",
-    linkValue:"https://evozone-web.web.app/"
-  },
-
-  {
     card_bg: evoVerse_bg,
-    title: "Anime",
+    title: "EvoVerse",
     character_img: evoVerse_character,
     className: "w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[17%] 2xl:w-[19%] right-[10%]",
   },
   {
     card_bg: manga_bg,
-    title: "Gallery",
+    title: "Manga",
     character_img: manga_character,
     className: "w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[17%] 2xl:w-[19%] left-[8%]",
   },
- 
-
+  {
+    card_bg: anime_bg,
+    title: "Anime",
+    character_img: anime_character,
+    className: "w-[35%] xs:w-[32%] sm:w-[35%] md:w-[30%] lg:w-[24%] xl:w-[22%] 2xl:w-[23%] right-[8%]",
+  },
+  {
+    card_bg: merch_bg,
+    title: "Merch",
+    character_img: merch_character,
+    className: "w-[80%] xs:w-[70%] sm:w-[60%] md:w-[50%] lg:w-[45%] xl:w-[43%] left-[2%]",
+  },
   {
     card_bg: coming_soon_bg,
     title: "coming soon",
