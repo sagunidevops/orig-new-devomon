@@ -63,32 +63,24 @@ const Slider = () => {
       }
     }
   }, [count]);
-  useEffect(() => {
-    setTimeout(() => {
-      if (count === array2.length) {
-        
-        setCount(0);
-      } else {
-        setCount(count + 1);
-      }
-    }, 5000);
-    for (let index = 0; index < array2.length; index++) {
-      if (count === index) {
-        setIndexValue(index)
-        const element = array2[index];
-        setQuestionValue(element);
-      }
-    }
-  }, [count]);
+ 
 
   return (
-    <>
+    <div className="flex">
       <h1 className="text-white">{imageValue && imageValue.image}</h1>
-      <h1 className="text-white">{questionValue && questionValue.question}</h1>
-     {
-        count===indexValue? <h1 className="text-white">{questionValue && questionValue.answer}</h1>:""
-     }
-    </>
+      {array2.map((val,i)=>{
+        return(
+          <div key={i} className="ps-3" >
+            <h1 className="text-white">{val.question}</h1>
+            {
+              count===i? <h1 className="text-white">{val.answer}</h1>:""
+            }
+           
+          </div>
+        )
+      })}
+  
+    </div>
   );
 };
 
