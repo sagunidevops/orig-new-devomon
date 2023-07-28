@@ -731,4 +731,21 @@ export const SideSocialIconData = [
     href: "https://discord.com/invite/devomon",
   },
 ];
+export const Dots_data = [
+  {
+    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+  },
+  {
+    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+  },
+  {
+    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+  },
+  {
+    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+  },
+  {
+    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+  },
+];
 

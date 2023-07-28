@@ -4,16 +4,12 @@ import latest_news_slider_img from "../assets/images/homepageImages/webp/latest_
 import slider_img_1 from "../assets/images/slider_img_1.png";
 import slider_img_2 from "../assets/images/slider_img_2.png";
 import slider_img_3 from "../assets/images/slider_img_3.png";
-// import { LatestNews_arrow } from "./common/Icons";
-// import { AnimatePresence } from "framer-motion";
-// import { motion } from "framer-motion";
-// import Slider from 'react-slick';
-// import { Latest_slider_data_dev } from "./common/Helper";
 import "slick-carousel/slick/slick.css"; // Import slick carousel styles
 import "slick-carousel/slick/slick-theme.css"; // Import slick carousel theme styles
 import { AnimatePresence } from "framer-motion";
 import { LatestNews_arrow } from "./common/Icons";
 import { motion } from "framer-motion";
+import { Dots_data } from "./common/Helper";
 
 const MySlider = () => {
   const activeHandler = (index) => {
@@ -73,7 +69,7 @@ const MySlider = () => {
       } else {
         setCount(count + 1);
       }
-    }, 5000);
+    }, 7000);
     for (let index = 0; index < array1.length; index++) {
       if (count === index) {
         setIndexValue(index);
@@ -90,35 +86,29 @@ const MySlider = () => {
           <p className="text-center text-white font-bold text-4xl pb-[30px] xl:pb-[51px] uppercase">
             Latest news
           </p>
-          <div className="flex flex-col xl:flex-row bg-latestNews_bg_color items-center bg-cover rounded-lg">
-            <div className="flex flex-col xl:flex-row items-center rounded-[12px] sm:w-10/12 lg:w-[45%] xl:h-[475px] px-3 md:px-0 relative mt-4 md:mt-9 xl:mt-0">
+          <div className="flex flex-col xl:flex-row bg-latestNews_bg_color items-center bg-cover rounded-lg xl:h-[483px] 2xl:h-[564px]">
+            <div className="flex flex-col xl:flex-row items-center rounded-[12px] sm:w-10/12 lg:w-[45%] px-3 md:px-0 relative mt-4 md:mt-9 xl:mt-0">
               <img
-                className="w-full sm:w-[507px] rounded-[12px]"
+                className="w-full sm:w-[507px] xl:w-full rounded-[12px]"
                 src={imageValue && imageValue.image}
                 alt=""
               />
-              <div className="flex gap-4 items-center justify-center absolute bottom-0 left-1/2 -translate-x-[50%] mb-4">
-                <a
-                  href="#"
-                  className={`${
-                    indexValue === count ? "bg-white" : "bg-[#2253F5]"
-                  } w-3 md:w-4 h-3 md:h-4 rounded-full  block`}
-                ></a>
-                <a
-                  href="#"
-                  className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#2253F5] block"
-                ></a>
-                <a
-                  href="#"
-                  className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#2253F5] block"
-                ></a>
-                <a
-                  href="#"
-                  className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#2253F5] block"
-                ></a>
+              <div className="flex gap-4 items-center justify-center absolute bottom-0 left-1/2 -translate-x-[50%] mb-6">
+              {  console.log("indexValue",indexValue,count,indexValue === count )}
+              {Dots_data &&
+                  Dots_data.map((item, index) => {
+                    return (
+                        <span key={index}
+                        className={` ${
+                          index === count ? "bg-white scale-125" : "bg-[rgb(34,83,245)]"
+                        } ${item.dot_class}`}
+                      ></span>
+                    );
+                  })}
+              
               </div>
             </div>
-            <div className="w-11/12 md:w-10/12 xl:w-[53%] xl:ps-8 h-[420px] overflow-x-hidden overflow-y-scroll mt-10 xl:mt-0">
+            <div className="w-11/12 md:w-10/12 xl:w-[53%] xl:ps-8 h-[420px] 2xl:h-auto overflow-x-hidden overflow-y-scroll mt-10 xl:mt-0">
               {array2.map((item, index) => (
                 <div
                   key={index}

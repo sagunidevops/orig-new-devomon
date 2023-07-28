@@ -8,11 +8,11 @@ import { useEffect, useState } from "react";
 import ComingSoon from './components/common/ComingSoon';
 import CoreTeam from './components/homepage/CoreTeam';
 import StreamPartner from './components/homepage/StreamPartner';
-// import Header from "./components/common/Header";
-// import Footer from './components/common/Footer';
+import Header from "./components/common/Header";
+import Footer from './components/common/Footer';
 import Homepage from "./components/homepage/Homepage";
 import Nft from './components/homepage/Nft';
-// import { Slider } from 'react-slick';
+import Slider from "./components/Slider";
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -31,16 +31,16 @@ function App() {
        
         {loading && <Preloader />}
         <BackToTop />
-        {/* <Header/> */}
+        <Header/>
         <Routes>
           <Route path="/" element={<Homepage/>}/>
           <Route path="/coming-soon" element={<ComingSoon/>}/>
           <Route path="/team" element={<CoreTeam/>}/>
           <Route path="/stream-partner" element={<StreamPartner/>}/>
           <Route path="/nft" element={<Nft/>}/>
-          {/* <Route path="/slider" element={<Slider/>}/> */}
+          <Route path="/slider" element={<Slider/>}/>
         </Routes>
-        {/* <Footer/> */}
+        <Footer/>
       </BrowserRouter>
     </>
   );

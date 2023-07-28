@@ -6,14 +6,12 @@ const SideSocialIcon = () => {
   const [open, setclose] = useState(false);
   return (
     <>
-      <div className="fixed right-0 top-1/2 z-20">
-        <div
-          className={
+      <div className={
             open
-              ? "translate-x-full duration-300 relative"
-              : "duration-300 relative"
-          }
-        >
+              ? "translate-x-full duration-300 fixed right-0 top-1/2 z-20" 
+              : "duration-300 fixed right-0 top-1/2 z-20"
+          }>
+        <div>
           <div
             className="bg-black absolute -left-[30px] top-0 w-[30px] h-[52px] cursor-pointer flex items-center justify-center rounded-[5px]"
             onClick={() => setclose(!open)}
