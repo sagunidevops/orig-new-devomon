@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css"; // Import slick carousel styles
 import "slick-carousel/slick/slick-theme.css"; // Import slick carousel theme styles
 import { AnimatePresence, motion } from "framer-motion";
 import { LatestNews_arrow } from "../common/Icons";
-import { Dots_data } from "../common/Helper";
+import { Dots_data, array2 } from "../common/Helper";
 
 const LatestNews = () => {
   const activeHandler = (index) => {
@@ -34,31 +34,6 @@ const LatestNews = () => {
     },
     {
       image: [slider_img_1],
-    },
-  ]);
-  const [array2, setArray2] = useState([
-    {
-      question: "Condimentum eros praesent condimentum nunc elementum.",
-      answer: "Register, connect your wallet and install the game.",
-    },
-    {
-      question: "Morbi lorem quisque non rutrum quisque blandit tellus.",
-      answer: "Usually 3, in some cases up to 6.",
-    },
-    {
-      question: "Mattis enim eleifend  vulputate bibendum netus amet.",
-      answer:
-        "You can start round-based battles, explore and decorate your island. Communicate with friends.",
-    },
-    {
-      question: "Scelerisque congue proin turpis bibendum duis nulla.",
-      answer:
-        "These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
-    },
-    {
-      question: "Aenean tristique suscipit diam mi gravida aenean non.",
-      answer:
-        "When your fire-type evomon battles a plant-type evomon, you will. ",
     },
   ]);
   useEffect(() => {

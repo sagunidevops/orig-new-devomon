@@ -762,3 +762,28 @@ export const Dots_data = [
   },
 ];
 
+export const array2 = [
+  {
+    question: "Condimentum eros praesent condimentum nunc elementum.",
+    answer: "Register, connect your wallet and install the game.",
+  },
+  {
+    question: "Morbi lorem quisque non rutrum quisque blandit tellus.",
+    answer: "Usually 3, in some cases up to 6.",
+  },
+  {
+    question: "Mattis enim eleifend  vulputate bibendum netus amet.",
+    answer:
+      "You can start round-based battles, explore and decorate your island. Communicate with friends.",
+  },
+  {
+    question: "Scelerisque congue proin turpis bibendum duis nulla.",
+    answer:
+      "These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
+  },
+  {
+    question: "Aenean tristique suscipit diam mi gravida aenean non.",
+    answer:
+      "When your fire-type evomon battles a plant-type evomon, you will. ",
+  },
+];
