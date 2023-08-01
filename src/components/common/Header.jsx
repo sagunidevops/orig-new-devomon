@@ -2,6 +2,7 @@
 import nav_logo from "../../assets/images/webp/header-logo.webp";
 import discord_img from "../../assets/images/webp/discord_icon.webp";
 import twitter_img from "../../assets/images/webp/twitter_icon.webp";
+import Callisto_logo from "../../assets/images/png/Devomon_Callisto_logo.png";
 import { Disclosure } from "@headlessui/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -286,7 +287,7 @@ const Header = () => {
                       {" "}
                       <a
                         target="_blank"
-                        href="https://drive.google.com/file/d/160mfNzpK0Uu0JdtmfzKSJOr6xjlhUtgp/view"
+                        href="https://pitchdeck.devomon.io"
                         className="font-normal text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" rel="noopener noreferrer"
                       >
                         Pitchdeck
@@ -344,6 +345,15 @@ const Header = () => {
             </ul>
             <ul className="gap-2 items-center flex">
               <li className="group">
+              <a href="https://callisto.devomon.io/" target="_blank" rel="noopener noreferrer">
+                  <img
+                    className="cursor-pointer sm:w-[30px] xl:w-10 w-[30px] sm:h-[30px] xl:h-10 h-[30px] hover:scale-[1.05] duration-300"
+                    src={Callisto_logo}
+                    alt="Callisto_logo"
+                   />
+                </a>
+              </li>
+              {/* <li className="group">
               <a href="https://discord.com/invite/devomon" target="_blank" rel="noopener noreferrer">
                   <img
                     className=" cursor-pointer sm:w-[30px] xl:w-10 w-[30px] sm:h-[30px] xl:h-10 h-[30px] hover:scale-[1.05] duration-300"
@@ -360,7 +370,7 @@ const Header = () => {
                   alt="twitter_img"
                 />
                 </a>
-              </li>
+              </li> */}
             </ul>
             <div
               className="flex flex-col rotate-180 lg:hidden w-5 h-4 justify-between cursor-pointer group"
@@ -708,7 +718,7 @@ const Header = () => {
                       {" "}
                       <a
                         target="_blank"
-                        href="https://drive.google.com/file/d/160mfNzpK0Uu0JdtmfzKSJOr6xjlhUtgp/view"
+                        href="https://pitchdeck.devomon.io"
                         className="font-normal text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" rel="noopener noreferrer"
                       >
                         Pitchdeck
