@@ -117,52 +117,52 @@ const Header = () => {
                 </svg>
               </li> */}
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute bottom-[-240px] xl:bottom-[-312px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+                <div className="absolute bottom-[-190px] xl:bottom-[-235px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                 <div className="flex flex-col">
                     <a href="#" onClick={() => setHide(!hide)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200">
+                    <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
                     GameFi
                     </p>
                     </a>
                     <a href="https://evozone-web.web.app/">
-                    <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-2">
+                    <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-4">
                     Evozone
                     </p>
                     </a>
                     <Link to={"/nft"} onClick={() => setNav(!Nav)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
+                    <p className=" font-poppins text-xs xl:text-base text-white mb-4 hover:text-[#2253F5] transition-all duration-200">
                       NFTs
                     </p>
                     </Link>
                     <p
                       onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
+                      className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] transition-all duration-200"
                     >
                       Dashboard{" "}
                     </p>
                     <a href="#" onClick={() => setHide(!hide)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
                     EvoVerse
                     </p>
                     </a>
                     <a href="#" onClick={() => setHide(!hide)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
                     Manga
                     </p>
                     </a>
                     <p
                       onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
+                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4"
                     >
                       Anime{" "}
                     </p>
                     <a href="#" onClick={() => setHide(!hide)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
                     Merch
                     </p>
                     </a>
                     <Link to={"/coming-soon"}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
                     coming soon
                     </p>
                     </Link>
@@ -229,11 +229,11 @@ const Header = () => {
                 </a>
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute bottom-[-85px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
-                  <div className="flex flex-col gap-1">
+                <div className="absolute bottom-[-55px] xl:bottom-[-60px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+                  <div className="flex flex-col">
                     <span>
                     <Link to={"/team"}>
-                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" 
+                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4" 
                       >
                         Team
                         </p>
@@ -271,8 +271,8 @@ const Header = () => {
                 </svg>
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute bottom-[-144px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
-                  <div className="flex flex-col gap-1">
+                <div className="absolute bottom-[-119px] xl:bottom-[-126px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+                  <div className="flex flex-col">
                     {" "}
                     <span>
                       <a
@@ -283,30 +283,30 @@ const Header = () => {
                         Whitepaper
                       </a>
                     </span>
-                    <span>
+                    <span className="mt-2 xl:mt-3">
                       {" "}
                       <a
                         target="_blank"
                         href="https://pitchdeck.devomon.io"
-                        className="font-normal text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" rel="noopener noreferrer"
+                        className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" rel="noopener noreferrer"
                       >
                         Pitchdeck
                       </a>
                     </span>
-                    <span>
+                    <span className="mt-2 xl:mt-3">
                       <a
                         target="_blank"
                         href="https://devomon-home.web.app/faqs"
-                        className="font-normal text-base text-white mb-0 mt-3  hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" rel="noopener noreferrer"
+                        className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" rel="noopener noreferrer"
                       >
                         FAQ
                       </a>
                     </span>
-                    <span>
+                    <span className="mt-2 xl:mt-3">
                       {" "}
                       <a
                         href="#contact"
-                        className="font-medium text-base text-white mb-0  hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" 
+                        className="font-medium text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" 
                       >
                         Contact
                       </a>
@@ -347,7 +347,7 @@ const Header = () => {
               <li className="group">
               <a href="https://callisto.devomon.io/" target="_blank" rel="noopener noreferrer">
                   <img
-                    className="cursor-pointer sm:w-[30px] xl:w-10 w-[30px] sm:h-[30px] xl:h-10 h-[30px] hover:scale-[1.05] duration-300"
+                    className="cursor-pointer xl:w-[40px] w-[20px] xs:w-[30px] xl:h-[40px] h-[20px] xs:h-[30px] hover:scale-[1.05] duration-300"
                     src={Callisto_logo}
                     alt="Callisto_logo"
                    />
@@ -373,7 +373,7 @@ const Header = () => {
               </li> */}
             </ul>
             <div
-              className="flex flex-col rotate-180 lg:hidden w-5 h-4 justify-between cursor-pointer group"
+              className="flex flex-col rotate-180 lg:hidden w-7 h-4 xs:w-10 xs:h-[15px] sm:w-10 sm:h-7 justify-between cursor-pointer group"
               onClick={() => setNav(!Nav)}
             >
               <div
@@ -495,44 +495,44 @@ const Header = () => {
                         
                         <div className="flex flex-col">
                         <a href="#" onClick={() => setHide(!hide)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                    <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                     GameFi
                     </p>
                     </a>
                     <a href="https://evozone-web.web.app/">
-                    <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-2">
+                    <p className="font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-2">
                     Evozone
                     </p>
                     </a>
                     <Link to={"/nft"} onClick={() => setNav(!Nav)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
+                    <p className="font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
                       NFTs
                     </p>
                     </Link>
                     <p
                       onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
+                      className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
                     >
                       Dashboard{" "}
                     </p>
                     <a href="#" onClick={() => setHide(!hide)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                    <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                     EvoVerse
                     </p>
                     </a>
                     <a href="#" onClick={() => setHide(!hide)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                    <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                     Manga
                     </p>
                     </a>
                     <p
                       onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
+                      className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
                     >
                       Anime{" "}
                     </p>
                     <a href="#" onClick={() => setHide(!hide)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                    <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                     Merch
                     </p>
                     </a>
@@ -714,30 +714,30 @@ const Header = () => {
                         Whitepaper
                       </a>
                     </span>
-                    <span>
+                    <span className="mt-4">
                       {" "}
                       <a
                         target="_blank"
                         href="https://pitchdeck.devomon.io"
-                        className="font-normal text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" rel="noopener noreferrer"
+                        className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" rel="noopener noreferrer"
                       >
                         Pitchdeck
                       </a>
                     </span>
-                    <span>
+                    <span className="mt-4">
                       <a
                         target="_blank"
                         href="https://devomon-home.web.app/faqs"
-                        className="font-normal text-base text-white mb-0 mt-3  hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" rel="noopener noreferrer"
+                        className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" rel="noopener noreferrer"
                       > 
                         FAQ
                       </a>
                     </span>
-                    <span>
+                    <span className="mt-4">
                       {" "}
                       <a onClick={() => setNav(!Nav)}
                         href="#contact"
-                        className="font-medium text-base text-white mb-0  hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" 
+                        className="font-medium text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" 
                       >
                         Contact
                       </a>

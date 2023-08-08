@@ -82,7 +82,7 @@ const Partner = () => {
                             href={item.url}
                           >
                             <img
-                              className="hover:scale-105 max-w-[150px] w-[210px] max-h-[80px] duration-300 ease-in-out transition-all sm:mt-0 mt-10 filter-property"
+                              className="hover:scale-105 max-w-[130px] w-[200px] max-h-[80px] duration-300 ease-in-out transition-all sm:mt-0 mt-10 filter-property mx-4"
                               src={item.icon}
                               alt=""
                             />
@@ -91,7 +91,7 @@ const Partner = () => {
                       );
                     })}
                 </div>
-                <div className="flex justify-center items-center sm:space-x-[40px] mt-3 flex-wrap py-2 ">
+                <div className="flex justify-center items-center sm:space-x-[40px] mt-3 flex-wrap py-2">
                   {obj &&
                     obj.partnericon2 &&
                     obj.partnericon2.map((item, i) => {
@@ -105,7 +105,7 @@ const Partner = () => {
                             <img
                               className={`${
                                 i === 2 ? "" : "filter-property"
-                              } hover:scale-105 max-w-[150px]  h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 xl:mt-10 `}
+                              } hover:scale-105 max-w-[120px] h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 xl:mt-10`}
                               src={item.icon}
                               alt=""
                             />
@@ -166,12 +166,12 @@ const Partner = () => {
           })}
       </div>
       <img
-        className="absolute bottom-[-50px] xl:bottom-[-20%]  left-0 w-[100px] md:w-[150px] xl:w-[300px] z-[2]"
+        className="absolute bottom-[-50px] xl:bottom-[-20%] left-0 w-[100px] md:w-[150px] xl:w-[300px] z-[2]"
         src={Gino}
         alt="Gino"
       />
       <img
-        className="absolute bottom-[-50px] xl:bottom-[-20%]  right-0 w-[120px] md:w-[170px] xl:w-[300px] z-[2]"
+        className="absolute bottom-[-60px] xl:bottom-[-20%] right-0 w-[120px] md:w-[170px] xl:w-[300px] z-[2]"
         src={Thunder}
         alt="thunder"
       />

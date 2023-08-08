@@ -72,14 +72,14 @@ const Footer = () => {
         </div>
         <div className="container pb-5 xl:pb-7 mt-4">
           <div className="md:flex">
-            <div className=" w-full md:w-1/2 flex justify-between items-start">
-              <div>
-                <p className=" text-[10px] lg:text-sm max-w-[300px] md:max-w-[150px] lg:max-w-[240px] opacity-70 text-white">
+            <div className="w-full md:w-1/2 flex justify-between items-start">
+              <div className="mb-2 md:mb-0">
+                <p className="ext-[10px] lg:text-[14px] max-w-[300px] md:max-w-[200px] lg:max-w-[240px] opacity-70 text-white">
                   Enjoy the intriguing adventures and challenges, as well as the
                   possibility to acquire and develop strong NFT collections and
                   become a part of an intriguing and dynamic environment.
                 </p>
-                <p className=" text-[10px] lg:text-sm max-w-[300px] md:max-w-[150px] lg:max-w-[240px] opacity-70 text-white">
+                <p className=" text-[10px] lg:text-sm max-w-[300px] md:max-w-[150px] lg:max-w-[240px] opacity-70 text-white mb-5">
                   See you on Callisto!
                 </p>
                 <div className="flex gap-2 xl:gap-3 mt-3 md:mt-4">
@@ -95,7 +95,7 @@ const Footer = () => {
                         aria-describedby="social"
                       >
                         <img
-                          className="max-w-[22px] "
+                          className="max-w-[22px]"
                           src={value.footerIcon}
                           alt="social"
                         />
@@ -400,7 +400,7 @@ const Footer = () => {
                       Saguni Tech LLC
                     </p>
                   </div>
-                  <div className="flex items-center - group">
+                  {/* <div className="flex items-center - group">
                     <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 font-poppins ">
                       2203520
                     </p>
@@ -410,7 +410,7 @@ const Footer = () => {
                       Business Center 1, M Floor, The Meydan Hotel, Nad AI
                       Sheba, Dubai, U.A.E
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
