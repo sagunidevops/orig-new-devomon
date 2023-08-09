@@ -82,7 +82,7 @@ const Partner = () => {
                             href={item.url}
                           >
                             <img
-                              className="hover:scale-105 max-w-[130px] w-[200px] max-h-[80px] duration-300 ease-in-out transition-all sm:mt-0 mt-10 filter-property mx-4"
+                              className="hover:scale-105 max-w-[130px] w-[200px] max-h-[80px] duration-300 ease-in-out transition-all sm:mt-0 mt-8 xs:mt-10 filter-property mx-4"
                               src={item.icon}
                               alt=""
                             />
@@ -105,7 +105,7 @@ const Partner = () => {
                             <img
                               className={`${
                                 i === 2 ? "" : "filter-property"
-                              } hover:scale-105 max-w-[120px] h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 xl:mt-10`}
+                              } hover:scale-105 max-w-[120px] h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 md:mb-8`}
                               src={item.icon}
                               alt=""
                             />
@@ -135,7 +135,7 @@ const Partner = () => {
                       );
                     })}
                 </div>
-                <div className="flex justify-center items-center sm:space-x-[40px]  mt-3 flex-wrap py-2 space-y-6 sm:space-y-0  mb-14">
+                <div className="flex justify-center items-center sm:space-x-[40px] md:mt-3 flex-wrap md:py-2 space-y-6 sm:space-y-0 mb-14">
                   {obj &&
                     obj.partnericon4 &&
                     obj.partnericon4.map((item, i) => {

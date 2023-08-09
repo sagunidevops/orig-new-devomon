@@ -117,7 +117,7 @@ const Header = () => {
                 </svg>
               </li> */}
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute bottom-[-190px] xl:bottom-[-235px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+                <div className="absolute top-[80px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                 <div className="flex flex-col">
                     <a href="#" onClick={() => setHide(!hide)}>
                     <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
@@ -229,7 +229,7 @@ const Header = () => {
                 </a>
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute bottom-[-55px] xl:bottom-[-60px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+                <div className="absolute top-[80px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     <span>
                     <Link to={"/team"}>
@@ -271,7 +271,7 @@ const Header = () => {
                 </svg>
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute bottom-[-119px] xl:bottom-[-126px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+                <div className="absolute top-[80px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     {" "}
                     <span>
@@ -373,7 +373,7 @@ const Header = () => {
               </li> */}
             </ul>
             <div
-              className="flex flex-col rotate-180 lg:hidden w-7 h-4 xs:w-10 xs:h-[15px] sm:w-10 sm:h-7 justify-between cursor-pointer group"
+              className="flex flex-col rotate-180 lg:hidden w-7 h-4 xs:w-10 xs:h-[15px] sm:w-8 sm:h-5 justify-between cursor-pointer group"
               onClick={() => setNav(!Nav)}
             >
               <div

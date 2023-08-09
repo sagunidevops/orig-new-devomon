@@ -357,7 +357,7 @@ export const footerIcons = [
   },
   {
     footerIcon: Discord,
-    iconUrl: "https://discord.com/invite/devomon",
+    iconUrl: "https://discord.devomon.io/",
   },
 ];
 export const ourPartner = [
@@ -430,12 +430,12 @@ export const ourPartner = [
       {
         icon: Vertical_Owned_logo,
         url: "https://gamefi.org/events/race-for-glory",
-        className: "max-w-[70px]",
+        className: "max-w-[70px] mt-8 xs:mt-auto",
       },
       {
         icon: AfterMathIslands,
         url: "https://aftermathislands.io/",
-        className: "mb-2 pb-2",
+        className: "mb-2 pb-2 mx-5 max-w-[130px]",
       },
       {
         icon: Salad_Ventures_logo,
@@ -742,7 +742,7 @@ export const SideSocialIconData = [
   {
     img: Discord,
     para: "discord",
-    href: "https://discord.com/invite/devomon",
+    href: "https://discord.devomon.io/",
   },
 ];
 export const Dots_data = [
