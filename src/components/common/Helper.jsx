@@ -675,28 +675,33 @@ export const AboutCardData = [
 ];
 
 // ============================================ Latest news ==============================================
-// export const Latest_news_faq_data = [
-//   {
-//     heading: "Condimentum eros praesent condimentum nunc elementum.",
-//     para: "Register, connect your wallet and install the game.",
-//   },
-//   {
-//     heading: "Morbi lorem quisque non rutrum quisque blandit tellus.",
-//     para: "Usually 3, in some cases up to 6.",
-//   },
-//   {
-//     heading: "Mattis enim eleifend  vulputate bibendum netus amet.",
-//     para: "You can start round-based battles, explore and decorate your island. Communicate with friends.",
-//   },
-//   {
-//     heading: "Scelerisque congue proin turpis bibendum duis nulla.",
-//     para: "These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
-//   },
-//   {
-//     heading: "Aenean tristique suscipit diam mi gravida aenean non.",
-//     para: "When your fire-type evomon battles a plant-type evomon, you will. ",
-//   },
-// ];
+export const Latest_news_faq_data = [
+  {
+     date:"10 Aug, 2023",
+    heading: "Condimentum eros praesent condimentum nunc elementum.",
+    // para: "Register, connect your wallet and install the game.",
+  },
+  {
+     date:"10 Aug, 2023",
+    heading: "Morbi lorem quisque non rutrum quisque blandit tellus.",
+    // para: "Usually 3, in some cases up to 6.",
+  },
+  {
+     date:"10 Aug, 2023",
+    heading: "Mattis enim eleifend  vulputate bibendum netus amet.",
+    // para: "You can start round-based battles, explore and decorate your island. Communicate with friends.",
+  },
+  {
+     date:"10 Aug, 2023",
+    heading: "Scelerisque congue proin turpis bibendum duis nulla.",
+    // para: "These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
+  },
+  {
+     date:"10 Aug, 2023",
+    heading: "Aenean tristique suscipit diam mi gravida aenean non.",
+    // para: "When your fire-type evomon battles a plant-type evomon, you will. ",
+  },
+];
 
 // ========================================== Latest news Slider img ===========================================
 export const Latest_slider_data_dev = [

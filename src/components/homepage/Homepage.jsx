@@ -10,6 +10,7 @@ import { LatestNewsHandler } from "../common/Api";
 import { NewsApi } from "../common/ApiUrls";
 import { useState } from "react";
 import moment from 'moment';
+import News from "./News";
 
 
 const Homepage = () => {
@@ -30,6 +31,7 @@ console.log("latestNewsDatalatestNewsData", moment(latestNewsData&&latestNewsDat
       <About />
       <AboutCard />
       <LatestNews />
+      <News/>
       <Partner />
       <TouchForm />
     </>
