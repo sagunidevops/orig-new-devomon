@@ -10,14 +10,14 @@ const News = () => {
             Latest news
           </p>
             <div className="flex flex-col xl:flex-row bg-latestNews_bg_color items-center bg-cover rounded-3xl xl:h-[481px] 2xl:h-[564px] bg_faq">
-                <div className="flex flex-col xl:flex-row items-center rounded-[12px] sm:w-10/12 lg:w-[45%] 2xl:w-[42.5%] px-3 md:px-0 relative mt-4 md:mt-9 xl:mt-0 ">
+                <div className="flex flex-col xl:flex-row items-center rounded-[12px] sm:w-10/12 lg:w-[45%] 2xl:w-[42.5%] px-3 md:px-0 relative mt-4 md:mt-9 xl:mt-0 h-full">
                   <img
                     className="w-full rounded-[23px] h-full"
                     src={latest_news_slider_img}
                     alt="latest_news_slider_img"
                   /> 
                 </div>
-                  <div className="w-11/12 md:w-10/12 xl:w-[53%] xl:ps-8 h-[420px] 2xl:h-auto overflow-x-hidden overflow-y-scroll mt-10 xl:mt-0">
+                  <div className="w-11/12 md:w-10/12 xl:w-[53%] xl:ps-8 h-[420px] 2xl:h-[500px] overflow-x-hidden overflow-y-scroll mt-10 xl:mt-0">
                     <div>
                     {Latest_news_faq_data &&
                     Latest_news_faq_data.map((items,index)=>{
