@@ -3,4 +3,5 @@ export const LatestNewsHandler = async (path) =>
   await axiosRequest(
     "GET",
     `${path}`
+    
   );
