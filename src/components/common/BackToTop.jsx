@@ -30,7 +30,7 @@ export default function BackToTop() {
         onClick={() => scrollToTop()}
         className={`${
           isVisible ? "opactiy-100 right-3" : "opacity-0 -right-12"
-        } fixed sm:bottom-3 bottom-12 w-12 h-12 rounded-full flex justify-center items-center shadow-lg cursor-pointer z-40 bg-[#FFA800] hover:opacity-90 hover:shadow-[#FFA800] transition-all duration-150 ease-linear`}
+        } fixed sm:bottom-3 bottom-12 w-12 h-12 rounded-full flex justify-center items-center shadow-lg cursor-pointer z-[41] bg-[#FFA800] hover:opacity-90 hover:shadow-[#FFA800] transition-all duration-150 ease-linear`}
       >
         <BackToTopIcon />
       </div>

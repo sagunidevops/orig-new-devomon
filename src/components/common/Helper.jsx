@@ -7,7 +7,7 @@ import Twitter from "../../assets/images/webp/twitter.webp";
 import Tiktok from "../../assets/images/webp/tiktok.webp";
 import Medium from "../../assets/images/webp/medium.webp";
 import Twitch from "../../assets/images/webp/twitch.webp";
-import Discord from "../../assets/images/webp/discord.webp";
+import Discord from "../../assets/images/webp/discord.webp"; 
 import OwnerShipImg1 from "../../assets/images/webp/ownership1.webp";
 import OwnerShipImg2 from "../../assets/images/webp/ownership2.webp";
 import OwnerShipImg3 from "../../assets/images/webp/ownership3.webp";
@@ -430,17 +430,17 @@ export const ourPartner = [
       {
         icon: Vertical_Owned_logo,
         url: "https://gamefi.org/events/race-for-glory",
-        className: "max-w-[70px] mt-8 xs:mt-auto",
+        className: "max-w-[70px] mt-3 xs:mt-auto",
       },
       {
         icon: AfterMathIslands,
         url: "https://aftermathislands.io/",
-        className: "mb-2 pb-2 mx-5 max-w-[130px]",
+        className: " mx-5 max-w-[130px]",
       },
       {
         icon: Salad_Ventures_logo,
         url: "https://aftermathislands.io/",
-        className: "w-[100px] mb-2 pb-2",
+        className: "w-[100px] ",
       },
       // {
       //   icon: Placewar,
@@ -676,28 +676,28 @@ export const AboutCardData = [
 ];
 
 // ============================================ Latest news ==============================================
-export const Latest_news_faq_data = [
-  {
-    heading: "Condimentum eros praesent condimentum nunc elementum.",
-    para: "Register, connect your wallet and install the game.",
-  },
-  {
-    heading: "Morbi lorem quisque non rutrum quisque blandit tellus.",
-    para: "Usually 3, in some cases up to 6.",
-  },
-  {
-    heading: "Mattis enim eleifend  vulputate bibendum netus amet.",
-    para: "You can start round-based battles, explore and decorate your island. Communicate with friends.",
-  },
-  {
-    heading: "Scelerisque congue proin turpis bibendum duis nulla.",
-    para: "These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
-  },
-  {
-    heading: "Aenean tristique suscipit diam mi gravida aenean non.",
-    para: "When your fire-type evomon battles a plant-type evomon, you will. ",
-  },
-];
+// export const Latest_news_faq_data = [
+//   {
+//     heading: "Condimentum eros praesent condimentum nunc elementum.",
+//     para: "Register, connect your wallet and install the game.",
+//   },
+//   {
+//     heading: "Morbi lorem quisque non rutrum quisque blandit tellus.",
+//     para: "Usually 3, in some cases up to 6.",
+//   },
+//   {
+//     heading: "Mattis enim eleifend  vulputate bibendum netus amet.",
+//     para: "You can start round-based battles, explore and decorate your island. Communicate with friends.",
+//   },
+//   {
+//     heading: "Scelerisque congue proin turpis bibendum duis nulla.",
+//     para: "These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
+//   },
+//   {
+//     heading: "Aenean tristique suscipit diam mi gravida aenean non.",
+//     para: "When your fire-type evomon battles a plant-type evomon, you will. ",
+//   },
+// ];
 
 // ========================================== Latest news Slider img ===========================================
 export const Latest_slider_data_dev = [
@@ -742,7 +742,13 @@ export const SideSocialIconData = [
   {
     img: Discord,
     para: "discord",
+    className: "mb-4",
     href: "https://discord.devomon.io/",
+  },
+  {
+    img: Twitter,
+    para: "Twitter",
+    href: "https://twitter.com/OfficialDevomon",
   },
 ];
 export const Dots_data = [
@@ -765,22 +771,27 @@ export const Dots_data = [
 
 export const array2 = [
   {
+    date:"10 Aug, 2023",
     question:"Condimentum eros praesent condimentum nunc elementum.",
     answer: "Register, connect your wallet and install the game.",
   },
   {
+    date:"10 Aug, 2023",
     question:"Morbi lorem quisque non rutrum quisque blandit tellus.",
     answer: "Usually 3, in some cases up to 6.",
   },
   {
+    date:"10 Aug, 2023",
     question:"Mattis enim eleifend  vulputate bibendum netus amet.",
     answer:"You can start round-based battles, explore and decorate your island. Communicate with friends.",
   },
   {
+    date:"10 Aug, 2023",
     question:"Scelerisque congue proin turpis bibendum duis nulla.",
     answer:"These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
   },
   {
+    date:"10 Aug, 2023",
     question:"Aenean tristique suscipit diam mi gravida aenean non.",
     answer:"When your fire-type evomon battles a plant-type evomon, you will. ",
   },

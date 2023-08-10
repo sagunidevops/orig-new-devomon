@@ -70,7 +70,7 @@ const Partner = () => {
           ourPartner.map((obj, i) => {
             return (
               <div key={i}>
-                <div className="flex justify-center items-center sm:space-x-[40px]  mt-3  flex-wrap py-2">
+                <div className="flex justify-center items-center sm:space-x-[40px] mt-3 flex-wrap py-2">
                   {obj &&
                     obj.partnericon1 &&
                     obj.partnericon1.map((item, i) => {
@@ -82,7 +82,7 @@ const Partner = () => {
                             href={item.url}
                           >
                             <img
-                              className="hover:scale-105 max-w-[130px] w-[200px] max-h-[80px] duration-300 ease-in-out transition-all sm:mt-0 mt-8 xs:mt-10 filter-property mx-4"
+                              className="hover:scale-105 max-w-[100px] md:max-w-[200px] sm:h-full w-[200px] max-h-[80px] duration-300 ease-in-out transition-all sm:mt-8 xs:mt-10 filter-property mx-4 mt-3"
                               src={item.icon}
                               alt=""
                             />
@@ -91,7 +91,7 @@ const Partner = () => {
                       );
                     })}
                 </div>
-                <div className="flex justify-center items-center sm:space-x-[40px] mt-3 flex-wrap py-2">
+                <div className="flex justify-center items-center sm:space-x-[40px] flex-wrap sm:py-2">
                   {obj &&
                     obj.partnericon2 &&
                     obj.partnericon2.map((item, i) => {
@@ -105,7 +105,7 @@ const Partner = () => {
                             <img
                               className={`${
                                 i === 2 ? "" : "filter-property"
-                              } hover:scale-105 max-w-[120px] h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 md:mb-8`}
+                              } hover:scale-105 max-w-[100px] md:max-w-[200px] sm:h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 mb-4 `}
                               src={item.icon}
                               alt=""
                             />
@@ -114,7 +114,7 @@ const Partner = () => {
                       );
                     })}
                 </div>
-                <div className="justify-center items-center sm:space-x-[40px]  mt-3 flex-wrap py-2 hidden">
+                <div className="justify-center items-center sm:space-x-[40px] mt-3 flex-wrap py-2 hidden">
                   {obj &&
                     obj.partnericon3 &&
                     obj.partnericon3.map((item, i) => {
@@ -126,7 +126,7 @@ const Partner = () => {
                             href={item.url}
                           >
                             <img
-                              className="hover:scale-105 [150px] h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all filter-property"
+                              className="hover:scale-105 w-[80px] xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all filter-property"
                               src={item.icon}
                               alt=""
                             />
@@ -135,7 +135,7 @@ const Partner = () => {
                       );
                     })}
                 </div>
-                <div className="flex justify-center items-center sm:space-x-[40px] md:mt-3 flex-wrap md:py-2 space-y-6 sm:space-y-0 mb-14">
+                <div className="flex justify-center items-center sm:space-x-[40px] flex-wrap md:py-2 space-y-6 sm:space-y-0 mb-14">
                   {obj &&
                     obj.partnericon4 &&
                     obj.partnericon4.map((item, i) => {
@@ -147,7 +147,7 @@ const Partner = () => {
                             href={item.url}
                           >
                             <img
-                              className={` hover:scale-1-w-[150px] h-full max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all ${
+                              className={` hover:scale-1 max-w-[80px] sm:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all ${
                                 (i === 0 || i == 1 || i == 3
                                   ? ""
                                   : "filter-property",

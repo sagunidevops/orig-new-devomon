@@ -91,6 +91,9 @@ const LatestNews = () => {
                     index === count ? "active" : ""
                   }`}
                 >
+                  <p>
+                    {item.date}
+                  </p>
                   <div
                     className={`flex items-center justify-between text-base sm:text-lg font-semibold font-raleway`}
                   >

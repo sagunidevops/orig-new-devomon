@@ -3,7 +3,7 @@ import { SideSocialIconData } from "./Helper";
 import { Social_arrow } from "./Icons";
 
 const SideSocialIcon = () => {
-  const [open, setclose] = useState(false);
+  const [open, setclose] = useState(true);
   return (
     <>
       <div className={
@@ -20,7 +20,7 @@ const SideSocialIcon = () => {
               <Social_arrow />
             </span>
           </div>
-          <div className="bg-white py-6 pl-6 pr-9">
+          <div className="bg-white py-6 pl-6 pr-9 z-50 relative">
             {SideSocialIconData.map((obj, i) => {
               return (
                 <a
