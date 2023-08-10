@@ -30,7 +30,7 @@ console.log("latestNewsDatalatestNewsData", moment(latestNewsData&&latestNewsDat
       <About />
       <AboutCard />
       {/* <LatestNews /> */}
-      <News/>
+      <News newsDataValue={latestNewsData}  />
       <Partner />
       <TouchForm />
     </>
