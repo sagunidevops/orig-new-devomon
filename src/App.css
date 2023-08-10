@@ -153,13 +153,36 @@
     border-radius: 117px;
   }
 
-  .items_start {
-    align-items: start !important;
-  }
+  /* ---- VIDEO ---- */
 
+  .video-container {
+    bottom: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.vimvideo {
+  height: 56.25vw;
+  left: 50%;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100vw;
+}
   @media (max-width: 1280px) {
     .translate_y {
-      transform: translateY(-300%) !important;
+      transform: translateY(-510%) !important;
     }
   }
 
@@ -188,7 +211,7 @@
     }
 
     .translate_y {
-      transform: translateY(-430%) !important;
+      transform: translateY(-753%) !important;
     }
   }
 

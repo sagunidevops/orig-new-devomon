@@ -177,7 +177,7 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
         <button
           disabled={reCaptchaCodeVerify === null ? true : false}
           type="submit"
-          className=" blue-btn-shadow hover:scale-105 transition-all ease-in-out duration-300  py-[5px] px-[21px] bg-[#2253F5] rounded-[39px] text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins  w-full "
+          className=" blue-btn-shadow hover:scale-105 transition-all ease-in-out duration-300 py-[5px] px-[21px] bg-[#2253F5] rounded-[39px] text-[14px] sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins  w-full "
         >
           {isLoading ? "Loading..." : " Submit"}
         </button>

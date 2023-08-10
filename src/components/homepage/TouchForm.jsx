@@ -38,7 +38,7 @@ const TouchForm = ({ contactToRef }) => {
         className="py-20 sm:py-28 md:py-36 relative"
         id="contact"
       >
-        {/* FORM HEADING  */}w
+        {/* FORM HEADING  */}
         <div className="container  relative z-10">
           <div className="">
             <h3 className="font-raleway touchform_zoom uppercase  font-bold text-center  text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">

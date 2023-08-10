@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import Instagram from "../../assets/images/webp/instagram.webp";
 import Youtube from "../../assets/images/webp/youtube.webp";
 import Telegram from "../../assets/images/webp/telegram.webp";
@@ -6,7 +7,7 @@ import Twitter from "../../assets/images/webp/twitter.webp";
 import Tiktok from "../../assets/images/webp/tiktok.webp";
 import Medium from "../../assets/images/webp/medium.webp";
 import Twitch from "../../assets/images/webp/twitch.webp";
-import Discord from "../../assets/images/webp/discord.webp";
+import Discord from "../../assets/images/webp/discord.webp"; 
 import OwnerShipImg1 from "../../assets/images/webp/ownership1.webp";
 import OwnerShipImg2 from "../../assets/images/webp/ownership2.webp";
 import OwnerShipImg3 from "../../assets/images/webp/ownership3.webp";
@@ -23,17 +24,20 @@ import devomon_team2 from "../../assets/images/webp/devomon_team2.webp";
 import devomon_team3 from "../../assets/images/webp/devomon_team3.webp";
 import devomon_team4 from "../../assets/images/webp/devomon_team4.webp";
 import devomon_team5 from "../../assets/images/webp/devomon_team5.webp";
-import devomon_team6 from "../../assets/images/webp/devomon_team6.webp";
+// import devomon_team6 from "../../assets/images/webp/devomon_team6.webp";
 import devomon_team7 from "../../assets/images/webp/devomon_team7.webp";
 import devomon_team8 from "../../assets/images/webp/devomon_team8.webp";
 
 // import InvoZoneGames from "../../assets/images/webp/invogames_logo.webp";
 import GameLofiHub from "../../assets/images/png/gamefi_org.png";
+import UnixGaming_logo from "../../assets/images/png/UnixGaming_logo.png";
+import Vertical_Owned_logo from "../../assets/images/png/Vertical_Owned_logo.png";
 import AfterMathIslands from "../../assets/images/webp/aftermath-islands.webp";
-import Placewar from "../../assets/images/webp/placewar.webp";
-import metafighter from "../../assets/images/webp/metafightzer.webp";
+// import Placewar from "../../assets/images/webp/placewar.webp";
+// import metafighter from "../../assets/images/webp/metafightzer.webp";
+import Salad_Ventures_logo from "../../assets/images/svg/Salad_Ventures_BW_logo.svg";
 import mystic from "../../assets/images/png/mystic.png";
-import RazeRacing from "../../assets/images/webp/raze_racing.webp";
+// import RazeRacing from "../../assets/images/webp/raze_racing.webp";
 import bgaLogo from "../../assets/images/svg/bgaLogo.svg";
 import { AppStore, AppleStore, HeaderArw, WindowStore } from "./Icons";
 import CallistoBattle1 from "../../assets/images/webp/callisto-1.png";
@@ -62,14 +66,22 @@ import anime_bg from "../../assets/images/homepageImages/webp/anime_bg.webp";
 import merch_bg from "../../assets/images/homepageImages/webp/merch_bg.webp";
 import coming_soon_bg from "../../assets/images/homepageImages/webp/coming_soon_bg.webp";
 // ================
-import gamefi_character from "../../assets/images/homepageImages/webp/gamefi.webp";
-import evozone_character from "../../assets/images/homepageImages/webp/evozone.webp";
-import nft_character from "../../assets/images/homepageImages/webp/nft.webp";
-import dashboard_character from "../../assets/images/homepageImages/webp/dashboard.webp";
-import evoVerse_character from "../../assets/images/homepageImages/webp/evoVerse.webp";
-import manga_character from "../../assets/images/homepageImages/webp/manga.webp";
-import anime_character from "../../assets/images/homepageImages/webp/anime.webp";
-import merch_character from "../../assets/images/homepageImages/webp/merch.webp";
+import gamefi_character from "../../assets/Images/abc.png";
+import evozone_character from "../../assets/Images/abc2.png";
+import nft_character from "../../assets/Images/abc3.png";
+import dashboard_character from "../../assets/Images/abc4.png";
+import evoVerse_character from "../../assets/Images/abc5.png";
+import manga_character from "../../assets/Images/abc6.png";
+import anime_character from "../../assets/images/abc7.png";
+import merch_character from "../../assets/images/abc8.png";
+// import gamefi_character from "../../assets/images/homepageImages/webp/gamefi.webp";
+// import evozone_character from "../../assets/images/homepageImages/webp/evozone.webp";
+// import nft_character from "../../assets/images/homepageImages/webp/nft.webp";
+// import dashboard_character from "../../assets/images/homepageImages/webp/dashboard.webp";
+// import evoVerse_character from "../../assets/images/homepageImages/webp/evoVerse.webp";
+// import manga_character from "../../assets/images/homepageImages/webp/manga.webp";
+// import anime_character from "../../assets/images/homepageImages/webp/anime.webp";
+// import merch_character from "../../assets/images/homepageImages/webp/merch.webp";
 // ======================================== faq=============================
 import latest_news_slider_img from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
 
@@ -345,7 +357,7 @@ export const footerIcons = [
   },
   {
     footerIcon: Discord,
-    iconUrl: "https://discord.com/invite/devomon",
+    iconUrl: "https://discord.devomon.io/",
   },
 ];
 export const ourPartner = [
@@ -388,6 +400,10 @@ export const ourPartner = [
         url: "https://gamefi.org/events/race-for-glory",
       },
       {
+        icon: UnixGaming_logo,
+        url: "https://gamefi.org/events/race-for-glory",
+      },
+      {
         icon: magic,
         url: "https://magic.io/",
       },
@@ -412,25 +428,35 @@ export const ourPartner = [
     // ],
     partnericon4: [
       {
+        icon: Vertical_Owned_logo,
+        url: "https://gamefi.org/events/race-for-glory",
+        className: "max-w-[70px] mt-3 xs:mt-auto",
+      },
+      {
         icon: AfterMathIslands,
         url: "https://aftermathislands.io/",
-        className: "mb-2 pb-2",
+        className: " mx-5 max-w-[130px]",
       },
       {
-        icon: Placewar,
-        url: "https://placewar.io/",
-        className: "mb-2 pb-2",
+        icon: Salad_Ventures_logo,
+        url: "https://aftermathislands.io/",
+        className: "w-[100px] ",
       },
-      {
-        icon: RazeRacing,
-        url: "https://www.razeracing.com/",
-        className: "sm:mt-2 sm:pt-2",
-      },
-      {
-        icon: metafighter,
-        url: "https://chain.link/",
-        className: "sm:mt-2 sm:pt-2",
-      },
+      // {
+      //   icon: Placewar,
+      //   url: "https://placewar.io/",
+      //   className: "mb-2 pb-2",
+      // },
+      // {
+      //   icon: RazeRacing,
+      //   url: "https://www.razeracing.com/",
+      //   className: "sm:mt-2 sm:pt-2",
+      // },
+      // {
+      //   icon: metafighter,
+      //   url: "https://chain.link/",
+      //   className: "sm:mt-2 sm:pt-2",
+      // },
 
       // {
       //   icon: Shoefy,
@@ -462,6 +488,14 @@ export const TeamData = [
     desc: "A Senior Digital Intermediate Artist with over 10 years of experience in the film and video industry. He has worked on a wide range of projects, from independent films to large-scale Hollywood productions. John has a keen eye for detail and is an expert in color grading and visual effects. He has a strong understanding of the latest digital intermediate tools and technologies and is able to deliver high-quality results under tight deadline.",
   },
   {
+    name: "Martin s.",
+    img: devomon_team7,
+    title: "Chief Gaming Officer",
+    url: "https://www.linkedin.com/in/serhatyanar/",
+    desc: "Martin boasts a track record of eight years as a seasoned game developer, demonstrating exceptional proficiency in Unreal Engine at senior levels.",
+    class:"hidden",
+  },
+  {
     name: "Selina Aley",
     img: devomon_team4,
     title: "Chief Strategic Manager",
@@ -476,20 +510,7 @@ export const TeamData = [
     desc: "Blandit viverra varius hendrerit hendrerit varius cras. Velit lorem id malesuada vitae velit odio semper. Feugiat tincidunt nunc velit sit lacinia ultrices quisque. Facilisi nec pharetra interdum quisque tincidunt sit netus diam cum. Tellus faucibus lacus viverra ultrices.",
   },
   {
-    name: "Serhat Yanar- Advisor",
-    img: devomon_team6,
-    className: item_start,
-    desc: "Serhat is a co-founder of a successful crypto launchpad, and he was instrumental in raising funds for various projects. He manages partnerships at Devomon by leveraging his extensive network of crypto and NFT industry contacts, venture capitalists, and key opinion leaders.",
-  },
-  {
-    name: "martin s.-Advisor",
-    img: devomon_team7,
-    title: "Chief Gaming Officer",
-    url: "https://www.linkedin.com/in/serhatyanar/",
-    desc: "Martin boasts a track record of eight years as a seasoned game developer, demonstrating exceptional proficiency in Unreal Engine at senior levels.",
-  },
-  {
-    name: "Saban Özden- Advisor",
+    name: "Saban Özden",
     img: devomon_team8,
     title: "Chief Technology Officer",
     url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
@@ -596,95 +617,89 @@ export const energeticTeamData = [
 
 export const AboutCardData = [
   {
-    id: 1,
     card_bg: gamefi_bg,
     title: "GameFi",
     character_img: gamefi_character,
-    className: "w-[29%] right-[6%]",
+    className: "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[27%] lg:w-[22%] xl:w-[19%] right-[6%]",
   },
   {
-    id: 2,
     card_bg: evozone_bg,
     title: "Evozone",
     character_img: evozone_character,
-    className: "w-[40%] left-[0%]",
+    className: "w-[90%] xs:w-[60%] sm:w-[55%] md:w-[45%] lg:w-[35%] 2xl:w-[40%] left-[0%]",
+    linkValue:"https://evozone-web.web.app/"
   },
   {
-    id: 3,
     card_bg: nft_bg,
     title: "NFT",
     character_img: nft_character,
-    className: "w-[18%] right-[6.5%]",
+    className: "w-[40%] xs:w-[30%] sm:w-[28%] md:w-[22%] xl:w-[18%] right-[6.5%]",
+    linkValue:"/nft"
   },
   {
-    id: 4,
     card_bg: dashboard_bg,
     title: "Dashboard",
     character_img: dashboard_character,
-    className: "w-[38%] -left-[3%]",
+    className: " w-[80%] xs:w-[70%] sm:w-[60%] md:w-[45%] xl:w-[40%] -left-[3%]",
   },
   {
-    id: 5,
     card_bg: evoVerse_bg,
     title: "EvoVerse",
     character_img: evoVerse_character,
-    className: "w-[19%] right-[10%]",
+    className: "w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[17%] 2xl:w-[19%] right-[10%]",
   },
   {
-    id: 6,
     card_bg: manga_bg,
-    title: "manga",
+    title: "Manga",
     character_img: manga_character,
-    className: "w-[19%] left-[8%]",
+    className: "w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[17%] 2xl:w-[19%] left-[8%]",
   },
   {
-    id: 7,
     card_bg: anime_bg,
     title: "Anime",
     character_img: anime_character,
-    className: "w-[22%] right-[8%]",
+    className: "w-[35%] xs:w-[32%] sm:w-[35%] md:w-[30%] lg:w-[24%] xl:w-[22%] 2xl:w-[23%] right-[8%]",
   },
   {
-    id: 8,
     card_bg: merch_bg,
     title: "Merch",
     character_img: merch_character,
-    className: "w-[43%] left-[2%]",
+    className: "w-[80%] xs:w-[70%] sm:w-[60%] md:w-[50%] lg:w-[45%] xl:w-[43%] left-[2%]",
   },
   {
-    id: 9,
     card_bg: coming_soon_bg,
     title: "coming soon",
     className: "hidden",
+    linkValue:"/coming-soon"
   },
 ];
 
 // ============================================ Latest news ==============================================
-export const Latest_news_faq_data = [
-  {
-    heading: "Condimentum eros praesent condimentum nunc elementum.",
-    para: "Register, connect your wallet and install the game.",
-  },
-  {
-    heading: "Morbi lorem quisque non rutrum quisque blandit tellus.",
-    para: "Usually 3, in some cases up to 6.",
-  },
-  {
-    heading: "Mattis enim eleifend  vulputate bibendum netus amet.",
-    para: "You can start round-based battles, explore and decorate your island. Communicate with friends.",
-  },
-  {
-    heading: "Scelerisque congue proin turpis bibendum duis nulla.",
-    para: "These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
-  },
-  {
-    heading: "Aenean tristique suscipit diam mi gravida aenean non.",
-    para: "When your fire-type evomon battles a plant-type evomon, you will. ",
-  },
-];
+// export const Latest_news_faq_data = [
+//   {
+//     heading: "Condimentum eros praesent condimentum nunc elementum.",
+//     para: "Register, connect your wallet and install the game.",
+//   },
+//   {
+//     heading: "Morbi lorem quisque non rutrum quisque blandit tellus.",
+//     para: "Usually 3, in some cases up to 6.",
+//   },
+//   {
+//     heading: "Mattis enim eleifend  vulputate bibendum netus amet.",
+//     para: "You can start round-based battles, explore and decorate your island. Communicate with friends.",
+//   },
+//   {
+//     heading: "Scelerisque congue proin turpis bibendum duis nulla.",
+//     para: "These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
+//   },
+//   {
+//     heading: "Aenean tristique suscipit diam mi gravida aenean non.",
+//     para: "When your fire-type evomon battles a plant-type evomon, you will. ",
+//   },
+// ];
 
 // ========================================== Latest news Slider img ===========================================
-export const Latest_slider_data = [
+export const Latest_slider_data_dev = [
   { img: latest_news_slider_img },
   { img: latest_news_slider_img },
   { img: latest_news_slider_img },
@@ -697,19 +712,19 @@ export const SideSocialIconData = [
     img: Instagram,
     para: "instagram",
     className: "mb-4",
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/devomonofficial/?igshid=YmMyMTA2M2Y%3D",
   },
   {
     img: Youtube,
     para: "youtube",
     className: "mb-4",
-    href: "https://www.youtube.com/",
+    href: "https://www.youtube.com/channel/UC5fGdMMwZtNfVoi8BU0mYBQ",
   },
   {
     img: Telegram,
     para: "telegram",
     className: "mb-4",
-    href: "https://web.telegram.org/",
+    href: "https://t.me/officialdevomon",
   },
   {
     img: Facebook,
@@ -721,11 +736,62 @@ export const SideSocialIconData = [
     img: Twitch,
     para: "twitch",
     className: "mb-4",
-    href: "https://www.twitch.tv/",
+    href: "https://www.twitch.tv/devomonofficial",
   },
   {
     img: Discord,
     para: "discord",
-    href: "https://discord.com/",
+    className: "mb-4",
+    href: "https://discord.devomon.io/",
+  },
+  {
+    img: Twitter,
+    para: "Twitter",
+    href: "https://twitter.com/OfficialDevomon",
+  },
+];
+export const Dots_data = [
+  {
+    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+  },
+  {
+    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+  },
+  {
+    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+  },
+  {
+    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+  },
+  {
+    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+  },
+];
+
+export const array2 = [
+  {
+    date:"10 Aug, 2023",
+    question:"Condimentum eros praesent condimentum nunc elementum.",
+    answer: "Register, connect your wallet and install the game.",
+  },
+  {
+    date:"10 Aug, 2023",
+    question:"Morbi lorem quisque non rutrum quisque blandit tellus.",
+    answer: "Usually 3, in some cases up to 6.",
+  },
+  {
+    date:"10 Aug, 2023",
+    question:"Mattis enim eleifend  vulputate bibendum netus amet.",
+    answer:"You can start round-based battles, explore and decorate your island. Communicate with friends.",
+  },
+  {
+    date:"10 Aug, 2023",
+    question:"Scelerisque congue proin turpis bibendum duis nulla.",
+    answer:"These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
+  },
+  {
+    date:"10 Aug, 2023",
+    question:"Aenean tristique suscipit diam mi gravida aenean non.",
+    answer:"When your fire-type evomon battles a plant-type evomon, you will. ",
   },
 ];

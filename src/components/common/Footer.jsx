@@ -58,7 +58,7 @@ const Footer = () => {
         <div className="container relative">
           <span className="inline-block">
             <a
-              href="https://devomon.io/"
+              href="https://new-devomon.web.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,14 +72,14 @@ const Footer = () => {
         </div>
         <div className="container pb-5 xl:pb-7 mt-4">
           <div className="md:flex">
-            <div className=" w-full md:w-1/2 flex justify-between items-start">
-              <div>
-                <p className=" text-[10px] lg:text-sm max-w-[300px] md:max-w-[150px] lg:max-w-[240px] opacity-70 text-white">
+            <div className="w-full md:w-1/2 flex justify-between items-start">
+              <div className="mb-2 md:mb-0">
+                <p className="ext-[10px] lg:text-[14px] max-w-[300px] md:max-w-[200px] lg:max-w-[240px] opacity-70 text-white">
                   Enjoy the intriguing adventures and challenges, as well as the
                   possibility to acquire and develop strong NFT collections and
                   become a part of an intriguing and dynamic environment.
                 </p>
-                <p className=" text-[10px] lg:text-sm max-w-[300px] md:max-w-[150px] lg:max-w-[240px] opacity-70 text-white">
+                <p className=" text-[10px] lg:text-sm max-w-[300px] md:max-w-[150px] lg:max-w-[240px] opacity-70 text-white mb-5">
                   See you on Callisto!
                 </p>
                 <div className="flex gap-2 xl:gap-3 mt-3 md:mt-4">
@@ -95,7 +95,7 @@ const Footer = () => {
                         aria-describedby="social"
                       >
                         <img
-                          className="max-w-[22px] "
+                          className="max-w-[22px]"
                           src={value.footerIcon}
                           alt="social"
                         />
@@ -187,39 +187,86 @@ const Footer = () => {
                   </div>
                   <div className="flex cursor-pointer items-center group relative scroll_hidden">
                     <div className="footer_hover absolute translate-x-16 bg-[#0d1015df] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3 scroll_hidden">
-                    <a href="">
-                        <p className="text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
-                        NFTs
-                        </p>
-                      </a>
-                      <button onClick={() => setHide(!hide)} className="text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
-                      Dashboard
-                      </button>
-                      
-                      <button onClick={() => setHide(!hide)} className="text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins w-full text-start">
+                    <div className="flex flex-col">
+                    <a href="#" onClick={() => setHide(!hide)}>
+                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200">
+                    GameFi
+                    </p>
+                    </a>
+                    <a href="https://evozone-web.web.app/">
+                    <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-2">
+                    Evozone
+                    </p>
+                    </a>
+                    <Link to={"/nft"}>
+                    <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
+                      NFTs
+                    </p>
+                    </Link>
+                    <p
+                      onClick={() => setHide(!hide)}
+                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
+                    >
+                      Dashboard{" "}
+                    </p>
+                    <a href="#" onClick={() => setHide(!hide)}>
+                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                    EvoVerse
+                    </p>
+                    </a>
+                    <a href="#" onClick={() => setHide(!hide)}>
+                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                    Manga
+                    </p>
+                    </a>
+                    <p
+                      onClick={() => setHide(!hide)}
+                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
+                    >
+                      Anime{" "}
+                    </p>
+                    <a href="#" onClick={() => setHide(!hide)}>
+                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                    Merch
+                    </p>
+                    </a>
+                    <Link to={"/coming-soon"}>
+                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                    coming soon
+                    </p>
+                    </Link>
+                    {/* <p
+                      onClick={() => setHide(!hide)}
+                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
+                    >
                       Land
-                      </button>
-                      
-                      <button onClick={() => setHide(!hide)} className="text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins">
-                      DevoDex
-                      </button>
-                      
-                      <button onClick={() => setHide(!hide)} className="text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins">
-                      Brand Shop
-                      </button>
-                      <a href="/comic">
-                      <p className="text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins">
+                    </p> */}
+                    {/* <p
+                      onClick={() => setHide(!hide)}
+                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
+                    >
+                      DevoDex{" "}
+                    </p> */}
+                    {/* <p
+                      onClick={() => setHide(!hide)}
+                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
+                    >
+                      Brand Shop{" "}
+                    </p> */}
+                    {/* <a
+                      href="https://devomon-home.web.app/comic"
+                      className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2"
+                    >
                       Comic
-                      </p>
-                      </a>
-                      <button onClick={() => setHide(!hide)} className="text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins">
-                      Anime
-                      </button>
-                      <a target='_blank' href="https://callisto.devomon.io/#gallery" rel="noopener noreferrer">
-                      <p className="text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins">
+                    </a> */}
+                    {/* <a
+                      target="_blank"
+                      href="https://callisto.devomon.io/#gallery"
+                      className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2" rel="noopener noreferrer"
+                    >
                       Gallery
-                      </p>
-                      </a>
+                    </a> */}
+                </div>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
                       D-World
@@ -246,17 +293,19 @@ const Footer = () => {
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
                     <div className="absolute translate-x-16 bg-[#0d1015df] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1]">
-                    <a href="/team">
+                    <Link to={"/team"}>
                         <p className="text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                         Core Team
                         </p>
-                      </a>
+                      </Link>
                       <button onClick={() => setHide(!hide)} className="text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                       Advisor
                       </button>
-                      <button className="text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
+                      <Link to={"/stream-partner"}>
+                      <p className="text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
                       Streaming Partners
-                      </button>
+                      </p>
+                      </Link>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
                       Team
@@ -351,7 +400,7 @@ const Footer = () => {
                       Saguni Tech LLC
                     </p>
                   </div>
-                  <div className="flex items-center - group">
+                  {/* <div className="flex items-center - group">
                     <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 font-poppins ">
                       2203520
                     </p>
@@ -361,7 +410,7 @@ const Footer = () => {
                       Business Center 1, M Floor, The Meydan Hotel, Nad AI
                       Sheba, Dubai, U.A.E
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -375,19 +424,19 @@ const Footer = () => {
             <div className="flex justify-between  gap-5 mt-2 md:mr-11 text-white">
               <Link
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="/cookie-policy"
+                to="https://www.devomon.io/cookie-policy"
               >
                 Cookie Policy
               </Link>
               <Link
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="/terms-and-conditions"
+                to="https://www.devomon.io/terms-and-conditions"
               >
                 Terms and Conditions
               </Link>
               <Link
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="/privacy-policy"
+                to="https://www.devomon.io/privacy-policy"
               >
                 Privacy Policy
               </Link>

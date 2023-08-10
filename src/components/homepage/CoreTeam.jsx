@@ -7,6 +7,10 @@ import { TeamData } from "../common/Helper";
 
 // eslint-disable-next-line no-unused-vars
 const CoreTeam = ({ teamToRef2 }) => {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     let teamLeft = gsap.timeline({
@@ -67,7 +71,7 @@ const CoreTeam = ({ teamToRef2 }) => {
           </div>
         </div>
         {/* TEAM CARD START */}
-        <div className="flex flex-wrap justify-center space-x-1 ">
+        <div className="flex flex-wrap justify-center space-x-1">
           {TeamData &&
             TeamData.map((obj, index) => (
               <TeamCard obj={obj} key={index} index={index} />

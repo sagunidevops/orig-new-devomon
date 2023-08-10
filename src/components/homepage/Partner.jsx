@@ -53,7 +53,7 @@ const Partner = () => {
     );
   }, []);
   return (
-    <section className="py-16 sm:py-24 md:py-40 lg:py-52 xl:py-[205px] partner_bg bg-cover bg-no-repeat relative">
+    <section className="sm:py-10 lg:py-20 xl:pt-[100px] partner_bg bg-cover bg-no-repeat relative">
       <div className="partner_top_layer absolute left-0 w-full top-0 h-[80px] sm:h-[150px] lg:h-[250px]"></div>
       <div className="partner_bottom_layer absolute left-0 w-full bottom-0 h-[80px] sm:h-[150px] lg:h-[250px]"></div>
       <div className="container overflow-x-hidden">
@@ -70,19 +70,19 @@ const Partner = () => {
           ourPartner.map((obj, i) => {
             return (
               <div key={i}>
-                <div className="flex justify-center items-center space-x-5 sm:space-x-[40px]  mt-3  flex-wrap py-2">
+                <div className="flex justify-center items-center sm:space-x-[40px] mt-3 flex-wrap py-2">
                   {obj &&
                     obj.partnericon1 &&
                     obj.partnericon1.map((item, i) => {
                       return (
-                        <div className="parnter_right " key={i}>
+                        <div className="parnter_right" key={i}>
                           <a
                             target="_blank"
                             rel="noopener noreferrer"
                             href={item.url}
                           >
                             <img
-                              className="hover:scale-105  max-w-[150px] w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 mt-10 filter-property"
+                              className="hover:scale-105 max-w-[100px] md:max-w-[200px] sm:h-full w-[200px] max-h-[80px] duration-300 ease-in-out transition-all sm:mt-8 xs:mt-10 filter-property mx-4 mt-3"
                               src={item.icon}
                               alt=""
                             />
@@ -91,7 +91,7 @@ const Partner = () => {
                       );
                     })}
                 </div>
-                <div className="flex justify-center items-center  sm:space-x-[40px] mt-3 flex-wrap py-2 ">
+                <div className="flex justify-center items-center sm:space-x-[40px] flex-wrap sm:py-2">
                   {obj &&
                     obj.partnericon2 &&
                     obj.partnericon2.map((item, i) => {
@@ -105,7 +105,7 @@ const Partner = () => {
                             <img
                               className={`${
                                 i === 2 ? "" : "filter-property"
-                              } hover:scale-105 max-w-[150px]  h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 xl:mt-10 `}
+                              } hover:scale-105 max-w-[100px] md:max-w-[200px] sm:h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 mb-4 `}
                               src={item.icon}
                               alt=""
                             />
@@ -114,7 +114,7 @@ const Partner = () => {
                       );
                     })}
                 </div>
-                <div className="justify-center items-center sm:space-x-[40px]  mt-3 flex-wrap py-2 hidden">
+                <div className="justify-center items-center sm:space-x-[40px] mt-3 flex-wrap py-2 hidden">
                   {obj &&
                     obj.partnericon3 &&
                     obj.partnericon3.map((item, i) => {
@@ -126,7 +126,7 @@ const Partner = () => {
                             href={item.url}
                           >
                             <img
-                              className="hover:scale-105 [150px] h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all filter-property"
+                              className="hover:scale-105 w-[80px] xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all filter-property"
                               src={item.icon}
                               alt=""
                             />
@@ -135,7 +135,7 @@ const Partner = () => {
                       );
                     })}
                 </div>
-                <div className="flex justify-center items-center sm:space-x-[40px]  mt-3 flex-wrap py-2 space-y-6 sm:space-y-0  mb-14">
+                <div className="flex justify-center items-center sm:space-x-[40px] flex-wrap md:py-2 space-y-6 sm:space-y-0 mb-14">
                   {obj &&
                     obj.partnericon4 &&
                     obj.partnericon4.map((item, i) => {
@@ -147,7 +147,7 @@ const Partner = () => {
                             href={item.url}
                           >
                             <img
-                              className={` hover:scale-1-w-[150px] h-full max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all ${
+                              className={` hover:scale-1 max-w-[80px] sm:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all ${
                                 (i === 0 || i == 1 || i == 3
                                   ? ""
                                   : "filter-property",
@@ -166,12 +166,12 @@ const Partner = () => {
           })}
       </div>
       <img
-        className="absolute bottom-[-50px] sm:bottom-[-5%]  left-0 w-[100px] md:w-[150px] xl:w-[300px] z-[2]"
+        className="absolute bottom-[-60px] xl:bottom-[-20%]  left-0 w-[100px] md:w-[150px] xl:w-[300px] z-[2]"
         src={Gino}
         alt="Gino"
       />
       <img
-        className="absolute bottom-[-50px] sm:bottom-[-8%]  right-0 w-[120px] md:w-[170px] xl:w-[300px] z-[2]"
+        className="absolute bottom-[-70px] xl:bottom-[-20%]  right-0 w-[120px] md:w-[170px] xl:w-[300px] z-[2]"
         src={Thunder}
         alt="thunder"
       />

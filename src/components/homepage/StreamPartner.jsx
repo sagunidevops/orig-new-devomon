@@ -1,12 +1,18 @@
+/* eslint-disable react/prop-types */
 import Stream from "../../assets/images/webp/stream_partner.jpg";
 import Stream2 from "../../assets/images/png/stream2.png";
 import Tiktok from "../../assets/images/webp/tiktok.webp";
+import { useEffect } from "react";
 
 const StreamPartner = ({ streamPartnerRef,advisorRef }) => {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
   return (
     <>
-      <section className="relative" ref={advisorRef} id="streampartner">
-        <div className="py-20 md:pb-24 lg:pb-30 xl:pb-36 overflow-x-hidden">
+      <section className="relative mt-[44px] sm:mt-[70px] lg:mt-[80px]" ref={advisorRef} id="streampartner">
+        <div className="py-20 md:py-24 lg:py-30 xl:py-36 overflow-x-hidden">
           <div className="pb-8 " ref={streamPartnerRef}>
             <h3 className="font-raleway parnter_left whitespace-normal break-words uppercase  font-bold text-center  text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">
               Streaming Partners
