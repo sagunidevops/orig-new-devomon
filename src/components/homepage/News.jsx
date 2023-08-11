@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import latest_news_slider_img from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
 import { Faq_arrow } from "../common/Icons";
 import moment from "moment";
+import NewsSkellton from "../common/NewsSkellton";
 // eslint-disable-next-line react/prop-types
-const News = ({ newsDataValue,loading }) => {
+const News = ({ newsDataValue, loading }) => {
   return (
     <>
       <section className="bg-latestNews_bg_img bg-no-repeat bg-cover py-14 xl:pt-[120px] xl:pb-[205px] overflow-hidden scroll_hidden">
@@ -21,46 +22,40 @@ const News = ({ newsDataValue,loading }) => {
               />
             </div>
             <div className="w-11/12 md:w-10/12 xl:w-[53%] xl:ps-8 h-[420px] 2xl:h-[500px] overflow-x-hidden overflow-y-scroll mt-10 xl:mt-0">
-              
-              {
-                loading?<div className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
-                <div className="animate-pulse flex space-x-4">
-                  <div className="rounded-full bg-slate-700 h-10 w-10"></div>
-                  <div className="flex-1 space-y-6 py-1">
-                    <div className="h-2 bg-slate-700 rounded"></div>
-                    <div className="space-y-3">
-                      <div className="grid grid-cols-3 gap-4">
-                        <div className="h-2 bg-slate-700 rounded col-span-2"></div>
-                        <div className="h-2 bg-slate-700 rounded col-span-1"></div>
-                      </div>
-                      <div className="h-2 bg-slate-700 rounded"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>:<div>
+              <div>
                 {newsDataValue &&
                   newsDataValue.slice(0, 5).map((items, index) => {
                     return (
-                      <Link key={index} target="_blank" to={`${items.link}`}>
-                        <div className="faq-wrapper cursor-pointer text-white border-b border-gray-500 pb-3 font-raleway">
-                          <p className="text-[12px] sm:text-sm md:text-base font-raleway text-white pt-3">
-                            {moment(items & items.created).format("MMM Do")}
-                          </p>
-                          <div className="flex justify-between">
-                            <div>
-                              <h3 className="flex items-center justify-between text-base sm:text-lg font-semibold font-raleway text-white">
-                                {items.title}
-                              </h3>
-                              <p className="text-[12px] sm:text-sm md:text-base mt-1 lg:mt-3 font-raleway text-white">
-                                {items.para}
+                      <>
+                        {loading ? (
+                          <NewsSkellton />
+                        ) : (
+                          <Link
+                            key={index}
+                            target="_blank"
+                            to={`${items.link}`}
+                          >
+                            <div className="faq-wrapper cursor-pointer text-white border-b border-gray-500 pb-3 font-raleway">
+                              <p className="text-[12px] sm:text-sm md:text-base font-raleway text-white pt-3">
+                                {moment(items & items.created).format("MMM Do")}
                               </p>
+                              <div className="flex justify-between">
+                                <div>
+                                  <h3 className="flex items-center justify-between text-base sm:text-lg font-semibold font-raleway text-white">
+                                    {items.title}
+                                  </h3>
+                                  <p className="text-[12px] sm:text-sm md:text-base mt-1 lg:mt-3 font-raleway text-white">
+                                    {items.para}
+                                  </p>
+                                </div>
+                                <div className="">
+                                  <Faq_arrow />
+                                </div>
+                              </div>
                             </div>
-                            <div className="">
-                              <Faq_arrow />
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
+                          </Link>
+                        )}
+                      </>
                     );
                   })}
                 <div className="text-end mt-6 mb-8 xl:mb-0">
@@ -72,7 +67,6 @@ const News = ({ newsDataValue,loading }) => {
                   </button>
                 </div>
               </div>
-              }
             </div>
           </div>
         </div>
