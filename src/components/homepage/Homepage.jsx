@@ -8,9 +8,8 @@ import { useEffect } from "react";
 import { LatestNewsHandler } from "../common/Api";
 import { NewsApi } from "../common/ApiUrls";
 import { useState } from "react";
-import moment from 'moment';
+// import moment from 'moment';
 import News from "./News";
-
 
 const Homepage = () => {
   const [latestNewsData, setLatestNewsData] = useState();
@@ -22,7 +21,7 @@ const Homepage = () => {
   useEffect(() => {
     latestNewsApiHandler();
   }, []);
-console.log("latestNewsDatalatestNewsData", moment(latestNewsData&&latestNewsData[0].created).format("MMM Do"))
+// console.log("latestNewsDatalatestNewsData", moment(latestNewsData&&latestNewsData[0].created).format("MMM Do"))
   return (
     <>
       <SideSocialIcon />

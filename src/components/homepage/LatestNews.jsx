@@ -21,9 +21,10 @@ const LatestNews = () => {
   const [indexValue, setIndexValue] = useState(0);
   const [array1, setArray1] = useState([
     {
-      image: [latest_news_slider_img],
+    image: [latest_news_slider_img],
     },
     {
+
       image: [slider_img_1],
     },
     {
