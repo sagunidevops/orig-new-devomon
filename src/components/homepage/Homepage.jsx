@@ -8,21 +8,25 @@ import { useEffect } from "react";
 import { LatestNewsHandler } from "../common/Api";
 import { NewsApi } from "../common/ApiUrls";
 import { useState } from "react";
-import moment from 'moment';
 import News from "./News";
-
 
 const Homepage = () => {
   const [latestNewsData, setLatestNewsData] = useState();
+  const [loading, setLoading] = useState(false);
 
   const latestNewsApiHandler = async () => {
-    const newsData = await LatestNewsHandler(NewsApi());
-    setLatestNewsData(newsData);
+    setLoading(true);
+    try {
+      const newsData = await LatestNewsHandler(NewsApi());
+      setLatestNewsData(newsData);
+      setLoading(false);
+    } catch (error) {
+      return error;
+    }
   };
   useEffect(() => {
     latestNewsApiHandler();
   }, []);
-console.log("latestNewsDatalatestNewsData", moment(latestNewsData&&latestNewsData[0].created).format("MMM Do"))
   return (
     <>
       <SideSocialIcon />
@@ -30,7 +34,7 @@ console.log("latestNewsDatalatestNewsData", moment(latestNewsData&&latestNewsDat
       <About />
       <AboutCard />
       {/* <LatestNews /> */}
-      <News newsDataValue={latestNewsData}  />
+      <News newsDataValue={latestNewsData} loading={loading} />
       <Partner />
       <TouchForm />
     </>
