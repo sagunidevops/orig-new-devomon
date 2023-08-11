@@ -23,10 +23,11 @@ const News = ({ newsDataValue, loading }) => {
             </div>
             <div className="w-11/12 md:w-10/12 xl:w-[53%] xl:ps-8 h-[420px] 2xl:h-[500px] overflow-x-hidden overflow-y-scroll mt-10 xl:mt-0">
               <div>
-                {newsDataValue &&
+                 {newsDataValue &&
                   newsDataValue.slice(0, 5).map((items, index) => {
                     return (
                       <>
+                      <NewsSkellton/>
                         {loading ? (
                           <NewsSkellton />
                         ) : (
@@ -35,7 +36,7 @@ const News = ({ newsDataValue, loading }) => {
                             target="_blank"
                             to={`${items.link}`}
                           >
-                            <div className="faq-wrapper cursor-pointer text-white border-b border-gray-500 pb-3 font-raleway">
+                            {/* <div className="faq-wrapper cursor-pointer text-white border-b border-gray-500 pb-3 font-raleway">
                               <p className="text-[12px] sm:text-sm md:text-base font-raleway text-white pt-3">
                                 {moment(items & items.created).format("MMM Do")}
                               </p>
@@ -52,7 +53,7 @@ const News = ({ newsDataValue, loading }) => {
                                   <Faq_arrow />
                                 </div>
                               </div>
-                            </div>
+                            </div> */}
                           </Link>
                         )}
                       </>
