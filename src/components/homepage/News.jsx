@@ -23,7 +23,7 @@ const News = ({ newsDataValue, loading }) => {
             </div>
             <div className="w-11/12 md:w-10/12 xl:w-[53%] xl:ps-8 h-[420px] 2xl:h-[500px] overflow-x-hidden overflow-y-scroll mt-10 xl:mt-0">
               <div>
-                 {newsDataValue &&
+                {newsDataValue &&
                   newsDataValue.slice(0, 5).map((items, index) => {
                     return (
                       <>
@@ -48,7 +48,7 @@ const News = ({ newsDataValue, loading }) => {
                                     {items.para}
                                   </p>
                                 </div>
-                                <div className="">
+                                <div>
                                   <Faq_arrow />
                                 </div>
                               </div>
