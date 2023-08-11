@@ -4,7 +4,7 @@ import latest_news_slider_img from "../../assets/images/homepageImages/webp/late
 import { Faq_arrow } from "../common/Icons";
 import moment from "moment";
 // eslint-disable-next-line react/prop-types
-const News = ({ newsDataValue }) => {
+const News = ({ newsDataValue,loading }) => {
   return (
     <>
       <section className="bg-latestNews_bg_img bg-no-repeat bg-cover py-14 xl:pt-[120px] xl:pb-[205px] overflow-hidden scroll_hidden">
@@ -21,7 +21,23 @@ const News = ({ newsDataValue }) => {
               />
             </div>
             <div className="w-11/12 md:w-10/12 xl:w-[53%] xl:ps-8 h-[420px] 2xl:h-[500px] overflow-x-hidden overflow-y-scroll mt-10 xl:mt-0">
-              <div>
+              
+              {
+                loading?<div className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
+                <div className="animate-pulse flex space-x-4">
+                  <div className="rounded-full bg-slate-700 h-10 w-10"></div>
+                  <div className="flex-1 space-y-6 py-1">
+                    <div className="h-2 bg-slate-700 rounded"></div>
+                    <div className="space-y-3">
+                      <div className="grid grid-cols-3 gap-4">
+                        <div className="h-2 bg-slate-700 rounded col-span-2"></div>
+                        <div className="h-2 bg-slate-700 rounded col-span-1"></div>
+                      </div>
+                      <div className="h-2 bg-slate-700 rounded"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>:<div>
                 {newsDataValue &&
                   newsDataValue.slice(0, 5).map((items, index) => {
                     return (
@@ -56,6 +72,7 @@ const News = ({ newsDataValue }) => {
                   </button>
                 </div>
               </div>
+              }
             </div>
           </div>
         </div>
