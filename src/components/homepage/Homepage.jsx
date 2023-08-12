@@ -3,7 +3,7 @@ import About from "./About";
 import AboutCard from "./AboutCard";
 import Partner from "./Partner";
 import TouchForm from "./TouchForm";
-import SideSocialIcon from "../common/SideSocialIcon";
+// import SideSocialIcon from "../common/SideSocialIcon";
 import { useEffect } from "react";
 import { LatestNewsHandler } from "../common/Api";
 import { NewsApi } from "../common/ApiUrls";
