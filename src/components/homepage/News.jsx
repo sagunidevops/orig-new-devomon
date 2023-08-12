@@ -25,6 +25,7 @@ const News = ({ newsDataValue, loading }) => {
               <div>
                 {newsDataValue &&
                   newsDataValue.slice(0, 5).map((items, index) => {
+                    console.log("itemsdfsf",items.created)
                     return (
                       <>
                         {loading ? (
@@ -37,7 +38,7 @@ const News = ({ newsDataValue, loading }) => {
                           >
                             <div className="faq-wrapper cursor-pointer text-white border-b border-gray-500 pb-3 font-raleway">
                               <p className="text-[12px] sm:text-sm md:text-base font-raleway text-white pt-3">
-                                {moment(items & items.created).format("MMM Do")}
+                                {moment(items && items.created).format("MMM Do")}
                               </p>
                               <div className="flex justify-between">
                                 <div>

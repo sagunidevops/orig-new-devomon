@@ -26,6 +26,7 @@ const Homepage = () => {
   useEffect(() => {
     latestNewsApiHandler();
   }, []);
+  console.log("latestNewsDatalatestNewsData",latestNewsData)
   return (
     <>
       <Hero />
