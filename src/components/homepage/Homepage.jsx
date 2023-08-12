@@ -29,7 +29,7 @@ const Homepage = () => {
   }, []);
   return (
     <>
-      <SideSocialIcon />
+      {/* <SideSocialIcon /> */}
       <Hero />
       <About />
       <AboutCard />

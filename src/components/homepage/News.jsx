@@ -8,6 +8,7 @@ import NewsSkellton from "../common/NewsSkellton";
 const News = ({ newsDataValue, loading }) => {
   return (
     <>
+    
       <section className="bg-latestNews_bg_img bg-no-repeat bg-cover py-14 xl:pt-[120px] xl:pb-[205px] overflow-hidden scroll_hidden">
         <div className="container">
           <p className="text-center text-white font-bold text-4xl pb-[30px] xl:pb-[51px] uppercase">
@@ -36,7 +37,7 @@ const News = ({ newsDataValue, loading }) => {
                             target="_blank"
                             to={`${items.link}`}
                           >
-                            {/* <div className="faq-wrapper cursor-pointer text-white border-b border-gray-500 pb-3 font-raleway">
+                            <div className="faq-wrapper cursor-pointer text-white border-b border-gray-500 pb-3 font-raleway">
                               <p className="text-[12px] sm:text-sm md:text-base font-raleway text-white pt-3">
                                 {moment(items & items.created).format("MMM Do")}
                               </p>
@@ -53,7 +54,7 @@ const News = ({ newsDataValue, loading }) => {
                                   <Faq_arrow />
                                 </div>
                               </div>
-                            </div> */}
+                            </div>
                           </Link>
                         )}
                       </>
