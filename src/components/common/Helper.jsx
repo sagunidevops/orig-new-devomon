@@ -13,10 +13,8 @@ import OwnerShipImg2 from "../../assets/images/webp/ownership2.webp";
 import OwnerShipImg3 from "../../assets/images/webp/ownership3.webp";
 import OwnerShipImg4 from "../../assets/images/webp/ownership4.webp";
 import OwnerShipImg5 from "../../assets/images/webp/ownership5.webp";
-// import XthiryIcon from "../../assets/images/svg/xthiry.svg";
 import MavenCapital from "../../assets/images/svg/MavenCapital.svg";
 import ChainLink from "../../assets/images/svg/chainlink.svg";
-// import salad from "../../assets/images/svg/salad.svg";
 import magic from "../../assets/images/svg/magic.svg";
 
 import devomon_team1 from "../../assets/images/webp/devomon_team1.webp";
@@ -24,20 +22,15 @@ import devomon_team2 from "../../assets/images/webp/devomon_team2.webp";
 import devomon_team3 from "../../assets/images/webp/devomon_team3.webp";
 import devomon_team4 from "../../assets/images/webp/devomon_team4.webp";
 import devomon_team5 from "../../assets/images/webp/devomon_team5.webp";
-// import devomon_team6 from "../../assets/images/webp/devomon_team6.webp";
 import devomon_team7 from "../../assets/images/webp/devomon_team7.webp";
 import devomon_team8 from "../../assets/images/webp/devomon_team8.webp";
 
-// import InvoZoneGames from "../../assets/images/webp/invogames_logo.webp";
 import GameLofiHub from "../../assets/images/png/gamefi_org.png";
 import UnixGaming_logo from "../../assets/images/png/UnixGaming_logo.png";
 import Vertical_Owned_logo from "../../assets/images/png/Vertical_Owned_logo.png";
 import AfterMathIslands from "../../assets/images/webp/aftermath-islands.webp";
-// import Placewar from "../../assets/images/webp/placewar.webp";
-// import metafighter from "../../assets/images/webp/metafightzer.webp";
 import Salad_Ventures_logo from "../../assets/images/svg/Salad_Ventures_BW_logo.svg";
 import mystic from "../../assets/images/png/mystic.png";
-// import RazeRacing from "../../assets/images/webp/raze_racing.webp";
 import bgaLogo from "../../assets/images/svg/bgaLogo.svg";
 import { AppStore, AppleStore, HeaderArw, WindowStore } from "./Icons";
 import CallistoBattle1 from "../../assets/images/webp/callisto-1.png";
@@ -74,14 +67,6 @@ import evoVerse_character from "../../assets/images/abc5.png";
 import manga_character from "../../assets/images/abc6.png";
 import anime_character from "../../assets/images/abc7.png";
 import merch_character from "../../assets/images/abc8.png";
-// import gamefi_character from "../../assets/images/homepageImages/webp/gamefi.webp";
-// import evozone_character from "../../assets/images/homepageImages/webp/evozone.webp";
-// import nft_character from "../../assets/images/homepageImages/webp/nft.webp";
-// import dashboard_character from "../../assets/images/homepageImages/webp/dashboard.webp";
-// import evoVerse_character from "../../assets/images/homepageImages/webp/evoVerse.webp";
-// import manga_character from "../../assets/images/homepageImages/webp/manga.webp";
-// import anime_character from "../../assets/images/homepageImages/webp/anime.webp";
-// import merch_character from "../../assets/images/homepageImages/webp/merch.webp";
 // ======================================== faq=============================
 import latest_news_slider_img from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
 
@@ -257,15 +242,6 @@ export const footerLinksFirst = [
     link: "Staking",
     url: "#",
   },
-  // {
-  //   link: "Team",
-  //   url: "#",
-  //   icon: <HeaderArw />,
-  //   footer: [
-  //     { text: "Core Team", path: "/team" },
-  //     { text: "Streaming Partners", path: "/", soon: "" },
-  //   ],
-  // },
   {
     link: "Team",
     url: "#",
@@ -310,21 +286,13 @@ export const footerLinksThird = [
 export const heroIcons = [
   {
     footerIcon: <AppleStore />,
-    // iconUrl: "https://www.apple.com/in/store",
   },
   {
     footerIcon: <AppStore />,
-    // iconUrl: "https://apk-store.org/",
   },
   {
     footerIcon: <WindowStore />,
-    // iconUrl: "https://apps.microsoft.com/store/apps",
   },
-
-  // {
-  //   footerIcon: Telegram,
-  //   iconUrl: "https://t.me/officialdevomon",
-  // },
 ];
 export const footerIcons = [
   {
@@ -375,26 +343,8 @@ export const ourPartner = [
         icon: bgaLogo,
         url: "https://www.blockchaingamealliance.org/",
       },
-
-      // {
-      //   icon: ChainLink,
-      //   url: "https://chain.link/",
-      // },
-
-      // {
-      //   icon: Immutable,
-      //   url: "https://www.immutable.com/",
-      // },
     ],
     partnericon2: [
-      // {
-      //   icon: OpenSea,
-      //   url: "https://opensea.io/",
-      // },
-      // {
-      //   icon: EhterScan,
-      //   url: "https://etherscan.io/",
-      // },
       {
         icon: GameLofiHub,
         url: "https://gamefi.org/events/race-for-glory",
@@ -412,20 +362,6 @@ export const ourPartner = [
         url: "https://mystic.io/",
       },
     ],
-    // partnericon3: [
-    //   {
-    //     icon: InvoZoneGames,
-    //     url: "https://invogames.com/",
-    //   },
-    //   {
-    //     icon: salad,
-    //     url: "https://salad.com/",
-    //   },
-    //   {
-    //     icon: XthiryIcon,
-    //     url: "https://www.xthirty7.com/",
-    //   },
-    // ],
     partnericon4: [
       {
         icon: Vertical_Owned_logo,
@@ -442,26 +378,6 @@ export const ourPartner = [
         url: "https://aftermathislands.io/",
         className: "w-[100px] ",
       },
-      // {
-      //   icon: Placewar,
-      //   url: "https://placewar.io/",
-      //   className: "mb-2 pb-2",
-      // },
-      // {
-      //   icon: RazeRacing,
-      //   url: "https://www.razeracing.com/",
-      //   className: "sm:mt-2 sm:pt-2",
-      // },
-      // {
-      //   icon: metafighter,
-      //   url: "https://chain.link/",
-      //   className: "sm:mt-2 sm:pt-2",
-      // },
-
-      // {
-      //   icon: Shoefy,
-      //   url: "https://www.shoefy.io/",
-      // },
     ],
   },
 ];
@@ -679,27 +595,22 @@ export const Latest_news_faq_data = [
   {
      date:"10 Aug, 2023",
     heading: "Condimentum eros praesent condimentum nunc elementum.",
-    // para: "Register, connect your wallet and install the game.",
   },
   {
      date:"10 Aug, 2023",
     heading: "Morbi lorem quisque non rutrum quisque blandit tellus.",
-    // para: "Usually 3, in some cases up to 6.",
   },
   {
      date:"10 Aug, 2023",
     heading: "Mattis enim eleifend  vulputate bibendum netus amet.",
-    // para: "You can start round-based battles, explore and decorate your island. Communicate with friends.",
   },
   {
      date:"10 Aug, 2023",
     heading: "Scelerisque congue proin turpis bibendum duis nulla.",
-    // para: "These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
   },
   {
      date:"10 Aug, 2023",
     heading: "Aenean tristique suscipit diam mi gravida aenean non.",
-    // para: "When your fire-type evomon battles a plant-type evomon, you will. ",
   },
 ];
 

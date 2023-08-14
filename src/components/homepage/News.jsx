@@ -4,7 +4,6 @@ import latest_news_slider_img from "../../assets/images/homepageImages/webp/late
 import { Faq_arrow } from "../common/Icons";
 import moment from "moment";
 import NewsSkellton from "../common/NewsSkellton";
-// eslint-disable-next-line react/prop-types
 const News = ({ newsDataValue, loading }) => {
   return (
     <>
@@ -28,7 +27,6 @@ const News = ({ newsDataValue, loading }) => {
                   newsDataValue.slice(0, 5).map((items, index) => {
                     return (
                       <>
-                      <NewsSkellton/>
                         {loading ? (
                           <NewsSkellton />
                         ) : (

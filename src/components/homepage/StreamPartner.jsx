@@ -48,22 +48,7 @@ const StreamPartner = ({ streamPartnerRef,advisorRef }) => {
                       alt="Tiktok"
                     />
                   </a>
-                  {/* <a
-                    href="http://youtube.com"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <img
-                      className="w-[30px] sm:w-[40px] transition-all hover:translate-y-[-8px] duration-200"
-                      src={Youtube}
-                      alt="Youtube"
-                    />
-                  </a> */}
                 </div>
-                {/* <div className="bg-black h-full flex justify-center items-center">
-                  <p className="font-raleway   whitespace-normal break-words uppercase  font-bold text-center text-[100px] xl:text-[160px] text-yellow">
-                    ?
-                  </p>
-                </div> */}
               </div>
               <div className="flex flex-col justify-between">
                 <div>
@@ -89,22 +74,7 @@ const StreamPartner = ({ streamPartnerRef,advisorRef }) => {
                       alt="Tiktok"
                     />
                   </a>
-                  {/* <a
-                    href="http://youtube.com"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <img
-                      className="w-[30px] sm:w-[40px] transition-all hover:translate-y-[-8px] duration-200"
-                      src={Youtube}
-                      alt="Youtube"
-                    />
-                  </a> */}
                 </div>
-                {/* <div className="bg-black h-full flex justify-center items-center">
-                  <p className="font-raleway   whitespace-normal break-words uppercase  font-bold text-center text-[100px] xl:text-[160px] text-yellow">
-                    ?
-                  </p>
-                </div> */}
               </div>
               <div className="flex flex-col items-center">
               <div className= "border border-4 lg:border-8 border-yellow-600 border-solid w-[200px] lg:w-[250px] h-[200px] lg:h-[300px] flex justify-center items-center">
@@ -123,16 +93,6 @@ const StreamPartner = ({ streamPartnerRef,advisorRef }) => {
                       alt="Tiktok"
                     />
                   </a>
-                  {/* <a
-                    href="http://youtube.com"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <img
-                      className="w-[30px] sm:w-[40px] transition-all hover:translate-y-[-8px] duration-200"
-                      src={Youtube}
-                      alt="Youtube"
-                    />
-                  </a> */}
                 </div>
               </div>
             </div>

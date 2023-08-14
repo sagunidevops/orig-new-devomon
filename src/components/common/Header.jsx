@@ -1,13 +1,9 @@
 /* eslint-disable no-unused-vars */
 import nav_logo from "../../assets/images/webp/header-logo.webp";
-import discord_img from "../../assets/images/webp/discord_icon.webp";
-import twitter_img from "../../assets/images/webp/twitter_icon.webp";
 import Callisto_logo from "../../assets/images/png/Devomon_Callisto_logo.png";
 import { Disclosure } from "@headlessui/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import { ChevronUpIcon } from "@heroicons/react/20/solid";
-// import { Link } from "heroicons-react";
 
 const Header = () => {
   const [Nav, setNav] = useState(1);
@@ -69,53 +65,6 @@ const Header = () => {
               </li>
             </ul>
             <ul className="xl:gap-[11px] gap-0 items-center hidden lg:flex">
-              {/* <li className="group flex items-center hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200 relative cursor-pointer">
-                <div className="absolute bottom-[-143px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
-                  <div className="flex flex-col gap-1">
-                    <a
-                      target="_blank"
-                      href="https://callisto.devomon.io/"
-                      className="font-normal font-poppins text-base text-white mb-0 hover:text-[#2253F5] transition-all inline-block duration-200 cursor-pointer" rel="noopener noreferrer"
-                    >
-                      Callisto
-                    </a>
-
-                    <a
-                      target="_blank"
-                      href="https://tcg.devomon.io/"
-                      className="font-normal font-poppins text-base text-white mb-0 mt-1 hover:text-[#2253F5] transition-all duration-200 cursor-pointer" rel="noopener noreferrer"
-                    >
-                      Card Game
-                    </a>
-                    <p className="font-normal font-poppins text-base text-[#9188A6] mb-0 mt-1 cursor-text">
-                      Devoland
-                    </p>
-                    <p className="font-medium font-poppins uppercase text-[12px] text-[#9188A6] mb-0 cursor-text">
-                      Coming soon
-                    </p>
-                  </div>
-                </div>
-                <a
-                  className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap z-20 relative"
-                  href="#"
-                >
-                  Play
-                </a>
-                <svg
-                  className="skew-x-12 group-hover:-rotate-180 duration-200"
-                  width="13"
-                  height="10"
-                  viewBox="0 0 13 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5004 0.901438C11.9679 1.35427 9.66923 3.37942 7.94196 4.88886L6.68222 5.99578L5.33157 4.82597C4.59131 4.18446 3.17573 2.95175 2.18871 2.08383C1.2017 1.22848 0.474428 0.649865 0.55235 0.813387C0.643259 0.964331 1.89001 2.83854 3.34456 4.95175C4.78612 7.07754 6.09781 9.02722 6.26664 9.29137C6.42248 9.54295 6.6043 9.75678 6.65625 9.75678C6.76014 9.75678 12.7861 0.939173 12.89 0.649865C12.916 0.574394 12.7342 0.687601 12.5004 0.901438Z"
-                    fill="white"
-                    className="group-hover:fill-[#2253F5]"
-                  />
-                </svg>
-              </li> */}
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[80px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                 <div className="flex flex-col">
@@ -166,37 +115,6 @@ const Header = () => {
                     coming soon
                     </p>
                     </Link>
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
-                    >
-                      Land
-                    </p> */}
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
-                    >
-                      DevoDex{" "}
-                    </p> */}
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
-                    >
-                      Brand Shop{" "}
-                    </p> */}
-                    {/* <a
-                      href="https://devomon-home.web.app/comic"
-                      className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2"
-                    >
-                      Comic
-                    </a> */}
-                    {/* <a
-                      target="_blank"
-                      href="https://callisto.devomon.io/#gallery"
-                      className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2" rel="noopener noreferrer"
-                    >
-                      Gallery
-                    </a> */}
                 </div>
                 </div>
                 <a
@@ -353,24 +271,6 @@ const Header = () => {
                    />
                 </a>
               </li>
-              {/* <li className="group">
-              <a href="https://discord.com/invite/devomon" target="_blank" rel="noopener noreferrer">
-                  <img
-                    className=" cursor-pointer sm:w-[30px] xl:w-10 w-[30px] sm:h-[30px] xl:h-10 h-[30px] hover:scale-[1.05] duration-300"
-                    src={discord_img}
-                    alt="discord_img"
-                   />
-                </a>
-              </li>
-              <li className="group">
-              <a href="https://developer.twitter.com/en/docs/twitter-for-websites" target="_blank" rel="noopener noreferrer">
-              <img
-                  className=" cursor-pointer sm:w-[30px] xl:w-10 w-[30px] sm:h-[30px] xl:h-10 h-[30px] hover:scale-[1.05] duration-300"
-                  src={twitter_img}
-                  alt="twitter_img"
-                />
-                </a>
-              </li> */}
             </ul>
             <div
               className="flex flex-col rotate-180 lg:hidden w-7 h-4 xs:w-10 xs:h-[15px] sm:w-8 sm:h-5 justify-between cursor-pointer group"
@@ -421,26 +321,6 @@ const Header = () => {
                   <Disclosure className="transition_300">
                     {({ open }) => (
                       <>
-                        {/* <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300">
-                          <span className=" mb-0">Play</span>
-                          <svg
-                            className={`${
-                              open
-                                ? "rotate-180 transform duration-300"
-                                : "duration-300"
-                            } h-3 w-3 text-white duration-300`}
-                            width="5"
-                            height="5"
-                            viewBox="0 0 13 10"
-                            fill="none" 
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M12.5004 0.901438C11.9679 1.35427 9.66923 3.37942 7.94196 4.88886L6.68222 5.99578L5.33157 4.82597C4.59131 4.18446 3.17573 2.95175 2.18871 2.08383C1.2017 1.22848 0.474428 0.649865 0.55235 0.813387C0.643259 0.964331 1.89001 2.83854 3.34456 4.95175C4.78612 7.07754 6.09781 9.02722 6.26664 9.29137C6.42248 9.54295 6.6043 9.75678 6.65625 9.75678C6.76014 9.75678 12.7861 0.939173 12.89 0.649865C12.916 0.574394 12.7342 0.687601 12.5004 0.901438Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </Disclosure.Button> */}
                         <Disclosure.Panel className="px-4 py-2 text-gray-500 bg-black transition_300 flex flex-col">
                         <a
                            target="_blank"
@@ -539,86 +419,7 @@ const Header = () => {
                     <Link to={"/coming-soon"} onClick={() => setNav(!Nav)} className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                     coming soon
                     </Link>
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
-                    >
-                      Land
-                    </p> */}
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
-                    >
-                      DevoDex{" "}
-                    </p> */}
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
-                    >
-                      Brand Shop{" "}
-                    </p> */}
-                    {/* <a
-                      href="https://devomon-home.web.app/comic"
-                      className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2"
-                    >
-                      Comic
-                    </a> */}
-                    {/* <a
-                      target="_blank"
-                      href="https://callisto.devomon.io/#gallery"
-                      className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2" rel="noopener noreferrer"
-                    >
-                      Gallery
-                    </a> */}
                     </div>
-                        {/* <a href="#nft_collection" onClick={() => setNav(!Nav)}>
-                            <p className=" font-poppins text-xs xl:text-base text-white mb-0 mt-2 hover:text-[#2253F5] transition-all duration-200">
-                               NFTs
-                             </p>
-                         </a> */}
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-[#9188A6] mb-0 mt-2 transition-all duration-200 "
-                    >
-                      Dashboard{" "}
-                    </p> */}
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-[#9188A6] mb-0 mt-2"
-                    >
-                      Land{" "}
-                    </p> */}
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-[#9188A6] mb-0 mt-2"
-                    >
-                      DevoDex{" "}
-                    </p> */}
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-[#9188A6] mb-0 mt-2"
-                    >
-                      Brand Shop{" "}]
-                    </p> */}
-                    {/* <a
-                      href="https://devomon-home.web.app/comic"
-                      className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2"
-                    >
-                      Comic
-                    </a> */}
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-[#9188A6] mb-0 mt-2 cursor-text"
-                    >
-                      Anime{" "}
-                    </p> */}
-                    {/* <a
-                      target="_blank"
-                      href="https://callisto.devomon.io/#gallery"
-                      className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2 " rel="noopener noreferrer"
-                    >
-                      Gallery
-                    </a> */}
                         </Disclosure.Panel>
                       </>
                     )}

@@ -3,7 +3,6 @@ import About from "./About";
 import AboutCard from "./AboutCard";
 import Partner from "./Partner";
 import TouchForm from "./TouchForm";
-// import SideSocialIcon from "../common/SideSocialIcon";
 import { useEffect } from "react";
 import { LatestNewsHandler } from "../common/Api";
 import { NewsApi } from "../common/ApiUrls";
@@ -29,11 +28,9 @@ const Homepage = () => {
   }, []);
   return (
     <>
-      {/* <SideSocialIcon /> */}
       <Hero />
       <About />
       <AboutCard />
-      {/* <LatestNews /> */}
       <News newsDataValue={latestNewsData} loading={loading} />
       <Partner />
       <TouchForm />

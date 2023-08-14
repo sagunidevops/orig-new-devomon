@@ -235,37 +235,6 @@ const Footer = () => {
                     coming soon
                     </p>
                     </Link>
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
-                    >
-                      Land
-                    </p> */}
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
-                    >
-                      DevoDex{" "}
-                    </p> */}
-                    {/* <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
-                    >
-                      Brand Shop{" "}
-                    </p> */}
-                    {/* <a
-                      href="https://devomon-home.web.app/comic"
-                      className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2"
-                    >
-                      Comic
-                    </a> */}
-                    {/* <a
-                      target="_blank"
-                      href="https://callisto.devomon.io/#gallery"
-                      className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2" rel="noopener noreferrer"
-                    >
-                      Gallery
-                    </a> */}
                 </div>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
@@ -400,17 +369,6 @@ const Footer = () => {
                       Saguni Tech LLC
                     </p>
                   </div>
-                  {/* <div className="flex items-center - group">
-                    <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 font-poppins ">
-                      2203520
-                    </p>
-                  </div>
-                  <div className="flex items-center - group">
-                    <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 font-poppins ">
-                      Business Center 1, M Floor, The Meydan Hotel, Nad AI
-                      Sheba, Dubai, U.A.E
-                    </p>
-                  </div> */}
                 </div>
               </div>
             </div>

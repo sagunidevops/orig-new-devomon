@@ -40,7 +40,7 @@ const Hero = () => {
               onClick={() => {
                 setComingSoon(false);
               }}
-            >
+            > 
               <div className="sm:max-w-[559px] bg-[#0D1014] text-center py-16 px-14 z-10 relative rounded-xl mx-auto text-white popup_shadow">
                 <div
                   className="absolute top-5 right-4 cursor-pointer"
@@ -89,20 +89,6 @@ const Hero = () => {
             />
           </div>
         )}
-        {/* <div className="video-container">
-          <VimeoPlayer
-            className="vimvideo"
-            autoplay
-            loop
-            muted
-            background={true}
-            responsive={true}
-            controls={false}
-            playsInline
-            video={videoId}
-          />
-        </div> */}
-
         <div className="absolute top-1/2  left-1/2 w-full container -translate-x-[50%] -translate-y-[50%] z-10 mt-10 ">
           <div className="text-center max-w-[300px] sm:max-w-full mx-auto">
             <img
@@ -110,27 +96,6 @@ const Hero = () => {
               src={Logo}
               alt="logo"
             />
-            {/* <h1 className="text-white text-xl sm:text-2xl md:text-[28px] lg:text-3xl leading-[114.32%] font-normal  font-cinzel my-5  uppercase">
-              explore calisto{" "}
-            </h1> */}
-
-            {/* <div className="flex items-center justify-center flex-col sm:flex-row">
-              <MailchimpSubscribe
-                url="https://drivesfn.us14.list-manage.com/subscribe/post?u=c2d03db1a3ab51904dc274156&amp;id=7e74a68b3e&amp;f_id=0025a1e0f0"
-                render={({ subscribe, status, message }) => (
-                  <div>
-                    <Subscribe
-                      message={message}
-                      status={status}
-                      setIsOpenThankYouModal={setIsOpenThankYouModal}
-                      onSubmitted={(formData) => subscribe(formData)}
-                    />
-                  </div>
-                )}
-              />
-            </div>
-             */}
-
             <div className="flex justify-center w-full gap-3 items-center">
               {heroIcons.map((value, index) => {
                 return (
@@ -141,7 +106,6 @@ const Hero = () => {
                       className="transition-all ease-in-out duration-300 hover:translate-y-[-8px] cursor-pointer"
                       target="_blank"
                       rel="noopener noreferrer"
-                      // href={value.iconUrl}
                       aria-label="social"
                       aria-describedby="social"
                     >
@@ -163,7 +127,6 @@ const Hero = () => {
             </h2>
           </div>
         </div>
-        {/* <div className="bottom-layer h-[124px] absolute bottom-0 w-full left-0"></div> */}
       </section>
       <ThankyouModal
         ThankyouModalText={ThankyouModalText}
