@@ -57,7 +57,7 @@ import evoVerse_bg from "../../assets/images/homepageImages/webp/evoverse_bg.web
 import manga_bg from "../../assets/images/homepageImages/webp/manga_bg.webp";
 import anime_bg from "../../assets/images/homepageImages/webp/anime_bg.webp";
 import merch_bg from "../../assets/images/homepageImages/webp/merch_bg.webp";
-import coming_soon_bg from "../../assets/images/homepageImages/webp/coming_soon_bg.webp";
+import coming_soon_bg from "../../assets/images/homepageImages/webp/news.webp";
 // ================
 import gamefi_character from "../../assets/images/abc.png";
 import evozone_character from "../../assets/images/abc2.png";
