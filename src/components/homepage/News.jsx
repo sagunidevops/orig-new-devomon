@@ -25,7 +25,6 @@ const News = ({ newsDataValue, loading }) => {
               <div>
                 {newsDataValue &&
                   newsDataValue.slice(0, 5).map((items, index) => {
-                    console.log("itemsdfsf",items.created)
                     return (
                       <>
                         {loading ? (

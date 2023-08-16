@@ -584,9 +584,9 @@ export const AboutCardData = [
   },
   {
     card_bg: coming_soon_bg,
-    title: "coming soon",
+    title: "News",
     className: "hidden",
-    linkValue:"/coming-soon"
+    linkValue:"https://medium.com/@DevomonOfficial"
   },
 ];
 
