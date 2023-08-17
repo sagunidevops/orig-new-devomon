@@ -57,7 +57,7 @@ const Partner = () => {
       <div className="partner_top_layer absolute left-0 w-full top-0 h-[80px] sm:h-[150px] lg:h-[250px]"></div>
       <div className="partner_bottom_layer absolute left-0 w-full bottom-0 h-[80px] sm:h-[150px] lg:h-[250px]"></div>
       <div className="container overflow-x-hidden">
-        <div className="md:pb-6 ">
+        <div className="md:pb-6 mt-10 lg:mt-6">
           <h3 className="font-raleway parnter_left whitespace-normal break-words uppercase  font-bold text-center  text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">
             PARTNERS
           </h3>
