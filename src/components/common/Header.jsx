@@ -213,8 +213,7 @@ const Header = () => {
                     </span>
                     <span className="mt-2 xl:mt-3">
                       <a
-                        target="_blank"
-                        href="https://devomon-home.web.app/faqs"
+                        href="#"
                         className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" rel="noopener noreferrer"
                       >
                         FAQ
@@ -527,8 +526,7 @@ const Header = () => {
                     </span>
                     <span className="mt-4">
                       <a
-                        target="_blank"
-                        href="https://devomon-home.web.app/faqs"
+                        href="#"
                         className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins" rel="noopener noreferrer"
                       > 
                         FAQ

@@ -27,7 +27,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-       
         {loading && <Preloader />}
         <BackToTop />
         <Header/>
