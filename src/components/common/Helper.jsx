@@ -578,7 +578,7 @@ export const AboutCardData = [
   },
   {
     card_bg: merch_bg,
-    title: "Merch",
+    title: "MERCHANDISE",
     character_img: merch_character,
     className: "w-[80%] xs:w-[70%] sm:w-[60%] md:w-[50%] lg:w-[45%] xl:w-[43%] left-[2%]",
   },
