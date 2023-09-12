@@ -74,7 +74,7 @@ const Footer = () => {
           <div className="md:flex">
             <div className="w-full md:w-1/2 flex justify-between items-start">
               <div className="mb-2 md:mb-0">
-                <p className="ext-[10px] lg:text-[14px] max-w-[300px] md:max-w-[200px] lg:max-w-[240px] opacity-70 text-white">
+                <p className="text-[10px] lg:text-[14px] max-w-[300px] md:max-w-[200px] lg:max-w-[240px] opacity-70 text-white">
                   Enjoy the intriguing adventures and challenges, as well as the
                   possibility to acquire and develop strong NFT collections and
                   become a part of an intriguing and dynamic environment.
@@ -306,11 +306,11 @@ const Footer = () => {
                       Pitchdeck
                       </p>
                       </a>
-                      <a href="/faqs">
+                      {/* <a href="/faqs">
                       <p className="text-base text-white my-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                       FAQ
                       </p>
-                      </a>
+                      </a> */}
                       <a href='#contact'
                            className="text-base text-white hover:text-[#2253F5] font-normal font-poppins">
                       Contact
@@ -347,9 +347,9 @@ const Footer = () => {
                     </p>
                   </div>
                   <div className="flex cursor-pointer items-center - group">
-                    <a href="/faqs" className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
+                    <button onClick={() => setHide(!hide)} className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
                       Faq
-                    </a>
+                    </button>
                   </div>
                   <div className="flex cursor-pointer items-center - group">
                     <button onClick={() => setHide(!hide)} className=" text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
