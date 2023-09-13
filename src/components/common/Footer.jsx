@@ -348,7 +348,7 @@ const Footer = () => {
                   </div>
                   <div className="flex cursor-pointer items-center - group">
                     <button onClick={() => setHide(!hide)} className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
-                      Faq
+                      FAQ
                     </button>
                   </div>
                   <div className="flex cursor-pointer items-center - group">

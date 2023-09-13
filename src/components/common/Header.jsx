@@ -87,12 +87,14 @@ const Header = () => {
                         NFTs
                       </p>
                     </Link>
-                    <p
-                      onClick={() => setHide(!hide)}
+                    <a
+                      href="href="
+                      http:target="_blank" //" target="_blank" rel="noopener noreferrer""
+                      rel="noopener noreferrer"
                       className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] transition-all duration-200"
                     >
                       Dashboard{" "}
-                    </p>
+                    </a>
                     <a href="#" onClick={() => setHide(!hide)}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
                         EvoVerse
@@ -225,6 +227,7 @@ const Header = () => {
                     </span>
                     <span className="mt-2 xl:mt-3">
                       <a
+                        onClick={() => setHide(!hide)}
                         href="#"
                         className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                         rel="noopener noreferrer"
@@ -390,12 +393,15 @@ const Header = () => {
                                 NFTs
                               </p>
                             </Link>
-                            <p
-                              onClick={() => setHide(!hide)}
+                            <a
+                              onClick={() => setNav(!Nav)}
+                              href="https://new-callisto.web.app/alpha "
+                              target="_blank"
+                              rel="noopener noreferrer"
                               className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
                             >
                               Dashboard{" "}
-                            </p>
+                            </a>
                             <a href="#" onClick={() => setHide(!hide)}>
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                                 EvoVerse
@@ -469,21 +475,29 @@ const Header = () => {
                         </Disclosure.Button>
                         <Disclosure.Panel className="px-4 py-2 text-gray-500 bg-black transition_300 flex flex-col">
                           <span>
-                            <Link to={"/team"}>
+                            <Link to={"/team"} onClick={() => setNav(!Nav)}>
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
                                 Core Team
                               </p>
                             </Link>
                           </span>
                           <span>
-                            <Link onClick={() => setNav(!Nav)}>
+                            <Link
+                              onClick={() => {
+                                setHide(!hide);
+                                setNav(!Nav);
+                              }}
+                            >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
                                 Advisors
                               </p>
                             </Link>
                           </span>
                           <span>
-                            <Link to={"/stream-partner"}>
+                            <Link
+                              to={"/stream-partner"}
+                              onClick={() => setNav(!Nav)}
+                            >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
                                 Streaming Partners
                               </p>
@@ -540,6 +554,10 @@ const Header = () => {
                           </span>
                           <span className="mt-4">
                             <a
+                              onClick={() => {
+                                setHide(!hide);
+                                setNav(!Nav);
+                              }}
                               href="#"
                               className="font-normal text-[12px] text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                               rel="noopener noreferrer"
