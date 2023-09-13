@@ -58,7 +58,7 @@ const Header = () => {
         <div className="px-4 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 bg-[#000000f8] fixed top-0 w-full">
           <div className="flex justify-between items-center relative">
             <ul>
-              <li className="cursor-pointer flex items-center">
+              <li className="cursor-pointer flex items-center py-2">
                 <Link to={"/"}>
                   <img
                     className=" sm:w-[70px] xl:w-20 w-11 h-11 sm:h-[70px] xl:h-20"
@@ -312,7 +312,7 @@ const Header = () => {
                 <VscChromeClose />
               </span>
               <div className=" w-[210px] mx-auto pt-16">
-                <div className="mx-auto w-[210px] max-w-md bg-transparent p-2 overflow-y-auto scroll_hidden max-h-[800px]">
+                <div className="mx-auto w-[210px] max-w-md bg-transparent p-2 overflow-y-auto scroll_hidden max-h-[500px]">
                   <Disclosure className="transition_300">
                     {({ open }) => (
                       <>
