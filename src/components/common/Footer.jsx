@@ -151,19 +151,19 @@ const Footer = () => {
               <div className="flex justify-between md:mt-0">
                 <div className="w-1/4 md:w-1/5 xl:w-1/4 flex flex-col gap-2 xl:ms-10">
                   <div className="flex cursor-pointer items-center group relative">
-                    <div className="absolute translate-x-16 bg-[#0d1015df] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden
+                    <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden
                     z-[1]">
                       <a href="https://callisto.devomon.io/">
-                        <p className="text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
+                        <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                          Callisto
                         </p>
                       </a>
                       <a href="https://tcg.devomon.io/">
-                      <p className="text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
+                      <p className="text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                         Card Game
                       </p>
                       </a>
-                      <button onClick={() => setHide(!hide)} className="text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins">
+                      <button onClick={() => setHide(!hide)} className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins">
                         Devoland
                       </button>
                     </div>
@@ -186,7 +186,7 @@ const Footer = () => {
                     </svg>
                   </div>
                   <div className="flex cursor-pointer items-center group relative scroll_hidden">
-                    <div className="footer_hover absolute translate-x-16 bg-[#0d1015df] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3 scroll_hidden">
+                    <div className="footer_hover absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3 scroll_hidden">
                     <div className="flex flex-col">
                     <a href="#" onClick={() => setHide(!hide)}>
                     <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200">
@@ -261,17 +261,17 @@ const Footer = () => {
                     </button>
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
-                    <div className="absolute translate-x-16 bg-[#0d1015df] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1]">
+                    <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1]">
                     <Link to={"/team"}>
-                        <p className="text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
+                        <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                         Core Team
                         </p>
                       </Link>
-                      <button onClick={() => setHide(!hide)} className="text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
+                      <button onClick={() => setHide(!hide)} className="text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                       Advisor
                       </button>
                       <Link to={"/stream-partner"}>
-                      <p className="text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
+                      <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
                       Streaming Partners
                       </p>
                       </Link>
@@ -295,14 +295,14 @@ const Footer = () => {
                     </svg>
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
-                    <div className="absolute translate-x-16 bg-[#0d1015df] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1]">
+                    <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[11]">
                     <a href="https://whitepaper.devomon.io/">
-                        <p className="text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
+                        <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                         Whitepaper
                         </p>
                       </a>
                       <a href="https://drive.google.com/file/d/160mfNzpK0Uu0JdtmfzKSJOr6xjlhUtgp/view">
-                      <p className="text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
+                      <p className="text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                       Pitchdeck
                       </p>
                       </a>
@@ -312,7 +312,7 @@ const Footer = () => {
                       </p>
                       </a> */}
                       <a href='#contact'
-                           className="text-base text-white hover:text-[#2253F5] font-normal font-poppins">
+                           className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins">
                       Contact
                       </a>
                     </div>
@@ -342,22 +342,22 @@ const Footer = () => {
                 </div>
                 <div className="xl:w-1/4 w-1/4 sm:w-1/6 md:w-1/4 lg:w-1/5 flex flex-col gap-3">
                   <div className="flex cursor-pointer items-center - group">
-                    <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
+                    <button onClick={() => setHide(!hide)} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
                       Governance
-                    </p>
+                    </button>
                   </div>
                   <div className="flex cursor-pointer items-center - group">
-                    <button onClick={() => setHide(!hide)} className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
+                    <button onClick={() => setHide(!hide)} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
                       Faq
                     </button>
                   </div>
                   <div className="flex cursor-pointer items-center - group">
-                    <button onClick={() => setHide(!hide)} className=" text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
+                    <button onClick={() => setHide(!hide)} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
                       Contributors
                     </button>
                   </div>
                   <div className="flex cursor-pointer items-center - group">
-                    <button onClick={() => setHide(!hide)} className=" text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
+                    <button onClick={() => setHide(!hide)} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
                       Jobs
                     </button>
                   </div>
