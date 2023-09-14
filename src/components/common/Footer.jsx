@@ -14,6 +14,7 @@ import { useState } from "react";
 
 
 const Footer = () => {
+
   const [hide, setHide] = useState();
   if (hide) {
     document.body.style.overflow = "hidden";
@@ -203,12 +204,11 @@ const Footer = () => {
                       NFTs
                     </p>
                     </Link>
-                    <p
-                      onClick={() => setHide(!hide)}
+                    <a href="https://new-callisto.web.app/alpha"target="_blank" rel="noopener noreferrer"
                       className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
                     >
                       Dashboard{" "}
-                    </p>
+                    </a>
                     <a href="#" onClick={() => setHide(!hide)}>
                     <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                     EvoVerse
@@ -230,11 +230,6 @@ const Footer = () => {
                     Merch
                     </p>
                     </a>
-                    <Link to={"/coming-soon"}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
-                    coming soon
-                    </p>
-                    </Link>
                 </div>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
@@ -335,9 +330,9 @@ const Footer = () => {
                     </svg>
                   </div>
                   <div className="flex cursor-pointer items-center group">
-                    <button onClick={() => setHide(!hide)} className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
+                    <Link target="_blank" to={"https://medium.com/@DevomonOfficial"} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
                       News
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="xl:w-1/4 w-1/4 sm:w-1/6 md:w-1/4 lg:w-1/5 flex flex-col gap-3">
@@ -347,8 +342,8 @@ const Footer = () => {
                     </button>
                   </div>
                   <div className="flex cursor-pointer items-center - group">
-                    <button onClick={() => setHide(!hide)} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
-                      Faq
+                    <button onClick={() => setHide(!hide)} className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
+                      FAQ
                     </button>
                   </div>
                   <div className="flex cursor-pointer items-center - group">

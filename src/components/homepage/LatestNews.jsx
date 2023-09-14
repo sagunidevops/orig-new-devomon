@@ -56,12 +56,12 @@ const LatestNews = () => {
 
   return (
     <section id="news">
-      <div className="bg-latestNews_bg_img bg-no-repeat bg-cover py-14 xl:pt-[120px] xl:pb-[205px] overflow-hidden scroll_hidden">
+      <div className="bg-latestNews_bg_img bg-no-repeat bg-cover py-14 pt-[100px] sm:pt-[150px] xl:pb-[205px] overflow-hidden scroll_hidden">
         <div className="container">
           <p className="text-center text-white font-bold text-4xl pb-[30px] xl:pb-[51px] uppercase">
             Latest news
           </p>
-          <div className="flex flex-col xl:flex-row bg-latestNews_bg_color items-center bg-cover rounded-lg xl:h-[481px] 2xl:h-[564px]">
+          <div className="flex flex-col xl:flex-row bg-latestNews_bg_color items-center bg-cover rounded-[30px] xl:rounded-lg xl:h-[481px] 2xl:h-[564px]">
             <div className="flex flex-col xl:flex-row items-center rounded-[12px] sm:w-10/12 lg:w-[45%] 2xl:w-[42.5%] px-3 md:px-0 relative mt-4 md:mt-9 xl:mt-0">
               <img
                 className="w-full sm:w-[507px] xl:w-full rounded-[12px]"
@@ -145,7 +145,7 @@ const LatestNews = () => {
               <div className="xl:text-end text-center mt-5 lg:mt-8 xl:mt-4 pt-3 pb-6 xl:pb-0">
                 <button
                   type="submit"
-                  className=" blue-btn-shadow hover:scale-105 transition-all ease-in-out duration-300 py-[5px] px-[21px] bg-[#F8C112] border border-[4px] border-[#CEA20C] rounded-[39px] text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins "
+                  className=" blue-btn-shadow hover:bg-transparent transition-all ease-in-out duration-300 py-[5px] px-[21px] bg-[#F8C112] border border-[4px] border-[#CEA20C] rounded-[39px] text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins"
                 >
                   Show more
                 </button>

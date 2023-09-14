@@ -35,7 +35,7 @@ const TouchForm = ({ contactToRef }) => {
     <>
       <section
         ref={contactToRef}
-        className="py-20 sm:py-28 md:py-36 relative"
+        className="py-20 sm:py-20 md:py-24 relative"
         id="contact"
       >
         {/* FORM HEADING  */}

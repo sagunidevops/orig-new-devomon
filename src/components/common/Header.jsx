@@ -2,12 +2,20 @@
 import nav_logo from "../../assets/images/webp/header-logo.webp";
 import Callisto_logo from "../../assets/images/png/Devomon_Callisto_logo.png";
 import { Disclosure } from "@headlessui/react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { VscChromeClose } from "react-icons/vsc";
 import { HiMenuAlt3 } from "react-icons/hi";
 
 const Header = () => {
+  const history = useNavigate();
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   const [Nav, setNav] = useState(1);
   if (Nav) {
     document.body.style.overflow = "auto";
@@ -22,6 +30,19 @@ const Header = () => {
   } else {
     document.body.style.overflow = "auto";
   }
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const targetElement = document.querySelector(location.hash);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [location]);
 
   return (
     <>
@@ -58,8 +79,11 @@ const Header = () => {
         <div className="px-4 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 bg-[#000000f8] fixed top-0 w-full">
           <div className="flex justify-between items-center relative">
             <ul>
-              <li className="cursor-pointer flex items-center py-2">
-                <Link to={"/"}>
+              <li className="cursor-pointer flex items-center">
+                <Link to={"/"} onClick={() => {
+                      history("/");
+                      scrollToTop();
+                    }}>
                   <img
                     className=" sm:w-[70px] xl:w-20 w-11 h-11 sm:h-[70px] xl:h-20"
                     src={nav_logo}
@@ -69,8 +93,8 @@ const Header = () => {
               </li>
             </ul>
             <ul className="xl:gap-[11px] gap-0 items-center hidden lg:flex">
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute top-[80px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
+                <div className="absolute top-[95px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     <a href="#" onClick={() => setHide(!hide)}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
@@ -87,12 +111,14 @@ const Header = () => {
                         NFTs
                       </p>
                     </Link>
-                    <p
-                      onClick={() => setHide(!hide)}
+                    <a
+                      href="https://new-callisto.web.app/alpha "
+                      target="_blank" //" target="_blank" rel="noopener noreferrer""
+                      rel="noopener noreferrer"
                       className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] transition-all duration-200"
                     >
                       Dashboard{" "}
-                    </p>
+                    </a>
                     <a href="#" onClick={() => setHide(!hide)}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
                         EvoVerse
@@ -123,7 +149,7 @@ const Header = () => {
                 </div>
                 <a
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
-                  href="#"
+                  href="#news"
                 >
                   D-World
                 </a>
@@ -142,7 +168,7 @@ const Header = () => {
                   />
                 </svg>
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200">
                 <a
                   onClick={() => setHide(!hide)}
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
@@ -151,8 +177,8 @@ const Header = () => {
                   Staking
                 </a>
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute top-[80px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
+                <div className="absolute top-[95px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     <span>
                       <Link to={"/team"}>
@@ -198,8 +224,8 @@ const Header = () => {
                   />
                 </svg>
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute top-[80px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
+                <div className="absolute top-[95px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     {" "}
                     <span>
@@ -225,6 +251,7 @@ const Header = () => {
                     </span>
                     <span className="mt-2 xl:mt-3">
                       <a
+                        onClick={() => setHide(!hide)}
                         href="#"
                         className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                         rel="noopener noreferrer"
@@ -235,7 +262,7 @@ const Header = () => {
                     <span className="mt-2 xl:mt-3">
                       {" "}
                       <a
-                        href="#contact"
+                        href="/#contact"
                         className="font-medium text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                       >
                         Contact
@@ -264,13 +291,12 @@ const Header = () => {
                   />
                 </svg>
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[80px] xl:px-4 px-2 -skew-x-12 duration-200">
-                <a
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200">
+                <Link target="_blank" to={"https://medium.com/@DevomonOfficial"}
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
-                  href="#news"
                 >
                   News
-                </a>
+                </Link>
               </li>
             </ul>
             <ul className="gap-2 items-center flex">
@@ -390,12 +416,15 @@ const Header = () => {
                                 NFTs
                               </p>
                             </Link>
-                            <p
-                              onClick={() => setHide(!hide)}
+                            <a
+                              onClick={() => setNav(!Nav)}
+                              href="https://new-callisto.web.app/alpha "
+                              target="_blank"
+                              rel="noopener noreferrer"
                               className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
                             >
                               Dashboard{" "}
-                            </p>
+                            </a>
                             <a href="#" onClick={() => setHide(!hide)}>
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                                 EvoVerse
@@ -469,21 +498,29 @@ const Header = () => {
                         </Disclosure.Button>
                         <Disclosure.Panel className="px-4 py-2 text-gray-500 bg-black transition_300 flex flex-col">
                           <span>
-                            <Link to={"/team"}>
+                            <Link to={"/team"} onClick={() => setNav(!Nav)}>
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
                                 Core Team
                               </p>
                             </Link>
                           </span>
                           <span>
-                            <Link onClick={() => setNav(!Nav)}>
+                            <Link
+                              onClick={() => {
+                                setHide(!hide);
+                                setNav(!Nav);
+                              }}
+                            >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
                                 Advisors
                               </p>
                             </Link>
                           </span>
                           <span>
-                            <Link to={"/stream-partner"}>
+                            <Link
+                              to={"/stream-partner"}
+                              onClick={() => setNav(!Nav)}
+                            >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
                                 Streaming Partners
                               </p>
@@ -540,6 +577,10 @@ const Header = () => {
                           </span>
                           <span className="mt-4">
                             <a
+                              onClick={() => {
+                                setHide(!hide);
+                                setNav(!Nav);
+                              }}
                               href="#"
                               className="font-normal text-[12px] text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                               rel="noopener noreferrer"
@@ -565,13 +606,14 @@ const Header = () => {
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
-                          <a
-                            href="#news"
-                            onClick={() => setNav(!Nav)}
+                          <Link target="_blank" to={"https://medium.com/@DevomonOfficial"}
+                          onClick={() => {
+                            setNav(!Nav);
+                          }}
                             className=" mb-0 font-poppins"
                           >
                             News
-                          </a>
+                          </Link>
                         </Disclosure.Button>
                       </>
                     )}

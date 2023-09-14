@@ -10,7 +10,8 @@ const AboutCard = () => {
             <Link
               to={value.linkValue}
               key={index}
-              target={`${value.title === "News" ? "_blank" : ""}`}
+              // target={`${value.title === "News" ? "_blank" : ""}`}
+              target="_blank"
             >
               <div className="relative overflow-hidden duration-500 about_card_outline">
                 <div className="about_card_bg h-[180px] sm:h-[200px] lg:h-[220px] 2xl:h-[300px]">

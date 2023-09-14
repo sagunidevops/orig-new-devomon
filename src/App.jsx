@@ -12,6 +12,7 @@ import Header from "./components/common/Header";
 import Footer from './components/common/Footer';
 import Homepage from "./components/homepage/Homepage";
 import Nft from './components/homepage/Nft';
+// import LatestNews from "./components/homepage/LatestNews";
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/team" element={<CoreTeam/>}/>
           <Route path="/stream-partner" element={<StreamPartner/>}/>
           <Route path="/nft" element={<Nft/>}/>
+          {/* <Route path="/latest-news" element={<LatestNews/>}/> */}
         </Routes>
         <Footer/>
       </BrowserRouter>
