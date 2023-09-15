@@ -82,7 +82,7 @@ const Partner = () => {
                             href={item.url}
                           >
                             <img
-                              className="hover:scale-105 max-w-[100px] md:max-w-[200px] sm:h-full w-[200px] max-h-[80px] duration-300 ease-in-out transition-all sm:mt-8 xs:mt-10 filter-property mx-4 mt-3"
+                              className="hover:scale-105 max-w-[100px] md:max-w-[200px] sm:h-full w-[200px] max-h-[80px] duration-300 ease-in-out transition-all sm:mt-8 xs:mt-10 mx-4 mt-3"
                               src={item.icon}
                               alt=""
                             />
@@ -96,7 +96,7 @@ const Partner = () => {
                     obj.partnericon2 &&
                     obj.partnericon2.map((item, i) => {
                       return (
-                        <div className="sm:mx-4 mx-2 parnter_left " key={i}>
+                        <div className="sm:mx-4 mx-2 parnter_left" key={i}>
                           <a
                             target="_blank"
                             rel="noopener noreferrer"
@@ -104,8 +104,8 @@ const Partner = () => {
                           >
                             <img
                               className={`${
-                                i === 2 ? "" : "filter-property"
-                              } hover:scale-105 max-w-[100px] md:max-w-[200px] sm:h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 mb-4 `}
+                                i === 2 ? "" : "",item.className
+                              } hover:scale-105 max-w-[100px] md:max-w-[200px] sm:h-full xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all lg:mt-0 mb-4`}
                               src={item.icon}
                               alt=""
                             />
@@ -150,7 +150,7 @@ const Partner = () => {
                               className={` hover:scale-1 max-w-[80px] sm:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all ${
                                 (i === 0 || i == 1 || i == 3
                                   ? ""
-                                  : "filter-property",
+                                  : "",
                                 item.className)
                               }`}
                               src={item.icon}

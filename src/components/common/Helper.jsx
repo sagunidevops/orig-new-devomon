@@ -348,6 +348,7 @@ export const ourPartner = [
       {
         icon: GameLofiHub,
         url: "https://gamefi.org/events/race-for-glory",
+        className:'filter-property',
       },
       {
         icon: UnixGaming_logo,
@@ -356,6 +357,7 @@ export const ourPartner = [
       {
         icon: magic,
         url: "https://magic.io/",
+        className:'filter-property',
       },
       {
         icon: mystic,
@@ -366,7 +368,7 @@ export const ourPartner = [
       {
         icon: Vertical_Owned_logo,
         url: "https://gamefi.org/events/race-for-glory",
-        className: "max-w-[70px] mt-3 xs:mt-auto",
+        className: "max-w-[70px] mt-3 xs:mt-auto filter-property",
       },
       {
         icon: AfterMathIslands,
@@ -376,7 +378,7 @@ export const ourPartner = [
       {
         icon: Salad_Ventures_logo,
         url: "https://aftermathislands.io/",
-        className: "w-[100px] ",
+        className: "w-[100px]",
       },
     ],
   },
