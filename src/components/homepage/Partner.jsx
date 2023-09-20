@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { ourPartner } from "../common/Helper";
-import Thunder from "../../assets/images/webp/Thunder.webp";
-import Gino from "../../assets/images/webp/Gino_-_New_evomon_44.webp";
 
 const Partner = () => {
   gsap.registerPlugin(ScrollTrigger);

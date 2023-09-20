@@ -471,7 +471,7 @@ export const VideoIcon = () => {
 };
 export const LinkedIcon = () => {
   return (
-    <svg
+    <svg className="max-w-[25px] md:max-w-[35px]"
       width="36"
       height="36"
       viewBox="0 0 36 36"

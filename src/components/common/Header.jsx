@@ -106,7 +106,7 @@ const Header = () => {
                         Evozone
                       </p>
                     </a>
-                    <Link to={"/nft"} onClick={() => setNav(!Nav)}>
+                    <Link to={"https://new-callisto.web.app/#evomons"} target="_blank" onClick={() => setNav(!Nav)}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-4 hover:text-[#2253F5] transition-all duration-200">
                         NFTs
                       </p>
@@ -187,13 +187,13 @@ const Header = () => {
                         </p>
                       </Link>
                     </span>
-                    <span>
+                    {/* <span>
                       <Link onClick={() => setHide(!hide)}>
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
                           Advisors
                         </p>
                       </Link>
-                    </span>
+                    </span> */}
                     <span>
                       <Link to={"/stream-partner"}>
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
@@ -238,7 +238,7 @@ const Header = () => {
                         Whitepaper
                       </a>
                     </span>
-                    <span className="mt-2 xl:mt-3">
+                    {/* <span className="mt-2 xl:mt-3">
                       {" "}
                       <a
                         target="_blank"
@@ -248,8 +248,8 @@ const Header = () => {
                       >
                         Pitchdeck
                       </a>
-                    </span>
-                    <span className="mt-2 xl:mt-3">
+                    </span> */}
+                    {/* <span className="mt-2 xl:mt-3">
                       <a
                         onClick={() => setHide(!hide)}
                         href="#"
@@ -258,7 +258,7 @@ const Header = () => {
                       >
                         FAQ
                       </a>
-                    </span>
+                    </span> */}
                     <span className="mt-2 xl:mt-3">
                       {" "}
                       <a
@@ -411,7 +411,7 @@ const Header = () => {
                                 Evozone
                               </p>
                             </a>
-                            <Link to={"/nft"} onClick={() => setNav(!Nav)}>
+                            <Link to={"https://new-callisto.web.app/#evomons"} target="_blank" onClick={() => setNav(!Nav)}>
                               <p className="font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
                                 NFTs
                               </p>
@@ -504,7 +504,7 @@ const Header = () => {
                               </p>
                             </Link>
                           </span>
-                          <span>
+                          {/* <span>
                             <Link
                               onClick={() => {
                                 setHide(!hide);
@@ -515,7 +515,7 @@ const Header = () => {
                                 Advisors
                               </p>
                             </Link>
-                          </span>
+                          </span> */}
                           <span>
                             <Link
                               to={"/stream-partner"}
@@ -564,7 +564,7 @@ const Header = () => {
                               Whitepaper
                             </a>
                           </span>
-                          <span className="mt-4">
+                          {/* <span className="mt-4">
                             {" "}
                             <a
                               target="_blank"
@@ -574,8 +574,8 @@ const Header = () => {
                             >
                               Pitchdeck
                             </a>
-                          </span>
-                          <span className="mt-4">
+                          </span> */}
+                          {/* <span className="mt-4">
                             <a
                               onClick={() => {
                                 setHide(!hide);
@@ -587,7 +587,7 @@ const Header = () => {
                             >
                               FAQ
                             </a>
-                          </span>
+                          </span> */}
                           <span className="mt-4">
                             {" "}
                             <a

@@ -552,7 +552,7 @@ export const AboutCardData = [
     title: "NFT",
     character_img: nft_character,
     className: "w-[40%] xs:w-[30%] sm:w-[28%] md:w-[22%] xl:w-[18%] right-[6.5%]",
-    linkValue:"/nft"
+    linkValue:"https://new-callisto.web.app/#evomons"
   },
   {
     card_bg: dashboard_bg,

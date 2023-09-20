@@ -1,6 +1,6 @@
 /* === FONT FAMILY LINKS === */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 /* === TAILWIND CSS === */
 @tailwind base;
@@ -49,7 +49,7 @@
     height: 3px;
   }
   .team-layer {
-    background: #2253f5;
+    background: #061B6A;
     filter: blur(250px);
   }
 
@@ -190,6 +190,30 @@
   filter: brightness(0) invert(1) !important;
 
 }
+
+/* ==== NEW TEAM SECTION CSS ==== */
+
+/* width */
+/* ::-webkit-scrollbar {
+  width: 5px;
+} */
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+} */
+ 
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: #2747a0; 
+  border-radius: 10px;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+} */
 
   @media (max-width: 1280px) {
     .translate_y {

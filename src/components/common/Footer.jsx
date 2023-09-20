@@ -151,41 +151,6 @@ const Footer = () => {
             <div className=" w-full md:w-1/2 mt-4 md:mt-0 md:ps-5 lg:ps-0">
               <div className="flex justify-between md:mt-0">
                 <div className="w-1/4 md:w-1/5 xl:w-1/4 flex flex-col gap-2 xl:ms-10">
-                  <div className="flex cursor-pointer items-center group relative">
-                    <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden
-                    z-[1]">
-                      <a href="https://callisto.devomon.io/">
-                        <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
-                         Callisto
-                        </p>
-                      </a>
-                      <a href="https://tcg.devomon.io/">
-                      <p className="text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
-                        Card Game
-                      </p>
-                      </a>
-                      <button onClick={() => setHide(!hide)} className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins">
-                        Devoland
-                      </button>
-                    </div>
-                    <p className="text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200 font-normal font-poppins">
-                      Play
-                    </p>
-                    <svg
-                      className="-rotate-[270deg] group-hover:-rotate-[360deg] duration-200"
-                      width="10"
-                      height="13"
-                      viewBox="0 0 10 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.274973 0.71908C0.727803 1.25155 2.75296 3.55025 4.26239 5.27752L5.36931 6.53726L4.1995 7.88791C3.55799 8.62817 2.32529 10.0438 1.45736 11.0308C0.602017 12.0178 0.0234004 12.7451 0.186922 12.6671C0.337866 12.5762 2.21208 11.3295 4.32529 9.87492C6.45107 8.43337 8.40076 7.12168 8.66491 6.95285C8.91648 6.797 9.13032 6.61518 9.13032 6.56324C9.13032 6.45934 0.312709 0.433366 0.0234004 0.32947C-0.0520713 0.303495 0.0611362 0.485313 0.274973 0.71908Z"
-                        fill="#B8BDCA"
-                        className=" group-hover:fill-white"
-                      />
-                    </svg>
-                  </div>
                   <div className="flex cursor-pointer items-center group relative scroll_hidden">
                     <div className="footer_hover absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3 scroll_hidden">
                     <div className="flex flex-col">
@@ -199,7 +164,7 @@ const Footer = () => {
                     Evozone
                     </p>
                     </a>
-                    <Link to={"/nft"}>
+                    <Link to={"https://new-callisto.web.app/#evomons"} target="_blank">
                     <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
                       NFTs
                     </p>
@@ -262,9 +227,9 @@ const Footer = () => {
                         Core Team
                         </p>
                       </Link>
-                      <button onClick={() => setHide(!hide)} className="text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
+                      {/* <button onClick={() => setHide(!hide)} className="text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                       Advisor
-                      </button>
+                      </button> */}
                       <Link to={"/stream-partner"}>
                       <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
                       Streaming Partners
@@ -291,16 +256,16 @@ const Footer = () => {
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
                     <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[11]">
-                    <a href="https://whitepaper.devomon.io/">
+                    <a target="_blank" rel="noreferrer" href="https://whitepaper.devomon.io/">
                         <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                         Whitepaper
                         </p>
                       </a>
-                      <a href="https://drive.google.com/file/d/160mfNzpK0Uu0JdtmfzKSJOr6xjlhUtgp/view">
-                      <p className="text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
+                      {/* <a href="https://drive.google.com/file/d/160mfNzpK0Uu0JdtmfzKSJOr6xjlhUtgp/view">
+                      <p className="text-xs xl:text-base text-white mb-2 md:mb-3 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                       Pitchdeck
                       </p>
-                      </a>
+                      </a> */}
                       {/* <a href="/faqs">
                       <p className="text-base text-white my-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                       FAQ
@@ -341,11 +306,11 @@ const Footer = () => {
                       Governance
                     </button>
                   </div>
-                  <div className="flex cursor-pointer items-center - group">
+                  {/* <div className="flex cursor-pointer items-center - group">
                     <button onClick={() => setHide(!hide)} className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
                       FAQ
                     </button>
-                  </div>
+                  </div> */}
                   <div className="flex cursor-pointer items-center - group">
                     <button onClick={() => setHide(!hide)} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
                       Contributors

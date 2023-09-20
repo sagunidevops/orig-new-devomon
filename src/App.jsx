@@ -6,12 +6,12 @@ import BackToTop from "./components/common/BackToTop";
 import Preloader from "./components/common/Preloader";
 import { useEffect, useState } from "react";
 import ComingSoon from './components/common/ComingSoon';
-import CoreTeam from './components/homepage/CoreTeam';
 import StreamPartner from './components/homepage/StreamPartner';
 import Header from "./components/common/Header";
 import Footer from './components/common/Footer';
 import Homepage from "./components/homepage/Homepage";
 import Nft from './components/homepage/Nft';
+import Team from "./components/homepage/Team";
 // import LatestNews from "./components/homepage/LatestNews";
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,7 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage/>}/>
           <Route path="/coming-soon" element={<ComingSoon/>}/>
-          <Route path="/team" element={<CoreTeam/>}/>
+          <Route path="/team" element={<Team/>}/>
           <Route path="/stream-partner" element={<StreamPartner/>}/>
           <Route path="/nft" element={<Nft/>}/>
           {/* <Route path="/latest-news" element={<LatestNews/>}/> */}
