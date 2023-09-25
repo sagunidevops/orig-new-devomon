@@ -23,7 +23,7 @@ const Team = () => {
               TeamData.map((data, index) => (
                 <div key={index}>
                   <div className="">
-                    <div className="flex sm:flex-col md:flex-row  items-center sm:items-start md:items-center gap-4">
+                    <div className="flex sm:flex-col md:flex-row  items-center sm:items-start md:items-center gap-4 hover:scale-105 duration-300 transition-all ease-in-out">
                       <img className="max-w-[70px] md:max-w-[90px] lg:max-w-[117px] img_shadow" src={data.img} alt="team image" />
                       <div>
                         <div className="flex items-center mb-2">

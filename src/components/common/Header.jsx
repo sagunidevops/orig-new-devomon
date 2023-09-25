@@ -96,7 +96,7 @@ const Header = () => {
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[95px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
-                    <a href="#" onClick={() => setHide(!hide)}>
+                    <a href="https://new-callisto.web.app/" target="_blank"rel="noopener noreferrer" >
                       <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
                         GameFi
                       </p>
@@ -137,7 +137,7 @@ const Header = () => {
                     </p>
                     <a href="#" onClick={() => setHide(!hide)}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
-                        Merch
+                      Merchandise
                       </p>
                     </a>
                     {/* <Link to={"/coming-soon"}>
@@ -401,7 +401,7 @@ const Header = () => {
                         </Disclosure.Button>
                         <Disclosure.Panel className="px-4 py-2 text-gray-500 bg-black transition_300 flex flex-col">
                           <div className="flex flex-col">
-                            <a href="#" onClick={() => setHide(!hide)}>
+                            <a href="https://new-callisto.web.app/" target="_blank" rel="noopener noreferrer">
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                                 GameFi
                               </p>
@@ -443,7 +443,7 @@ const Header = () => {
                             </p>
                             <a href="#" onClick={() => setHide(!hide)}>
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
-                                Merch
+                              Merchandise
                               </p>
                             </a>
                             {/* <Link

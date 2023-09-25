@@ -20,10 +20,11 @@ import magic from "../../assets/images/svg/magic.svg";
 import devomon_team1 from "../../assets/images/webp/devomon_team1.webp";
 import devomon_team2 from "../../assets/images/webp/devomon_team2.webp";
 import devomon_team3 from "../../assets/images/webp/devomon_team3.webp";
-import devomon_team4 from "../../assets/images/webp/devomon_team4.webp";
+// import devomon_team4 from "../../assets/images/webp/devomon_team4.webp";
 import devomon_team5 from "../../assets/images/webp/devomon_team5.webp";
 import devomon_team7 from "../../assets/images/webp/devomon_team7.webp";
 import devomon_team8 from "../../assets/images/webp/devomon_team8.webp";
+import Maurice from "../../assets/images/svg/Maurice.svg";
 
 import GameLofiHub from "../../assets/images/png/gamefi_org.png";
 import UnixGaming_logo from "../../assets/images/png/UnixGaming_logo.png";
@@ -387,23 +388,23 @@ export const TeamData = [
   {
     name: "Güven Alkan",
     img: devomon_team1,
-    title: "Ceo",
+    title: "CEO",
     url: "https://www.linkedin.com/in/gueven-al/",
-    desc: "With experience in project management and an entrepreneurial spirit. Known for his visionary approach, strong analytical, organizational and  communication skills, and ability to work well under pressure. A passionate anime fan and gamer, Güven brings a unique perspective to the team and believes it will be key to the project's success. He is confident in his ability to deliver exceptional results and is excited to be a part of this dynamic project team.",
+    desc: "Güven, a 15-year gaming enthusiast and entrepreneurial leader, excels under pressure with a passion for anime and gaming",
   },
   {
     name: "Sammy Grund- Advisor",
     img: devomon_team2,
-    title: "Co Founder",
+    title: "COO",
     url: "https://www.linkedin.com/in/sammy-g/",
-    desc: "Anime fan and skilled business professional with a strong finance background, excels in calculations and presenting data clearly. He also brings passion and understanding of cryptocurrency, web3 and Metaverse to the team, excited to contribute to their evolutionthrough this project .",
+    desc: "A finance-savvy anime fan with a passion for cryptocurrency, web3, and the Metaverse, eager to contribute to this project's evolution.",
   },
   {
     name: "Dominik Bialek",
     img: devomon_team3,
     title: "Senior DI Artist",
     url: "https://www.imdb.com/name/nm4633335/?ref_=nv_sr_srsg_0",
-    desc: "A Senior Digital Intermediate Artist with over 10 years of experience in the film and video industry. He has worked on a wide range of projects, from independent films to large-scale Hollywood productions. John has a keen eye for detail and is an expert in color grading and visual effects. He has a strong understanding of the latest digital intermediate tools and technologies and is able to deliver high-quality results under tight deadline.",
+    desc: "Dominik Bialek Senior DI Artist Dominik, a highly experienced Digital Artist from the gaming industry. He also has experience from Netflix and Amazon titles and delivers high-quality results under tight deadlines.",
   },
   {
     name: "Martin s.",
@@ -413,26 +414,33 @@ export const TeamData = [
     desc: "Martin boasts a track record of eight years as a seasoned game developer, demonstrating exceptional proficiency in Unreal Engine at senior levels.",
     class:"hidden",
   },
-  {
-    name: "Selina Aley",
-    img: devomon_team4,
-    title: "Chief Strategic Manager",
-    url: "https://www.linkedin.com/in/selina-aley-7a2557248/",
-    desc: "Her experience in developing strategies for various companies will have a positive impact on Devomon. Furthermore, her strong analytical, organizational, and communication abilities will guarantee the successful execution of the project's operational initiatives and growth .",
-  },
+  // {
+  //   name: "Selina Aley",
+  //   img: devomon_team4,
+  //   title: "Chief Strategic Manager",
+  //   url: "https://www.linkedin.com/in/selina-aley-7a2557248/",
+  //   desc: "Her experience in developing strategies for various companies will have a positive impact on Devomon. Furthermore, her strong analytical, organizational, and communication abilities will guarantee the successful execution of the project's operational initiatives and growth .",
+  // },
   {
     name: "Jeff Nowak",
     img: devomon_team5,
     title: "CEO Maven Capital",
     url: "https://www.linkedin.com/in/selina-aley-7a2557248/",
-    desc: "Blandit viverra varius hendrerit hendrerit varius cras. Velit lorem id malesuada vitae velit odio semper. Feugiat tincidunt nunc velit sit lacinia ultrices quisque. Facilisi nec pharetra interdum quisque tincidunt sit netus diam cum. Tellus faucibus lacus viverra ultrices.",
+    desc: "Strategic advisory and GTM expertise with a background as Software engineer with over a decade of experience in Al, IoT, Web3, blockchain projects as Filecoin, IPFS, R3, Polygon, KCC, Telos, and more.",
   },
   {
     name: "Saban Özden",
     img: devomon_team8,
     title: "Chief Technology Officer",
     url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
-    desc: "Saban Özden is a skilled software engineer and academic expert in Computer Science. With a proven track record in software development, he leads international teams and executes complex projects with precision. As a vital asset to our company, Saban's deep technical expertise and passion for innovative technologies contribute significantly to our success. He has also advised the United Nations on blockchain technology.",
+    desc: "Saban Özden, a software engineer and ex blockchain advisor to the United Nations, greatly benefits our company.",
+  },
+  {
+    name: "Maurice P",
+    img: Maurice,
+    title: "Senior Game Dev / Ex Nintendo",
+    url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
+    desc: "An experienced Senior Game Developer with a focus on RPG development. Committed to crafting compelling narratives and gameplay mechanics.",
   },
 ];
 
@@ -538,13 +546,13 @@ export const AboutCardData = [
     card_bg: gamefi_bg,
     title: "GameFi",
     character_img: gamefi_character,
-    className: "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[27%] lg:w-[22%] xl:w-[19%] right-[6%]",
+    className: "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[24%] lg:w-[22%] xl:w-[19%] right-[6%]",
   },
   {
     card_bg: evozone_bg,
     title: "Evozone",
     character_img: evozone_character,
-    className: "w-[90%] xs:w-[60%] sm:w-[55%] md:w-[45%] lg:w-[35%] 2xl:w-[40%] left-[0%]",
+    className: "w-[90%] xs:w-[60%] sm:w-[55%] md:w-[45%] lg:w-[40%] 2xl:w-[40%] left-[0%]",
     linkValue:"https://evozone-web.web.app/"
   },
   {
@@ -558,32 +566,32 @@ export const AboutCardData = [
     card_bg: dashboard_bg,
     title: "Dashboard",
     character_img: dashboard_character,
-    className: " w-[80%] xs:w-[70%] sm:w-[60%] md:w-[45%] xl:w-[40%] -left-[3%]",
+    className: "w-[95%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[45%] xl:w-[40%] xs:!left-[0%] -left-[9%]",
     linkValue:"https://new-callisto.web.app/alpha"
   },
   {
     card_bg: evoVerse_bg,
     title: "EvoVerse",
     character_img: evoVerse_character,
-    className: "w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[17%] 2xl:w-[19%] right-[10%]",
+    className: "w-[45%] min-[576px]:w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[19%] 2xl:w-[19%] min-[576px]:right-[10%] right-0",
   },
   {
     card_bg: manga_bg,
     title: "Manga",
     character_img: manga_character,
-    className: "w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[17%] 2xl:w-[19%] left-[8%]",
+    className: "w-[50%] min-[576px]:w-[35%] xs:w-[30%] sm:w-[26%] md:w-[23%] lg:w-[22%] xl:w-[20%] 2xl:w-[19%] min-[576px]:left-[8%] -left-[5%]",
   },
   {
     card_bg: anime_bg,
     title: "Anime",
     character_img: anime_character,
-    className: "w-[35%] xs:w-[32%] sm:w-[35%] md:w-[30%] lg:w-[24%] xl:w-[22%] 2xl:w-[23%] right-[8%]",
+    className: "w-[53%] min-[576px]:w-[35%] xs:w-[32%] sm:w-[35%] md:w-[30%] lg:w-[26%] xl:w-[22%] 2xl:w-[23%] min-[576px]:right-[8%] right-0",
   },
   {
     card_bg: merch_bg,
     title: "MERCHANDISE",
     character_img: merch_character,
-    className: "w-[80%] xs:w-[70%] sm:w-[60%] md:w-[50%] lg:w-[45%] xl:w-[43%] left-[2%]",
+    className: "w-[100%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[53%] lg:w-[45%] xl:w-[43%] -left-[7%] xs:left-[1%]",
   },
   {
     card_bg: coming_soon_bg,

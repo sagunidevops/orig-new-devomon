@@ -154,7 +154,7 @@ const Footer = () => {
                   <div className="flex cursor-pointer items-center group relative scroll_hidden">
                     <div className="footer_hover absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3 scroll_hidden">
                     <div className="flex flex-col">
-                    <a href="#" onClick={() => setHide(!hide)}>
+                    <a href="https://new-callisto.web.app/" target="_blank"rel="noopener noreferrer">
                     <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200">
                     GameFi
                     </p>
@@ -192,7 +192,7 @@ const Footer = () => {
                     </p>
                     <a href="#" onClick={() => setHide(!hide)}>
                     <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
-                    Merch
+                    Merchandise
                     </p>
                     </a>
                 </div>
@@ -323,7 +323,9 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className=" xl:w-5/12 max-[475px]:w-2/5 min-[475px]:w-1/3 md:w-2/5 lg:w-1/2 flex flex-col gap-2">
+                  <a href="https://sagunitech.com/" target="_blank" rel="noopener noreferrer">
                   <img className="max-w-[96px]" src={saguniLogo} alt="saguniLogo img" />
+                  </a>
                   <div className="flex items-center - group">
                     <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 font-poppins font-bold">
                       Saguni Tech LLC

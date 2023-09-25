@@ -7,6 +7,7 @@ import { useMediaQuery } from 'react-responsive'
 import { CrossIcon } from "../common/Icons";
 import { heroIcons } from "../common/Helper";
 import VimeoPlayer from "@u-wave/react-vimeo";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [comingSoon, setComingSoon] = useState(false);
@@ -102,16 +103,15 @@ const Hero = () => {
                   <>
                     <div
                       key={index}
-                      onClick={() => setComingSoon(true)}
                       className="transition-all ease-in-out duration-300 hover:translate-y-[-8px] cursor-pointer"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="social"
                       aria-describedby="social"
                     >
-                      <span className="max-w-[25px] sm:max-w-[40px] inline">
+                      <Link to={"https://new-callisto.web.app/"} target="_blank"rel="noopener noreferrer" className="max-w-[25px] sm:max-w-[40px] inline">
                         {value.footerIcon}
-                      </span>
+                      </Link>
                     </div>
                     {index === 2 ? (
                       ""

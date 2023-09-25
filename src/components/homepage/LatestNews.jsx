@@ -80,7 +80,6 @@ const LatestNews = () => {
                       ></span>
                     );
                   })}
-              
               </div>
             </div>
             <div className="w-11/12 md:w-10/12 xl:w-[53%] xl:ps-8 h-[420px] 2xl:h-auto overflow-x-hidden overflow-y-scroll mt-10 xl:mt-0">
