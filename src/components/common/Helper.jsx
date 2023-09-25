@@ -40,6 +40,7 @@ import CallistoBattle3 from "../../assets/images/webp/callisto-3.png";
 import CallistoBattle4 from "../../assets/images/webp/callisto-4.png";
 import CallistoBattle5 from "../../assets/images/webp/callisto-5.png";
 import CallistoBattle6 from "../../assets/images/webp/callisto-6.png";
+import seharat from "../../assets/images/png/seharat.png";
 import CallistoBattle7 from "../../assets/images/webp/Narugamon_Dark_prev.png";
 import User2 from "../../assets/images/png/mizuki.png";
 import User3 from "../../assets/images/png/marina.png";
@@ -441,6 +442,13 @@ export const TeamData = [
     title: "Senior Game Dev / Ex Nintendo",
     url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
     desc: "An experienced Senior Game Developer with a focus on RPG development. Committed to crafting compelling narratives and gameplay mechanics.",
+  },
+  {
+    name: "Serhat Yanar",
+    img: seharat,
+    title: "Advisor / Partnership Manager ",
+    url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
+    desc: "With his years of experience in the blockchain business and his extensive network,he significantly enriches our company with his skills and knowledge.",
   },
 ];
 
