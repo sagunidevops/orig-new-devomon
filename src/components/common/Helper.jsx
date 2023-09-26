@@ -393,19 +393,34 @@ export const TeamData = [
     url: "https://www.linkedin.com/in/gueven-al/",
     desc: "Güven, a 15-year gaming enthusiast and entrepreneurial leader, excels under pressure with a passion for anime and gaming",
   },
+    {
+    name: "Jeff Nowak",
+    img: devomon_team5,
+    title: "CEO Maven Capital",
+    url: "https://www.linkedin.com/in/selina-aley-7a2557248/",
+    desc: "Strategic advisory and GTM expertise with a background as Software engineer with over a decade of experience in Al, IoT, Web3, blockchain projects as Filecoin, IPFS, R3, Polygon, KCC, Telos, and more.",
+  },
   {
     name: "Sammy Grund- Advisor",
     img: devomon_team2,
     title: "COO",
-    url: "https://www.linkedin.com/in/sammy-g/",
+    url:" https://www.linkedin.com/in/sammy-g",
     desc: "A finance-savvy anime fan with a passion for cryptocurrency, web3, and the Metaverse, eager to contribute to this project's evolution.",
   },
   {
-    name: "Dominik Bialek",
-    img: devomon_team3,
-    title: "Senior DI Artist",
-    url: "https://www.imdb.com/name/nm4633335/?ref_=nv_sr_srsg_0",
-    desc: "Dominik Bialek Senior DI Artist Dominik, a highly experienced Digital Artist from the gaming industry. He also has experience from Netflix and Amazon titles and delivers high-quality results under tight deadlines.",
+    name: "Maurice P",
+    img: Maurice,
+    title: "Senior Game Dev / Ex Nintendo",
+    url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
+    desc: "An experienced Senior Game Developer with a focus on RPG development. Committed to crafting compelling narratives and gameplay mechanics.",
+    class:"hidden",
+  },
+  {
+    name: "Saban Özden",
+    img: devomon_team8,
+    title: "Chief Technology Officer",
+    url: " https://www.linkedin.com/in/saban-%C3%B6-065b20213",
+    desc: "Saban Özden, a software engineer and ex blockchain advisor to the United Nations, greatly benefits our company.",
   },
   {
     name: "Martin s.",
@@ -415,6 +430,14 @@ export const TeamData = [
     desc: "Martin boasts a track record of eight years as a seasoned game developer, demonstrating exceptional proficiency in Unreal Engine at senior levels.",
     class:"hidden",
   },
+  {
+    name: "Dominik Bialek",
+    img: devomon_team3,
+    title: "Senior DI Artist",
+    url: "https://m.imdb.com/name/nm4633335/bio/?ref_=nm_ql_1",
+    desc: "Dominik Bialek Senior DI Artist Dominik, a highly experienced Digital Artist from the gaming industry. He also has experience from Netflix and Amazon titles and delivers high-quality results under tight deadlines.",
+  },
+
   // {
   //   name: "Selina Aley",
   //   img: devomon_team4,
@@ -422,27 +445,7 @@ export const TeamData = [
   //   url: "https://www.linkedin.com/in/selina-aley-7a2557248/",
   //   desc: "Her experience in developing strategies for various companies will have a positive impact on Devomon. Furthermore, her strong analytical, organizational, and communication abilities will guarantee the successful execution of the project's operational initiatives and growth .",
   // },
-  {
-    name: "Jeff Nowak",
-    img: devomon_team5,
-    title: "CEO Maven Capital",
-    url: "https://www.linkedin.com/in/selina-aley-7a2557248/",
-    desc: "Strategic advisory and GTM expertise with a background as Software engineer with over a decade of experience in Al, IoT, Web3, blockchain projects as Filecoin, IPFS, R3, Polygon, KCC, Telos, and more.",
-  },
-  {
-    name: "Saban Özden",
-    img: devomon_team8,
-    title: "Chief Technology Officer",
-    url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
-    desc: "Saban Özden, a software engineer and ex blockchain advisor to the United Nations, greatly benefits our company.",
-  },
-  {
-    name: "Maurice P",
-    img: Maurice,
-    title: "Senior Game Dev / Ex Nintendo",
-    url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
-    desc: "An experienced Senior Game Developer with a focus on RPG development. Committed to crafting compelling narratives and gameplay mechanics.",
-  },
+
   {
     name: "Serhat Yanar",
     img: seharat,
@@ -554,6 +557,7 @@ export const AboutCardData = [
     card_bg: gamefi_bg,
     title: "GameFi",
     character_img: gamefi_character,
+    linkValue:"https://new-callisto.web.app/",
     className: "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[24%] lg:w-[22%] xl:w-[19%] right-[6%]",
   },
   {

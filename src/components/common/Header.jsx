@@ -331,13 +331,13 @@ const Header = () => {
                   : "left-0 flex fixed flex-col justify-center min-w-full min-h-screen bottom-0 items-center lg:hidden transition-all duration-500 ease-in-out bg-[#000000] gap-7"
               }
             >
+              <div className=" w-full mx-auto min-h-screen flex flex-col relative justify-center">
               <span
                 onClick={() => setNav(!Nav)}
-                className="absolute end-4 z-50 top-[20px] cursor-pointer text-[34px] text-white"
+                className="absolute end-4 z-50 top-2 cursor-pointer text-[34px] text-white"
               >
                 <VscChromeClose />
               </span>
-              <div className=" w-[210px] mx-auto pt-16">
                 <div className="mx-auto w-[210px] max-w-md bg-transparent p-2 overflow-y-auto scroll_hidden max-h-[500px]">
                   <Disclosure className="transition_300">
                     {({ open }) => (

@@ -316,11 +316,11 @@ const Footer = () => {
                       Contributors
                     </button>
                   </div>
-                  <div className="flex cursor-pointer items-center - group">
+                  {/* <div className="flex cursor-pointer items-center - group">
                     <button onClick={() => setHide(!hide)} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
                       Jobs
                     </button>
-                  </div>
+                  </div> */}
                 </div>
                 <div className=" xl:w-5/12 max-[475px]:w-2/5 min-[475px]:w-1/3 md:w-2/5 lg:w-1/2 flex flex-col gap-2">
                   <a href="https://sagunitech.com/" target="_blank" rel="noopener noreferrer">

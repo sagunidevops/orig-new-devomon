@@ -36,7 +36,7 @@ const Team = () => {
                             className={`hover:scale-105  duration-300 ease-in-out transition-all ${data.class}`}
                             >
                             {" "}
-                            {index === 2 ? (
+                            {index === 6 ? (
                               <img className="max-w-[30px]" src={imdb_icon} alt="imdb" />
                             ) : (
                               <LinkedIcon />
