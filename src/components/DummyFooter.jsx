@@ -8,12 +8,12 @@ import CommingSoonPopup from "./common/CommingSoonPopup";
 const DummyFooter = () => {
     const [soonPopup, setSoonPopup] = useState(false);
     // setSoonPopup(soonPopup);
-    function scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
+    // function scrollToTop() {
+    //   window.scrollTo({
+    //     top: 0,
+    //     behavior: "smooth",
+    //   });
+    // }
   return (
     <>
      <div className="bg-black relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-[#2253F5] custom-sm:after:bottom-[54px] 2xl:after:bottom-[100px] after:bottom-[75px]  after:left-0 before:content-[''] overflow-hidden">
@@ -29,8 +29,13 @@ const DummyFooter = () => {
             </Link>
             <ul className="flex md:gap-[30px] gap-4 items-center sm:order-2 order-3 sm:pt-0 pt-5 mx-auto">
               <li>
+              <Link target="_blank" to={"https://medium.com/@DevomonOfficial"} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
+                      News
+                    </Link>
+              </li>
+              <li>
               <Link to={"/team"}>
-                        <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
+                        <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
                         Core Team
                         </p>
                       </Link>

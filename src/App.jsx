@@ -12,7 +12,6 @@ import Footer from './components/common/Footer';
 import Homepage from "./components/homepage/Homepage";
 import Nft from './components/homepage/Nft';
 import Team from "./components/homepage/Team";
-import DummyFooter from "./components/DummyFooter";
 // import LatestNews from "./components/homepage/LatestNews";
 function App() {
   const [loading, setLoading] = useState(true);
@@ -40,8 +39,7 @@ function App() {
           <Route path="/nft" element={<Nft/>}/>
           {/* <Route path="/latest-news" element={<LatestNews/>}/> */}
         </Routes>
-        {/* <Footer/> */}
-        <DummyFooter/>
+        <Footer/>
       </BrowserRouter>
     </>
   );

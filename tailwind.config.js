@@ -18,6 +18,7 @@ export default {
       },
       boxShadow: {
         shadowPopup: ["box-shadow: 11px 11px 15px 0px #2253F54D;"],
+        hero_btn_shadow: ["box-shadow: 0px 0px 0px 5px #2248C5, 0px 0px 17px 0px rgba(0, 0, 0, 0.30);"],
       },
       backgroundImage: {
         aboutBgImg: "url('./assets/images/png/about_bg_img.png')",
