@@ -2,12 +2,28 @@
 import nav_logo from "../../assets/images/webp/header-logo.webp";
 import Callisto_logo from "../../assets/images/png/Devomon_Callisto_logo.png";
 import { Disclosure } from "@headlessui/react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { VscChromeClose } from "react-icons/vsc";
 import { HiMenuAlt3 } from "react-icons/hi";
+import story_video from "../../assets/video/story_video.mp4";
+import cross_icon from "../../assets/images/svg/cross_icon.svg";
 
 const Header = () => {
+  const [video, setVideo] = useState();
+  const videoRef = useRef(null); // Create a reference to the video element
+
+  useEffect(() => {
+    if (video) {
+      document.body.style.overflow = "hidden";
+      if (videoRef.current) {
+        videoRef.current.pause();
+      }
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [video]);
+
   const history = useNavigate();
   function scrollToTop() {
     window.scrollTo({
@@ -47,6 +63,34 @@ const Header = () => {
   return (
     <>
       <nav className="relative z-50">
+      <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
+          <div className={video ? "" : "hidden"}>
+            <div
+              className=" 
+             -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100]"
+            >
+              <a  onClick={() => {
+                setVideo(false), videoRef.current.pause()
+                ;
+              }}
+              className="fixed end-[2%] z-50 top-[3%] cursor-pointer max-w-[16px]"
+              >
+                <img src={cross_icon} alt="cross_icon" />
+              </a>
+                <video  ref={videoRef} className='w-100 mx-auto object-cover 
+                rounded-xl max-w-[300px] xs:max-w-[430px] sm:max-w-[600px] md:max-w-[700px]' width="700" height="700" autoPlay loop controls muted >
+                 <source src={story_video} type="video/mp4"/>
+               </video>
+            </div>
+            <div
+              onClick={() => {
+                setVideo(false), videoRef.current.pause()
+                ;
+              }}
+              className="w-full h-screen flex justify-center items-center fixed top-0 start-0 bg-[#00000080] z-[51]"
+            ></div>
+          </div>
+        </div>
         <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
           <div className={hide ? "" : "hidden"}>
             <div
@@ -124,7 +168,7 @@ const Header = () => {
                         EvoVerse
                       </p>
                     </a>
-                    <a href="#" onClick={() => setHide(!hide)}>
+                    <a onClick={() => setVideo(!video)}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
                         Manga
                       </p>
