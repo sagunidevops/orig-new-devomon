@@ -206,7 +206,7 @@
  
 /* Handle */
 .story_popup::-webkit-scrollbar-thumb {
-  background: #ffb73f; 
+  background: white; 
   border-radius: 10px;
 }
 

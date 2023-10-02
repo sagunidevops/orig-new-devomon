@@ -41,7 +41,7 @@ if (videoRef.current) {
       top: 0,
       behavior: "smooth",
     });
-  }
+  } 
   return (
     <>
       <section className=" bg-[#1E3EA81A] pt-12 relative overflow-x-hidden">
@@ -51,10 +51,7 @@ if (videoRef.current) {
               className=" 
              -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100]"
             >
-              <a  onClick={() => {
-                setVideo(false), videoRef.current.pause()
-                ;
-              }}
+              <a onClick={() => {setVideo(false), videoRef.current.pause();}}
               className="fixed end-[2%] z-50 top-[3%] cursor-pointer max-w-[16px]"
               >
                 <img src={cross_icon} alt="cross_icon" />
@@ -72,7 +69,7 @@ if (videoRef.current) {
               className="w-full h-screen flex justify-center items-center fixed top-0 start-0 bg-[#00000080] z-[51]"
             ></div>
           </div>
-        </div>
+      </div>
       <div className={hide ? "" : "hidden"}>
           <div className="text-white whitespace-nowrap bg-black py-12 px-16 rounded-xl -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-center text-xl font-bold popup_shadow">
             <svg

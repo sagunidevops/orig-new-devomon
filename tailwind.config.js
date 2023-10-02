@@ -5,6 +5,7 @@ export default {
     extend: {
       screens: {
         'xs': '475px',
+        'custom-xsm': '576px',
       },
       container: {
         center: true,
