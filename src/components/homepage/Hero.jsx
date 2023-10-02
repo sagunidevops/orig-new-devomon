@@ -57,11 +57,11 @@ const Hero = () => {
 
   return (
     <>
-     <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
+  <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
           <div className={hide ? "" : "hidden"}>
             <div
-              className="text-white bg-black opacity-95 p-6 sm:p-6 custom-xsm:p-8 rounded-xl 
-             -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-xl font-bold"
+              className="text-white bg-black opacity-95 p-6 sm:p-6 custom-md:p-8 rounded-xl 
+             -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-xl font-bold mt-[50px]"
             >
               <svg
                 onClick={() => {
@@ -77,12 +77,47 @@ const Hero = () => {
                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
               </svg>
                <h3 className="font-raleway font-bold text-xl sm:text-2xl text-white mb-4">Condors of Callisto: A Dance of Destiny</h3>
-                <div className="w-[240px] custom-xsm:w-[300px] custom-sm:w-[400px] sm:w-[500px] md:w-[600px] xl:max-w-[700px] h-[300px] custom-xsm:h-[380px] sm:h-[500px] md:h-[540px] overflow-y-auto pe-2 custom-xsm:pe-2 story_popup">
-                  
+                <div className="w-[240px] custom-md:w-[300px] custom-sm:w-[400px] sm:w-[500px] md:w-[600px] xl:max-w-[700px] h-[300px] custom-md:h-[380px] sm:h-[400px] overflow-y-auto pe-2 custom-md:pe-2 story_popup">
                   <p className="text-base font-thin leading-5">
-                  In the vast expanse of the cosmos, where stars and moons waltz through the celestial heavens, there's Calisto. It was once a desolate orb, shrouded in mystery. But now, it throbs with a hidden tale, a destiny woven by cosmic forces. Here, in the heart of the cosmos, an epic cosmic battle unfolds—a spectacle that ignites the very fabric of existence. Three legendary Evomons engage in a cataclysmic clash that sets the universe ablaze. Calisto, once barren, is transformed into a living marvel, the result of powers that defy comprehension. The battle, however, is far from over. Even with their celestial might, the sacred Devomons cannot secure victory. Desperation drives them to unleash ancient magic, banishing their dark adversary to the depths of Calisto's enigmatic surface, where secrets lie dormant, waiting to be unraveled. A century passes, and destiny takes a new turn. A young adventurer is haunted by vivid visions, a cryptic whisper that refuses to be silenced. Suddenly, a rift in the fabric of reality tears open, ensnaring the adventurer in an odyssey of epic proportions. He awakens amidst whispering trees and ethereal winds on Calisto, his heart racing, fear and anticipation reflected in his eyes. Above him, Flokimon, a fiery and joyful Evomon, materializes. An unbreakable bond forms between them, marking the beginning of an extraordinary journey. Each night, the boy is tormented by the voice that calls for liberation. The duo embarks on a voyage cloaked in mysteries and fraught with perils. They liberate oppressed realms and gather allies, all in an effort to thwart the dark forces that threaten to resurface. Their path leads them to a mysterious Evomon and the enigmatic laboratory of Professor Rix, where fragmented memories and concealed truths unravel tales of dark energies, wayward Evomons, and a destiny that remains inexplicably intertwined. As they delve deeper into the enigma of Calisto, they uncover malevolent plots led by a sinister Evomon, and a group of clandestine scientists with ominous ambitions. Their goal is nothing short of unleashing the legendary Devomon sealed within Calisto, giving life to their nefarious desires. The enigmatic voice, once haunting the young adventurer, conceals a deep mystery, a being of magical and holy nature—a guardian of ancient wisdom, bound by an inscrutable fate to break the seal of the cosmic force within Calisto, all while veiling its true intentions in shadow. Now, the adventurer and his companions must foil these malevolent plots, free the lands from the grip of darkness, and ultimately confront the very embodiment of cosmic chaos. This odyssey, bursting with long-guarded revelations and the enigma of ancient secrets, beats with exhilaration. It extends a daring challenge for you to step into a cosmos where the very universe becomes your realm. Dare to immerse yourself, for the essence of this tale pulses with eager anticipation. Embark on a journey to uncover the hidden mysteries of the Evomons, unlock the secrets of dark energies, and unveil destinies inexplicably intertwined. An electrifying adventure awaits—an expedition calling upon your courage and curiosity, a quest to liberate Calisto and shape the destiny of the cosmos itself!
+                  In the vast expanse of the cosmos, where stars and moons waltz through the celestial heavens, there's Calisto. It was once a desolate orb, shrouded in mystery. But now, it throbs with a hidden tale, a destiny woven by cosmic forces.
                  </p>
-                </div>
+                  <p className="text-base font-thin leading-5 mt-3">
+                  Here, in the heart of the cosmos, an epic cosmic battle unfolds—a spectacle that ignites the very fabric of existence. Three legendary Evomons engage in a cataclysmic clash that sets the universe ablaze. Calisto, once barren, is transformed into a living marvel, the result of powers that defy comprehension. The battle, however, is far from over.
+                 </p>
+                  <p className="text-base font-thin leading-5 mt-3">
+                  Even with their celestial might, the sacred Devomons cannot secure victory. Desperation drives them to unleash ancient magic, banishing their dark adversary to the depths of Calisto's enigmatic surface, where secrets lie dormant, waiting to be unraveled.
+                 </p>
+                  <p className="text-base font-thin leading-5 mt-3">
+                  A century passes, and destiny takes a new turn. A young adventurer is haunted by vivid visions, a cryptic whisper that refuses to be silenced. Suddenly, a rift in the fabric of reality tears open, ensnaring the adventurer in an odyssey of epic proportions.
+                 </p>
+                  <p className="text-base font-thin leading-5 mt-3">
+                  He awakens amidst whispering trees and ethereal winds on Calisto, his heart racing, fear and anticipation reflected in his eyes. Above him, Flokimon, a fiery and joyful Evomon, materializes. An unbreakable bond forms between them, marking the beginning of an extraordinary journey.
+                 </p>
+                  <p className="text-base font-thin leading-5 mt-3">
+                  Each night, the boy is tormented by the voice that calls for liberation. The duo embarks on a voyage cloaked in mysteries and fraught with perils. They liberate oppressed realms and gather allies, all in an effort to thwart the dark forces that threaten to resurface.
+                 </p>
+                  <p className="text-base font-thin leading-5 mt-3">
+                  Their path leads them to a mysterious Evomon and the enigmatic laboratory of Professor Rix, where fragmented memories and concealed truths unravel tales of dark energies, wayward Evomons, and a destiny that remains inexplicably intertwined.
+                 </p>
+                  <p className="text-base font-thin leading-5 mt-3">
+                  As they delve deeper into the enigma of Calisto, they uncover malevolent plots led by a sinister Evomon, and a group of clandestine scientists with ominous ambitions. Their goal is nothing short of unleashing the legendary Devomon sealed within Calisto, giving life to their nefarious desires.
+                 </p>
+                  <p className="text-base font-thin leading-5 mt-3">
+                  The enigmatic voice, once haunting the young adventurer, conceals a deep mystery, a being of magical and holy nature—a guardian of ancient wisdom, bound by an inscrutable fate to break the seal of the cosmic force within Calisto, all while veiling its true intentions in shadow.
+                 </p>
+                  <p className="text-base font-thin leading-5 mt-3">
+                  Now, the adventurer and his companions must foil these malevolent plots, free the lands from the grip of darkness, and ultimately confront the very embodiment of cosmic chaos.
+                 </p>
+                  <p className="text-base font-thin leading-5 mt-3">
+                  This odyssey, bursting with long-guarded revelations and the enigma of ancient secrets, beats with exhilaration. It extends a daring challenge for you to step into a cosmos where the very universe becomes your realm.
+                 </p>
+                  <p className="text-base font-thin leading-5 mt-3">
+                  Dare to immerse yourself, for the essence of this tale pulses with eager anticipation. Embark on a journey to uncover the hidden mysteries of the Evomons, unlock the secrets of dark energies, and unveil destinies inexplicably intertwined.
+                 </p>
+                  <p className="text-base font-thin leading-5 mt-3">
+                  An electrifying adventure awaits—an expedition calling upon your courage and curiosity, a quest to liberate Calisto and shape the destiny of the cosmos itself!
+                 </p>
+            </div>
             </div>
             <div
               onClick={() => {
