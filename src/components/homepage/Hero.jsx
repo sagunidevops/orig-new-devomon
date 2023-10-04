@@ -245,7 +245,7 @@ const Hero = () => {
               })}
             </div> */}
             <h2 className="text-white text-base leading-[114.32%] font-bold font-raleway my-5 sm:mt-6 sm:mb-9 max-w-[288px] sm:max-w-full mx-auto drop-shadow-lg">
-            Once upon a Time
+            Once Upon A Time...
             </h2>
             <button onClick={() => setHide(!hide)} className="bg-[#2253F5] text-white font-poppins text-xl font-bold
             px-[30px] py-[5px] border-4 border-[#2042B2] border-solid rounded-full shadow-hero_btn_shadow hover:bg-transparent duration-300 me-2 hero_btn_text">

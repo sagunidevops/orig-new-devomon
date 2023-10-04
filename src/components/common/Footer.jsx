@@ -45,32 +45,43 @@ if (videoRef.current) {
   return (
     <>
       <section className=" bg-[#1E3EA81A] pt-12 relative overflow-x-hidden">
-      <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
+        <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
           <div className={video ? "" : "hidden"}>
             <div
               className=" 
              -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100]"
             >
-              <a onClick={() => {setVideo(false), videoRef.current.pause();}}
-              className="fixed end-[2%] z-50 top-[3%] cursor-pointer max-w-[16px]"
+              <a
+                onClick={() => {
+                  setVideo(false), videoRef.current.pause();
+                }}
+                className="fixed end-[2%] z-50 top-[3%] cursor-pointer max-w-[16px]"
               >
                 <img src={cross_icon} alt="cross_icon" />
               </a>
-                <video  ref={videoRef} className='w-100 mx-auto object-cover 
-                rounded-xl max-w-[300px] xs:max-w-[430px] sm:max-w-[600px] md:max-w-[700px]' width="700" height="700" autoPlay loop controls muted >
-                 <source src={story_video} type="video/mp4"/>
-               </video>
+              <video
+                ref={videoRef}
+                className="w-100 mx-auto object-cover 
+                rounded-xl max-w-[300px] xs:max-w-[430px] sm:max-w-[600px] md:max-w-[700px]"
+                width="700"
+                height="700"
+                autoPlay
+                loop
+                controls
+                muted
+              >
+                <source src={story_video} type="video/mp4" />
+              </video>
             </div>
             <div
               onClick={() => {
-                setVideo(false), videoRef.current.pause()
-                ;
+                setVideo(false), videoRef.current.pause();
               }}
               className="w-full h-screen flex justify-center items-center fixed top-0 start-0 bg-[#00000080] z-[51]"
             ></div>
           </div>
-      </div>
-      <div className={hide ? "" : "hidden"}>
+        </div>
+        <div className={hide ? "" : "hidden"}>
           <div className="text-white whitespace-nowrap bg-black py-12 px-16 rounded-xl -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-center text-xl font-bold popup_shadow">
             <svg
               onClick={() => {
@@ -85,7 +96,7 @@ if (videoRef.current) {
             >
               <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
             </svg>
-            Comming Soon
+            Coming Soon
           </div>
           <div
             onClick={() => {
@@ -115,9 +126,9 @@ if (videoRef.current) {
             <div className="w-full md:w-1/2 flex justify-between items-start">
               <div className="mb-2 md:mb-0">
                 <p className="text-[10px] lg:text-[14px] max-w-[300px] md:max-w-[200px] lg:max-w-[240px] opacity-70 text-white">
-                  Enjoy the intriguing adventures and challenges, as well as the
-                  possibility to acquire and develop strong NFT collections and
-                  become a part of an intriguing and dynamic environment.
+                  Experience the captivating journeys and trials, along with the
+                  opportunity to build and enhance robust NFT collections, all
+                  within an engaging and ever-evolving setting.
                 </p>
                 <p className=" text-[10px] lg:text-sm max-w-[300px] md:max-w-[150px] lg:max-w-[240px] opacity-70 text-white mb-5">
                   See you on Callisto!
@@ -144,7 +155,7 @@ if (videoRef.current) {
                   })}
                 </div>
                 <div className="flex items-center gap-3 xl:gap-4 h-auto me-10 min-[475px]:hidden mt-4 sm:my-0">
-                   <div>
+                  <div>
                     <span
                       onClick={() => {
                         history("/");
@@ -192,49 +203,59 @@ if (videoRef.current) {
                 <div className="w-1/4 md:w-1/5 xl:w-1/4 flex flex-col gap-2 xl:ms-10">
                   <div className="flex cursor-pointer items-center group relative scroll_hidden">
                     <div className="footer_hover absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3 scroll_hidden">
-                    <div className="flex flex-col">
-                    <a href="https://new-callisto.web.app/" target="_blank"rel="noopener noreferrer">
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200">
-                    GameFi
-                    </p>
-                    </a>
-                    <a href="https://evozone-web.web.app/">
-                    <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-2">
-                    Evozone
-                    </p>
-                    </a>
-                    <Link to={"https://new-callisto.web.app/#evomons"} target="_blank">
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
-                      NFTs
-                    </p>
-                    </Link>
-                    <a href="https://new-callisto.web.app/alpha"target="_blank" rel="noopener noreferrer"
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
-                    >
-                      Dashboard{" "}
-                    </a>
-                    <a href="#" onClick={() => setHide(!hide)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
-                    EvoVerse
-                    </p>
-                    </a>
-                    <Link onClick={() => setVideo(!video)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
-                    Manga
-                    </p>
-                    </Link>
-                    <p
-                      onClick={() => setHide(!hide)}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
-                    >
-                      Anime{" "}
-                    </p>
-                    <a href="#" onClick={() => setHide(!hide)}>
-                    <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
-                    Merchandise
-                    </p>
-                    </a>
-                </div>
+                      <div className="flex flex-col">
+                        <a
+                          href="https://new-callisto.web.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200">
+                            GameFi
+                          </p>
+                        </a>
+                        <a href="https://evozone-web.web.app/">
+                          <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-2">
+                            Evozone
+                          </p>
+                        </a>
+                        <Link
+                          to={"https://new-callisto.web.app/#evomons"}
+                          target="_blank"
+                        >
+                          <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
+                            NFTs
+                          </p>
+                        </Link>
+                        <a
+                          href="https://new-callisto.web.app/alpha"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
+                        >
+                          Dashboard{" "}
+                        </a>
+                        <a href="#" onClick={() => setHide(!hide)}>
+                          <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                            EvoVerse
+                          </p>
+                        </a>
+                        <Link onClick={() => setVideo(!video)}>
+                          <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                            Manga
+                          </p>
+                        </Link>
+                        <p
+                          onClick={() => setHide(!hide)}
+                          className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
+                        >
+                          Anime{" "}
+                        </p>
+                        <a href="#" onClick={() => setHide(!hide)}>
+                          <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                            Merchandise
+                          </p>
+                        </a>
+                      </div>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
                       D-World
@@ -255,24 +276,27 @@ if (videoRef.current) {
                     </svg>
                   </div>
                   <div className="flex cursor-pointer items-center group">
-                    <button onClick={() => setHide(!hide)} className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
+                    <button
+                      onClick={() => setHide(!hide)}
+                      className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200"
+                    >
                       Staking
                     </button>
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
                     <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1]">
-                    <Link to={"/team"}>
+                      <Link to={"/team"}>
                         <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
-                        Core Team
+                          Core Team
                         </p>
                       </Link>
                       {/* <button onClick={() => setHide(!hide)} className="text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                       Advisor
                       </button> */}
-                      <Link to={"/stream-partner"}>
-                      <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
-                      Streaming Partners
-                      </p>
+                      <Link to={"https://streaming.devomon.io"}>
+                        <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
+                          Streaming Partners
+                        </p>
                       </Link>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
@@ -295,9 +319,13 @@ if (videoRef.current) {
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
                     <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[11]">
-                    <a target="_blank" rel="noreferrer" href="https://whitepaper.devomon.io/">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://whitepaper.devomon.io/"
+                      >
                         <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
-                        Whitepaper
+                          Whitepaper
                         </p>
                       </a>
                       {/* <a href="https://drive.google.com/file/d/160mfNzpK0Uu0JdtmfzKSJOr6xjlhUtgp/view">
@@ -310,9 +338,11 @@ if (videoRef.current) {
                       FAQ
                       </p>
                       </a> */}
-                      <a href='#contact'
-                           className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins">
-                      Contact
+                      <a
+                        href="#contact"
+                        className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins"
+                      >
+                        Contact
                       </a>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
@@ -334,14 +364,21 @@ if (videoRef.current) {
                     </svg>
                   </div>
                   <div className="flex cursor-pointer items-center group">
-                    <Link target="_blank" to={"https://medium.com/@DevomonOfficial"} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
+                    <Link
+                      target="_blank"
+                      to={"https://medium.com/@DevomonOfficial"}
+                      className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200"
+                    >
                       News
                     </Link>
                   </div>
                 </div>
                 <div className="xl:w-1/4 w-1/4 sm:w-1/6 md:w-1/4 lg:w-1/5 flex flex-col gap-3">
                   <div className="flex cursor-pointer items-center - group">
-                    <button onClick={() => setHide(!hide)} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
+                    <button
+                      onClick={() => setHide(!hide)}
+                      className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200"
+                    >
                       Governance
                     </button>
                   </div>
@@ -351,7 +388,10 @@ if (videoRef.current) {
                     </button>
                   </div> */}
                   <div className="flex cursor-pointer items-center - group">
-                    <button onClick={() => setHide(!hide)} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200">
+                    <button
+                      onClick={() => setHide(!hide)}
+                      className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200"
+                    >
                       Contributors
                     </button>
                   </div>
@@ -362,12 +402,20 @@ if (videoRef.current) {
                   </div> */}
                 </div>
                 <div className=" xl:w-5/12 max-[475px]:w-2/5 min-[475px]:w-1/3 md:w-2/5 lg:w-1/2 flex flex-col gap-2">
-                  <a href="https://sagunitech.com/" target="_blank" rel="noopener noreferrer">
-                  <img className="max-w-[96px]" src={saguniLogo} alt="saguniLogo img" />
+                  <a
+                    href="https://sagunitech.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="max-w-[96px]"
+                      src={saguniLogo}
+                      alt="saguniLogo img"
+                    />
                   </a>
                   <div className="flex items-center - group">
                     <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 font-poppins font-bold">
-                      Saguni Tech LLC
+                      SaGuNi Tech LLC
                     </p>
                   </div>
                 </div>
@@ -378,9 +426,9 @@ if (videoRef.current) {
         <div className="border-t border-[#2253F5] py-3 text-sm opacity-70 relative z-10">
           <div className="container flex flex-col sm:flex-row justify-between">
             <p className="text-center sm:text-start opacity-70 text-white">
-              All rights reserved
+              All Rights Reserved
             </p>
-            <div className="flex justify-between  gap-5 mt-2 md:mr-11 text-white">
+            <div className="flex justify-between  gap-5 md:mr-11 text-white">
               <Link
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="https://www.devomon.io/cookie-policy"

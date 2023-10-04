@@ -80,7 +80,7 @@ const DummyFooter = () => {
           </div>
         </div>
         <div className="bg-[#2253F5] rounded-[420px] w-[420px] h-[179px] absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 blur-[200px] z-[0]"></div>
-        {/* popup comming soon */}
+        {/* popup coming soon */}
         {soonPopup ? (
           <div className="fixed top-0 left-0 w-full min-h-screen z-[999]">
             <CommingSoonPopup setSoonPopup={setSoonPopup} />
