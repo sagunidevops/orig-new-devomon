@@ -285,10 +285,10 @@ if (videoRef.current) {
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
                     <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1]">
-                      <Link to={"/team"}>
+                      <Link to={"https://team.devomon.io"}>
                         <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                           Core Team
-                        </p>
+                        </p>  
                       </Link>
                       {/* <button onClick={() => setHide(!hide)} className="text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                       Advisor
@@ -428,7 +428,7 @@ if (videoRef.current) {
             <p className="text-center sm:text-start opacity-70 text-white">
               All Rights Reserved
             </p>
-            <div className="flex justify-between  gap-5 md:mr-11 text-white">
+            <div className="flex justify-between sm:mt-0 mt-2 gap-5 md:mr-11 text-white">
               <Link
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="https://www.devomon.io/cookie-policy"

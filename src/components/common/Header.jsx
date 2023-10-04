@@ -262,7 +262,11 @@ const Header = () => {
                       </Link>
                     </span> */}
                     <span>
-                      <Link to={"https://streaming.devomon.io"}>
+                      <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        to={"https://streaming.devomon.io"}
+                      >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
                           Streaming Partners
                         </p>
@@ -388,10 +392,10 @@ const Header = () => {
               </li>
             </ul>
             <div
-              className="lg:hidden cursor-pointer text-[35px] text-white"
+              className="lg:hidden cursor-pointer text-[35px] text-white relative  z-10"
               onClick={() => setNav(!Nav)}
             >
-              <HiMenuAlt3 />
+              {Nav ? <HiMenuAlt3 /> : <VscChromeClose />}
             </div>
             <ul
               className={
@@ -401,12 +405,6 @@ const Header = () => {
               }
             >
               <div className=" w-full mx-auto min-h-screen flex flex-col relative justify-center">
-                <span
-                  onClick={() => setNav(!Nav)}
-                  className="absolute end-4 z-50 top-2 cursor-pointer text-[34px] text-white"
-                >
-                  <VscChromeClose />
-                </span>
                 <div className="mx-auto w-[210px] max-w-md bg-transparent p-2 overflow-y-auto scroll_hidden max-h-[500px]">
                   <Disclosure className="transition_300">
                     {({ open }) => (
