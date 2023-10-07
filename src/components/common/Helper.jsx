@@ -14,7 +14,7 @@ import OwnerShipImg3 from "../../assets/images/webp/ownership3.webp";
 import OwnerShipImg4 from "../../assets/images/webp/ownership4.webp";
 import OwnerShipImg5 from "../../assets/images/webp/ownership5.webp";
 import MavenCapital from "../../assets/images/svg/MavenCapital.svg";
-import ChainLink from "../../assets/images/svg/chainlink.svg";
+// import ChainLink from "../../assets/images/svg/chainlink.svg";
 import magic from "../../assets/images/svg/magic.svg";
 
 import devomon_team1 from "../../assets/images/webp/devomon_team1.webp";
@@ -337,10 +337,10 @@ export const ourPartner = [
         icon: MavenCapital,
         url: "https://mavencapital.io/",
       },
-      {
-        icon: ChainLink,
-        url: "https://chain.link/",
-      },
+      // {
+      //   icon: ChainLink,
+      //   url: "https://chain.link/",
+      // },
       {
         icon: bgaLogo,
         url: "https://www.blockchaingamealliance.org/",
