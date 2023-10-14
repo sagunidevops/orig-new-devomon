@@ -1,7 +1,7 @@
 import Hero from "./Hero";
 import About from "./About";
 import AboutCard from "./AboutCard";
-import Partner from "./Partner";
+// import Partner from "./Partner";
 import TouchForm from "./TouchForm";
 // import { useEffect } from "react";
 // import { LatestNewsHandler } from "../common/Api";
@@ -33,7 +33,7 @@ const Homepage = () => {
       <About />
       <AboutCard />
       {/* <News newsDataValue={latestNewsData} loading={loading} /> */}
-      <Partner />
+      {/* <Partner /> */}
       <TouchForm />
     </>
   );
