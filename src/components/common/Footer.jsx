@@ -293,9 +293,9 @@ if (videoRef.current) {
                       {/* <button onClick={() => setHide(!hide)} className="text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                       Advisor
                       </button> */}
-                      <Link to={"https://streaming.devomon.io"}>
+                      <Link to={"https://partners.devomon.io"}>
                         <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
-                          Streaming Partners
+                          Partners
                         </p>
                       </Link>
                     </div>

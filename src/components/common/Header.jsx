@@ -265,10 +265,10 @@ const Header = () => {
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        to={"https://streaming.devomon.io"}
+                        to={"https://partners.devomon.io"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                          Streaming Partners
+                          Partners
                         </p>
                       </Link>
                     </span>
@@ -622,11 +622,11 @@ const Header = () => {
                           </span> */}
                           <span>
                             <Link
-                              to={"https://streaming.devomon.io"}
+                              to={"https://partners.devomon.io"}
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                Streaming Partners
+                                Partners
                               </p>
                             </Link>
                           </span>
