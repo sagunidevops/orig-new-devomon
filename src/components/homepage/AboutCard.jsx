@@ -3,6 +3,7 @@ import { AboutCardData } from "../common/Helper";
 import { useRef, useState } from "react";
 import story_video from "../../assets/video/story_video.mp4";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
+import Brand_peak from "../../assets/images/png/Brand_peak.png";
 import { useEffect } from "react";
 
 const AboutCard = () => {
@@ -98,23 +99,23 @@ useEffect(() => {
       </div>
        {/* Pop-up */}
        <div className={`bg-[#1E3EA81A] relative overflow-x-hidden ${hide ? "" : "hidden"}`}>
-        <div className="text-white whitespace-nowrap bg-black py-12 px-16 rounded-xl -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-center text-xl font-bold popup_shadow">
-          <svg
-            onClick={closePopup}
-            className="absolute end-5 z-50 top-[10%] bi bi-x-lg cursor-pointer"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="white"
-            viewBox="0 0 16 16"
-          >
-            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
-          </svg>
-          Coming Soon
+        <div className="text-white whitespace-nowrap bg-black w-[300px] md:w-auto xs:w-[400px] md:max-w-[500px] rounded-xl -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-center text-xl font-bold popup_shadow">
+
+        <svg onClick={closePopup} className="absolute end-3 xs:end-4 z-50 top-[3%] cursor-pointer max-w-[20px] sm:max-w-[26px]" width="26" height="26" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="14.8491" width="3" height="21" rx="1.5" transform="rotate(45 14.8491 0)" fill="white"/>
+        <rect x="14.8491" width="3" height="21" rx="1.5" transform="rotate(45 14.8491 0)" fill="white"/>
+        <rect x="14.8491" width="3" height="21" rx="1.5" transform="rotate(45 14.8491 0)" fill="white"/>
+        <rect x="14.8491" width="3" height="21" rx="1.5" transform="rotate(45 14.8491 0)" fill="white"/>
+        <rect y="2.12134" width="3" height="21" rx="1.5" transform="rotate(-45 0 2.12134)" fill="white"/>
+        <rect y="2.12134" width="3" height="21" rx="1.5" transform="rotate(-45 0 2.12134)" fill="white"/>
+        <rect y="2.12134" width="3" height="21" rx="1.5" transform="rotate(-45 0 2.12134)" fill="white"/>
+        <rect y="2.12134" width="3" height="21" rx="1.5" transform="rotate(-45 0 2.12134)" fill="white"/>
+        </svg>
+          <img className="w-full h-full rounded-xl" src={Brand_peak} alt="" />
         </div>
         <div
           onClick={closePopup}
-          className="w-full h-screen flex justify-center items-center fixed top-0 start-0 bg-[#00000080] z-[51]"
+          className="w-full h-screen flex justify-center items-center fixed top-0 start-0 bg-[#00000080] z-[51]rounded-xl"
         ></div>
       </div>
     </>

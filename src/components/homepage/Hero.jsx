@@ -9,6 +9,7 @@ import VimeoPlayer from "@u-wave/react-vimeo";
 import story_video from "../../assets/video/story_video.mp4";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   // VIDEO POPUP JS
@@ -57,7 +58,7 @@ const Hero = () => {
 
   return (
     <>
-  <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
+     {/* <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
           <div className={hide ? "" : "hidden"}>
             <div
               className="text-white bg-black opacity-95 p-6 sm:p-6 custom-md:p-8 rounded-xl 
@@ -126,7 +127,7 @@ const Hero = () => {
               className="w-full h-screen flex justify-center items-center fixed top-0 start-0 bg-[#00000080] z-[51]"
             ></div>
           </div>
-     </div>
+     </div> */}
       <section className="min-h-screen relative h-screen hero_section ">
       <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
           <div className={video ? "" : "hidden"}>
@@ -247,10 +248,10 @@ const Hero = () => {
             <h2 className="text-white text-base leading-[114.32%] font-bold font-raleway my-5 sm:mt-6 sm:mb-9 max-w-[288px] sm:max-w-full mx-auto drop-shadow-lg">
             Once Upon A Time...
             </h2>
-            <button onClick={() => setHide(!hide)} className="bg-[#2253F5] text-white font-poppins text-xl font-bold
+            <Link to={"https://story.devomon.io/"} target="_blank" className="bg-[#2253F5] text-white font-poppins text-xl font-bold
             px-[30px] py-[5px] border-4 border-[#2042B2] border-solid rounded-full shadow-hero_btn_shadow hover:bg-transparent duration-300 me-2 hero_btn_text">
             Story
-            </button>
+            </Link>
             <button onClick={() => setVideo(!video)} className="bg-[#FFC40A] text-white font-poppins text-xl font-bold
             px-[30px] py-[5px] border-4 border-[#D0A205] border-solid rounded-full shadow-hero_btn_shadow hover:bg-transparent duration-300 ms-2 hero_btn_text">
             Manga

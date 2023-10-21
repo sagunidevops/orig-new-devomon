@@ -579,7 +579,6 @@ export const AboutCardData = [
     title: "Dashboard",
     character_img: dashboard_character,
     className: "w-[95%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[45%] xl:w-[40%] xs:!left-[0%] -left-[9%]",
-    linkValue:"https://new-callisto.web.app/alpha"
   },
   {
     card_bg: evoVerse_bg,
