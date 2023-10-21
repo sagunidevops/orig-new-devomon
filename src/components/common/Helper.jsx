@@ -71,6 +71,7 @@ import anime_character from "../../assets/images/abc7.png";
 import merch_character from "../../assets/images/abc8.png";
 // ======================================== faq=============================
 import latest_news_slider_img from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
+import MerchImage from "../../assets/images/png/Brand_peak.png"
 
 export const tureOnwership = [
   {
@@ -602,6 +603,8 @@ export const AboutCardData = [
     card_bg: merch_bg,
     title: "MERCHANDISE",
     character_img: merch_character,
+    popupImage:MerchImage 
+,
     className: "w-[100%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[53%] lg:w-[45%] xl:w-[43%] -left-[7%] xs:left-[1%]",
   },
   {

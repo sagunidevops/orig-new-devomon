@@ -3,7 +3,6 @@ import { AboutCardData } from "../common/Helper";
 import { useRef, useState } from "react";
 import story_video from "../../assets/video/story_video.mp4";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
-import Brand_peak from "../../assets/images/png/Brand_peak.png";
 import { useEffect } from "react";
 
 const AboutCard = () => {
@@ -12,6 +11,7 @@ const AboutCard = () => {
 const [video, setVideo] = useState();
 const videoRef = useRef(null);
 const [hide, setHide] = useState(false);
+const [modalImage,setModalImage]=useState()
 
 useEffect(() => {
   if (video||hide) {
@@ -25,7 +25,9 @@ useEffect(() => {
 }, [video,hide]);
 
     // Pop-up state and functions
-  const openPopup = () => {
+  const openPopup = (value) => {
+    setModalImage(value.popupImage
+      )
     setHide(true);
   };
   const closePopup = () => {
@@ -70,10 +72,9 @@ useEffect(() => {
                 if (value.title === "Manga") {
                   setVideo(!video);
                 } else if (!value.linkValue) {
-                  openPopup();
+                  openPopup(value);
                 }
               }}
-              // target={value.linkValue ? "_blank" : ""}
             >
               <div className="relative overflow-hidden duration-500 about_card_outline">
                 <div className="about_card_bg h-[180px] sm:h-[200px] lg:h-[220px] 2xl:h-[300px]">
@@ -111,7 +112,7 @@ useEffect(() => {
         <rect y="2.12134" width="3" height="21" rx="1.5" transform="rotate(-45 0 2.12134)" fill="white"/>
         <rect y="2.12134" width="3" height="21" rx="1.5" transform="rotate(-45 0 2.12134)" fill="white"/>
         </svg>
-          <img className="w-full h-full rounded-xl" src={Brand_peak} alt="" />
+          <img className="w-full h-full rounded-xl" src={modalImage} alt="" />
         </div>
         <div
           onClick={closePopup}
