@@ -252,10 +252,10 @@ const Hero = () => {
             px-[30px] py-[5px] border-4 border-[#2042B2] border-solid rounded-full shadow-hero_btn_shadow hover:bg-transparent duration-300 me-2 hero_btn_text">
             Story
             </Link>
-            <button onClick={() => setVideo(!video)} className="bg-[#FFC40A] text-white font-poppins text-xl font-bold
+            {/* <button onClick={() => setVideo(!video)} className="bg-[#FFC40A] text-white font-poppins text-xl font-bold
             px-[30px] py-[5px] border-4 border-[#D0A205] border-solid rounded-full shadow-hero_btn_shadow hover:bg-transparent duration-300 ms-2 hero_btn_text">
             Manga
-            </button>
+            </button> */}
           </div>
         </div>
       </section>
