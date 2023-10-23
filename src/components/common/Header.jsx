@@ -160,7 +160,7 @@ const Header = () => {
                         GameFi
                       </p>
                     </a>
-                    <a href="https://evozone-web.web.app/">
+                    <a target="_blank" rel="noopener noreferrer" href="https://evozone-web.web.app/">
                       <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-4">
                         Evozone
                       </p>
@@ -477,7 +477,7 @@ const Header = () => {
                                 GameFi
                               </p>
                             </a>
-                            <a href="https://evozone-web.web.app/">
+                            <a target="_blank" rel="noopener noreferrer" href="https://evozone-web.web.app/">
                               <p className="font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-2">
                                 Evozone
                               </p>
@@ -621,7 +621,7 @@ const Header = () => {
                             </Link>
                           </span> */}
                           <span>
-                            <Link
+                            <Link target="_blank"
                               to={"https://partners.devomon.io"}
                               onClick={() => setNav(!Nav)}
                             >

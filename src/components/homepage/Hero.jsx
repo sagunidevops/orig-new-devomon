@@ -10,6 +10,9 @@ import story_video from "../../assets/video/story_video.mp4";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import audioFile from "../../assets/audio/Devomon_song.wav";
+import play_button from "../../assets/images/svg/play_button.svg";
+import pause_button from "../../assets/images/svg/pause_button.svg";
 
 const Hero = () => {
   // VIDEO POPUP JS
@@ -56,6 +59,20 @@ const Hero = () => {
    });
    const isTabletOrMobile = useMediaQuery({ query: "(max-width: 767.99px)" });
 
+    const [audioPlaying, setAudioPlaying] = useState(false);
+    const audioRef = useRef(null);
+  
+    const toggleAudio = () => {
+      const audio = audioRef.current;
+  
+      if (audioPlaying) {
+        audio.pause();
+      } else {
+        audio.play();
+      }
+  
+      setAudioPlaying(!audioPlaying);
+    };
   return (
     <>
      {/* <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
@@ -248,10 +265,15 @@ const Hero = () => {
             <h2 className="text-white text-base leading-[114.32%] font-bold font-raleway my-5 sm:mt-6 sm:mb-9 max-w-[288px] sm:max-w-full mx-auto drop-shadow-lg">
             Once Upon A Time...
             </h2>
+            <div className="flex items-center justify-center">
             <Link to={"https://story.devomon.io/"} target="_blank" className="bg-[#2253F5] text-white font-poppins text-xl font-bold
-            px-[30px] py-[5px] border-4 border-[#2042B2] border-solid rounded-full shadow-hero_btn_shadow hover:bg-transparent duration-300 me-2 hero_btn_text">
+            px-[30px] py-[5px] border-4 border-[#2042B2] border-solid rounded-full shadow-hero_btn_shadow hover:bg-transparent duration-300 me-5 hero_btn_text">
             Story
             </Link>
+            <button className="play-button" onClick={toggleAudio}>
+             {audioPlaying ? <><img className="w-[40px]" src={pause_button} alt="pause button" /></> : <><img className="w-[40px]" src={play_button} alt="play button" /></>}
+            </button>
+            </div>
             {/* <button onClick={() => setVideo(!video)} className="bg-[#FFC40A] text-white font-poppins text-xl font-bold
             px-[30px] py-[5px] border-4 border-[#D0A205] border-solid rounded-full shadow-hero_btn_shadow hover:bg-transparent duration-300 ms-2 hero_btn_text">
             Manga
@@ -259,6 +281,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
+      <audio ref={audioRef} src={audioFile}></audio>
       <ThankyouModal
         ThankyouModalText={ThankyouModalText}
         isOpenThankYouModal={isOpenThankYouModal}

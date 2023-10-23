@@ -71,9 +71,9 @@ import anime_character from "../../assets/images/abc7.png";
 import merch_character from "../../assets/images/abc8.png";
 // ==== faq ====
 import latest_news_slider_img from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
-import MerchImage from "../../assets/images/png/Brand_peak.png"
-import evoverse from "../../assets/images/png/evoverse.png"
-import dashboard from "../../assets/images/png/dashboard coming.png"
+import MerchImage from "../../assets/images/webp/Brand_peak.webp"
+import evoverse from "../../assets/images/webp/evoverse.webp"
+import dashboard from "../../assets/images/webp/dashboard-coming.webp"
 
 export const tureOnwership = [
   {
@@ -596,12 +596,15 @@ export const AboutCardData = [
     title: "Manga",
     character_img: manga_character,
     className: "w-[50%] min-[576px]:w-[35%] xs:w-[30%] sm:w-[26%] md:w-[23%] lg:w-[22%] xl:w-[20%] 2xl:w-[19%] min-[576px]:left-[8%] -left-[5%]",
+    popupPara:"Coming Soon",
   },
   {
     card_bg: anime_bg,
     title: "Anime",
     character_img: anime_character,
     className: "w-[53%] min-[576px]:w-[35%] xs:w-[32%] sm:w-[35%] md:w-[30%] lg:w-[26%] xl:w-[22%] 2xl:w-[23%] min-[576px]:right-[8%] right-0",
+    popupPara:"Coming Soon",
+
   },
   {
     card_bg: merch_bg,
@@ -614,7 +617,7 @@ export const AboutCardData = [
     card_bg: coming_soon_bg,
     title: "News",
     className: "hidden",
-    linkValue:"https://medium.com/@DevomonOfficial"
+    linkValue:"https://medium.com/@DevomonOfficial",
   },
 ];
 

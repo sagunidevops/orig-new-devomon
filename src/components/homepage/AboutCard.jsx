@@ -12,6 +12,7 @@ const [video, setVideo] = useState();
 const videoRef = useRef(null);
 const [hide, setHide] = useState(false);
 const [modalImage,setModalImage]=useState()
+const [modalPara,setModalPara]=useState()
 
 useEffect(() => {
   if (video||hide) {
@@ -26,14 +27,16 @@ useEffect(() => {
 
     // Pop-up state and functions
   const openPopup = (value) => {
+    console.log(value)
     setModalImage(value.popupImage
+      )
+      setModalPara(value.popupPara
       )
     setHide(true);
   };
   const closePopup = () => {
     setHide(false);
   };
-
   return (
     <>
       <div className=" -mt-[23%] xs:-mt-[18%] sm:-mt-[24%] md:-mt-[19%] lg:-mt-[14%] xl:-mt-[11%] 2xl:-mt-[14%] relative z-[11]">
@@ -99,10 +102,10 @@ useEffect(() => {
         })}
       </div>
        {/* Pop-up */}
-       <div className={`bg-[#1E3EA81A] relative overflow-x-hidden ${hide ? "" : "hidden"}`}>
-        <div className="text-white whitespace-nowrap bg-black w-[300px] md:w-auto xs:w-[400px] md:max-w-[500px] rounded-xl -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-center text-xl font-bold popup_shadow">
-
-        <svg onClick={closePopup} className="absolute end-3 xs:end-4 z-50 top-[3%] cursor-pointer max-w-[20px] sm:max-w-[26px]" width="26" height="26" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <div className={`relative overflow-x-hidden ${hide ? "" : "hidden"}`}>
+        <div className="text-white whitespace-nowrap min-w-[90%] min-h-[90%] 2xl:min-h-0 2xl:min-w-0 2xl:max-w-[100%] 2xl:max-h-[100%] rounded-xl -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-center text-xl font-bold p-[15px] custom-xsm:p-[40px] lg:p-[96px] mt-[48px] flex justify-center items-center">
+       <div className="relative">
+       <svg onClick={closePopup} className={`absolute z-50 cursor-pointer max-w-[20px] sm:max-w-[26px] ${modalPara ? "end-[4%] top-[6%]" : "lg:-end-[8%] lg:-top-[11%] -end-[6%] -top-[14%] md:-top-[10%]"}`} width="26" height="26" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="14.8491" width="3" height="21" rx="1.5" transform="rotate(45 14.8491 0)" fill="white"/>
         <rect x="14.8491" width="3" height="21" rx="1.5" transform="rotate(45 14.8491 0)" fill="white"/>
         <rect x="14.8491" width="3" height="21" rx="1.5" transform="rotate(45 14.8491 0)" fill="white"/>
@@ -113,6 +116,10 @@ useEffect(() => {
         <rect y="2.12134" width="3" height="21" rx="1.5" transform="rotate(-45 0 2.12134)" fill="white"/>
         </svg>
           <img className="w-full h-full rounded-xl" src={modalImage} alt="" />
+          <div className="bg-black py-16 px-12 sm:px-24 sm:py-20 rounded-2xl max-w-[320px] flex justify-center items-center popup_shadow">
+          <p className="text-3xl text-white">{modalPara}</p>
+          </div>
+       </div>
         </div>
         <div
           onClick={closePopup}

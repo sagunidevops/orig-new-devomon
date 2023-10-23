@@ -54,7 +54,7 @@ const DummyFooter = () => {
             </ul>
             {/* ===================== COMPANY LOGOS ====================== */}
             <div className="flex md:gap-5 custom-sm:gap-3 gap-5 items-center custom-xsm:justify-end justify-center sm:order-3 order-2 sm:w-auto custom-xsm:w-1/2 w-full">
-              <a href="https://sagunitech.com/">
+              <a target="_blank" rel="noopener noreferrer" href="https://sagunitech.com/">
                 <img
                   className="lg:max-w-[120px] 2xl:max-w-[220px] w-full sm:max-w-[100px] max-w-[90px]"
                   src={saguni_logo}
