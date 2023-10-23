@@ -69,9 +69,11 @@ import evoVerse_character from "../../assets/images/abc5.png";
 import manga_character from "../../assets/images/abc6.png";
 import anime_character from "../../assets/images/abc7.png";
 import merch_character from "../../assets/images/abc8.png";
-// ======================================== faq=============================
+// ==== faq ====
 import latest_news_slider_img from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
 import MerchImage from "../../assets/images/png/Brand_peak.png"
+import evoverse from "../../assets/images/png/evoverse.png"
+import dashboard from "../../assets/images/png/dashboard coming.png"
 
 export const tureOnwership = [
   {
@@ -580,12 +582,14 @@ export const AboutCardData = [
     title: "Dashboard",
     character_img: dashboard_character,
     className: "w-[95%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[45%] xl:w-[40%] xs:!left-[0%] -left-[9%]",
+    popupImage:dashboard,
   },
   {
     card_bg: evoVerse_bg,
     title: "EvoVerse",
     character_img: evoVerse_character,
     className: "w-[45%] min-[576px]:w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[19%] 2xl:w-[19%] min-[576px]:right-[10%] right-0",
+    popupImage:evoverse,
   },
   {
     card_bg: manga_bg,
@@ -603,8 +607,7 @@ export const AboutCardData = [
     card_bg: merch_bg,
     title: "MERCHANDISE",
     character_img: merch_character,
-    popupImage:MerchImage 
-,
+    popupImage:MerchImage,
     className: "w-[100%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[53%] lg:w-[45%] xl:w-[43%] -left-[7%] xs:left-[1%]",
   },
   {
