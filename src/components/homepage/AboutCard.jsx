@@ -103,7 +103,7 @@ useEffect(() => {
       </div>
        {/* Pop-up */}
        <div className={`relative overflow-x-hidden ${hide ? "" : "hidden"}`}>
-        <div className="text-white whitespace-nowrap min-w-[90%] min-h-[90%] 2xl:min-h-0 2xl:min-w-0 2xl:max-w-[100%] 2xl:max-h-[100%] rounded-xl -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-center text-xl font-bold p-[15px] custom-xsm:p-[40px] lg:p-[96px] mt-[48px] flex justify-center items-center">
+        <div className="text-white whitespace-nowrap min-w-[90%] xl:min-w-[70%] min-h-[90%] xl:min-h-[70%] 2xl:min-h-0 2xl:min-w-0 2xl:max-w-[100%] 2xl:max-h-[100%] rounded-xl -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-center text-xl font-bold p-[15px] custom-xsm:p-[40px] lg:p-[96px] mt-[48px] flex justify-center items-center">
        <div className="relative">
        <svg onClick={closePopup} className={`absolute z-50 cursor-pointer max-w-[20px] sm:max-w-[26px] ${modalPara ? "end-[4%] top-[6%]" : "lg:-end-[8%] lg:-top-[11%] -end-[6%] -top-[14%] md:-top-[10%]"}`} width="26" height="26" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="14.8491" width="3" height="21" rx="1.5" transform="rotate(45 14.8491 0)" fill="white"/>
@@ -121,7 +121,6 @@ useEffect(() => {
             <p className="text-3xl text-white">{modalPara}</p>
             </div>
           }
-        
        </div>
         </div>
         <div
