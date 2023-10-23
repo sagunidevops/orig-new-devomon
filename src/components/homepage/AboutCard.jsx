@@ -115,12 +115,26 @@ useEffect(() => {
         <rect y="2.12134" width="3" height="21" rx="1.5" transform="rotate(-45 0 2.12134)" fill="white"/>
         <rect y="2.12134" width="3" height="21" rx="1.5" transform="rotate(-45 0 2.12134)" fill="white"/>
         </svg>
-          <img className="w-full h-full rounded-xl" src={modalImage?modalImage.popupImage:""} alt="" />
+          {/* <img className="w-full h-full rounded-xl" src={modalImage?modalImage.popupImage:""} alt="" />
           {
            modalImage&& modalImage.title==="Dashboard"||modalImage&&modalImage.title==="EvoVerse"||modalImage&&modalImage.title==="MERCHANDISE"?"":  <div className="bg-black py-16 px-12 sm:px-24 sm:py-20 rounded-2xl max-w-[320px] flex justify-center items-center popup_shadow">
             <p className="text-3xl text-white">{modalPara}</p>
             </div>
-          }
+          } */}
+          {(modalImage && modalImage.title === "Dashboard") ||
+            (modalImage && modalImage.title === "EvoVerse") ||
+            (modalImage && modalImage.title === "MERCHANDISE") ? (
+              <img
+              className="w-full h-full rounded-xl"
+              src={modalImage ? modalImage.popupImage : ""}
+              alt=""
+            />
+            ) : (
+              <div className="bg-black py-16 px-12 sm:px-24 sm:py-20 rounded-2xl max-w-[320px] flex justify-center items-center popup_shadow">
+                <p className="text-3xl text-white">{modalPara}</p>
+              </div>
+            )}
+        
        </div>
         </div>
         <div
