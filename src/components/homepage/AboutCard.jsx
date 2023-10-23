@@ -13,7 +13,7 @@ const videoRef = useRef(null);
 const [hide, setHide] = useState(false);
 const [modalImage,setModalImage]=useState()
 const [modalPara,setModalPara]=useState()
-
+console.log(modalImage?modalImage.popupImage:"")
 useEffect(() => {
   if (video||hide) {
     document.body.style.overflow = "hidden";
@@ -28,7 +28,7 @@ useEffect(() => {
     // Pop-up state and functions
   const openPopup = (value) => {
     console.log(value)
-    setModalImage(value.popupImage
+    setModalImage(value
       )
       setModalPara(value.popupPara
       )
@@ -115,10 +115,13 @@ useEffect(() => {
         <rect y="2.12134" width="3" height="21" rx="1.5" transform="rotate(-45 0 2.12134)" fill="white"/>
         <rect y="2.12134" width="3" height="21" rx="1.5" transform="rotate(-45 0 2.12134)" fill="white"/>
         </svg>
-          <img className="w-full h-full rounded-xl" src={modalImage} alt="" />
-          <div className="bg-black py-16 px-12 sm:px-24 sm:py-20 rounded-2xl max-w-[320px] flex justify-center items-center popup_shadow">
-          <p className="text-3xl text-white">{modalPara}</p>
-          </div>
+          <img className="w-full h-full rounded-xl" src={modalImage?modalImage.popupImage:""} alt="" />
+          {
+           modalImage&& modalImage.title==="Dashboard"||modalImage&&modalImage.title==="EvoVerse"||modalImage&&modalImage.title==="MERCHANDISE"?"":  <div className="bg-black py-16 px-12 sm:px-24 sm:py-20 rounded-2xl max-w-[320px] flex justify-center items-center popup_shadow">
+            <p className="text-3xl text-white">{modalPara}</p>
+            </div>
+          }
+        
        </div>
         </div>
         <div
