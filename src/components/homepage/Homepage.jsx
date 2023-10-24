@@ -3,6 +3,9 @@ import About from "./About";
 import AboutCard from "./AboutCard";
 // import Partner from "./Partner";
 import TouchForm from "./TouchForm";
+import StoryPdf from "../common/StoryPdf.jsx";
+import { PDFViewer } from "@react-pdf/renderer";
+import { useState } from "react";
 // import { useEffect } from "react";
 // import { LatestNewsHandler } from "../common/Api";
 // import { NewsApi } from "../common/ApiUrls";
@@ -12,7 +15,7 @@ import TouchForm from "./TouchForm";
 const Homepage = () => {
   // const [latestNewsData, setLatestNewsData] = useState();
   // const [loading, setLoading] = useState(false);
-
+const[show,setShow]=useState(false)
   // const latestNewsApiHandler = async () => {
   //   setLoading(true);
   //   try {
@@ -29,12 +32,16 @@ const Homepage = () => {
   // console.log("latestNewsDatalatestNewsData",latestNewsData)
   return (
     <>
-      <Hero />
+      {/* <Hero />
       <About />
-      <AboutCard />
+      <AboutCard />  */}
       {/* <News newsDataValue={latestNewsData} loading={loading} /> */}
       {/* <Partner /> */}
-      <TouchForm />
+       {/* <TouchForm /> */}
+      
+   
+    <StoryPdf />
+    
     </>
   );
 };

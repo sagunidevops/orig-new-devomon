@@ -28,9 +28,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {loading && <Preloader />}
+        {/* {loading && <Preloader />} */}
         <BackToTop />
-        <Header/>
+        {/* <Header/> */}
         <Routes>
           <Route path="/" element={<Homepage/>}/>
           <Route path="/coming-soon" element={<ComingSoon/>}/>
