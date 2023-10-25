@@ -3,7 +3,7 @@ import footer_logo from "../../src/assets/images/png/devomon-logo.png";
 import saguni_logo from "../../src/assets/images/png/Saguni-Logo.png";
 import emotiongaming from "../../src/assets/images/png/EMOTIONS_GAMING.png";
 import { Link } from "react-router-dom";
-import CommingSoonPopup from "./common/CommingSoonPopup";
+import ComingSoonPopup from "./common/ComingSoonPopup";
 
 const DummyFooter = () => {
     const [soonPopup, setSoonPopup] = useState(false);
@@ -83,7 +83,7 @@ const DummyFooter = () => {
         {/* popup coming soon */}
         {soonPopup ? (
           <div className="fixed top-0 left-0 w-full min-h-screen z-[999]">
-            <CommingSoonPopup setSoonPopup={setSoonPopup} />
+            <ComingSoonPopup setSoonPopup={setSoonPopup} />
           </div>
         ) : (
           ""

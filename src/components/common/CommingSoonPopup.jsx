@@ -1,6 +1,6 @@
 
 import { VscChromeClose } from "react-icons/vsc";
-const CommingSoonPopup = ({ setSoonPopup }) => {
+const ComingSoonPopup = ({ setSoonPopup }) => {
   return (
     <>
       <div className="relative">
@@ -30,4 +30,4 @@ const CommingSoonPopup = ({ setSoonPopup }) => {
   );
 };
 
-export default CommingSoonPopup;
+export default ComingSoonPopup;

@@ -8,10 +8,15 @@ import { VscChromeClose } from "react-icons/vsc";
 import { HiMenuAlt3 } from "react-icons/hi";
 import story_video from "../../assets/video/story_video.mp4";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
+import dashboard from "../../assets/images/webp/dashboard-coming.webp";
+import MerchImage from "../../assets/images/png/Brand_peak.png";
+import evoverse from "../../assets/images/webp/evoverse.webp";
+// import cross_icon from "../../assets/images/svg/cross_icon.svg";
 
 const Header = () => {
   const [video, setVideo] = useState();
   const videoRef = useRef(null); // Create a reference to the video element
+  const [popupValue, setPopupValue] = useState("");
 
   useEffect(() => {
     if (video) {
@@ -48,7 +53,10 @@ const Header = () => {
   }
 
   const location = useLocation();
-
+  const clickHandler = (value) => {
+    setPopupValue(value);
+    setHide(!hide);
+  };
   useEffect(() => {
     if (location.hash) {
       const targetElement = document.querySelector(location.hash);
@@ -102,24 +110,57 @@ const Header = () => {
         <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
           <div className={hide ? "" : "hidden"}>
             <div
-              className="text-white whitespace-nowrap bg-black py-12 px-16 rounded-xl 
-             -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-center text-xl font-bold popup_shadow"
+              className={`text-white whitespace-nowrap rounded-xl 
+             -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-center text-xl font-bold w-auto ${
+               popupValue === "Dashboard" ||
+               popupValue === "EvoVerse" ||
+               popupValue === "Merchandise"
+                 ? "max-w-[700px] 2xl:max-w-[900px] px-4 w-full"
+                 : "bg-black popup_shadow py-12 px-16"
+             }`}
             >
-              <svg
-                onClick={() => {
-                  setHide(false);
-                }}
-                className="absolute end-5 z-50 top-[10%] bi bi-x-lg cursor-pointer"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="white"
-                viewBox="0 0 16 16"
-              >
-                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
-              </svg>
-              Coming Soon
+              {popupValue === "Merchandise" ? (
+                ""
+              ) : (
+                <img
+                  onClick={() => {
+                    setHide(false);
+                  }}
+                  className={`absolute z-50 bi bi-x-lg cursor-pointer ${
+                    popupValue === "Dashboard" ||
+                    popupValue === "EvoVerse" ||
+                    popupValue === "Merchandise"
+                      ? "top-[5%] end-[6%] custom-xsm:top-[5%] custom-xsm:end-[5%] max-w-[20px] sm:max-w-[40px]"
+                      : "max-w-[20px] end-[5%] custom-xsm:end-4 top-[12%]"
+                  }`}
+                  src={cross_icon}
+                  alt=""
+                />
+              )}
+              {popupValue === "Dashboard" ? (
+                <img className="rounded-xl w-full" src={dashboard} />
+              ) : popupValue === "EvoVerse" ? (
+                <img className="rounded-xl w-full" src={evoverse} />
+              ) : popupValue === "Merchandise" ? (
+                <div className="relative">
+                  <img
+                    onClick={() => {
+                      setHide(false);
+                    }}
+                    className="absolute z-50 max-w-[20px] sm:max-w-[40px] top-5 end-[4%] sm:end-[15%] bi bi-x-lg cursor-pointer"
+                    src={cross_icon}
+                    alt=""
+                  />
+                  <img
+                    className="rounded-xl w-full sm:h-[500px] sm:w-[500px] mx-auto"
+                    src={MerchImage}
+                  />
+                </div>
+              ) : (
+                "Coming Soon"
+              )}
             </div>
+
             <div
               onClick={() => {
                 setHide(false);
@@ -160,7 +201,11 @@ const Header = () => {
                         GameFi
                       </p>
                     </a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://evozone-web.web.app/">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://evozone-web.web.app/"
+                    >
                       <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-4">
                         Evozone
                       </p>
@@ -174,35 +219,36 @@ const Header = () => {
                         NFTs
                       </p>
                     </Link>
-                    <a
-                      href="https://callisto.devomon.io/alpha"
-                      target="_blank" //" target="_blank" rel="noopener noreferrer""
+                    <span
+                      onClick={() => clickHandler("Dashboard")}
+                      // href="https://callisto.devomon.io/alpha"
+                      //" target="_blank" rel="noopener noreferrer""
                       rel="noopener noreferrer"
                       className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] transition-all duration-200"
                     >
                       Dashboard{" "}
-                    </a>
-                    <a href="#" onClick={() => setHide(!hide)}>
+                    </span>
+                    <span onClick={() => clickHandler("EvoVerse")}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
                         EvoVerse
                       </p>
-                    </a>
+                    </span>
                     <a onClick={() => setVideo(!video)}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
                         Manga
                       </p>
                     </a>
                     <p
-                      onClick={() => setHide(!hide)}
+                      onClick={() => clickHandler("Anime")}
                       className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4"
                     >
                       Anime{" "}
                     </p>
-                    <a href="#" onClick={() => setHide(!hide)}>
+                    <span onClick={() => clickHandler("Merchandise")}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
                         Merchandise
                       </p>
-                    </a>
+                    </span>
                     {/* <Link to={"/coming-soon"}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
                         coming soon
@@ -232,13 +278,13 @@ const Header = () => {
                 </svg>
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200">
-                <a
-                  onClick={() => setHide(!hide)}
+                <Link
+                  onClick={() => clickHandler("Anime")}
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   href="#"
                 >
                   Staking
-                </a>
+                </Link>
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[95px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
@@ -477,7 +523,11 @@ const Header = () => {
                                 GameFi
                               </p>
                             </a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://evozone-web.web.app/">
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href="https://evozone-web.web.app/"
+                            >
                               <p className="font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-2">
                                 Evozone
                               </p>
@@ -491,15 +541,15 @@ const Header = () => {
                                 NFTs
                               </p>
                             </Link>
-                            <a
+                            <span
                               onClick={() => setNav(!Nav)}
-                              href="https://callisto.devomon.io/alpha "
+                              // href="https://callisto.devomon.io/alpha "
                               target="_blank"
                               rel="noopener noreferrer"
                               className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
                             >
                               Dashboard{" "}
-                            </a>
+                            </span>
                             <a
                               href="#"
                               onClick={() => {
@@ -531,8 +581,7 @@ const Header = () => {
                             >
                               Anime{" "}
                             </p>
-                            <a
-                              href="#"
+                            <span
                               onClick={() => {
                                 setNav(!Nav);
                                 setHide(!hide);
@@ -541,7 +590,7 @@ const Header = () => {
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                                 Merchandise
                               </p>
-                            </a>
+                            </span>
                             {/* <Link
                               to={"/coming-soon"}
                               onClick={() => setNav(!Nav)}
@@ -621,7 +670,8 @@ const Header = () => {
                             </Link>
                           </span> */}
                           <span>
-                            <Link target="_blank"
+                            <Link
+                              target="_blank"
                               to={"https://partners.devomon.io"}
                               onClick={() => setNav(!Nav)}
                             >
@@ -693,7 +743,6 @@ const Header = () => {
                             </a>
                           </span> */}
                           <span className="mt-4">
-                            {" "}
                             <a
                               onClick={() => setNav(!Nav)}
                               href="#contact"

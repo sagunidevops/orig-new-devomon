@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AboutCardData } from "../common/Helper";
 import { useRef, useState } from "react";
 import story_video from "../../assets/video/story_video.mp4";
@@ -37,6 +37,14 @@ useEffect(() => {
   const closePopup = () => {
     setHide(false);
   };
+
+  const history = useNavigate();
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <>
       <div className=" -mt-[23%] xs:-mt-[18%] sm:-mt-[24%] md:-mt-[19%] lg:-mt-[14%] xl:-mt-[11%] 2xl:-mt-[14%] relative z-[11]">
@@ -71,11 +79,14 @@ useEffect(() => {
             <Link
               to={value.linkValue}
               key={index}
-              onClick={() => {
+              target={value.title==="GameFi"||value.title==="Evozone"||value.title==="NFT"||value.title==="News"?"_blank":""}
+              onClick={() => { 
                 if (value.title === "Manga") {
                   setVideo(!video);
                 } else if (!value.linkValue) {
                   openPopup(value);
+                  history("/");
+                  scrollToTop();
                 }
               }}
             >
