@@ -14,7 +14,7 @@ import Team from "./components/homepage/Team";
 import CookiePolicyText from "./components/CookiePolicyText";
 import PrivacyPolicyTexts from "./components/PrivacyPolicyTexts";
 import TermsAndConditionsTexts from "./components/TermsAndConditionsTexts";
-// import LatestNews from "./components/homepage/LatestNews";
+
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
