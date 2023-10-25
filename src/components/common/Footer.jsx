@@ -205,7 +205,7 @@ if (videoRef.current) {
                     <div className="footer_hover absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3 scroll_hidden">
                       <div className="flex flex-col">
                         <a
-                          href="https://new-callisto.web.app/"
+                          href="https://callisto.devomon.io/"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -219,7 +219,7 @@ if (videoRef.current) {
                           </p>
                         </a>
                         <Link
-                          to={"https://new-callisto.web.app/#evomons"}
+                          to={"https://callisto.devomon.io/#evomons"}
                           target="_blank"
                         >
                           <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
@@ -227,7 +227,7 @@ if (videoRef.current) {
                           </p>
                         </Link>
                         <a
-                          href="https://new-callisto.web.app/alpha"
+                          href="https://callisto.devomon.io/alpha"
                           target="_blank"
                           rel="noopener noreferrer"
                           className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"

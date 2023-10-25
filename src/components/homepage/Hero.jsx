@@ -249,7 +249,7 @@ const Hero = () => {
                       aria-label="social"
                       aria-describedby="social"
                     >
-                      <Link to={"https://new-callisto.web.app/"} target="_blank"rel="noopener noreferrer" className="max-w-[25px] sm:max-w-[40px] inline">
+                      <Link to={"https://callisto.devomon.io/"} target="_blank"rel="noopener noreferrer" className="max-w-[25px] sm:max-w-[40px] inline">
                         {value.footerIcon}
                       </Link>
                     </div>

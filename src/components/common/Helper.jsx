@@ -464,7 +464,7 @@ export const HeaderData = [
     icon: <HeaderArw />,
     header: [
       { text: "Callisto", path: "https://callisto.devomon.io/" },
-      { text: "Card Game", path: "https://tcg.devomon.io//" },
+      { text: "Card Game", path: "https://tcg.devomon.io/" },
       { text: "Devoland", path: "/", soon: "" },
     ],
   },
@@ -560,7 +560,7 @@ export const AboutCardData = [
     card_bg: gamefi_bg,
     title: "GameFi",
     character_img: gamefi_character,
-    linkValue:"https://new-callisto.web.app/",
+    linkValue:"https://callisto.devomon.io/",
     className: "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[24%] lg:w-[22%] xl:w-[19%] right-[6%]",
   },
   {
@@ -575,7 +575,7 @@ export const AboutCardData = [
     title: "NFT",
     character_img: nft_character,
     className: "w-[40%] xs:w-[30%] sm:w-[28%] md:w-[22%] xl:w-[18%] right-[6.5%]",
-    linkValue:"https://new-callisto.web.app/#evomons"
+    linkValue:"https://callisto.devomon.io/#evomons"
   },
   {
     card_bg: dashboard_bg,
