@@ -11,11 +11,10 @@ import cross_icon from "../../assets/images/svg/cross_icon.svg";
 import dashboard from "../../assets/images/webp/dashboard-coming.webp";
 import MerchImage from "../../assets/images/png/Brand_peak.png";
 import evoverse from "../../assets/images/webp/evoverse.webp";
-// import cross_icon from "../../assets/images/svg/cross_icon.svg";
 
 const Header = () => {
   const [video, setVideo] = useState();
-  const videoRef = useRef(null); // Create a reference to the video element
+  const videoRef = useRef(null);
   const [popupValue, setPopupValue] = useState("");
 
   useEffect(() => {
@@ -541,51 +540,35 @@ const Header = () => {
                                 NFTs
                               </p>
                             </Link>
-                            <span
-                              onClick={() => setNav(!Nav)}
-                              // href="https://callisto.devomon.io/alpha "
-                              target="_blank"
-                              rel="noopener noreferrer"
+                            <Link
+                              onClick={() => {clickHandler("Dashboard"), setNav(!Nav)}}
                               className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
                             >
                               Dashboard{" "}
-                            </span>
-                            <a
+                            </Link>
+                            <Link onClick={() => {clickHandler("EvoVerse"),setNav(!Nav)}}
                               href="#"
-                              onClick={() => {
-                                setNav(!Nav);
-                                setHide(!hide);
-                              }}
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                                 EvoVerse
                               </p>
-                            </a>
+                            </Link>
                             <a
                               href="#"
-                              onClick={() => {
-                                setNav(!Nav);
-                                setHide(!hide);
-                              }}
+                              onClick={() => {setVideo(!video),setNav(!Nav)}}
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                                 Manga
                               </p>
                             </a>
-                            <p
-                              onClick={() => {
-                                setNav(!Nav);
-                                setHide(!hide);
-                              }}
+                            <Link
+                              onClick={() => {clickHandler("Anime"),setNav(!Nav)}}
                               className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
                             >
                               Anime{" "}
-                            </p>
+                            </Link>
                             <span
-                              onClick={() => {
-                                setNav(!Nav);
-                                setHide(!hide);
-                              }}
+                              onClick={() => {clickHandler("Merchandise"),setNav(!Nav)}}
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                                 Merchandise
@@ -607,16 +590,13 @@ const Header = () => {
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
-                          <a
-                            onClick={() => {
-                              setNav(!Nav);
-                              setHide(!hide);
-                            }}
+                          <Link
+                             onClick={() => {clickHandler("Staking"),setNav(!Nav)}}
                             className="font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                             href="#"
                           >
                             Staking
-                          </a>
+                          </Link>
                         </Disclosure.Button>
                       </>
                     )}
