@@ -361,7 +361,7 @@ if (videoRef.current) {
                         </p>  
                       </Link>
                    
-                      <Link to={"https://app.gitbook.com/o/v9pCsr3yZrh9f7Q2bzoc/s/wpq8qh193MV8ECoC6SjA/"}>
+                      <Link to={"https://partners.devomon.io"}>
                         <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
                           Partners
                         </p>
