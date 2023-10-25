@@ -248,11 +248,7 @@ const Header = () => {
                         Merchandise
                       </p>
                     </span>
-                    {/* <Link to={"/coming-soon"}>
-                      <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
-                        coming soon
-                      </p>
-                    </Link> */}
+                  
                   </div>
                 </div>
                 <a
@@ -292,25 +288,19 @@ const Header = () => {
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        to={"https://team.devomon.io"}
+                        to={"https://app.gitbook.com/o/v9pCsr3yZrh9f7Q2bzoc/s/wpq8qh193MV8ECoC6SjA/"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
                           Core Team
                         </p>
                       </Link>
                     </span>
-                    {/* <span>
-                      <Link onClick={() => setHide(!hide)}>
-                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
-                          Advisors
-                        </p>
-                      </Link>
-                    </span> */}
+                  
                     <span>
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        to={"https://partners.devomon.io"}
+                        to={"https://app.gitbook.com/o/v9pCsr3yZrh9f7Q2bzoc/s/wpq8qh193MV8ECoC6SjA/"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
                           Partners
@@ -541,12 +531,17 @@ const Header = () => {
                               </p>
                             </Link>
                             <Link
-                              onClick={() => {clickHandler("Dashboard"), setNav(!Nav)}}
+                              onClick={() => {
+                                clickHandler("Dashboard"), setNav(!Nav);
+                              }}
                               className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
                             >
                               Dashboard{" "}
                             </Link>
-                            <Link onClick={() => {clickHandler("EvoVerse"),setNav(!Nav)}}
+                            <Link
+                              onClick={() => {
+                                clickHandler("EvoVerse"), setNav(!Nav);
+                              }}
                               href="#"
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
@@ -555,20 +550,26 @@ const Header = () => {
                             </Link>
                             <a
                               href="#"
-                              onClick={() => {setVideo(!video),setNav(!Nav)}}
+                              onClick={() => {
+                                setVideo(!video), setNav(!Nav);
+                              }}
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                                 Manga
                               </p>
                             </a>
                             <Link
-                              onClick={() => {clickHandler("Anime"),setNav(!Nav)}}
+                              onClick={() => {
+                                clickHandler("Anime"), setNav(!Nav);
+                              }}
                               className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
                             >
                               Anime{" "}
                             </Link>
                             <span
-                              onClick={() => {clickHandler("Merchandise"),setNav(!Nav)}}
+                              onClick={() => {
+                                clickHandler("Merchandise"), setNav(!Nav);
+                              }}
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                                 Merchandise
@@ -591,7 +592,9 @@ const Header = () => {
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
                           <Link
-                             onClick={() => {clickHandler("Staking"),setNav(!Nav)}}
+                            onClick={() => {
+                              clickHandler("Staking"), setNav(!Nav);
+                            }}
                             className="font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                             href="#"
                           >
@@ -629,7 +632,9 @@ const Header = () => {
                             <Link
                               target="_blank"
                               rel="noopener noreferrer"
-                              to={"https://team.devomon.io"}
+                              to={
+                                "https://app.gitbook.com/o/v9pCsr3yZrh9f7Q2bzoc/s/wpq8qh193MV8ECoC6SjA/"
+                              }
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
@@ -637,22 +642,11 @@ const Header = () => {
                               </p>
                             </Link>
                           </span>
-                          {/* <span>
-                            <Link
-                              onClick={() => {
-                                setHide(!hide);
-                                setNav(!Nav);
-                              }}
-                            >
-                              <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                Advisors
-                              </p>
-                            </Link>
-                          </span> */}
+
                           <span>
                             <Link
                               target="_blank"
-                              to={"https://partners.devomon.io"}
+                              to={"https://app.gitbook.com/o/v9pCsr3yZrh9f7Q2bzoc/s/wpq8qh193MV8ECoC6SjA/"}
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
@@ -698,30 +692,7 @@ const Header = () => {
                               Whitepaper
                             </a>
                           </span>
-                          {/* <span className="mt-4">
-                            {" "}
-                            <a
-                              target="_blank"
-                              href="https://pitchdeck.devomon.io"
-                              className="font-normal text-[12px] text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
-                              rel="noopener noreferrer"
-                            >
-                              Pitchdeck
-                            </a>
-                          </span> */}
-                          {/* <span className="mt-4">
-                            <a
-                              onClick={() => {
-                                setHide(!hide);
-                                setNav(!Nav);
-                              }}
-                              href="#"
-                              className="font-normal text-[12px] text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
-                              rel="noopener noreferrer"
-                            >
-                              FAQ
-                            </a>
-                          </span> */}
+
                           <span className="mt-4">
                             <a
                               onClick={() => setNav(!Nav)}

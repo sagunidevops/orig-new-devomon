@@ -3,15 +3,13 @@ import About from "./About";
 import AboutCard from "./AboutCard";
 import TouchForm from "./TouchForm";
 
-
 const Homepage = () => {
-
   return (
     <>
-       <Hero />
+      <Hero />
       <About />
-      <AboutCard /> 
-       <TouchForm />
+      <AboutCard />
+      <TouchForm />
     </>
   );
 };

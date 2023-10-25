@@ -39,12 +39,7 @@ useEffect(() => {
   };
 
   const history = useNavigate();
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
+ 
   return (
     <>
       <div className=" -mt-[23%] xs:-mt-[18%] sm:-mt-[24%] md:-mt-[19%] lg:-mt-[14%] xl:-mt-[11%] 2xl:-mt-[14%] relative z-[11]">
@@ -86,7 +81,7 @@ useEffect(() => {
                 } else if (!value.linkValue) {
                   openPopup(value);
                   history("/");
-                  scrollToTop();
+                 
                 }
               }}
             >
