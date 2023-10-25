@@ -488,19 +488,28 @@ if (videoRef.current) {
               All Rights Reserved
             </p>
             <div className="flex justify-between sm:mt-0 mt-2 gap-5 md:mr-11 text-white">
-              <Link 
+              <Link  onClick={() => {
+                        history("/");
+                        scrollToTop();
+                      }}
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="/cookie-policy"
               >
-                Cookie Policy
+                Cookie Policy,
               </Link>
-              <Link 
+              <Link  onClick={() => {
+                        history("/");
+                        scrollToTop();
+                      }}
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="/terms-conditions"
               >
                 Terms and Conditions
               </Link>
-              <Link 
+              <Link  onClick={() => {
+                        history("/");
+                        scrollToTop();
+                      }}
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="/privacy-policy"
               >
