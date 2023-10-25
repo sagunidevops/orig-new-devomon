@@ -10,7 +10,6 @@ import StreamPartner from './components/homepage/StreamPartner';
 import Header from "./components/common/Header";
 import Footer from './components/common/Footer';
 import Homepage from "./components/homepage/Homepage";
-import Nft from './components/homepage/Nft';
 import Team from "./components/homepage/Team";
 import CookiePolicyText from "./components/CookiePolicyText";
 import PrivacyPolicyTexts from "./components/PrivacyPolicyTexts";
@@ -30,7 +29,7 @@ function App() {
     }, [loading]);
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter >
         {loading && <Preloader />}
         <BackToTop />
         <Header/>
