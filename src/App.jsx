@@ -12,6 +12,9 @@ import Footer from './components/common/Footer';
 import Homepage from "./components/homepage/Homepage";
 import Nft from './components/homepage/Nft';
 import Team from "./components/homepage/Team";
+import CookiePolicyText from "./components/CookiePolicyText";
+import PrivacyPolicyTexts from "./components/PrivacyPolicyTexts";
+import TermsAndConditionsTexts from "./components/TermsAndConditionsTexts";
 // import LatestNews from "./components/homepage/LatestNews";
 function App() {
   const [loading, setLoading] = useState(true);
@@ -36,7 +39,9 @@ function App() {
           <Route path="/coming-soon" element={<ComingSoon/>}/>
           <Route path="/team" element={<Team/>}/>
           <Route path="/stream-partner" element={<StreamPartner/>}/>
-          <Route path="/nft" element={<Nft/>}/>
+          <Route path="/cookie-policy" element={<CookiePolicyText/>}/>
+          <Route path="/privacy-policy" element={<PrivacyPolicyTexts/>}/>
+          <Route path="/terms-conditions" element={<TermsAndConditionsTexts/>}/>
           {/* <Route path="/latest-news" element={<LatestNews/>}/> */}
         </Routes>
         <Footer/>

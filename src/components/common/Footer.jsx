@@ -491,21 +491,21 @@ if (videoRef.current) {
               <Link 
               target="_blank"
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="https://www.devomon.io/"
+                to="/cookie-policy"
               >
                 Cookie Policy
               </Link>
               <Link 
               target="_blank"
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="https://www.devomon.io/"
+                to="/terms-conditions"
               >
                 Terms and Conditions
               </Link>
               <Link 
               target="_blank"
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="https://www.devomon.io/"
+                to="/privacy-policy"
               >
                 Privacy Policy
               </Link>
