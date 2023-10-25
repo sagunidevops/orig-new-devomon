@@ -51,8 +51,7 @@ useEffect(() => {
              -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100]"
             >
               <a onClick={() => {setVideo(false), videoRef.current.pause();}}
-              className="fixed end-[2%] z-50 top-[3%] cursor-pointer max-w-[16px]"
-              >
+                 className="fixed end-[2%] z-50 top-[3%] cursor-pointer max-w-[16px]">
                 <img src={cross_icon} alt="cross_icon" />
               </a>
                 <video  ref={videoRef} className='w-100 mx-auto object-cover 
@@ -131,7 +130,7 @@ useEffect(() => {
             (modalImage && modalImage.title === "EvoVerse") ||
             (modalImage && modalImage.title === "MERCHANDISE") ? (
               <img
-              className={`rounded-xl ${modalImage&&modalImage.title === "MERCHANDISE" ? "w-full h-full sm:w-[500px] sm:h-[500px] 3xl:w-[900px] 3xl:h-[900px]": "w-full h-full"}`}
+              className={`rounded-xl ${modalImage&&modalImage.title === "MERCHANDISE" ? "w-[310px] custom-xsm:w-full custom-xsm:h-full sm:w-[500px] sm:h-[500px] 3xl:w-[900px] 3xl:h-[900px]": "w-full h-full"}`}
               src={modalImage ? modalImage.popupImage : ""}
               alt=""
             />

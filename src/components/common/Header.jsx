@@ -141,12 +141,12 @@ const Header = () => {
               ) : popupValue === "EvoVerse" ? (
                 <img className="rounded-xl w-full" src={evoverse} />
               ) : popupValue === "Merchandise" ? (
-                <div className="relative">
+                <div className="relative p-[20px] custom-xsm:p-0">
                   <img
                     onClick={() => {
                       setHide(false);
                     }}
-                    className="absolute z-50 max-w-[20px] sm:max-w-[40px] top-5 end-[4%] 3xl:end-[24%] sm:end-[15%] bi bi-x-lg cursor-pointer"
+                    className="absolute z-50 max-w-[20px] sm:max-w-[40px] top-[8%] end-[8%] custom-xsm:top-5 custom-xsm:end-[4%] 3xl:end-[24%] sm:end-[15%] bi bi-x-lg cursor-pointer"
                     src={cross_icon}
                     alt=""
                   />
