@@ -37,6 +37,8 @@ const Homepage = () => {
       <AboutCard /> 
       {/* <News newsDataValue={latestNewsData} loading={loading} /> */}
       {/* <Partner /> */}
+
+      
        <TouchForm />
       
    
