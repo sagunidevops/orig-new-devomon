@@ -152,7 +152,7 @@ const Header = () => {
                 <div className="absolute top-[95px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     <a
-                      href="https://new-callisto.web.app/"
+                      href="https://callisto.devomon.io/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -166,7 +166,7 @@ const Header = () => {
                       </p>
                     </a>
                     <Link
-                      to={"https://new-callisto.web.app/#evomons"}
+                      to={"https://callisto.devomon.io/#evomons"}
                       target="_blank"
                       onClick={() => setNav(!Nav)}
                     >
@@ -175,7 +175,7 @@ const Header = () => {
                       </p>
                     </Link>
                     <a
-                      href="https://new-callisto.web.app/alpha "
+                      href="https://callisto.devomon.io/alpha"
                       target="_blank" //" target="_blank" rel="noopener noreferrer""
                       rel="noopener noreferrer"
                       className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] transition-all duration-200"
@@ -469,7 +469,7 @@ const Header = () => {
                         <Disclosure.Panel className="px-4 py-2 text-gray-500 bg-black transition_300 flex flex-col">
                           <div className="flex flex-col">
                             <a
-                              href="https://new-callisto.web.app/"
+                              href="https://callisto.devomon.io/"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -483,7 +483,7 @@ const Header = () => {
                               </p>
                             </a>
                             <Link
-                              to={"https://new-callisto.web.app/#evomons"}
+                              to={"https://callisto.devomon.io/#evomons"}
                               target="_blank"
                               onClick={() => setNav(!Nav)}
                             >
@@ -493,7 +493,7 @@ const Header = () => {
                             </Link>
                             <a
                               onClick={() => setNav(!Nav)}
-                              href="https://new-callisto.web.app/alpha "
+                              href="https://callisto.devomon.io/alpha "
                               target="_blank"
                               rel="noopener noreferrer"
                               className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
