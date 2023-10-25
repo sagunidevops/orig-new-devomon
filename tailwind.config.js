@@ -6,6 +6,7 @@ export default {
       screens: {
         'xs': '475px',
         'custom-xsm': '576px',
+        '3xl': '1920px',
       },
       container: {
         center: true,

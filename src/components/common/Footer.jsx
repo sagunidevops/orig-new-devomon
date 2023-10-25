@@ -125,7 +125,7 @@ if (videoRef.current) {
                popupValue === "Dashboard" ||
                popupValue === "EvoVerse" ||
                popupValue === "Merchandise"
-                 ? "max-w-[700px] 2xl:max-w-[900px] px-4 w-full"
+                 ? "max-w-[700px] 3xl:max-w-[900px] px-4 w-full"
                  : "bg-black popup_shadow py-12 px-16"
              }`}
             >
@@ -157,7 +157,7 @@ if (videoRef.current) {
                     onClick={() => {
                       setHide(false);
                     }}
-                    className="absolute z-50 max-w-[20px] sm:max-w-[40px] top-5 end-[4%] sm:end-[15%] bi bi-x-lg cursor-pointer"
+                    className="absolute z-50 max-w-[20px] sm:max-w-[40px] top-5 end-[4%] sm:end-[15%] 3xl:end-[24%] bi bi-x-lg cursor-pointer"
                     src={cross_icon}
                     alt=""
                   />
