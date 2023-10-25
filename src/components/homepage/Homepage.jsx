@@ -3,8 +3,7 @@ import About from "./About";
 import AboutCard from "./AboutCard";
 // import Partner from "./Partner";
 import TouchForm from "./TouchForm";
-import StoryPdf from "../common/StoryPdf.jsx";
-import { PDFViewer } from "@react-pdf/renderer";
+
 import { useState } from "react";
 // import { useEffect } from "react";
 // import { LatestNewsHandler } from "../common/Api";
@@ -39,8 +38,7 @@ const[show,setShow]=useState(false)
       {/* <Partner /> */}
        {/* <TouchForm /> */}
       
-   
-    <StoryPdf />
+
     
     </>
   );
