@@ -310,11 +310,9 @@ if (videoRef.current) {
                             EvoVerse
                           </p>
                         </span>
-                        <Link onClick={() => setVideo(!video)}>
-                          <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                        <span className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200" onClick={() => setVideo(!video)}>
                             Manga
-                          </p>
-                        </Link>
+                        </span>
                         <spanLink
                           onClick={() => clickHandler("Anime")}
                           className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
