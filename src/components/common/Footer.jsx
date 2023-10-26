@@ -117,7 +117,7 @@ if (videoRef.current) {
           ></div>
         </div> */}
 
-<div className="bg-[#1E3EA81A] relative overflow-x-hidden">
+          <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
           <div className={hide ? "" : "hidden"}>
             <div
               className={`text-white whitespace-nowrap rounded-xl 
