@@ -130,7 +130,7 @@ useEffect(() => {
             (modalImage && modalImage.title === "EvoVerse") ||
             (modalImage && modalImage.title === "MERCHANDISE") ? (
               <img
-              className={`rounded-xl ${modalImage&&modalImage.title === "MERCHANDISE" ? "w-[310px] custom-xsm:w-full custom-xsm:h-full sm:w-[500px] sm:h-[500px] 3xl:w-[900px] 3xl:h-[900px]": "w-full h-full"}`}
+              className={`rounded-xl ${modalImage&&modalImage.title === "MERCHANDISE" ? "w-[310px] custom-xsm:w-full custom-xsm:h-full sm:w-[500px] sm:h-[500px] 3xl:w-[600px] 3xl:h-[600px]": "w-full h-full"}`}
               src={modalImage ? modalImage.popupImage : ""}
               alt=""
             />

@@ -114,7 +114,7 @@ const Header = () => {
                popupValue === "Dashboard" ||
                popupValue === "EvoVerse" ||
                popupValue === "Merchandise"
-                 ? "max-w-[700px] 3xl:max-w-[900px] px-4 w-full"
+                 ? "max-w-[700px] 3xl:max-w-[1200px] px-4 w-full"
                  : "bg-black popup_shadow py-12 px-16"
              }`}
             >
@@ -146,12 +146,12 @@ const Header = () => {
                     onClick={() => {
                       setHide(false);
                     }}
-                    className="absolute z-50 max-w-[20px] sm:max-w-[40px] top-[8%] end-[8%] custom-xsm:top-5 custom-xsm:end-[4%] 3xl:end-[24%] sm:end-[15%] bi bi-x-lg cursor-pointer"
+                    className="absolute z-50 max-w-[20px] sm:max-w-[40px] top-[8%] end-[8%] custom-xsm:top-5 custom-xsm:end-[4%] 3xl:end-[10%] sm:end-[15%] bi bi-x-lg cursor-pointer"
                     src={cross_icon}
                     alt=""
                   />
                   <img
-                    className="rounded-xl w-full sm:h-[500px] sm:w-[500px] mx-auto"
+                    className="rounded-xl w-full sm:h-[500px] sm:w-[500px] 3xl:w-[1000px] 3xl:h-[925px] mx-auto"
                     src={MerchImage}
                   />
                 </div>
@@ -540,15 +540,15 @@ const Header = () => {
                                 NFTs
                               </p>
                             </Link>
-                            <Link
+                            <span
                               onClick={() => {
                                 clickHandler("Dashboard"), setNav(!Nav);
                               }}
                               className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
                             >
                               Dashboard{" "}
-                            </Link>
-                            <Link
+                            </span>
+                            <span
                               onClick={() => {
                                 clickHandler("EvoVerse"), setNav(!Nav);
                               }}
@@ -557,7 +557,7 @@ const Header = () => {
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                                 EvoVerse
                               </p>
-                            </Link>
+                            </span>
                             <a
                               href="#"
                               onClick={() => {
