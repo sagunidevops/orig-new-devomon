@@ -568,14 +568,14 @@ const Header = () => {
                                 Manga
                               </p>
                             </a>
-                            <Link
+                            <span
                               onClick={() => {
                                 clickHandler("Anime"), setNav(!Nav);
                               }}
                               className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
                             >
                               Anime{" "}
-                            </Link>
+                            </span>
                             <span
                               onClick={() => {
                                 clickHandler("Merchandise"), setNav(!Nav);
