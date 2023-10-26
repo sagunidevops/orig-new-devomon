@@ -361,7 +361,7 @@ if (videoRef.current) {
                         </p>  
                       </Link>
                    
-                      <Link to={"https://partners.devomon.io"}>
+                      <Link target="_blank" to={"https://partners.devomon.io"}>
                         <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
                           Partners
                         </p>
@@ -488,28 +488,19 @@ if (videoRef.current) {
               All Rights Reserved
             </p>
             <div className="flex justify-between sm:mt-0 mt-2 gap-5 md:mr-11 text-white">
-              <Link  onClick={() => {
-                        history("/");
-                        scrollToTop();
-                      }}
+              <Link target="_blank"  
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="/cookie-policy"
               >
                 Cookie Policy,
               </Link>
-              <Link  onClick={() => {
-                        history("/");
-                        scrollToTop();
-                      }}
+              <Link target="_blank"  
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="/terms-conditions"
               >
                 Terms and Conditions
               </Link>
-              <Link  onClick={() => {
-                        history("/");
-                        scrollToTop();
-                      }}
+              <Link target="_blank"  
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="/privacy-policy"
               >
