@@ -794,3 +794,21 @@ export const Faq_arrow = () => {
 </svg>
   );
 };
+
+
+export const BackToTopIcon = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M22 15.975L20.225 17.75L12 9.525L3.775 17.75L2 15.975L12 5.975L22 15.975Z"
+        fill="white"
+      />
+    </svg>
+  );
+};
