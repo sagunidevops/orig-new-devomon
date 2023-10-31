@@ -5,6 +5,7 @@ import saguniLogo from "../../assets/images/svg/SaguniLogo.svg";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import story_video from "../../assets/video/story_video.mp4";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
+import C_icon from "../../assets/images/svg/C_icon.svg";
 import dashboard from "../../assets/images/webp/dashboard-coming.webp";
 import MerchImage from "../../assets/images/png/Brand_peak.png";
 import evoverse from "../../assets/images/webp/evoverse.webp";
@@ -482,8 +483,8 @@ if (videoRef.current) {
         </div>
         <div className="border-t border-[#2253F5] py-3 text-sm opacity-70 relative z-10">
           <div className="container flex flex-col sm:flex-row justify-between">
-            <p className="text-center sm:text-start opacity-70 text-white">
-              2023 c Saguni.All Rights Reserved.
+            <p className="text-center sm:text-start opacity-70 text-white flex items-center gap-1 justify-center">
+             2023 <img className="max-w-[12px]" src={C_icon} alt="C_icon" /> Saguni.All Rights Reserved
             </p>
             <div className="flex justify-between sm:mt-0 mt-2 gap-5 md:mr-11 text-white">
               {/* <Link target="_blank"  
