@@ -483,7 +483,7 @@ if (videoRef.current) {
         <div className="border-t border-[#2253F5] py-3 text-sm opacity-70 relative z-10">
           <div className="container flex flex-col sm:flex-row justify-between">
             <p className="text-center sm:text-start opacity-70 text-white">
-              All Rights Reserved
+              2023 c Saguni.All Rights Reserved.
             </p>
             <div className="flex justify-between sm:mt-0 mt-2 gap-5 md:mr-11 text-white">
               <Link target="_blank"  
@@ -494,13 +494,13 @@ if (videoRef.current) {
               </Link>
               <Link target="_blank"  
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="/terms-conditions"
+                to="https://legal.devomon.io/"
               >
                 Terms and Conditions
               </Link>
               <Link target="_blank"  
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="/privacy-policy"
+                to="https://legal.devomon.io/privacy/legal"
               >
                 Privacy Policy
               </Link>
