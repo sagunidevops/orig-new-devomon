@@ -354,7 +354,7 @@ if (videoRef.current) {
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
                     <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1]">
-                      <Link target="_blank" to={"https://app.gitbook.com/o/v9pCsr3yZrh9f7Q2bzoc/s/wpq8qh193MV8ECoC6SjA/"}>
+                      <Link target="_blank" to={"https://team.devomon.io"}>
                         <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                           Core Team
                         </p>  
