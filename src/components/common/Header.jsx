@@ -292,7 +292,7 @@ const Header = () => {
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        to={"https://app.gitbook.com/o/v9pCsr3yZrh9f7Q2bzoc/s/wpq8qh193MV8ECoC6SjA/"}
+                        to={"https://team.devomon.io"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
                           Core Team
@@ -643,7 +643,7 @@ const Header = () => {
                               target="_blank"
                               rel="noopener noreferrer"
                               to={
-                                "https://app.gitbook.com/o/v9pCsr3yZrh9f7Q2bzoc/s/wpq8qh193MV8ECoC6SjA/"
+                                "https://team.devomon.io"
                               }
                               onClick={() => setNav(!Nav)}
                             >
