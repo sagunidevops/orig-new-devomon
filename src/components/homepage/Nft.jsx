@@ -168,7 +168,7 @@ const Nft = ({ NftRef }) => {
           </div>
           <div className="flex justify-center mt-6">
             <a
-              href="https://evozone-web.web.app/"
+              href="https://evozone.devomon.io/"
               target="_blank"
               rel="noopener noreferrer"
               className=" blue-btn-shadow hover:scale-105 transition-all ease-in-out duration-300 py-[5px] px-[21px] bg-[#F8C112] border border-[4px] border-[#CEA20C] rounded-[39px] text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins"
