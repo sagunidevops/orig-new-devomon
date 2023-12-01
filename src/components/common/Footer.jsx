@@ -286,7 +286,7 @@ if (videoRef.current) {
                         >
                             GameFi
                         </a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://evozone-web.web.app/">
+                        <a target="_blank" rel="noopener noreferrer" href="https://evozone.devomon.io/">
                           <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-2">
                             Evozone
                           </p>

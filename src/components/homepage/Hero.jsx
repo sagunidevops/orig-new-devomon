@@ -6,7 +6,6 @@ import ThankyouModal from "../common/ThankyouModal";
 import { useMediaQuery } from 'react-responsive'
 import { CrossIcon } from "../common/Icons";
 import VimeoPlayer from "@u-wave/react-vimeo";
-import story_video from "../../assets/video/story_video.mp4";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
@@ -162,7 +161,7 @@ const Hero = () => {
               </a>
                 <video  ref={videoRef} className='w-100 mx-auto object-cover 
                 rounded-xl max-w-[300px] xs:max-w-[430px] sm:max-w-[600px] md:max-w-[700px]' width="700" height="700" autoPlay loop controls muted >
-                 <source src={story_video} type="video/mp4"/>
+                 <source src="https://firebasestorage.googleapis.com/v0/b/bayou-energy.appspot.com/o/story_video.mp4?alt=media&token=ce0a3b4d-6fc9-4f47-9b65-6cf15e290d04" type="video/mp4"/>
                </video>
             </div>
             <div

@@ -1,4 +1,3 @@
-import Video  from "../../assets/video/about_video.mp4";
 const About = () => {
   return (
     <>
@@ -13,11 +12,10 @@ const About = () => {
                 <p className="text-white text-center font-normal font-poppins text-xs sm:text-sm md:text-base lg:text-xl max-w-[702px] mx-auto mt-[15px] mb-[35px] ">Unleash the Power of Anime on the Blockchain! Embark on an extraordinary journey through a captivating world, brimming with enigmatic creatures eagerly anticipating your arrival! Experience the pinnacle of entertainment with cutting-edge triple-A smartphone games, captivating comics, exclusive merchandise, and beyond – all crafted with revolutionary web3 technology. Immerse yourself in the ground-breaking fusion of anime and blockchain, like never seen before! Prepare to be amazed by Devomon.</p>
                 <div className="mt-5 ">
                 <video className='w-100 rounded-3xl mx-auto object-cover' width="700" height="700" autoPlay muted controls >
-                 <source src={Video} type="video/mp4"/>
+                 <source src="https://firebasestorage.googleapis.com/v0/b/bayou-energy.appspot.com/o/Devomon_Alpha_Trailer.mp4?alt=media&token=bb400599-0f75-4d31-9cfa-5512d839748c" type="video/mp4"/>
                 </video>
                 </div>
             </div>
-            
         </div>
     </section>
     </>

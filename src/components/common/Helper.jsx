@@ -568,7 +568,7 @@ export const AboutCardData = [
     title: "Evozone",
     character_img: evozone_character,
     className: "w-[90%] xs:w-[60%] sm:w-[55%] md:w-[45%] lg:w-[40%] 2xl:w-[40%] left-[0%]",
-    linkValue:"https://evozone-web.web.app/"
+    linkValue:"https://evozone.devomon.io/"
   },
   {
     card_bg: nft_bg,
