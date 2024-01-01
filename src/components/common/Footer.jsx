@@ -493,15 +493,15 @@ if (videoRef.current) {
               >
                 Cookie Policy,
               </Link> */}
-              <Link target="_blank"  
+              <Link  
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="https://legal.devomon.io/"
+                to="/service-terms"
               >
                 Terms and Conditions
               </Link>
-              <Link target="_blank"  
+              <Link  
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="https://legal.devomon.io/privacy/legal"
+                to="/privacy-policy"
               >
                 Privacy Policy
               </Link>
