@@ -493,13 +493,13 @@ if (videoRef.current) {
               >
                 Cookie Policy,
               </Link> */}
-              <Link  
+              <Link   target="_blank" 
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="/terms-conditons"
               >
                 Terms and Conditions
               </Link>
-              <Link  
+              <Link  target="_blank" 
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="/privacy-policy"
               >
