@@ -12,6 +12,8 @@ import Footer from './components/common/Footer';
 import Homepage from "./components/homepage/Homepage";
 import Team from "./components/homepage/Team";
 import CookiePolicyText from "./components/CookiePolicyText";
+import TermsAndConditionsTexts from "./components/TermsAndConditionsTexts";
+import PrivacyPolicyTexts from "./components/PrivacyPolicyTexts";
 // import PrivacyPolicyTexts from "./components/PrivacyPolicyTexts";
 // import TermsAndConditionsTexts from "./components/TermsAndConditionsTexts";
 
@@ -39,9 +41,8 @@ function App() {
           <Route path="/team" element={<Team/>}/>
           <Route path="/stream-partner" element={<StreamPartner/>}/>
           <Route path="/cookie-policy" element={<CookiePolicyText/>}/>
-          {/* <Route path="/privacy-policy" element={<PrivacyPolicyTexts/>}/> */}
-          {/* <Route path="/terms-conditions" element={<TermsAndConditionsTexts/>}/> */}
-          {/* <Route path="/latest-news" element={<LatestNews/>}/> */}
+          <Route path="/privacy-policy" element={<PrivacyPolicyTexts/>}/>
+          <Route path="/service-terms" element={<TermsAndConditionsTexts/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
