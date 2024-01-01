@@ -42,7 +42,7 @@ function App() {
           <Route path="/stream-partner" element={<StreamPartner/>}/>
           <Route path="/cookie-policy" element={<CookiePolicyText/>}/>
           <Route path="/privacy-policy" element={<PrivacyPolicyTexts/>}/>
-          <Route path="/service-terms" element={<TermsAndConditionsTexts/>}/>
+          <Route path="/terms-conditons" element={<TermsAndConditionsTexts/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

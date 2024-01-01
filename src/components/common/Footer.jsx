@@ -495,7 +495,7 @@ if (videoRef.current) {
               </Link> */}
               <Link  
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
-                to="/service-terms"
+                to="/terms-conditons"
               >
                 Terms and Conditions
               </Link>
