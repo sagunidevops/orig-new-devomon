@@ -31,8 +31,7 @@ const About = () => {
                 controls
               >
                 <source
-                  src="https://firebasestorage.googleapis.com/v0/b/devomon-home.appspot.com/o/about.mp4?alt=media&token=17e63c8c-9a4e-4266-9f83-eb294e51a01c"
-                  type="video/mp4"
+                  src="https://firebasestorage.googleapis.com/v0/b/devomon-1d489.appspot.com/o/Devomon_Game_Announcement_Trailer_1080p.mp4?alt=media&token=8c701118-9919-484d-be49-ca097c5d6beb"
                 />
               </video>
             </div>
