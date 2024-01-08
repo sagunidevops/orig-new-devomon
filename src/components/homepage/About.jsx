@@ -31,7 +31,8 @@ const About = () => {
                 controls
               >
                 <source
-                  src="/src/assets/video/Devomon_Game_Announcement_Trailer_1080p.mp4"
+                  // src="/src/assets/video/Devomon_Game_Announcement_Trailer_1080p.mp4"
+                  src="https://firebasestorage.googleapis.com/v0/b/devomon-1d489.appspot.com/o/Devomon_Game_Announcement_Trailer_1080p.mp4?alt=media&token=8c701118-9919-484d-be49-ca097c5d6beb"
                   type="video/mp4"
                 />
               </video>
