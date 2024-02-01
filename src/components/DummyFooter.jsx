@@ -6,17 +6,17 @@ import { Link } from "react-router-dom";
 import ComingSoonPopup from "./common/ComingSoonPopup";
 
 const DummyFooter = () => {
-    const [soonPopup, setSoonPopup] = useState(false);
-    // setSoonPopup(soonPopup);
-    // function scrollToTop() {
-    //   window.scrollTo({
-    //     top: 0,
-    //     behavior: "smooth",
-    //   });
-    // }
+  const [soonPopup, setSoonPopup] = useState(false);
+  // setSoonPopup(soonPopup);
+  // function scrollToTop() {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // }
   return (
     <>
-     <div className="bg-black relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-[#2253F5] custom-sm:after:bottom-[54px] 2xl:after:bottom-[100px] after:bottom-[75px]  after:left-0 before:content-[''] overflow-hidden">
+      <div className="bg-black relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-[#2253F5] custom-sm:after:bottom-[54px] 2xl:after:bottom-[100px] after:bottom-[75px]  after:left-0 before:content-[''] overflow-hidden">
         <div className="container 2xl:container 2xl:max-w-none 2xl:px-36 xl:max-w-[1140px] mx-auto xl:px-0 px-3 relative z-[1]">
           <div className="flex custom-xsm:justify-between justify-center pt-[32px] pb-[29px] items-center w-full flex-wrap">
             <Link to={"/"} className="order-1 w-auto custom-xsm:mb-0 mb-5">
@@ -29,16 +29,20 @@ const DummyFooter = () => {
             </Link>
             <ul className="flex md:gap-[30px] gap-4 items-center sm:order-2 order-3 sm:pt-0 pt-5 mx-auto">
               <li>
-              <Link target="_blank" to={"https://medium.com/@DevomonOfficial"} className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
-                      News
-                    </Link>
+                <Link
+                  target="_blank"
+                  to={"https://medium.com/@DevomonOfficial"}
+                  className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200"
+                >
+                  News
+                </Link>
               </li>
               <li>
-              <Link to={"/team"}>
-                        <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
-                        Core Team
-                        </p>
-                      </Link>
+                <Link to={"/team"}>
+                  <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
+                    Core Team
+                  </p>
+                </Link>
               </li>
               {/* <li>
                 <button
@@ -54,7 +58,11 @@ const DummyFooter = () => {
             </ul>
             {/* ===================== COMPANY LOGOS ====================== */}
             <div className="flex md:gap-5 custom-sm:gap-3 gap-5 items-center custom-xsm:justify-end justify-center sm:order-3 order-2 sm:w-auto custom-xsm:w-1/2 w-full">
-              <a target="_blank" rel="noopener noreferrer" href="https://sagunitech.com/">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://sagunitech.com/"
+              >
                 <img
                   className="lg:max-w-[120px] 2xl:max-w-[220px] w-full sm:max-w-[100px] max-w-[90px]"
                   src={saguni_logo}
@@ -90,7 +98,7 @@ const DummyFooter = () => {
         )}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default DummyFooter
+export default DummyFooter;

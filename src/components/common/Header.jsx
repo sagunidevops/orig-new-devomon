@@ -278,9 +278,9 @@ const Header = () => {
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200">
                 <Link
-                  onClick={() => clickHandler("Anime")}
+                  to="https://app.uncx.network/chain/bsc/farm/0xb8A299f18C8bD079c839CACB63f036Cd7dfE68c7"
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
-                  href="#"
+                  target="_blank"
                 >
                   Staking
                 </Link>
@@ -602,11 +602,12 @@ const Header = () => {
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
                           <Link
+                            to="https://app.uncx.network/chain/bsc/farm/0xb8A299f18C8bD079c839CACB63f036Cd7dfE68c7"
                             onClick={() => {
-                              clickHandler("Staking"), setNav(!Nav);
+                              setNav(!Nav);
                             }}
                             className="font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
-                            href="#"
+                            target="_blank"
                           >
                             Staking
                           </Link>
@@ -642,9 +643,7 @@ const Header = () => {
                             <Link
                               target="_blank"
                               rel="noopener noreferrer"
-                              to={
-                                "https://team.devomon.io"
-                              }
+                              to={"https://team.devomon.io"}
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">

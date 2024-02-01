@@ -346,11 +346,11 @@ if (videoRef.current) {
                     </svg>
                   </div>
                   <div className="flex cursor-pointer items-center group">
-                    <button onClick={() => clickHandler("Staking")}
+                    <Link target="_blank" to="https://app.uncx.network/chain/bsc/farm/0xb8A299f18C8bD079c839CACB63f036Cd7dfE68c7" 
                       className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200"
                     >
                       Staking
-                    </button>
+                    </Link>
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
                     <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1]">
