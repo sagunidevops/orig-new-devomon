@@ -2,16 +2,14 @@
 import footerLogo from "../../assets/images/svg/footer_logo.svg";
 import priceLogo from "../../assets/images/svg/price_logo.svg";
 import saguniLogo from "../../assets/images/svg/SaguniLogo.svg";
-import { Link,  useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import story_video from "../../assets/video/story_video.mp4";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
 import dashboard from "../../assets/images/webp/dashboard-coming.webp";
 import MerchImage from "../../assets/images/png/Brand_peak.png";
 import evoverse from "../../assets/images/webp/evoverse.webp";
 
-import {
-  footerIcons,
-} from "./Helper";
+import { footerIcons } from "./Helper";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
 import { priceApi } from "./Api";
@@ -58,10 +56,8 @@ const Footer = () => {
     setEvoPrice(responseValue);
   };
   useEffect(() => {
-
     priceHandler();
   });
- 
 
   return (
     <>
@@ -466,6 +462,52 @@ const Footer = () => {
                     >
                       News
                     </Link>
+                  </div>
+                  <div className="flex cursor-pointer items-center group relative">
+                    <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[11]">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://www.gate.io/de/trade/EVO_USDT"
+                      >
+                        <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
+                          GateIO
+                        </p>
+                      </a>
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href=" https://www.mexc.com/de-DE/exchange/EVO_USDT?_from=market"
+                        className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins"
+                      >
+                        MEXC
+                      </a>
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href=" https://pancakeswap.finance/swap?outputCurrency=0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba"
+                        className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block"
+                      >
+                        PCS
+                      </a>
+                    </div>
+                    <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
+                      Buy Evo
+                    </p>
+                    <svg
+                      className="-rotate-[270deg] group-hover:-rotate-[360deg] duration-200"
+                      width="10"
+                      height="13"
+                      viewBox="0 0 10 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.274973 0.71908C0.727803 1.25155 2.75296 3.55025 4.26239 5.27752L5.36931 6.53726L4.1995 7.88791C3.55799 8.62817 2.32529 10.0438 1.45736 11.0308C0.602017 12.0178 0.0234004 12.7451 0.186922 12.6671C0.337866 12.5762 2.21208 11.3295 4.32529 9.87492C6.45107 8.43337 8.40076 7.12168 8.66491 6.95285C8.91648 6.797 9.13032 6.61518 9.13032 6.56324C9.13032 6.45934 0.312709 0.433366 0.0234004 0.32947C-0.0520713 0.303495 0.0611362 0.485313 0.274973 0.71908Z"
+                        fill="#B8BDCA"
+                        className=" group-hover:fill-white"
+                      />
+                    </svg>
                   </div>
                 </div>
                 <div className="xl:w-1/4 w-1/4 sm:w-1/6 md:w-1/4 lg:w-1/5 flex flex-col gap-3">

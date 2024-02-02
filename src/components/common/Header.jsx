@@ -807,7 +807,7 @@ const Header = () => {
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
-                          <span className=" mb-0 font-poppins">BUY EVO</span>
+                          <span className=" mb-0 font-poppins">Buy Evo</span>
                           <svg
                             className={`${
                               open
