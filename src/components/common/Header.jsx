@@ -469,7 +469,7 @@ const Header = () => {
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   href="#"
                 >
-                  BUY EVO
+                  Buy Evo
                 </a>
                 <svg
                   className="skew-x-12 group-hover:-rotate-180 duration-200"

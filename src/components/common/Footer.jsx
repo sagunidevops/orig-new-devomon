@@ -2,19 +2,15 @@
 import footerLogo from "../../assets/images/svg/footer_logo.svg";
 import priceLogo from "../../assets/images/svg/price_logo.svg";
 import saguniLogo from "../../assets/images/svg/SaguniLogo.svg";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link,  useNavigate } from "react-router-dom";
 import story_video from "../../assets/video/story_video.mp4";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
-import C_icon from "../../assets/images/svg/C_icon.svg";
 import dashboard from "../../assets/images/webp/dashboard-coming.webp";
 import MerchImage from "../../assets/images/png/Brand_peak.png";
 import evoverse from "../../assets/images/webp/evoverse.webp";
 
 import {
   footerIcons,
-  footerLinksFirst,
-  footerLinksSecond,
-  footerLinksThird,
 } from "./Helper";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
@@ -52,20 +48,20 @@ const Footer = () => {
     });
   }
 
-  const location = useLocation();
   const clickHandler = (value) => {
     setPopupValue(value);
     setHide(!hide);
   };
-  // useEffect(() => {
-
-  //   priceHandler();
-  // });
   const priceHandler = async () => {
     const response = await priceApi(PRICE_URL);
     const responseValue = response.evoverses.usd;
     setEvoPrice(responseValue);
   };
+  useEffect(() => {
+
+    priceHandler();
+  });
+ 
 
   return (
     <>
