@@ -259,10 +259,10 @@ const Footer = () => {
                       </span>
                     </div>
                     <div>
-                      <p className="text-[10px] sm:text-xs xl:text-base font-medium text-white  opacity-70 ">
+                      <p className="text-[12px] sm:text-xs xl:text-base font-medium text-white  opacity-70 ">
                         {`$EVO —- ${evoPrice}`}
                       </p>
-                      <p className="text-[10px] mt-2 break-all sm:text-xs xl:text-base font-medium text-white opacity-70 ">
+                      <p className="text-[12px] mt-2 break-all sm:text-xs xl:text-base font-medium text-white opacity-70 ">
                         Official Contract:
                         0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba
                       </p>
