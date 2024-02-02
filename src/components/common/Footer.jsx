@@ -18,21 +18,24 @@ import {
 } from "./Helper";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
+import { priceApi } from "./Api";
+import { PRICE_URL } from "./ApiUrl";
 
 const Footer = () => {
   const [popupValue, setPopupValue] = useState("");
+  const [evoPrice, setEvoPrice] = useState("");
 
-// VIDEO POPUP JS
-const [video, setVideo] = useState();
-const videoRef = useRef(null); // Create a reference to the video element
-if (video) { 
- document.body.style.overflow = "hidden";
-if (videoRef.current) {
-  videoRef.current.pause();
-}
-} else {
-  document.body.style.overflow = "auto";
-}
+  // VIDEO POPUP JS
+  const [video, setVideo] = useState();
+  const videoRef = useRef(null); // Create a reference to the video element
+  if (video) {
+    document.body.style.overflow = "hidden";
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
+  } else {
+    document.body.style.overflow = "auto";
+  }
   const [hide, setHide] = useState();
   useEffect(() => {
     if (hide) {
@@ -47,13 +50,23 @@ if (videoRef.current) {
       top: 0,
       behavior: "smooth",
     });
-  } 
+  }
 
   const location = useLocation();
   const clickHandler = (value) => {
     setPopupValue(value);
     setHide(!hide);
   };
+  // useEffect(() => {
+
+  //   priceHandler();
+  // });
+  const priceHandler = async () => {
+    const response = await priceApi(PRICE_URL);
+    const responseValue = response.evoverses.usd;
+    setEvoPrice(responseValue);
+  };
+
   return (
     <>
       <section className=" bg-[#1E3EA81A] pt-12 relative overflow-x-hidden">
@@ -118,7 +131,7 @@ if (videoRef.current) {
           ></div>
         </div> */}
 
-          <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
+        <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
           <div className={hide ? "" : "hidden"}>
             <div
               className={`text-white whitespace-nowrap rounded-xl 
@@ -197,8 +210,8 @@ if (videoRef.current) {
           </span>
         </div>
         <div className="container pb-5 xl:pb-7 mt-4">
-          <div className="md:flex">
-            <div className="w-full md:w-1/2 flex justify-between items-start">
+          <div className="md:flex flex-wrap">
+            <div className="w-full xl:w-[55%] flex lg:justify-between items-start">
               <div className="mb-2 md:mb-0">
                 <p className="text-[10px] lg:text-[14px] max-w-[300px] md:max-w-[200px] lg:max-w-[240px] opacity-70 text-white">
                   Experience the captivating journeys and trials, along with the
@@ -229,7 +242,36 @@ if (videoRef.current) {
                     );
                   })}
                 </div>
-                <div className="flex items-center gap-3 xl:gap-4 h-auto me-10 min-[475px]:hidden mt-4 sm:my-0">
+                <div className="h-auto me-10 md:hidden mt-4 md:my-0">
+                  <div className="flex items-center gap-3 xl:gap-4">
+                    <div>
+                      <span
+                        onClick={() => {
+                          history("/");
+                          scrollToTop();
+                        }}
+                      >
+                        <img
+                          className="max-w-[40px] sm:max-w-none"
+                          src={priceLogo}
+                          alt="priceLogo"
+                        />
+                      </span>
+                    </div>
+                    <div>
+                      <p className="text-[10px] sm:text-xs xl:text-base font-medium text-white  opacity-70 ">
+                        {`$EVO —- ${evoPrice}`}
+                      </p>
+                      <p className="text-[10px] mt-2 break-all sm:text-xs xl:text-base font-medium text-white opacity-70 ">
+                        Official Contract:
+                        0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="pl-6 h-auto sm:me-10 max-[900px]:w-[60%] md:block hidden">
+                <div className="flex gap-3 items-center xl:gap-4">
                   <div>
                     <span
                       onClick={() => {
@@ -238,55 +280,46 @@ if (videoRef.current) {
                       }}
                     >
                       <img
-                        className="max-w-[30px] sm:max-w-none"
+                        className="max-w-[50px] sm:max-w-none"
                         src={priceLogo}
                         alt="priceLogo"
                       />
                     </span>
                   </div>
                   <div>
-                    <p className="text-[10px] sm:text-xs xl:text-base font-medium text-white  opacity-70 ">
-                      $EVO —-
+                    <button
+                      onClick={priceHandler}
+                      className="text-[10px] sm:text-xs xl:text-base font-medium text-white opacity-70"
+                    >
+                      {`$EVO —- ${evoPrice}`}
+                    </button>
+                    <p className="text-[10px] break-all 2xl:max-w-none xl:text-base sm:text-xs font-medium text-white opacity-70 ">
+                      Official Contract:
+                      0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-3 xl:gap-4 pl-6 h-auto sm:me-10 max-[475px]:hidden">
-                <div>
-                  <span
-                    onClick={() => {
-                      history("/");
-                      scrollToTop();
-                    }}
-                  >
-                    <img
-                      className="max-w-[30px] sm:max-w-none"
-                      src={priceLogo}
-                      alt="priceLogo"
-                    />
-                  </span>
-                </div>
-                <div>
-                  <p className="text-[10px] sm:text-xs xl:text-base font-medium text-white  opacity-70 ">
-                    $EVO —-
-                  </p>
-                </div>
-              </div>
             </div>
-            <div className=" w-full md:w-1/2 mt-4 md:mt-0 md:ps-5 lg:ps-0">
+            <div className="w-full xl:w-[45%] mt-4 lg:mt-5 xl:mt-0 lg:ps-0">
               <div className="flex justify-between md:mt-0">
                 <div className="w-1/4 md:w-1/5 xl:w-1/4 flex flex-col gap-2 xl:ms-10">
                   <div className="flex cursor-pointer items-center group relative scroll_hidden">
                     <div className="footer_hover absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3 scroll_hidden">
                       <div className="flex flex-col">
-                        <a className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
+                        <a
+                          className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
                           href="https://callisto.devomon.io/"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                            GameFi
+                          GameFi
                         </a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://evozone.devomon.io/">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://evozone.devomon.io/"
+                        >
                           <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-2">
                             Evozone
                           </p>
@@ -306,13 +339,16 @@ if (videoRef.current) {
                         >
                           Dashboard{" "}
                         </span>
-                        <span onClick={() => clickHandler("EvoVerse")} href="#" >
+                        <span onClick={() => clickHandler("EvoVerse")} href="#">
                           <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                             EvoVerse
                           </p>
                         </span>
-                        <span className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200" onClick={() => setVideo(!video)}>
-                            Manga
+                        <span
+                          className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200"
+                          onClick={() => setVideo(!video)}
+                        >
+                          Manga
                         </span>
                         <spanLink
                           onClick={() => clickHandler("Anime")}
@@ -320,7 +356,10 @@ if (videoRef.current) {
                         >
                           Anime{" "}
                         </spanLink>
-                        <span href="#" onClick={() => clickHandler("Merchandise")}>
+                        <span
+                          href="#"
+                          onClick={() => clickHandler("Merchandise")}
+                        >
                           <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
                             Merchandise
                           </p>
@@ -346,7 +385,9 @@ if (videoRef.current) {
                     </svg>
                   </div>
                   <div className="flex cursor-pointer items-center group">
-                    <Link target="_blank" to="https://app.uncx.network/chain/bsc/farm/0xb8A299f18C8bD079c839CACB63f036Cd7dfE68c7" 
+                    <Link
+                      target="_blank"
+                      to="https://app.uncx.network/chain/bsc/farm/0xb8A299f18C8bD079c839CACB63f036Cd7dfE68c7"
                       className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200"
                     >
                       Staking
@@ -357,9 +398,9 @@ if (videoRef.current) {
                       <Link target="_blank" to={"https://team.devomon.io"}>
                         <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                           Core Team
-                        </p>  
+                        </p>
                       </Link>
-                   
+
                       <Link target="_blank" to={"https://partners.devomon.io"}>
                         <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
                           Partners
@@ -395,7 +436,7 @@ if (videoRef.current) {
                           Whitepaper
                         </p>
                       </a>
-                   
+
                       <a
                         href="#contact"
                         className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins"
@@ -484,7 +525,7 @@ if (videoRef.current) {
         <div className="border-t border-[#2253F5] py-3 text-sm opacity-70 relative z-10">
           <div className="container flex flex-col sm:flex-row justify-between">
             <p className="text-center sm:text-start opacity-70 text-white flex items-center gap-1 justify-center">
-             2023 c Saguni.All Rights Reserved
+              2023 c Saguni.All Rights Reserved
             </p>
             <div className="flex justify-between sm:mt-0 mt-2 gap-5 md:mr-11 text-white">
               {/* <Link target="_blank"  
@@ -493,13 +534,15 @@ if (videoRef.current) {
               >
                 Cookie Policy,
               </Link> */}
-              <Link   target="_blank" 
+              <Link
+                target="_blank"
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="/terms-conditons"
               >
                 Terms and Conditions
               </Link>
-              <Link  target="_blank" 
+              <Link
+                target="_blank"
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="/privacy-policy"
               >
@@ -512,4 +555,4 @@ if (videoRef.current) {
     </>
   );
 };
-export default Footer
+export default Footer;

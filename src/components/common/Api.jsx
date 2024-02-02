@@ -1,7 +1,2 @@
 import { axiosRequest } from "./ApiHelper";
-export const LatestNewsHandler = async (path) =>
-  await axiosRequest(
-    "GET",
-    `${path}`
-    
-  );
+export const priceApi = async (path) => await axiosRequest("GET", `${path}`);

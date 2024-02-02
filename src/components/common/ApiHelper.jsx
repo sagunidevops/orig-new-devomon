@@ -1,5 +1,5 @@
 import Axios from "axios";
-const SERVER_URL = "https://v1.nocodeapi.com";
+const SERVER_URL = "https://api.coingecko.com/api/v3";
 
 export async function axiosRequest(method, url, data = null) {
   try {
