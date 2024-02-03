@@ -1,4 +1,4 @@
-;/* eslint-disable react/prop-types */
+/* eslint-disable react/prop-types */
 export const ExclamationIcon = () => {
   return (
     <svg
@@ -6,7 +6,8 @@ export const ExclamationIcon = () => {
       height="24"
       viewBox="0 0 24 24"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g clipPath="url(#clip0_0_413)">
         <path
           d="M10.773 0.0638485C7.93566 0.426514 5.525 1.59985 3.56233 3.56252C1.88766 5.22651 0.724997 7.34918 0.255664 9.59985C-0.0110026 10.8372 -0.0110026 13.1625 0.255664 14.3998C1.22633 19.0185 4.981 22.7732 9.59966 23.7438C10.837 24.0105 13.1623 24.0105 14.3997 23.7438C19.0183 22.7732 22.773 19.0185 23.7437 14.3998C23.8717 13.7705 23.9357 13.0238 23.9357 11.9998C23.9357 10.2292 23.7437 9.19451 23.1357 7.62651C21.7277 3.98918 18.261 1.05585 14.453 0.277182C13.5997 0.0958481 11.477 -0.0214863 10.773 0.0638485ZM14.581 1.65318C16.4797 2.13318 18.133 3.08251 19.5303 4.46918C20.917 5.85585 21.845 7.49851 22.357 9.43985C22.6023 10.3465 22.645 10.7305 22.645 11.9998C22.645 13.2692 22.6023 13.6532 22.357 14.5598C21.845 16.5012 20.917 18.1438 19.5303 19.5305C18.1437 20.9172 16.501 21.8452 14.5597 22.3572C13.653 22.6025 13.269 22.6452 11.9997 22.6452C10.7303 22.6452 10.3463 22.6025 9.43966 22.3572C7.49833 21.8452 5.85566 20.9172 4.469 19.5305C3.08233 18.1438 2.15433 16.5012 1.64233 14.5598C1.397 13.6532 1.35433 13.2692 1.35433 11.9998C1.35433 10.7305 1.397 10.3465 1.64233 9.43985C2.46366 6.32518 4.44766 3.86118 7.32766 2.41051C8.20233 1.97318 9.64233 1.53585 10.6663 1.38651C11.7223 1.24785 13.397 1.35452 14.581 1.65318Z"
@@ -36,7 +37,8 @@ export const CrossIcon = () => {
       height="17"
       viewBox="0 0 17 17"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g clipPath="url(#clip0_0_399)">
         <path
           opacity="0.7"
@@ -60,7 +62,8 @@ export const UserIcon = () => {
       height="24"
       viewBox="0 0 24 24"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g opacity="0.7" clipPath="url(#clip0_0_402)">
         <path
           d="M11.4655 0.0146427C10.9724 0.0611725 10.7898 0.0856628 10.4611 0.146887C8.96375 0.426071 7.6594 1.08485 6.57158 2.10362C5.41332 3.19342 4.75071 4.4277 4.49506 5.97546C4.42984 6.37464 4.42984 7.38852 4.49506 7.7877C4.69853 9.02444 5.18375 10.0971 5.96114 11.0326C6.48288 11.6595 7.26549 12.3134 7.95419 12.6979C8.09767 12.7787 8.21767 12.8522 8.21767 12.8595C8.21767 12.8669 8.10288 12.9085 7.96462 12.9526C6.91332 13.2857 5.85419 13.7877 4.99593 14.3608C4.24723 14.8579 3.35245 15.644 2.80723 16.2857C1.88114 17.3779 1.1768 18.6024 0.691578 19.9714C0.328969 20.995 0.0707084 22.195 0.0341867 23.035C0.0185345 23.373 0.0211432 23.3804 0.091578 23.5297C0.175056 23.7036 0.334187 23.8555 0.516795 23.9338C0.610708 23.9755 0.688969 23.9877 0.861143 23.9877C1.05419 23.9877 1.10114 23.9779 1.23419 23.9167C1.31766 23.875 1.42462 23.8016 1.47419 23.7526C1.63853 23.5812 1.67245 23.4881 1.71158 23.0718C1.93853 20.7502 2.86201 18.6122 4.33332 17.0081C4.61506 16.6995 5.18114 16.1828 5.50723 15.9404C7.07245 14.7599 8.96114 14.0791 11.3872 13.8244C11.8516 13.7755 12.1516 13.7755 12.6264 13.8244C15.0916 14.0791 17.0742 14.8138 18.6394 16.053C19.002 16.3395 19.589 16.9028 19.8864 17.253C20.1472 17.5591 20.5855 18.164 20.8046 18.524C21.6055 19.8391 22.1377 21.4702 22.2864 23.0595C22.3151 23.3657 22.3359 23.4734 22.3803 23.5567C22.4664 23.7134 22.6072 23.8432 22.769 23.9191C22.9672 24.0097 23.2933 24.0171 23.4838 23.9338C23.6664 23.8555 23.8255 23.7036 23.909 23.5297C23.982 23.3804 23.982 23.373 23.9664 23.0204C23.9272 22.1828 23.6716 20.9926 23.309 19.9714C22.4351 17.5102 20.8568 15.5118 18.7438 14.1918C17.9638 13.7044 16.9803 13.2538 16.0385 12.9502C15.8977 12.9061 15.7829 12.8644 15.7829 12.8571C15.7829 12.8497 15.9029 12.7787 16.0464 12.6979C16.5838 12.3991 17.2046 11.9167 17.669 11.4391C18.6551 10.4277 19.2733 9.20321 19.5003 7.81219C19.5655 7.41301 19.5785 6.64648 19.5316 6.21546C19.3438 4.58933 18.6081 3.17138 17.3455 2.01791C16.169 0.945255 14.6898 0.276684 13.0072 0.0611725C12.7307 0.0244389 11.6872 -0.00739861 11.4655 0.0146427ZM13.0177 1.61138C14.2672 1.82444 15.2872 2.31178 16.1585 3.1077C16.5159 3.43587 16.7116 3.65627 16.9646 4.01627C18.0681 5.58362 18.1881 7.57954 17.2777 9.25464C16.8029 10.1265 16.0438 10.8906 15.1307 11.4195C14.8829 11.5616 14.3481 11.804 14.0611 11.902C13.049 12.2522 11.8542 12.3306 10.7794 12.1224C8.57767 11.6938 6.83245 10.1583 6.28984 8.17219C6.05767 7.32484 6.06288 6.37464 6.30288 5.53464C6.90549 3.44076 8.82027 1.89546 11.2046 1.57954C11.6038 1.52811 12.6264 1.54525 13.0177 1.61138Z"
@@ -83,7 +86,8 @@ export const HeaderCrossIcons = () => {
       height="16"
       fill="white"
       className="bi bi-x-lg"
-      viewBox="0 0 16 16">
+      viewBox="0 0 16 16"
+    >
       <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
     </svg>
   );
@@ -95,7 +99,8 @@ export const HeaderArw = () => {
       height="10"
       viewBox="0 0 14 10"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M12.7008 1.11335C12.1684 1.56618 9.86967 3.59134 8.1424 5.10077L6.88266 6.20769L5.53201 5.03788C4.79175 4.39637 3.37617 3.16367 2.38915 2.29574C1.40214 1.4404 0.674867 0.861779 0.752789 1.0253C0.843698 1.17624 2.09045 3.05046 3.545 5.16367C4.98656 7.28945 6.29824 9.23914 6.46708 9.50329C6.62292 9.75486 6.80474 9.9687 6.85669 9.9687C6.96058 9.9687 12.9866 1.15109 13.0905 0.861779C13.1164 0.786308 12.9346 0.899515 12.7008 1.11335Z"
         fill="white"
@@ -112,7 +117,8 @@ export const ToggleIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth="2"
       stroke="currentColor"
-      aria-hidden="true">
+      aria-hidden="true"
+    >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -129,7 +135,8 @@ export const SupportIcon = () => {
       height="25"
       viewBox="0 0 25 25"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g filter="url(#filter0_d_99_10)">
         <path
           d="M12 2C6.486 2 2 6.486 2 12V16.143C2 17.167 2.897 18 4 18H5C5.26522 18 5.51957 17.8946 5.70711 17.7071C5.89464 17.5196 6 17.2652 6 17V11.857C6 11.5918 5.89464 11.3374 5.70711 11.1499C5.51957 10.9624 5.26522 10.857 5 10.857H4.092C4.648 6.987 7.978 4 12 4C16.022 4 19.352 6.987 19.908 10.857H19C18.7348 10.857 18.4804 10.9624 18.2929 11.1499C18.1054 11.3374 18 11.5918 18 11.857V18C18 19.103 17.103 20 16 20H14V19H10V22H16C18.206 22 20 20.206 20 18C21.103 18 22 17.167 22 16.143V12C22 6.486 17.514 2 12 2Z"
@@ -144,7 +151,8 @@ export const SupportIcon = () => {
           width="28"
           height="28"
           filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB">
+          colorInterpolationFilters="sRGB"
+        >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
@@ -182,7 +190,8 @@ export const FaqArrowIcon = () => {
       height="15"
       viewBox="0 0 24 15"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M21.0268 0.208253L12 9.00003L2.97319 0.208252L-1.21515e-07 3.10403L12 14.7916L24 3.10403L21.0268 0.208253Z"
         fill="white"
@@ -198,7 +207,8 @@ export const FaqLine = () => {
       height="3"
       viewBox="0 0 461 3"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <line
         x1="1.5"
         y1="1.5"
@@ -215,7 +225,8 @@ export const FaqLine = () => {
           y1="3"
           x2="15.9752"
           y2="3"
-          gradientUnits="userSpaceOnUse">
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#2253F5" stopOpacity="0" />
           <stop offset="0.534812" stopColor="#2253F5" />
           <stop offset="1" stopColor="#2253F5" stopOpacity="0" />
@@ -232,7 +243,8 @@ export const FaqRightBlur = () => {
       height="1064"
       viewBox="0 0 725 1064"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g filter="url(#filter0_f_0_513)">
         <ellipse
           cx="624.029"
@@ -251,7 +263,8 @@ export const FaqRightBlur = () => {
           width="1247.32"
           height="1242.03"
           filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB">
+          colorInterpolationFilters="sRGB"
+        >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
@@ -275,7 +288,8 @@ export const InstaIcon = () => {
       height="28"
       viewBox="0 0 28 28"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect
         y="0.575195"
         width="27.22"
@@ -297,7 +311,8 @@ export const YoutubeIcon = () => {
       height="28"
       viewBox="0 0 28 28"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect
         x="0.220215"
         y="0.575195"
@@ -320,7 +335,8 @@ export const TelegramIcon = () => {
       height="28"
       viewBox="0 0 28 28"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect
         x="0.439941"
         y="0.575195"
@@ -343,7 +359,8 @@ export const TwitterIcon = () => {
       height="28"
       viewBox="0 0 28 28"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect
         x="0.660156"
         y="0.575195"
@@ -366,7 +383,8 @@ export const FacebookIcon = () => {
       height="28"
       viewBox="0 0 29 28"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect
         x="0.879883"
         y="0.575195"
@@ -389,7 +407,8 @@ export const TwitchIcon = () => {
       height="28"
       viewBox="0 0 28 28"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect
         x="0.100098"
         y="0.575195"
@@ -416,7 +435,8 @@ export const DiscordIcon = () => {
       height="28"
       viewBox="0 0 28 28"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect
         x="0.319824"
         y="0.575195"
@@ -441,7 +461,8 @@ export const VideoIcon = () => {
       height="101"
       viewBox="0 0 101 101"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <circle
         cx="50.354"
         cy="50.7561"
@@ -471,12 +492,14 @@ export const VideoIcon = () => {
 };
 export const LinkedIcon = () => {
   return (
-    <svg className="max-w-[25px] md:max-w-[35px]"
+    <svg
+      className="max-w-[25px] md:max-w-[35px]"
       width="36"
       height="36"
       viewBox="0 0 36 36"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect width="36" height="36" rx="8" fill="#23CAFF" />
       <path
         d="M11.5813 7.88203C12.1368 8.09297 12.6571 8.60625 12.868 9.17578C13.1633 9.97734 12.9594 10.9406 12.3618 11.5102C11.9399 11.918 11.4266 12.1148 10.7446 12.15C10.0063 12.1852 9.52818 12.0586 9.02896 11.6789C7.65084 10.6383 8.00943 8.4375 9.64771 7.86797C10.1821 7.68516 11.054 7.69219 11.5813 7.88203ZM24.779 13.8867C25.5876 14.0555 26.3821 14.4914 26.9727 15.082C27.3946 15.5039 27.5422 15.7219 27.8305 16.3195C28.5055 17.7117 28.5477 18.1406 28.5477 23.182V27.2109H26.4102H24.2657L24.2376 23.2523C24.2094 18.9562 24.2024 18.893 23.8016 18.1477C23.4008 17.4164 22.7821 17.1141 21.8047 17.1703C20.9188 17.2266 20.2227 17.7047 19.7797 18.5625L19.5829 18.9492L19.5618 23.0766L19.5407 27.2109H17.4032H15.2586V20.6367V14.0625H17.4032H19.5477V14.9766C19.5477 15.4758 19.5688 15.8906 19.604 15.8906C19.6321 15.8906 19.7586 15.7289 19.8922 15.532C20.3985 14.7937 21.3477 14.1398 22.2899 13.8937C22.7962 13.7602 24.1602 13.7531 24.779 13.8867ZM12.7274 20.6367V27.2109H10.5829H8.43834V20.6367V14.0625H10.5829H12.7274V20.6367Z"
@@ -501,7 +524,8 @@ export const FooterArw = ({ price }) => {
       height="17"
       viewBox="0 0 16 17"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M4.26683 12.5002L3.3335 11.5668L9.7335 5.16683H4.00016V3.8335H12.0002V11.8335H10.6668V6.10016L4.26683 12.5002Z"
         fill={`${price < 0 ? "#FF0000" : "#00FF0A"}`}
@@ -518,7 +542,8 @@ export const AppleStore = () => {
         height="55"
         viewBox="0 0 72 71"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g filter="url(#filter0_b_1449_317)">
           <rect
             x="0.714844"
@@ -551,7 +576,8 @@ export const AppleStore = () => {
             width="148.091"
             height="148.09"
             filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB">
+            colorInterpolationFilters="sRGB"
+          >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feGaussianBlur in="BackgroundImageFix" stdDeviation="19.3928" />
             <feComposite
@@ -579,7 +605,8 @@ export const WindowStore = () => {
         height="55"
         viewBox="0 0 72 71"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g filter="url(#filter0_b_1449_318)">
           <rect
             x="0.740234"
@@ -612,7 +639,8 @@ export const WindowStore = () => {
             width="148.091"
             height="148.09"
             filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB">
+            colorInterpolationFilters="sRGB"
+          >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feGaussianBlur in="BackgroundImageFix" stdDeviation="19.3928" />
             <feComposite
@@ -640,7 +668,8 @@ export const AppStore = () => {
         height="55"
         viewBox="0 0 72 71"
         fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g filter="url(#filter0_b_1449_321)">
           <rect
             x="0.765625"
@@ -673,7 +702,8 @@ export const AppStore = () => {
             width="148.091"
             height="148.09"
             filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB">
+            colorInterpolationFilters="sRGB"
+          >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feGaussianBlur in="BackgroundImageFix" stdDeviation="19.3928" />
             <feComposite
@@ -700,7 +730,8 @@ export const LatestNews_arrow = () => {
       width="10"
       height="13"
       viewBox="0 0 10 13"
-      fill="none">
+      fill="none"
+    >
       <path
         d="M1.11286 0.7992C1.56569 1.3316 3.59085 3.63033 5.10028 5.3576L6.2072 6.61734L5.03739 7.96799C4.39588 8.70825 3.16318 10.1238 2.29525 11.1108C1.43991 12.0979 0.861291 12.8251 1.02481 12.7472C1.17575 12.6563 3.04997 11.4095 5.16318 9.955C7.28896 8.51344 9.23865 7.20176 9.5028 7.03292C9.75437 6.87708 9.96821 6.69526 9.96821 6.64331C9.96821 6.53942 1.1506 0.5134 0.86129 0.4095C0.785819 0.3836 0.899026 0.5654 1.11286 0.7992Z"
         fill="white"
@@ -716,7 +747,8 @@ export const Social_arrow = () => {
       height="18"
       viewBox="0 0 7 12"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M6 1L1 6L6 11"
         stroke="white"
@@ -729,72 +761,192 @@ export const Social_arrow = () => {
 };
 export const Left_arrow = () => {
   return (
-    <svg width="64" height="63" viewBox="0 0 64 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_dd_1694_989)">
-<rect width="29" height="29" rx="14.5" transform="matrix(-1 0 0 1 46.6777 17)" fill="#2253F5"/>
-<path d="M36.4028 25.3922C35.9499 25.9246 33.9248 28.2233 32.4153 29.9506L31.3084 31.2104L32.4782 32.561C33.1197 33.3013 34.3524 34.7168 35.2204 35.7039C36.0757 36.6909 36.6543 37.4182 36.4908 37.3402C36.3399 37.2493 34.4657 36.0026 32.3524 34.548C30.2267 33.1065 28.277 31.7948 28.0128 31.6259C27.7613 31.4701 27.5474 31.2883 27.5474 31.2363C27.5474 31.1324 36.365 25.1064 36.6543 25.0025C36.7298 24.9766 36.6166 25.1584 36.4028 25.3922Z" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_dd_1694_989" x="0.677734" y="0" width="63" height="63" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="5" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_1694_989"/>
-<feOffset/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.134896 0 0 0 0 0.282578 0 0 0 0 0.770833 0 0 0 1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1694_989"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset/>
-<feGaussianBlur stdDeviation="8.5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
-<feBlend mode="normal" in2="effect1_dropShadow_1694_989" result="effect2_dropShadow_1694_989"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1694_989" result="shape"/>
-</filter>
-</defs>
-</svg>
-
+    <svg
+      width="64"
+      height="63"
+      viewBox="0 0 64 63"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g filter="url(#filter0_dd_1694_989)">
+        <rect
+          width="29"
+          height="29"
+          rx="14.5"
+          transform="matrix(-1 0 0 1 46.6777 17)"
+          fill="#2253F5"
+        />
+        <path
+          d="M36.4028 25.3922C35.9499 25.9246 33.9248 28.2233 32.4153 29.9506L31.3084 31.2104L32.4782 32.561C33.1197 33.3013 34.3524 34.7168 35.2204 35.7039C36.0757 36.6909 36.6543 37.4182 36.4908 37.3402C36.3399 37.2493 34.4657 36.0026 32.3524 34.548C30.2267 33.1065 28.277 31.7948 28.0128 31.6259C27.7613 31.4701 27.5474 31.2883 27.5474 31.2363C27.5474 31.1324 36.365 25.1064 36.6543 25.0025C36.7298 24.9766 36.6166 25.1584 36.4028 25.3922Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_dd_1694_989"
+          x="0.677734"
+          y="0"
+          width="63"
+          height="63"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feMorphology
+            radius="5"
+            operator="dilate"
+            in="SourceAlpha"
+            result="effect1_dropShadow_1694_989"
+          />
+          <feOffset />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.134896 0 0 0 0 0.282578 0 0 0 0 0.770833 0 0 0 1 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_1694_989"
+          />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="8.5" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="effect1_dropShadow_1694_989"
+            result="effect2_dropShadow_1694_989"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect2_dropShadow_1694_989"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
   );
 };
 export const Right_arrow = () => {
   return (
-    <svg width="64" height="63" viewBox="0 0 64 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_dd_1694_993)">
-<rect x="17.3223" y="17" width="29" height="29" rx="14.5" fill="#2253F5"/>
-<path d="M27.5972 25.3922C28.0501 25.9246 30.0752 28.2233 31.5847 29.9506L32.6916 31.2104L31.5218 32.561C30.8803 33.3013 29.6476 34.7168 28.7796 35.7039C27.9243 36.6909 27.3457 37.4182 27.5092 37.3402C27.6601 37.2493 29.5343 36.0026 31.6476 34.548C33.7733 33.1065 35.723 31.7948 35.9872 31.6259C36.2387 31.4701 36.4526 31.2883 36.4526 31.2363C36.4526 31.1324 27.635 25.1064 27.3457 25.0025C27.2702 24.9766 27.3834 25.1584 27.5972 25.3922Z" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_dd_1694_993" x="0.322266" y="0" width="63" height="63" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="5" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_1694_993"/>
-<feOffset/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.134896 0 0 0 0 0.282578 0 0 0 0 0.770833 0 0 0 1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1694_993"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset/>
-<feGaussianBlur stdDeviation="8.5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
-<feBlend mode="normal" in2="effect1_dropShadow_1694_993" result="effect2_dropShadow_1694_993"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1694_993" result="shape"/>
-</filter>
-</defs>
-</svg>
-
-
+    <svg
+      width="64"
+      height="63"
+      viewBox="0 0 64 63"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g filter="url(#filter0_dd_1694_993)">
+        <rect
+          x="17.3223"
+          y="17"
+          width="29"
+          height="29"
+          rx="14.5"
+          fill="#2253F5"
+        />
+        <path
+          d="M27.5972 25.3922C28.0501 25.9246 30.0752 28.2233 31.5847 29.9506L32.6916 31.2104L31.5218 32.561C30.8803 33.3013 29.6476 34.7168 28.7796 35.7039C27.9243 36.6909 27.3457 37.4182 27.5092 37.3402C27.6601 37.2493 29.5343 36.0026 31.6476 34.548C33.7733 33.1065 35.723 31.7948 35.9872 31.6259C36.2387 31.4701 36.4526 31.2883 36.4526 31.2363C36.4526 31.1324 27.635 25.1064 27.3457 25.0025C27.2702 24.9766 27.3834 25.1584 27.5972 25.3922Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_dd_1694_993"
+          x="0.322266"
+          y="0"
+          width="63"
+          height="63"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feMorphology
+            radius="5"
+            operator="dilate"
+            in="SourceAlpha"
+            result="effect1_dropShadow_1694_993"
+          />
+          <feOffset />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.134896 0 0 0 0 0.282578 0 0 0 0 0.770833 0 0 0 1 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_1694_993"
+          />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="8.5" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="effect1_dropShadow_1694_993"
+            result="effect2_dropShadow_1694_993"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect2_dropShadow_1694_993"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
   );
 };
 
 export const Faq_arrow = () => {
   return (
-    <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.11286 0.7992C1.56569 1.3316 3.59085 3.63033 5.10028 5.3576L6.2072 6.61734L5.03739 7.96799C4.39588 8.70825 3.16318 10.1238 2.29525 11.1108C1.43991 12.0979 0.861291 12.8251 1.02481 12.7472C1.17575 12.6563 3.04997 11.4095 5.16318 9.955C7.28896 8.51344 9.23865 7.20176 9.5028 7.03292C9.75437 6.87708 9.96821 6.69526 9.96821 6.64331C9.96821 6.53942 1.1506 0.5134 0.86129 0.4095C0.785819 0.3836 0.899026 0.5654 1.11286 0.7992Z" fill="white"/>
-</svg>
+    <svg
+      width="10"
+      height="13"
+      viewBox="0 0 10 13"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.11286 0.7992C1.56569 1.3316 3.59085 3.63033 5.10028 5.3576L6.2072 6.61734L5.03739 7.96799C4.39588 8.70825 3.16318 10.1238 2.29525 11.1108C1.43991 12.0979 0.861291 12.8251 1.02481 12.7472C1.17575 12.6563 3.04997 11.4095 5.16318 9.955C7.28896 8.51344 9.23865 7.20176 9.5028 7.03292C9.75437 6.87708 9.96821 6.69526 9.96821 6.64331C9.96821 6.53942 1.1506 0.5134 0.86129 0.4095C0.785819 0.3836 0.899026 0.5654 1.11286 0.7992Z"
+        fill="white"
+      />
+    </svg>
   );
 };
-
 
 export const BackToTopIcon = () => {
   return (
@@ -808,6 +960,42 @@ export const BackToTopIcon = () => {
       <path
         d="M22 15.975L20.225 17.75L12 9.525L3.775 17.75L2 15.975L12 5.975L22 15.975Z"
         fill="white"
+      />
+    </svg>
+  );
+};
+export const HeraderLinkArrow = () => {
+  return (
+    <svg
+      className="skew-x-12 group-hover:-rotate-180 duration-200"
+      width="13"
+      height="10"
+      viewBox="0 0 13 10"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12.5004 0.901438C11.9679 1.35427 9.66923 3.37942 7.94196 4.88886L6.68222 5.99578L5.33157 4.82597C4.59131 4.18446 3.17573 2.95175 2.18871 2.08383C1.2017 1.22848 0.474428 0.649865 0.55235 0.813387C0.643259 0.964331 1.89001 2.83854 3.34456 4.95175C4.78612 7.07754 6.09781 9.02722 6.26664 9.29137C6.42248 9.54295 6.6043 9.75678 6.65625 9.75678C6.76014 9.75678 12.7861 0.939173 12.89 0.649865C12.916 0.574394 12.7342 0.687601 12.5004 0.901438Z"
+        fill="white"
+        className="group-hover:fill-[#2253F5]"
+      />
+    </svg>
+  );
+};
+export const FooterLinkArrow = () => {
+  return (
+    <svg
+      className="-rotate-[270deg] group-hover:-rotate-[360deg] duration-200"
+      width="10"
+      height="13"
+      viewBox="0 0 10 13"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0.274973 0.71908C0.727803 1.25155 2.75296 3.55025 4.26239 5.27752L5.36931 6.53726L4.1995 7.88791C3.55799 8.62817 2.32529 10.0438 1.45736 11.0308C0.602017 12.0178 0.0234004 12.7451 0.186922 12.6671C0.337866 12.5762 2.21208 11.3295 4.32529 9.87492C6.45107 8.43337 8.40076 7.12168 8.66491 6.95285C8.91648 6.797 9.13032 6.61518 9.13032 6.56324C9.13032 6.45934 0.312709 0.433366 0.0234004 0.32947C-0.0520713 0.303495 0.0611362 0.485313 0.274973 0.71908Z"
+        fill="#B8BDCA"
+        className=" group-hover:fill-white"
       />
     </svg>
   );
