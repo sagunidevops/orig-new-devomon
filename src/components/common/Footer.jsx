@@ -2,16 +2,14 @@
 import footerLogo from "../../assets/images/svg/footer_logo.svg";
 import priceLogo from "../../assets/images/svg/price_logo.svg";
 import saguniLogo from "../../assets/images/svg/SaguniLogo.svg";
-import { Link,  useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import story_video from "../../assets/video/story_video.mp4";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
 import dashboard from "../../assets/images/webp/dashboard-coming.webp";
 import MerchImage from "../../assets/images/png/Brand_peak.png";
 import evoverse from "../../assets/images/webp/evoverse.webp";
 
-import {
-  footerIcons,
-} from "./Helper";
+import { footerIcons } from "./Helper";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
 import { priceApi } from "./Api";
@@ -57,15 +55,19 @@ const Footer = () => {
     const responseValue = response.evoverses.usd;
     setEvoPrice(responseValue);
   };
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      priceHandler();
-    }, 45000); // 45 seconds in milliseconds
-  
-    // Clear the timer when component unmounts or when the effect runs again
-    return () => clearTimeout(timer);
-  });
  
+  useEffect(() => {
+    // Run console log when the component mounts or refreshes
+    priceHandler();
+
+    // Set interval to run a specific condition every 45000 milliseconds
+    const interval = setInterval(() => {
+      priceHandler(); // Place your condition here
+    }, 45000);
+
+    // Clean up interval when the component unmounts or refreshes
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
