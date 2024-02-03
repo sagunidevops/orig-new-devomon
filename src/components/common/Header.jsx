@@ -459,7 +459,7 @@ const Header = () => {
                         }
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                          PCS
+                        PancakeSwap
                         </p>
                       </Link>
                     </span>
@@ -862,7 +862,7 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                PCS
+                              PancakeSwap
                               </p>
                             </Link>
                           </span>

@@ -285,7 +285,7 @@ const Footer = () => {
                     >
                       {`$EVO —- ${evoPrice}`}
                     </button>
-                    <p className="text-[10px] break-all 2xl:max-w-none xl:text-base sm:text-xs font-medium text-white opacity-70 ">
+                    <p className="text-[10px] break-all xl:text-base sm:text-xs font-medium text-white opacity-70 ">
                       Official Contract:
                       0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba
                     </p>
@@ -488,7 +488,7 @@ const Footer = () => {
                         href=" https://pancakeswap.finance/swap?outputCurrency=0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba"
                         className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block"
                       >
-                        PCS
+                      PancakeSwap
                       </a>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
@@ -538,7 +538,7 @@ const Footer = () => {
                     </button>
                   </div> */}
                 </div>
-                <div className=" xl:w-5/12 max-[475px]:w-2/5 min-[475px]:w-1/3 md:w-2/5 lg:w-1/2 flex flex-col gap-2">
+                <div className="xl:w-5/12 max-[475px]:w-2/5 min-[475px]:w-1/3 md:w-2/5 lg:w-1/2 flex flex-col gap-2">
                   <a
                     href="https://sagunitech.com/"
                     target="_blank"
