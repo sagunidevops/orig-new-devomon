@@ -58,8 +58,12 @@ const Footer = () => {
     setEvoPrice(responseValue);
   };
   useEffect(() => {
-
-    priceHandler();
+    const timer = setTimeout(() => {
+      priceHandler();
+    }, 45000); // 45 seconds in milliseconds
+  
+    // Clear the timer when component unmounts or when the effect runs again
+    return () => clearTimeout(timer);
   });
  
 
