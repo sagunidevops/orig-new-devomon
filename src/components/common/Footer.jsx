@@ -59,7 +59,6 @@ const Footer = () => {
   useEffect(() => {
     priceHandler();
   });
-
   return (
     <>
       <section className=" bg-[#1E3EA81A] pt-12 relative overflow-x-hidden">
@@ -440,7 +439,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noreferrer"
                         href=" https://www.mexc.com/de-DE/exchange/EVO_USDT?_from=market"
-                        className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block"
+                        className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
                       >
                         MEXC
                       </a>
@@ -448,7 +447,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noreferrer"
                         href=" https://pancakeswap.finance/swap?outputCurrency=0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba"
-                        className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block"
+                        className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
                       >
                         PancakeSwap
                       </a>
