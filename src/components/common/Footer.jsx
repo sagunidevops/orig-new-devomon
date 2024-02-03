@@ -56,9 +56,20 @@ const Footer = () => {
     const responseValue = response.evoverses.usd;
     setEvoPrice(responseValue);
   };
+
   useEffect(() => {
+    // Run console log when the component mounts or refreshes
     priceHandler();
-  });
+
+    // Set interval to run a specific condition every 45000 milliseconds
+    const interval = setInterval(() => {
+      priceHandler(); // Place your condition here
+    }, 45000);
+
+    // Clean up interval when the component unmounts or refreshes
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <section className=" bg-[#1E3EA81A] pt-12 relative overflow-x-hidden">
@@ -285,7 +296,7 @@ const Footer = () => {
                     >
                       {`$EVO —- ${evoPrice}`}
                     </button>
-                    <p className="text-[10px] break-all xl:text-base sm:text-xs font-medium text-white opacity-70 ">
+                    <p className="text-[10px] mt-2 break-all xl:text-base sm:text-xs font-medium text-white opacity-70 ">
                       Official Contract:
                       0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba
                     </p>
