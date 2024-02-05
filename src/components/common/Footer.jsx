@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 import { useRef } from "react";
 import { priceApi } from "./Api";
 import { PRICE_URL } from "./ApiUrl";
+import { FooterLinkArrow } from "./Icons";
 
 const Footer = () => {
   const [popupValue, setPopupValue] = useState("");
@@ -295,7 +296,7 @@ const Footer = () => {
                     >
                       {`$EVO —- ${evoPrice}`}
                     </button>
-                    <p className="text-[10px] break-all 2xl:max-w-none xl:text-base sm:text-xs font-medium text-white opacity-70 ">
+                    <p className="text-[10px] break-all xl:text-base sm:text-xs font-medium text-white opacity-70 ">
                       Official Contract:
                       0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba
                     </p>
@@ -371,20 +372,7 @@ const Footer = () => {
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
                       D-World
                     </p>
-                    <svg
-                      className="-rotate-[270deg] group-hover:-rotate-[360deg] duration-200"
-                      width="10"
-                      height="13"
-                      viewBox="0 0 10 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.274973 0.71908C0.727803 1.25155 2.75296 3.55025 4.26239 5.27752L5.36931 6.53726L4.1995 7.88791C3.55799 8.62817 2.32529 10.0438 1.45736 11.0308C0.602017 12.0178 0.0234004 12.7451 0.186922 12.6671C0.337866 12.5762 2.21208 11.3295 4.32529 9.87492C6.45107 8.43337 8.40076 7.12168 8.66491 6.95285C8.91648 6.797 9.13032 6.61518 9.13032 6.56324C9.13032 6.45934 0.312709 0.433366 0.0234004 0.32947C-0.0520713 0.303495 0.0611362 0.485313 0.274973 0.71908Z"
-                        fill="#B8BDCA"
-                        className=" group-hover:fill-white"
-                      />
-                    </svg>
+                    <FooterLinkArrow />
                   </div>
                   <div className="flex cursor-pointer items-center group">
                     <Link
@@ -412,20 +400,7 @@ const Footer = () => {
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
                       Team
                     </p>
-                    <svg
-                      className="-rotate-[270deg] group-hover:-rotate-[360deg] duration-200"
-                      width="10"
-                      height="13"
-                      viewBox="0 0 10 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.274973 0.71908C0.727803 1.25155 2.75296 3.55025 4.26239 5.27752L5.36931 6.53726L4.1995 7.88791C3.55799 8.62817 2.32529 10.0438 1.45736 11.0308C0.602017 12.0178 0.0234004 12.7451 0.186922 12.6671C0.337866 12.5762 2.21208 11.3295 4.32529 9.87492C6.45107 8.43337 8.40076 7.12168 8.66491 6.95285C8.91648 6.797 9.13032 6.61518 9.13032 6.56324C9.13032 6.45934 0.312709 0.433366 0.0234004 0.32947C-0.0520713 0.303495 0.0611362 0.485313 0.274973 0.71908Z"
-                        fill="#B8BDCA"
-                        className=" group-hover:fill-white"
-                      />
-                    </svg>
+                    <FooterLinkArrow />
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
                     <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[11]">
@@ -449,20 +424,7 @@ const Footer = () => {
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
                       Help
                     </p>
-                    <svg
-                      className="-rotate-[270deg] group-hover:-rotate-[360deg] duration-200"
-                      width="10"
-                      height="13"
-                      viewBox="0 0 10 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.274973 0.71908C0.727803 1.25155 2.75296 3.55025 4.26239 5.27752L5.36931 6.53726L4.1995 7.88791C3.55799 8.62817 2.32529 10.0438 1.45736 11.0308C0.602017 12.0178 0.0234004 12.7451 0.186922 12.6671C0.337866 12.5762 2.21208 11.3295 4.32529 9.87492C6.45107 8.43337 8.40076 7.12168 8.66491 6.95285C8.91648 6.797 9.13032 6.61518 9.13032 6.56324C9.13032 6.45934 0.312709 0.433366 0.0234004 0.32947C-0.0520713 0.303495 0.0611362 0.485313 0.274973 0.71908Z"
-                        fill="#B8BDCA"
-                        className=" group-hover:fill-white"
-                      />
-                    </svg>
+                    <FooterLinkArrow />
                   </div>
                   <div className="flex cursor-pointer items-center group">
                     <Link
@@ -472,6 +434,39 @@ const Footer = () => {
                     >
                       News
                     </Link>
+                  </div>
+                  <div className="flex cursor-pointer items-center group relative">
+                    <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[11]">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://www.gate.io/de/trade/EVO_USDT"
+                      >
+                        <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
+                          GateIO
+                        </p>
+                      </a>
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href=" https://www.mexc.com/de-DE/exchange/EVO_USDT?_from=market"
+                        className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
+                      >
+                        MEXC
+                      </a>
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href=" https://pancakeswap.finance/swap?outputCurrency=0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba"
+                        className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
+                      >
+                        PancakeSwap
+                      </a>
+                    </div>
+                    <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
+                      Buy Evo
+                    </p>
+                    <FooterLinkArrow />
                   </div>
                 </div>
                 <div className="xl:w-1/4 w-1/4 sm:w-1/6 md:w-1/4 lg:w-1/5 flex flex-col gap-3">
@@ -502,7 +497,7 @@ const Footer = () => {
                     </button>
                   </div> */}
                 </div>
-                <div className=" xl:w-5/12 max-[475px]:w-2/5 min-[475px]:w-1/3 md:w-2/5 lg:w-1/2 flex flex-col gap-2">
+                <div className="xl:w-5/12 max-[475px]:w-2/5 min-[475px]:w-1/3 md:w-2/5 lg:w-1/2 flex flex-col gap-2">
                   <a
                     href="https://sagunitech.com/"
                     target="_blank"

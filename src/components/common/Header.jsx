@@ -11,6 +11,7 @@ import cross_icon from "../../assets/images/svg/cross_icon.svg";
 import dashboard from "../../assets/images/webp/dashboard-coming.webp";
 import MerchImage from "../../assets/images/png/Brand_peak.png";
 import evoverse from "../../assets/images/webp/evoverse.webp";
+import { HeraderLinkArrow } from "./Icons";
 
 const Header = () => {
   const [video, setVideo] = useState();
@@ -261,20 +262,7 @@ const Header = () => {
                 >
                   D-World
                 </a>
-                <svg
-                  className="skew-x-12 group-hover:-rotate-180 duration-200"
-                  width="13"
-                  height="10"
-                  viewBox="0 0 13 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5004 0.901438C11.9679 1.35427 9.66923 3.37942 7.94196 4.88886L6.68222 5.99578L5.33157 4.82597C4.59131 4.18446 3.17573 2.95175 2.18871 2.08383C1.2017 1.22848 0.474428 0.649865 0.55235 0.813387C0.643259 0.964331 1.89001 2.83854 3.34456 4.95175C4.78612 7.07754 6.09781 9.02722 6.26664 9.29137C6.42248 9.54295 6.6043 9.75678 6.65625 9.75678C6.76014 9.75678 12.7861 0.939173 12.89 0.649865C12.916 0.574394 12.7342 0.687601 12.5004 0.901438Z"
-                    fill="white"
-                    className="group-hover:fill-[#2253F5]"
-                  />
-                </svg>
+                <HeraderLinkArrow />
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200">
                 <Link
@@ -325,20 +313,7 @@ const Header = () => {
                 >
                   Team
                 </a>
-                <svg
-                  className="skew-x-12 group-hover:-rotate-180 duration-200"
-                  width="13"
-                  height="10"
-                  viewBox="0 0 13 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5004 0.901438C11.9679 1.35427 9.66923 3.37942 7.94196 4.88886L6.68222 5.99578L5.33157 4.82597C4.59131 4.18446 3.17573 2.95175 2.18871 2.08383C1.2017 1.22848 0.474428 0.649865 0.55235 0.813387C0.643259 0.964331 1.89001 2.83854 3.34456 4.95175C4.78612 7.07754 6.09781 9.02722 6.26664 9.29137C6.42248 9.54295 6.6043 9.75678 6.65625 9.75678C6.76014 9.75678 12.7861 0.939173 12.89 0.649865C12.916 0.574394 12.7342 0.687601 12.5004 0.901438Z"
-                    fill="white"
-                    className="group-hover:fill-[#2253F5]"
-                  />
-                </svg>
+                <HeraderLinkArrow />
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[95px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
@@ -392,20 +367,7 @@ const Header = () => {
                 >
                   Help
                 </a>
-                <svg
-                  className="skew-x-12 group-hover:-rotate-180 duration-200"
-                  width="13"
-                  height="10"
-                  viewBox="0 0 13 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5004 0.901438C11.9679 1.35427 9.66923 3.37942 7.94196 4.88886L6.68222 5.99578L5.33157 4.82597C4.59131 4.18446 3.17573 2.95175 2.18871 2.08383C1.2017 1.22848 0.474428 0.649865 0.55235 0.813387C0.643259 0.964331 1.89001 2.83854 3.34456 4.95175C4.78612 7.07754 6.09781 9.02722 6.26664 9.29137C6.42248 9.54295 6.6043 9.75678 6.65625 9.75678C6.76014 9.75678 12.7861 0.939173 12.89 0.649865C12.916 0.574394 12.7342 0.687601 12.5004 0.901438Z"
-                    fill="white"
-                    className="group-hover:fill-[#2253F5]"
-                  />
-                </svg>
+                <HeraderLinkArrow />
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200">
                 <Link
@@ -459,7 +421,7 @@ const Header = () => {
                         }
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                          PCS
+                          PancakeSwap
                         </p>
                       </Link>
                     </span>
@@ -471,20 +433,7 @@ const Header = () => {
                 >
                   Buy Evo
                 </a>
-                <svg
-                  className="skew-x-12 group-hover:-rotate-180 duration-200"
-                  width="13"
-                  height="10"
-                  viewBox="0 0 13 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5004 0.901438C11.9679 1.35427 9.66923 3.37942 7.94196 4.88886L6.68222 5.99578L5.33157 4.82597C4.59131 4.18446 3.17573 2.95175 2.18871 2.08383C1.2017 1.22848 0.474428 0.649865 0.55235 0.813387C0.643259 0.964331 1.89001 2.83854 3.34456 4.95175C4.78612 7.07754 6.09781 9.02722 6.26664 9.29137C6.42248 9.54295 6.6043 9.75678 6.65625 9.75678C6.76014 9.75678 12.7861 0.939173 12.89 0.649865C12.916 0.574394 12.7342 0.687601 12.5004 0.901438Z"
-                    fill="white"
-                    className="group-hover:fill-[#2253F5]"
-                  />
-                </svg>
+                <HeraderLinkArrow />
               </li>
             </ul>
             <ul className="gap-2 items-center flex py-2">
@@ -807,7 +756,7 @@ const Header = () => {
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
-                          <span className=" mb-0 font-poppins">BUY EVO</span>
+                          <span className=" mb-0 font-poppins">Buy Evo</span>
                           <svg
                             className={`${
                               open
@@ -862,7 +811,7 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                PCS
+                                PancakeSwap
                               </p>
                             </Link>
                           </span>
