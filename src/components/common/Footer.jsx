@@ -53,10 +53,10 @@ const Footer = () => {
   };
   const priceHandler = async () => {
     const response = await priceApi(PRICE_URL);
-    const responseValue = response.evoverses.usd;
+    const responseValue = response.devomon.usd;
     setEvoPrice(responseValue);
   };
- 
+
   useEffect(() => {
     // Run console log when the component mounts or refreshes
     priceHandler();
@@ -290,13 +290,13 @@ const Footer = () => {
                     </span>
                   </div>
                   <div>
-                    <button
+                    <p
                       onClick={priceHandler}
                       className="text-[10px] sm:text-xs xl:text-base font-medium text-white opacity-70"
                     >
                       {`$EVO —- ${evoPrice}`}
-                    </button>
-                    <p className="text-[10px] break-all xl:text-base sm:text-xs font-medium text-white opacity-70 ">
+                    </p>
+                    <p className="text-[10px] mt-2 break-all xl:text-base sm:text-xs font-medium text-white opacity-70 ">
                       Official Contract:
                       0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba
                     </p>
