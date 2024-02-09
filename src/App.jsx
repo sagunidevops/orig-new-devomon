@@ -14,6 +14,7 @@ import Team from "./components/homepage/Team";
 import CookiePolicyText from "./components/CookiePolicyText";
 import TermsAndConditionsTexts from "./components/TermsAndConditionsTexts";
 import PrivacyPolicyTexts from "./components/PrivacyPolicyTexts";
+import RoadMap from "./components/RoadMap";
 // import PrivacyPolicyTexts from "./components/PrivacyPolicyTexts";
 // import TermsAndConditionsTexts from "./components/TermsAndConditionsTexts";
 
@@ -43,6 +44,8 @@ function App() {
           <Route path="/stream-partner" element={<StreamPartner />} />
           <Route path="/cookie-policy" element={<CookiePolicyText />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyTexts />} />
+          <Route path="/roadmap" element={<RoadMap />} />
+
           <Route
             path="/terms-conditons"
             element={<TermsAndConditionsTexts />}

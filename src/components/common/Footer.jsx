@@ -2,7 +2,7 @@
 import footerLogo from "../../assets/images/svg/footer_logo.svg";
 import priceLogo from "../../assets/images/svg/price_logo.svg";
 import saguniLogo from "../../assets/images/svg/SaguniLogo.svg";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import story_video from "../../assets/video/story_video.mp4";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
 import dashboard from "../../assets/images/webp/dashboard-coming.webp";
@@ -420,12 +420,14 @@ const Footer = () => {
                       >
                         Contact
                       </a>
-                      <a
-                        href="#roadmap"
+                      <NavLink  onClick={() => {
+                          scrollToTop();
+                        }}
+                        to="/roadmap"
                         className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
                       >
                         Roadmap
-                      </a>
+                      </NavLink>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
                       Help

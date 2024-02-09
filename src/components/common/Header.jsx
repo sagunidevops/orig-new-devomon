@@ -3,7 +3,7 @@ import nav_logo from "../../assets/images/webp/header-logo.webp";
 import Callisto_logo from "../../assets/images/png/Devomon_Callisto_logo.png";
 import { Disclosure } from "@headlessui/react";
 import { useEffect, useRef, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { VscChromeClose } from "react-icons/vsc";
 import { HiMenuAlt3 } from "react-icons/hi";
 import story_video from "../../assets/video/story_video.mp4";
@@ -360,12 +360,12 @@ const Header = () => {
                       </a>
                     </span>
                     <span className="mt-2 xl:mt-3">
-                      <a
-                        href="/#roadmap"
+                      <NavLink
+                        to="/roadmap"
                         className="font-medium text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                       >
                         Roadmap
-                      </a>
+                      </NavLink>
                     </span>
                   </div>
                 </div>
@@ -640,13 +640,7 @@ const Header = () => {
                                 Merchandise
                               </p>
                             </span>
-                            {/* <Link
-                              to={"/coming-soon"}
-                              onClick={() => setNav(!Nav)}
-                              className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200"
-                            >
-                              coming soon
-                            </Link> */}
+                          
                           </div>
                         </Disclosure.Panel>
                       </>
@@ -767,13 +761,13 @@ const Header = () => {
                             </a>
                           </span>
                           <span className="mt-3">
-                            <a
+                            <NavLink
                               onClick={() => setNav(!Nav)}
-                              href="#roadmap"
+                              href="/roadmap"
                               className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                             >
                               Roadmap
-                            </a>
+                            </NavLink>
                           </span>
                         </Disclosure.Panel>
                       </>
