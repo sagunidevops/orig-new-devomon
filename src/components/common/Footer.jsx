@@ -392,7 +392,7 @@ const Footer = () => {
                       </Link>
 
                       <Link target="_blank" to={"https://partners.devomon.io"}>
-                        <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-3 font-normal font-poppins text-start">
+                        <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2 font-normal font-poppins text-start">
                           Partners
                         </p>
                       </Link>
@@ -416,9 +416,15 @@ const Footer = () => {
 
                       <a
                         href="#contact"
-                        className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins"
+                        className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
                       >
                         Contact
+                      </a>
+                      <a
+                        href="#roadmap"
+                        className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
+                      >
+                        Roadmap
                       </a>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
