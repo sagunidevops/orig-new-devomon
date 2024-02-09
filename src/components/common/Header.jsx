@@ -763,7 +763,7 @@ const Header = () => {
                           <span className="mt-3">
                             <NavLink
                               onClick={() => setNav(!Nav)}
-                              href="/roadmap"
+                              to="/roadmap"
                               className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                             >
                               Roadmap
