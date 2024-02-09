@@ -12,7 +12,8 @@ import dashboard from "../../assets/images/webp/dashboard-coming.webp";
 import MerchImage from "../../assets/images/png/Brand_peak.png";
 import evoverse from "../../assets/images/webp/evoverse.webp";
 import { HeraderLinkArrow } from "./Icons";
-
+import discord from "../../assets/images/homepageImages/png/discord.png";
+import twitter from "../../assets/images/homepageImages/png/twitter.png";
 const Header = () => {
   const [video, setVideo] = useState();
   const videoRef = useRef(null);
@@ -351,12 +352,19 @@ const Header = () => {
                       </a>
                     </span> */}
                     <span className="mt-2 xl:mt-3">
-                      {" "}
                       <a
                         href="/#contact"
                         className="font-medium text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                       >
                         Contact
+                      </a>
+                    </span>
+                    <span className="mt-2 xl:mt-3">
+                      <a
+                        href="/#roadmap"
+                        className="font-medium text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
+                      >
+                        Roadmap
                       </a>
                     </span>
                   </div>
@@ -436,7 +444,35 @@ const Header = () => {
                 <HeraderLinkArrow />
               </li>
             </ul>
-            <ul className="gap-2 items-center flex py-2">
+            <ul className="gap-4 items-center flex py-2">
+              <li className="group">
+                <a
+                  href="https://twitter.com/OfficialDevomon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={twitter}
+                    alt="twitter"
+                    width={30}
+                    className="hover:scale-[1.1] transition-all duration-300 w-[27px] sm:w-[30px]"
+                  />
+                </a>
+              </li>
+              <li className="group">
+                <a
+                  href="https://discord.com/invite/8nXQ4uQE2k"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={discord}
+                    alt="discord"
+                    width={30}
+                    className="hover:scale-[1.1] transition-all duration-300 w-[27px] sm:w-[30px]"
+                  />
+                </a>
+              </li>
               <li className="group">
                 <a
                   href="https://callisto.devomon.io/"
@@ -537,7 +573,7 @@ const Header = () => {
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                              <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3 transition-all duration-200">
                                 GameFi
                               </p>
                             </a>
@@ -546,7 +582,7 @@ const Header = () => {
                               rel="noopener noreferrer"
                               href="https://evozone.devomon.io/"
                             >
-                              <p className="font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-2">
+                              <p className="font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-3 transition-all duration-200 mb-0">
                                 Evozone
                               </p>
                             </a>
@@ -555,7 +591,7 @@ const Header = () => {
                               target="_blank"
                               onClick={() => setNav(!Nav)}
                             >
-                              <p className="font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
+                              <p className="font-poppins text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200">
                                 NFTs
                               </p>
                             </Link>
@@ -563,7 +599,7 @@ const Header = () => {
                               onClick={() => {
                                 clickHandler("Dashboard"), setNav(!Nav);
                               }}
-                              className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
+                              className="font-poppins text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200"
                             >
                               Dashboard{" "}
                             </span>
@@ -573,7 +609,7 @@ const Header = () => {
                               }}
                               href="#"
                             >
-                              <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                              <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3 transition-all duration-200">
                                 EvoVerse
                               </p>
                             </span>
@@ -583,7 +619,7 @@ const Header = () => {
                                 setVideo(!video), setNav(!Nav);
                               }}
                             >
-                              <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                              <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3 transition-all duration-200">
                                 Manga
                               </p>
                             </a>
@@ -591,7 +627,7 @@ const Header = () => {
                               onClick={() => {
                                 clickHandler("Anime"), setNav(!Nav);
                               }}
-                              className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
+                              className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3"
                             >
                               Anime{" "}
                             </span>
@@ -600,7 +636,7 @@ const Header = () => {
                                 clickHandler("Merchandise"), setNav(!Nav);
                               }}
                             >
-                              <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
+                              <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3 transition-all duration-200">
                                 Merchandise
                               </p>
                             </span>
@@ -714,20 +750,29 @@ const Header = () => {
                             <a
                               target="_blank"
                               href="https://whitepaper.devomon.io/"
-                              className="font-normal text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all inline-block duration-200 cursor-pointer font-poppins"
+                              className="font-normal text-[12px] text-white mb-0 hover:text-[#2253F5] mt-3 transition-all inline-block duration-200 cursor-pointer font-poppins"
                               rel="noopener noreferrer"
                             >
                               Whitepaper
                             </a>
                           </span>
 
-                          <span className="mt-4">
+                          <span className="mt-3">
                             <a
                               onClick={() => setNav(!Nav)}
                               href="#contact"
                               className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                             >
                               Contact
+                            </a>
+                          </span>
+                          <span className="mt-3">
+                            <a
+                              onClick={() => setNav(!Nav)}
+                              href="#roadmap"
+                              className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
+                            >
+                              Roadmap
                             </a>
                           </span>
                         </Disclosure.Panel>
