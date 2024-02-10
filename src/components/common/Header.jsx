@@ -762,7 +762,7 @@ const Header = () => {
                           </span>
                           <span className="mt-3">
                             <NavLink
-                              onClick={() => setNav(!Nav)}
+                              onClick={() => {setNav(!Nav), scrollToTop()}}
                               to="/roadmap"
                               className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                             >
