@@ -415,12 +415,13 @@ const Footer = () => {
                       </a>
 
                       <a
-                        href="#contact"
+                        href="/#contact"
                         className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
                       >
                         Contact
                       </a>
-                      <NavLink  onClick={() => {
+                      <NavLink
+                        onClick={() => {
                           scrollToTop();
                         }}
                         to="/roadmap"
