@@ -262,8 +262,8 @@ const Footer = () => {
                       </span>
                     </div>
                     <div>
-                      <p className="text-[12px] sm:text-xs xl:text-base font-medium text-white  opacity-70 ">
-                        {`$EVO —- ${evoPrice}`}
+                      <p className="text-[12px] sm:text-xs xl:text-base font-medium text-white  opacity-70 flex gap-3">
+                        <span>$EVO </span> <span>{evoPrice}</span>
                       </p>
                       <p className="text-[12px] mt-2 break-all sm:text-xs xl:text-base font-medium text-white opacity-70 ">
                         Official Contract:
@@ -292,9 +292,9 @@ const Footer = () => {
                   <div>
                     <p
                       onClick={priceHandler}
-                      className="text-[10px] sm:text-xs xl:text-base font-medium text-white opacity-70"
+                      className="text-[10px] sm:text-xs xl:text-base font-medium text-white opacity-70 flex gap-4"
                     >
-                      {`$EVO —- ${evoPrice}`}
+                      <span>$EVO </span> <span>{evoPrice}</span>
                     </p>
                     <p className="text-[10px] mt-2 break-all xl:text-base sm:text-xs font-medium text-white opacity-70 ">
                       Official Contract:
@@ -449,7 +449,7 @@ const Footer = () => {
                       <a
                         target="_blank"
                         rel="noreferrer"
-                        href="https://www.gate.io/de/trade/EVO_USDT"
+                        href=" https://www.gate.io/trade/EVO_USDT"
                       >
                         <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                           GateIO
@@ -458,7 +458,7 @@ const Footer = () => {
                       <a
                         target="_blank"
                         rel="noreferrer"
-                        href=" https://www.mexc.com/de-DE/exchange/EVO_USDT?_from=market"
+                        href="https://www.mexc.com/exchange/EVO_USDT?_from=market"
                         className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
                       >
                         MEXC

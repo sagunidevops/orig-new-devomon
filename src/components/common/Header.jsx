@@ -170,7 +170,7 @@ const Header = () => {
             ></div>
           </div>
         </div>
-        <div className="px-4 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 bg-[#000000f8] fixed top-0 w-full">
+        <div className="px-4 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 navbar_bg fixed top-0 w-full">
           <div className="flex justify-between items-center relative">
             <ul>
               <li className="cursor-pointer flex items-center">
@@ -393,7 +393,7 @@ const Header = () => {
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        to={"https://www.gate.io/de/trade/EVO_USDT"}
+                        to={"https://www.gate.io/trade/EVO_USDT"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
                           GateIO
@@ -412,7 +412,7 @@ const Header = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         to={
-                          "https://www.mexc.com/de-DE/exchange/EVO_USDT?_from=market"
+                          "https://www.mexc.com/exchange/EVO_USDT?_from=market"
                         }
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
@@ -640,7 +640,6 @@ const Header = () => {
                                 Merchandise
                               </p>
                             </span>
-                          
                           </div>
                         </Disclosure.Panel>
                       </>
@@ -762,7 +761,9 @@ const Header = () => {
                           </span>
                           <span className="mt-3">
                             <NavLink
-                              onClick={() => {setNav(!Nav), scrollToTop()}}
+                              onClick={() => {
+                                setNav(!Nav), scrollToTop();
+                              }}
                               to="/roadmap"
                               className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                             >
@@ -819,7 +820,7 @@ const Header = () => {
                             <Link
                               target="_blank"
                               rel="noopener noreferrer"
-                              to={"https://www.gate.io/de/trade/EVO_USDT"}
+                              to={"https://www.gate.io/trade/EVO_USDT"}
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
@@ -832,7 +833,7 @@ const Header = () => {
                               target="_blank"
                               rel="noopener noreferrer"
                               to={
-                                "https://www.mexc.com/de-DE/exchange/EVO_USDT?_from=market"
+                                "https://www.mexc.com/exchange/EVO_USDT?_from=market"
                               }
                               onClick={() => setNav(!Nav)}
                             >
