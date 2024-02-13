@@ -398,7 +398,7 @@ const Footer = () => {
                       </Link>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
-                      Team
+                      Info
                     </p>
                     <FooterLinkArrow />
                   </div>

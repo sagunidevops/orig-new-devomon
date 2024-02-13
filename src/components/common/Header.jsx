@@ -172,7 +172,7 @@ const Header = () => {
         </div>
         <div className="px-4 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 navbar_bg fixed top-0 w-full">
           <div className="flex justify-between items-center relative">
-            <ul>
+            {/* <ul>
               <li className="cursor-pointer flex items-center">
                 <Link
                   to={"/"}
@@ -188,10 +188,10 @@ const Header = () => {
                   />
                 </Link>
               </li>
-            </ul>
+            </ul> */}
             <ul className="xl:gap-[11px] gap-0 items-center hidden lg:flex">
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute top-[95px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
+                <div className="absolute top-[75px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     <a
                       href="https://callisto.devomon.io/"
@@ -265,7 +265,7 @@ const Header = () => {
                 </a>
                 <HeraderLinkArrow />
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200">
                 <Link
                   to="https://app.uncx.network/chain/bsc/farm/0xb8A299f18C8bD079c839CACB63f036Cd7dfE68c7"
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
@@ -274,8 +274,8 @@ const Header = () => {
                   Staking
                 </Link>
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute top-[95px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
+                <div className="absolute top-[75px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     <span>
                       <Link
@@ -312,12 +312,12 @@ const Header = () => {
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   href="#"
                 >
-                  Team
+                  Info
                 </a>
                 <HeraderLinkArrow />
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute top-[95px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
+                <div className="absolute top-[75px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     {" "}
                     <span>
@@ -377,7 +377,7 @@ const Header = () => {
                 </a>
                 <HeraderLinkArrow />
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200">
                 <Link
                   target="_blank"
                   to={"https://medium.com/@DevomonOfficial"}
@@ -386,8 +386,8 @@ const Header = () => {
                   News
                 </Link>
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute top-[95px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
+                <div className="absolute top-[75px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     <span>
                       <Link
@@ -473,7 +473,7 @@ const Header = () => {
                   />
                 </a>
               </li>
-              <li className="group">
+              {/* <li className="group">
                 <a
                   href="https://callisto.devomon.io/"
                   target="_blank"
@@ -489,7 +489,7 @@ const Header = () => {
                     alt="Callisto_logo"
                   />
                 </a>
-              </li>
+              </li> */}
             </ul>
             <div
               className="lg:hidden cursor-pointer text-[35px] text-white relative  z-10"
@@ -667,7 +667,7 @@ const Header = () => {
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
-                          <span className=" mb-0 font-poppins">Team</span>
+                          <span className=" mb-0 font-poppins">Info</span>
                           <svg
                             className={`${
                               open
