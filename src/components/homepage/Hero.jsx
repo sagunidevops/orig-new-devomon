@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import ThankyouModal from "../common/ThankyouModal";
 // import Subscribe from "../common/Subscribe";
 // import MailchimpSubscribe from "react-mailchimp-subscribe";
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from "react-responsive";
 import { CrossIcon } from "../common/Icons";
 import VimeoPlayer from "@u-wave/react-vimeo";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
@@ -12,6 +12,12 @@ import { Link } from "react-router-dom";
 import audioFile from "../../assets/audio/Devomon_song.wav";
 import play_button from "../../assets/images/svg/play_button.svg";
 import pause_button from "../../assets/images/svg/pause_button.svg";
+import heading_img_1 from "../../assets/images/homepageImages/png/title_01_apple_chancery.png";
+import heading_img_2 from "../../assets/images/homepageImages/png/title_02_apple_chancery.png";
+import subtitle from "../../assets/images/homepageImages/png/subtitle_archangelsk.png";
+import play_button_hero from "../../assets/images/homepageImages/png/play_button.png";
+import story_button from "../../assets/images/homepageImages/png/story_button.png";
+import gamefi_button from "../../assets/images/homepageImages/png/gamefi_button.png";
 
 const Hero = () => {
   // VIDEO POPUP JS
@@ -28,15 +34,15 @@ const Hero = () => {
       document.body.style.overflow = "auto";
     }
   }, [video]);
-      // POPUP JS
-    const [hide, setHide] = useState();
-    useEffect(() => {
-      if (hide) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "auto";
-      }
-    }, [hide]);
+  // POPUP JS
+  const [hide, setHide] = useState();
+  useEffect(() => {
+    if (hide) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [hide]);
   const [comingSoon, setComingSoon] = useState(false);
   const [isOpenThankYouModal, setIsOpenThankYouModal] = useState(false);
   useEffect(() => {
@@ -53,28 +59,28 @@ const Hero = () => {
     title: "You have successfully subscribed.",
     para: "We’ll contact you via e-mail about our recent updates and the pre-sale rounds! You’ll have enough time to participate!”",
   };
-   const isDesktopOrLaptop = useMediaQuery({
-     query: "(min-width: 768px)",
-   });
-   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 767.99px)" });
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 768px)",
+  });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 767.99px)" });
 
-    const [audioPlaying, setAudioPlaying] = useState(false);
-    const audioRef = useRef(null);
-  
-    const toggleAudio = () => {
-      const audio = audioRef.current;
-  
-      if (audioPlaying) {
-        audio.pause();
-      } else {
-        audio.play();
-      }
-  
-      setAudioPlaying(!audioPlaying);
-    };
+  const [audioPlaying, setAudioPlaying] = useState(false);
+  const audioRef = useRef(null);
+
+  const toggleAudio = () => {
+    const audio = audioRef.current;
+
+    if (audioPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+
+    setAudioPlaying(!audioPlaying);
+  };
   return (
     <>
-     {/* <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
+      {/* <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
           <div className={hide ? "" : "hidden"}>
             <div
               className="text-white bg-black opacity-95 p-6 sm:p-6 custom-md:p-8 rounded-xl 
@@ -144,30 +150,41 @@ const Hero = () => {
             ></div>
           </div>
      </div> */}
-      <section className="min-h-screen relative h-screen hero_section ">
-      <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
+      <section className="min-h-screen relative h-screen hero_section">
+        <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
           <div className={video ? "" : "hidden"}>
             <div
               className=" 
              -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100]"
             >
-              <a  onClick={() => {
-                setVideo(false), videoRef.current.pause()
-                ;
-              }}
-              className="fixed end-[2%] z-50 top-[3%] cursor-pointer max-w-[16px]"
+              <a
+                onClick={() => {
+                  setVideo(false), videoRef.current.pause();
+                }}
+                className="fixed end-[2%] z-50 top-[3%] cursor-pointer max-w-[16px]"
               >
                 <img src={cross_icon} alt="cross_icon" />
               </a>
-                <video  ref={videoRef} className='w-100 mx-auto object-cover 
-                rounded-xl max-w-[300px] xs:max-w-[430px] sm:max-w-[600px] md:max-w-[700px]' width="700" height="700" autoPlay loop controls muted >
-                 <source src="https://firebasestorage.googleapis.com/v0/b/bayou-energy.appspot.com/o/story_video.mp4?alt=media&token=ce0a3b4d-6fc9-4f47-9b65-6cf15e290d04" type="video/mp4"/>
-               </video>
+              <video
+                ref={videoRef}
+                className="w-100 mx-auto object-cover 
+                rounded-xl max-w-[300px] xs:max-w-[430px] sm:max-w-[600px] md:max-w-[700px]"
+                width="700"
+                height="700"
+                autoPlay
+                loop
+                controls
+                muted
+              >
+                <source
+                  src="https://firebasestorage.googleapis.com/v0/b/bayou-energy.appspot.com/o/story_video.mp4?alt=media&token=ce0a3b4d-6fc9-4f47-9b65-6cf15e290d04"
+                  type="video/mp4"
+                />
+              </video>
             </div>
             <div
               onClick={() => {
-                setVideo(false), videoRef.current.pause()
-                ;
+                setVideo(false), videoRef.current.pause();
               }}
               className="w-full h-screen flex justify-center items-center fixed top-0 start-0 bg-[#00000080] z-[51]"
             ></div>
@@ -180,7 +197,7 @@ const Hero = () => {
               onClick={() => {
                 setComingSoon(false);
               }}
-            > 
+            >
               <div className="sm:max-w-[559px] bg-[#0D1014] text-center py-16 px-14 z-10 relative rounded-xl mx-auto text-white popup_shadow">
                 <div
                   className="absolute top-5 right-4 cursor-pointer"
@@ -199,9 +216,8 @@ const Hero = () => {
         )}
 
         {isDesktopOrLaptop && (
-          
           <div className="video-container">
-            <VimeoPlayer
+            {/* <VimeoPlayer
               className="vimvideo"
               autoplay
               loop
@@ -211,12 +227,18 @@ const Hero = () => {
               controls={false}
               playsInline
               video={videoId}
-            />
+            /> */}
+            <video className="vimvideo" loop muted autoPlay>
+              <source
+                src="/src/assets/video/hero_video_devomon.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
         )}
         {isTabletOrMobile && (
           <div className="video-container">
-            <VimeoPlayer
+            {/* <VimeoPlayer
               className="vimvideo"
               autoplay
               loop
@@ -226,16 +248,73 @@ const Hero = () => {
               controls={false}
               playsInline
               video="https://player.vimeo.com/video/823406218?playsinline=0&background=1&autoplay=1&muted=1"
-            />
+            /> */}
+            <video className="vimvideo" loop muted autoPlay>
+              <source
+                src="/src/assets/video/hero_video_devomon.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
         )}
+        <img
+          className="max-w-[150px] sm:max-w-[200px] lg:max-w-[261px] mt-12 md:mt-14 lg:mt-20 ms-5 lg:ms-10"
+          src={Logo}
+          alt="logo"
+        />
         <div className="absolute top-1/2  left-1/2 w-full container -translate-x-[50%] -translate-y-[50%] z-10 mt-10 ">
-          <div className="text-center max-w-[300px] sm:max-w-full mx-auto">
+          <div className="text-center max-w-[400px] sm:max-w-full mx-auto">
             <img
-              className=" max-w-full sm:max-w-[261px] mx-auto mb-5"
+              src={heading_img_1}
+              alt="heading"
+              className="max-w-[600px] mx-auto w-full"
+            />
+            <img
+              src={heading_img_2}
+              alt="heading"
+              className="max-w-[500px] mx-auto w-full"
+            />
+            <img
+              src={subtitle}
+              alt="subtitle"
+              className="max-w-[450px] mx-auto mt-4 w-full"
+            />
+            <div className="flex justify-center items-center gap-5 sm:gap-10 mt-20 sm:mt-32">
+              <Link
+                to={"https://story.devomon.io/"}
+                target="_blank"
+                className="cursor-pointer"
+              >
+                <img
+                  src={story_button}
+                  alt="story"
+                  className="max-w-[250px] w-full"
+                />
+              </Link>
+              <span className="cursor-pointer">
+                <img
+                  src={play_button_hero}
+                  alt="play"
+                  className="max-w-[100px] w-full"
+                />
+              </span>
+              <Link
+                to={"https://callisto.devomon.io/"}
+                target="_blank"
+                className="cursor-pointer"
+              >
+                <img
+                  src={gamefi_button}
+                  alt="gamefi"
+                  className="max-w-[250px] w-full"
+                />
+              </Link>
+            </div>
+            {/* <img
+              className="max-w-full sm:max-w-[261px] mx-auto mb-5"
               src={Logo}
               alt="logo"
-            />
+            /> */}
             {/* <div className="flex justify-center w-full gap-3 items-center">
               {heroIcons.map((value, index) => {
                 return (
@@ -261,18 +340,38 @@ const Hero = () => {
                 );
               })}
             </div> */}
-            <h2 className="text-white text-base leading-[114.32%] font-bold font-raleway my-5 sm:mt-6 sm:mb-9 max-w-[288px] sm:max-w-full mx-auto drop-shadow-lg">
-            Once Upon A Time...
+            {/* <h2 className="text-white text-base leading-[114.32%] font-bold font-raleway my-5 sm:mt-6 sm:mb-9 max-w-[288px] sm:max-w-full mx-auto drop-shadow-lg">
+              Once Upon A Time...
             </h2>
             <div className="flex items-center justify-center">
-            <Link to={"https://story.devomon.io/"} target="_blank" className="bg-[#2253F5] text-white font-poppins text-xl font-bold
-            px-[30px] py-[5px] border-4 border-[#2042B2] border-solid rounded-full shadow-hero_btn_shadow hover:bg-transparent duration-300 me-5 hero_btn_text">
-            Story
-            </Link>
-            <button className="play-button" onClick={toggleAudio}>
-             {audioPlaying ? <><img className="w-[40px]" src={pause_button} alt="pause button" /></> : <><img className="w-[40px]" src={play_button} alt="play button" /></>}
-            </button>
-            </div>
+              <Link
+                to={"https://story.devomon.io/"}
+                target="_blank"
+                className="bg-[#2253F5] text-white font-poppins text-xl font-bold
+            px-[30px] py-[5px] border-4 border-[#2042B2] border-solid rounded-full shadow-hero_btn_shadow hover:bg-transparent duration-300 me-5 hero_btn_text"
+              >
+                Story
+              </Link>
+              <button className="play-button" onClick={toggleAudio}>
+                {audioPlaying ? (
+                  <>
+                    <img
+                      className="w-[40px]"
+                      src={pause_button}
+                      alt="pause button"
+                    />
+                  </>
+                ) : (
+                  <>
+                    <img
+                      className="w-[40px]"
+                      src={play_button}
+                      alt="play button"
+                    />
+                  </>
+                )}
+              </button>
+            </div> */}
             {/* <button onClick={() => setVideo(!video)} className="bg-[#FFC40A] text-white font-poppins text-xl font-bold
             px-[30px] py-[5px] border-4 border-[#D0A205] border-solid rounded-full shadow-hero_btn_shadow hover:bg-transparent duration-300 ms-2 hero_btn_text">
             Manga

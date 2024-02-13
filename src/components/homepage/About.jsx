@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <>
-      <section className="relative pt-[100px] pb-[80px] xs:pb-[100px] lg:py-[100px] xl:pb-[50px] play-earn about_bg_img bg-aboutBgImg bg-no-repeat sm:-translate-y-[142px] -translate-y-[80px] mb-[-50px] 2xl:mb-16 z-10 bg-cover">
+      <section className="relative pt-[100px] pb-[80px] xs:pb-[100px] lg:py-[100px] xl:pb-[50px] play-earn about_bg_img bg-aboutBgImg bg-no-repeat sm:-translate-y-[108px] lg:-translate-y-[125px] -translate-y-[80px] mb-[-50px] 2xl:mb-16 z-10 bg-cover">
         <div className="container">
           <div className="sm:my-12 lg:mt-12 pb-16">
             <h2 className="font-raleway uppercase font-bold text-center text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">

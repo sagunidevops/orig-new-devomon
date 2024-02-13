@@ -170,7 +170,7 @@ const Header = () => {
             ></div>
           </div>
         </div>
-        <div className="px-4 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 navbar_bg fixed top-0 w-full">
+        <div className="px-4 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 navbar_ bg bg-black fixed top-0 w-full">
           <div className="flex justify-between items-center relative">
             {/* <ul>
               <li className="cursor-pointer flex items-center">

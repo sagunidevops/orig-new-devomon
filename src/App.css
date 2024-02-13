@@ -184,10 +184,9 @@
     min-height: 100vh;
     min-width: 177.77vh;
     position: absolute;
-    top: 50%;
+    top: 57%;
     transform: translate(-50%, -50%);
     width: 100vw;
-    object-fit: 100% 100%;
   }
 
   .bg_faq {
@@ -265,7 +264,11 @@
       transform: translateY(-753%) !important;
     }
   }
-
+  @media (max-width: 1024px) {
+    .vimvideo {
+      top: 55%;
+    }
+  }
   @media (max-width: 641px) {
     .onwership-slider .slick-track .slick-active {
       transform: unset !important;
@@ -282,6 +285,12 @@
     }
     .onwership-slider .slick-track {
       padding: 15px 0px 32px 0px;
+    }
+    .vimvideo {
+      left: 58%;
+      min-height: 100vh;
+      min-width: 174.77vh;
+      position: absolute;
     }
   }
 
