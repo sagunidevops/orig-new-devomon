@@ -274,7 +274,7 @@ const Header = () => {
                   Staking
                 </Link>
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
+              {/* <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[75px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     <span>
@@ -288,13 +288,13 @@ const Header = () => {
                         </p>
                       </Link>
                     </span>
-                    {/* <span>
+                    <span>
                       <Link onClick={() => setHide(!hide)}>
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
                           Advisors
                         </p>
                       </Link>
-                    </span> */}
+                    </span>
                     <span>
                       <Link
                         target="_blank"
@@ -312,10 +312,10 @@ const Header = () => {
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   href="#"
                 >
-                  Info
+                  Team
                 </a>
                 <HeraderLinkArrow />
-              </li>
+              </li> */}
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[75px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
@@ -367,13 +367,35 @@ const Header = () => {
                         Roadmap
                       </NavLink>
                     </span>
+                    <span className="mt-2 xl:mt-3">
+                      <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        to={"https://team.devomon.io"}
+                      >
+                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
+                          Core Team
+                        </p>
+                      </Link>
+                    </span>
+                    <span className="mt-2 xl:mt-3">
+                      <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        to={"https://partners.devomon.io"}
+                      >
+                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
+                          Partners
+                        </p>
+                      </Link>
+                    </span>
                   </div>
                 </div>
                 <a
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   href="#"
                 >
-                  Help
+                  Info
                 </a>
                 <HeraderLinkArrow />
               </li>
@@ -663,11 +685,11 @@ const Header = () => {
                       </>
                     )}
                   </Disclosure>
-                  <Disclosure className="transition_300 mt-4">
+                  {/* <Disclosure className="transition_300 mt-4">
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
-                          <span className=" mb-0 font-poppins">Info</span>
+                          <span className=" mb-0 font-poppins">Team</span>
                           <svg
                             className={`${
                               open
@@ -714,12 +736,12 @@ const Header = () => {
                         </Disclosure.Panel>
                       </>
                     )}
-                  </Disclosure>
+                  </Disclosure> */}
                   <Disclosure className="transition_300 mt-4">
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
-                          <span className=" mb-0 font-poppins">Help</span>
+                          <span className=" mb-0 font-poppins">Info</span>
                           <svg
                             className={`${
                               open
@@ -739,17 +761,16 @@ const Header = () => {
                           </svg>
                         </Disclosure.Button>
                         <Disclosure.Panel className="px-4 py-2 text-gray-500 bg-black transition_300 flex flex-col">
-                          <span>
+                          <span className="mt-3">
                             <a
                               target="_blank"
                               href="https://whitepaper.devomon.io/"
-                              className="font-normal text-[12px] text-white mb-0 hover:text-[#2253F5] mt-3 transition-all inline-block duration-200 cursor-pointer font-poppins"
+                              className="font-normal text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all inline-block duration-200 cursor-pointer font-poppins"
                               rel="noopener noreferrer"
                             >
                               Whitepaper
                             </a>
                           </span>
-
                           <span className="mt-3">
                             <a
                               onClick={() => setNav(!Nav)}
@@ -769,6 +790,29 @@ const Header = () => {
                             >
                               Roadmap
                             </NavLink>
+                          </span>
+                          <span className="mt-3">
+                            <Link
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              to={"https://team.devomon.io"}
+                              onClick={() => setNav(!Nav)}
+                            >
+                              <p className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
+                                Core Team
+                              </p>
+                            </Link>
+                          </span>
+                          <span className="mt-3">
+                            <Link
+                              target="_blank"
+                              to={"https://partners.devomon.io"}
+                              onClick={() => setNav(!Nav)}
+                            >
+                              <p className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
+                                Partners
+                              </p>
+                            </Link>
                           </span>
                         </Disclosure.Panel>
                       </>

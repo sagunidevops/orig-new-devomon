@@ -257,29 +257,37 @@ const Hero = () => {
             </video>
           </div>
         )}
-        <img
-          className="max-w-[150px] sm:max-w-[200px] lg:max-w-[261px] mt-12 md:mt-14 lg:mt-20 ms-5 lg:ms-10"
-          src={Logo}
-          alt="logo"
-        />
+        <Link
+          to={"/"}
+          onClick={() => {
+            history("/");
+            scrollToTop();
+          }}
+        >
+          <img
+            className="max-w-[150px] sm:max-w-[200px] lg:max-w-[261px] mt-12 md:mt-14 lg:mt-20 ms-5 lg:ms-10 cursor-pointer"
+            src={Logo}
+            alt="logo"
+          />
+        </Link>
         <div className="absolute top-1/2  left-1/2 w-full container -translate-x-[50%] -translate-y-[50%] z-10 mt-10 ">
           <div className="text-center max-w-[400px] sm:max-w-full mx-auto">
             <img
               src={heading_img_1}
               alt="heading"
-              className="max-w-[600px] mx-auto w-full"
+              className="max-w-[500px] md:max-w-[600px] mx-auto w-full"
             />
             <img
               src={heading_img_2}
               alt="heading"
-              className="max-w-[500px] mx-auto w-full"
+              className="max-w-[400px] md:max-w-[500px] mx-auto w-full"
             />
             <img
               src={subtitle}
               alt="subtitle"
-              className="max-w-[450px] mx-auto mt-4 w-full"
+              className="max-w-[350px] md:max-w-[450px] mx-auto mt-4 w-full"
             />
-            <div className="flex justify-center items-center gap-5 sm:gap-10 mt-20 sm:mt-32">
+            <div className="flex justify-center items-center gap-5 sm:gap-10 mt-14 sm:mt-16">
               <Link
                 to={"https://story.devomon.io/"}
                 target="_blank"
@@ -288,14 +296,14 @@ const Hero = () => {
                 <img
                   src={story_button}
                   alt="story"
-                  className="max-w-[250px] w-full"
+                  className="max-w-[200px] md:max-w-[250px] w-full"
                 />
               </Link>
               <span className="cursor-pointer">
                 <img
                   src={play_button_hero}
                   alt="play"
-                  className="max-w-[100px] w-full"
+                  className="max-w-[70px] md:max-w-[100px] w-full"
                 />
               </span>
               <Link
@@ -306,7 +314,7 @@ const Hero = () => {
                 <img
                   src={gamefi_button}
                   alt="gamefi"
-                  className="max-w-[250px] w-full"
+                  className="max-w-[200px] md:max-w-[250px] w-full"
                 />
               </Link>
             </div>

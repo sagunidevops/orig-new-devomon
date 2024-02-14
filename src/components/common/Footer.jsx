@@ -383,7 +383,7 @@ const Footer = () => {
                       Staking
                     </Link>
                   </div>
-                  <div className="flex cursor-pointer items-center group relative">
+                  {/* <div className="flex cursor-pointer items-center group relative">
                     <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1]">
                       <Link target="_blank" to={"https://team.devomon.io"}>
                         <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
@@ -398,10 +398,10 @@ const Footer = () => {
                       </Link>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
-                      Info
+                      Team
                     </p>
                     <FooterLinkArrow />
-                  </div>
+                  </div> */}
                   <div className="flex cursor-pointer items-center group relative">
                     <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[11]">
                       <a
@@ -429,9 +429,20 @@ const Footer = () => {
                       >
                         Roadmap
                       </NavLink>
+                      <Link target="_blank" to={"https://team.devomon.io"}>
+                        <p className="text-xs xl:text-base text-white mb-0 mt-2 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
+                          Core Team
+                        </p>
+                      </Link>
+
+                      <Link target="_blank" to={"https://partners.devomon.io"}>
+                        <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2 font-normal font-poppins text-start">
+                          Partners
+                        </p>
+                      </Link>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
-                      Help
+                      Info
                     </p>
                     <FooterLinkArrow />
                   </div>
