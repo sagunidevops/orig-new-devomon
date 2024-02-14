@@ -184,7 +184,7 @@
     min-height: 100vh;
     min-width: 177.77vh;
     position: absolute;
-    top: 57%;
+    top: 50%;
     transform: translate(-50%, -50%);
     width: 100vw;
   }
@@ -264,11 +264,6 @@
       transform: translateY(-753%) !important;
     }
   }
-  @media (max-width: 1024px) {
-    .vimvideo {
-      top: 54%;
-    }
-  }
   @media (max-width: 641px) {
     .onwership-slider .slick-track .slick-active {
       transform: unset !important;
@@ -285,10 +280,6 @@
     }
     .onwership-slider .slick-track {
       padding: 15px 0px 32px 0px;
-    }
-    .vimvideo {
-      left: 58%;
-      min-width: 174.77vh;
     }
   }
 

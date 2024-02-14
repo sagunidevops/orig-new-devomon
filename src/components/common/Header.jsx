@@ -170,7 +170,7 @@ const Header = () => {
             ></div>
           </div>
         </div>
-        <div className="px-4 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 navbar_ bg bg-black fixed top-0 w-full">
+        <div className="px-4 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 navbar_bg fixed top-0 w-full">
           <div className="flex justify-between items-center relative">
             {/* <ul>
               <li className="cursor-pointer flex items-center">
@@ -190,8 +190,8 @@ const Header = () => {
               </li>
             </ul> */}
             <ul className="xl:gap-[11px] gap-0 items-center hidden lg:flex">
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute top-[75px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
+                <div className="absolute top-[55px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     <a
                       href="https://callisto.devomon.io/"
@@ -265,7 +265,7 @@ const Header = () => {
                 </a>
                 <HeraderLinkArrow />
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200">
                 <Link
                   to="https://app.uncx.network/chain/bsc/farm/0xb8A299f18C8bD079c839CACB63f036Cd7dfE68c7"
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
@@ -274,8 +274,8 @@ const Header = () => {
                   Staking
                 </Link>
               </li>
-              {/* <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute top-[75px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+              {/* <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
+                <div className="absolute top-[55px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     <span>
                       <Link
@@ -316,8 +316,8 @@ const Header = () => {
                 </a>
                 <HeraderLinkArrow />
               </li> */}
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute top-[75px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
+                <div className="absolute top-[55px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     {" "}
                     <span>
@@ -399,7 +399,7 @@ const Header = () => {
                 </a>
                 <HeraderLinkArrow />
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200">
                 <Link
                   target="_blank"
                   to={"https://medium.com/@DevomonOfficial"}
@@ -408,8 +408,8 @@ const Header = () => {
                   News
                 </Link>
               </li>
-              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[75px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute top-[75px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
+              <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
+                <div className="absolute top-[55px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
                     <span>
                       <Link

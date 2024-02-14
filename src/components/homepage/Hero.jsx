@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/webp/logo.webp";
 import heading_img_1 from "../../assets/images/homepageImages/png/title_01_apple_chancery.png";
@@ -9,19 +9,39 @@ import story_button from "../../assets/images/homepageImages/png/story_button.pn
 import gamefi_button from "../../assets/images/homepageImages/png/gamefi_button.png";
 
 const Hero1 = () => {
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  // Function to handle play/pause when the play button is clicked
+  const handleButtonClick = () => {
+    const video = videoRef.current;
+
+    if (isPlaying) {
+      video.pause();
+    } else {
+      video.play();
+    }
+
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <>
       <section className="min-h-screen relative h-screen hero_section">
         <div className="bg-[#1E3EA81A] relative overflow-x-hidden h-full">
+          {/* Logo with a link to the homepage */}
           <Link to={"/"}>
             <img
-              className="max-w-[150px] sm:max-w-[200px] lg:max-w-[261px] mt-12 md:mt-14 lg:mt-20 ms-5 lg:ms-10 cursor-pointer"
+              className="max-w-[150px] sm:max-w-[200px] lg:max-w-[261px] mt-12 lg:mt-16 ms-5 lg:ms-10 cursor-pointer"
               src={Logo}
               alt="logo"
             />
           </Link>
-          <div className="absolute top-1/2  left-1/2 w-full container -translate-x-[50%] -translate-y-[50%] z-10 mt-10">
+
+          {/* Main content of the hero section */}
+          <div className="absolute top-1/2 left-1/2 w-full container -translate-x-[50%] -translate-y-[50%] z-10 mt-10">
             <div className="text-center max-w-[400px] sm:max-w-full mx-auto">
+              {/* Heading images */}
               <img
                 src={heading_img_1}
                 alt="heading"
@@ -32,11 +52,15 @@ const Hero1 = () => {
                 alt="heading"
                 className="max-w-[400px] md:max-w-[500px] mx-auto w-full"
               />
+
+              {/* Subtitle image */}
               <img
                 src={subtitle}
                 alt="subtitle"
                 className="max-w-[350px] md:max-w-[450px] mx-auto mt-4 w-full"
               />
+
+              {/* Buttons with links */}
               <div className="flex justify-center items-center gap-5 sm:gap-10 mt-14 sm:mt-16">
                 <Link
                   to={"https://story.devomon.io/"}
@@ -49,7 +73,7 @@ const Hero1 = () => {
                     className="max-w-[200px] md:max-w-[250px] w-full"
                   />
                 </Link>
-                <span className="cursor-pointer">
+                <span className="cursor-pointer" onClick={handleButtonClick}>
                   <img
                     src={play_button_hero}
                     alt="play"
@@ -70,8 +94,17 @@ const Hero1 = () => {
               </div>
             </div>
           </div>
+
+          {/* Video container */}
           <div className="video-container">
-            <video className="vimvideo" loop muted autoPlay>
+            <video
+              className="vimvideo"
+              autoPlay={true}
+              loop={true}
+              playsInline
+              muted={true}
+              ref={videoRef}
+            >
               <source
                 src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-46257.appspot.com/o/Devomon_Early_Access_uhd_h264_video_only.mp4?alt=media&token=8797638f-2d2e-4651-a70e-9a50904bee70"
                 type="video/mp4"
