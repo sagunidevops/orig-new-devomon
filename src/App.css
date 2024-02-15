@@ -229,10 +229,6 @@
   .overflow_hidden {
     overflow: hidden !important;
   }
-  /* TWITTER BOX */
-  article {
-    height: 240px !important;
-  }
   @media (max-width: 1280px) {
     .translate_y {
       transform: translateY(-510%) !important;
