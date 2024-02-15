@@ -14,6 +14,7 @@ import evoverse from "../../assets/images/webp/evoverse.webp";
 import { HeraderLinkArrow } from "./Icons";
 import discord from "../../assets/images/homepageImages/png/discord.png";
 import twitter from "../../assets/images/homepageImages/png/twitter.png";
+import youtube from "../../assets/images/homepageImages/png/youtube_icon.png";
 const Header = () => {
   const [video, setVideo] = useState();
   const videoRef = useRef(null);
@@ -490,6 +491,20 @@ const Header = () => {
                   <img
                     src={discord}
                     alt="discord"
+                    width={30}
+                    className="hover:scale-[1.1] transition-all duration-300 w-[27px] sm:w-[30px]"
+                  />
+                </a>
+              </li>
+              <li className="group">
+                <a
+                  href="https://www.youtube.com/@devomon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={youtube}
+                    alt="youtube"
                     width={30}
                     className="hover:scale-[1.1] transition-all duration-300 w-[27px] sm:w-[30px]"
                   />

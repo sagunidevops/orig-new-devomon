@@ -9,22 +9,6 @@ import story_button from "../../assets/images/homepageImages/png/story_button.pn
 import gamefi_button from "../../assets/images/homepageImages/png/gamefi_button.png";
 
 const Hero1 = () => {
-  const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  // Function to handle play/pause when the play button is clicked
-  const handleButtonClick = () => {
-    const video = videoRef.current;
-
-    if (isPlaying) {
-      video.pause();
-    } else {
-      video.play();
-    }
-
-    setIsPlaying(!isPlaying);
-  };
-
   return (
     <>
       <section className="min-h-screen relative h-screen hero_section">
@@ -73,13 +57,17 @@ const Hero1 = () => {
                     className="max-w-[200px] md:max-w-[250px] w-full"
                   />
                 </Link>
-                <span className="cursor-pointer" onClick={handleButtonClick}>
+                <Link
+                  className="cursor-pointer"
+                  target="_blank"
+                  to={"https://www.youtube.com/watch?v=YPP4wEnvzsI"}
+                >
                   <img
                     src={play_button_hero}
                     alt="play"
                     className="max-w-[70px] md:max-w-[100px] w-full"
                   />
-                </span>
+                </Link>
                 <Link
                   to={"https://callisto.devomon.io/"}
                   target="_blank"
@@ -103,7 +91,6 @@ const Hero1 = () => {
               loop={true}
               playsInline
               muted={true}
-              ref={videoRef}
             >
               <source
                 src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-46257.appspot.com/o/Devomon_Early_Access_uhd_h264_video_only.mp4?alt=media&token=8797638f-2d2e-4651-a70e-9a50904bee70"
