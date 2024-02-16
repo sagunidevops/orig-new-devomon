@@ -15,7 +15,7 @@ const About = () => {
   }, []);
   return (
     <>
-      <section className="relative pt-14 pb-4 sm:pb-8 lg:py-14 play-earn about_bg_img bg-aboutBgImg bg-no-repeat z-10 bg-cover">
+      <section className="relative pt-14 pb-4 sm:pb-8 lg:pt-16 lg:pb-16 play-earn about_bg_img bg-aboutBgImg bg-no-repeat z-10 bg-cover">
         <div className="container 2xl:max-w-[1520px]">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-6/12 px-3 lg:pt-9 xl:pt-3">
