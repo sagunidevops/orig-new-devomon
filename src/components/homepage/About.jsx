@@ -15,10 +15,10 @@ const About = () => {
   }, []);
   return (
     <>
-      <section className="relative pt-14 pb-4 sm:pb-8 lg:pt-16 lg:pb-16 play-earn about_bg_img bg-aboutBgImg bg-no-repeat z-10 bg-cover">
+      <section className="relative py-14 lg:py-20 play-earn about_bg_img bg-aboutBgImg bg-no-repeat z-10 bg-cover">
         <div className="container 2xl:max-w-[1520px]">
           <div className="flex flex-wrap">
-            <div className="w-full lg:w-6/12 px-3 lg:pt-9 xl:pt-3">
+            <div className="w-full px-3">
               <h2 className="font-raleway uppercase font-bold text-center text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">
                 About Devomon
               </h2>
@@ -46,7 +46,7 @@ const About = () => {
                 />
               </video>
             </div>
-            <div className="w-full lg:w-6/12 -mt-3 sm:mt-0 px-3">
+            {/* <div className="w-full lg:w-6/12 -mt-3 sm:mt-0 px-3">
               <div className="mx-auto max-w-[466px] md:max-w-[550px] scale-y-[0.9] xl:scale-[1] rounded-xl text-center text-white font-poppins text-sm">
                 <blockquote className="twitter-tweet">
                   <p lang="en" dir="ltr">
@@ -62,7 +62,7 @@ const About = () => {
                   </a>
                 </blockquote>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

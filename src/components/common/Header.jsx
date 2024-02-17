@@ -268,7 +268,7 @@ const Header = () => {
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200">
                 <Link
-                  to="https://app.uncx.network/chain/bsc/farm/0xb8A299f18C8bD079c839CACB63f036Cd7dfE68c7"
+                  to="https://bit.ly/WS-DEVO-STAKE"
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   target="_blank"
                 >
@@ -416,7 +416,7 @@ const Header = () => {
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        to={"https://www.gate.io/trade/EVO_USDT"}
+                        to={"https://devomon.ink/WS-DEVO-GATE"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
                           GateIO
@@ -434,9 +434,7 @@ const Header = () => {
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        to={
-                          "https://www.mexc.com/exchange/EVO_USDT?_from=market"
-                        }
+                        to={"https://devomon.ink/WS-DEVO-MEXC"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
                           MEXC
@@ -447,9 +445,7 @@ const Header = () => {
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
-                        to={
-                          "https://pancakeswap.finance/swap?outputCurrency=0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba"
-                        }
+                        to={"https://https://devomon.ink/WS-DEVO-PCS"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
                           PancakeSwap
@@ -470,7 +466,7 @@ const Header = () => {
             <ul className="gap-4 items-center flex py-2">
               <li className="group">
                 <a
-                  href="https://twitter.com/OfficialDevomon"
+                  href="https://bit.ly/WS-DEVO-X"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -484,7 +480,7 @@ const Header = () => {
               </li>
               <li className="group">
                 <a
-                  href="https://discord.com/invite/8nXQ4uQE2k"
+                  href="https://bit.ly/WS-DEVO-DSC"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -498,7 +494,7 @@ const Header = () => {
               </li>
               <li className="group">
                 <a
-                  href="https://www.youtube.com/@devomon"
+                  href="https://devomon.ink/Youtube"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -687,7 +683,7 @@ const Header = () => {
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
                           <Link
-                            to="https://app.uncx.network/chain/bsc/farm/0xb8A299f18C8bD079c839CACB63f036Cd7dfE68c7"
+                            to="https://bit.ly/WS-DEVO-STAKE"
                             onClick={() => {
                               setNav(!Nav);
                             }}
@@ -879,7 +875,7 @@ const Header = () => {
                             <Link
                               target="_blank"
                               rel="noopener noreferrer"
-                              to={"https://www.gate.io/trade/EVO_USDT"}
+                              to={"https://devomon.ink/WS-DEVO-GATE"}
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
@@ -891,9 +887,7 @@ const Header = () => {
                             <Link
                               target="_blank"
                               rel="noopener noreferrer"
-                              to={
-                                "https://www.mexc.com/exchange/EVO_USDT?_from=market"
-                              }
+                              to={"https://devomon.ink/WS-DEVO-MEXC"}
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
@@ -904,9 +898,7 @@ const Header = () => {
                           <span>
                             <Link
                               target="_blank"
-                              to={
-                                " https://pancakeswap.finance/swap?outputCurrency=0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba"
-                              }
+                              to={"https://devomon.ink/WS-DEVO-PCS"}
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">

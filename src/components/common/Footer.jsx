@@ -377,7 +377,7 @@ const Footer = () => {
                   <div className="flex cursor-pointer items-center group">
                     <Link
                       target="_blank"
-                      to="https://app.uncx.network/chain/bsc/farm/0xb8A299f18C8bD079c839CACB63f036Cd7dfE68c7"
+                      to="https://bit.ly/WS-DEVO-STAKE"
                       className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200"
                     >
                       Staking
@@ -460,7 +460,7 @@ const Footer = () => {
                       <a
                         target="_blank"
                         rel="noreferrer"
-                        href=" https://www.gate.io/trade/EVO_USDT"
+                        href="https://devomon.ink/WS-DEVO-GATE"
                       >
                         <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
                           GateIO
@@ -469,7 +469,7 @@ const Footer = () => {
                       <a
                         target="_blank"
                         rel="noreferrer"
-                        href="https://www.mexc.com/exchange/EVO_USDT?_from=market"
+                        href="https://devomon.ink/WS-DEVO-MEXC"
                         className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
                       >
                         MEXC
@@ -477,7 +477,7 @@ const Footer = () => {
                       <a
                         target="_blank"
                         rel="noreferrer"
-                        href=" https://pancakeswap.finance/swap?outputCurrency=0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba"
+                        href="https://devomon.ink/WS-DEVO-PCS"
                         className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
                       >
                         PancakeSwap
