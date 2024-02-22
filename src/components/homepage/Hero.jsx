@@ -93,7 +93,7 @@ const Hero1 = () => {
               muted={true}
             >
               <source
-                src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-46257.appspot.com/o/Devomon_Early_Access_uhd_h264_video_only.mp4?alt=media&token=8797638f-2d2e-4651-a70e-9a50904bee70"
+                src="https://firebasestorage.googleapis.com/v0/b/sinup-c4f28.appspot.com/o/devo_epic_rise_20ec_h264_40mbit_uhd.mp4?alt=media&token=f4bde004-2f10-4ae9-94bc-421f5d7819af"
                 type="video/mp4"
               />
             </video>
