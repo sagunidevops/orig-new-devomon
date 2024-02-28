@@ -15,8 +15,9 @@ import CookiePolicyText from "./components/CookiePolicyText";
 import TermsAndConditionsTexts from "./components/TermsAndConditionsTexts";
 import PrivacyPolicyTexts from "./components/PrivacyPolicyTexts";
 import RoadMap from "./components/RoadMap";
-// import PrivacyPolicyTexts from "./components/PrivacyPolicyTexts";
-// import TermsAndConditionsTexts from "./components/TermsAndConditionsTexts";
+import { Analytics } from "@vercel/analytics/react"
+
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -51,6 +52,7 @@ function App() {
             element={<TermsAndConditionsTexts />}
           />
         </Routes>
+        <Analytics/>
         <Footer />
       </BrowserRouter>
     </>

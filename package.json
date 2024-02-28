@@ -17,6 +17,7 @@
     "@react-pdf/renderer": "^3.1.13",
     "@u-wave/react-vimeo": "^0.9.10",
     "@uidotdev/usehooks": "^2.0.1",
+    "@vercel/analytics": "^1.2.2",
     "axios": "^1.4.0",
     "framer-motion": "^10.13.0",
     "gsap": "^3.12.2",
