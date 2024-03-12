@@ -15,9 +15,7 @@ import CookiePolicyText from "./components/CookiePolicyText";
 import TermsAndConditionsTexts from "./components/TermsAndConditionsTexts";
 import PrivacyPolicyTexts from "./components/PrivacyPolicyTexts";
 import RoadMap from "./components/RoadMap";
-import { Analytics } from "@vercel/analytics/react"
-
-
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,6 +30,7 @@ function App() {
       document.body.classList.remove("overflow_hidden");
     }
   }, [loading]);
+
   return (
     <>
       <BrowserRouter>
@@ -46,13 +45,12 @@ function App() {
           <Route path="/cookie-policy" element={<CookiePolicyText />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyTexts />} />
           <Route path="/roadmap" element={<RoadMap />} />
-
           <Route
             path="/terms-conditons"
             element={<TermsAndConditionsTexts />}
           />
         </Routes>
-        <Analytics/>
+        <Analytics />
         <Footer />
       </BrowserRouter>
     </>

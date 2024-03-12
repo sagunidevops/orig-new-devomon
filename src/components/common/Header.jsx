@@ -1,6 +1,4 @@
 /* eslint-disable no-unused-vars */
-import nav_logo from "../../assets/images/webp/header-logo.webp";
-import Callisto_logo from "../../assets/images/png/Devomon_Callisto_logo.png";
 import { Disclosure } from "@headlessui/react";
 import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
@@ -15,10 +13,12 @@ import { HeraderLinkArrow } from "./Icons";
 import discord from "../../assets/images/homepageImages/png/discord.png";
 import twitter from "../../assets/images/homepageImages/png/twitter.png";
 import youtube from "../../assets/images/homepageImages/png/youtube_icon.png";
+import { track } from "@vercel/analytics";
 const Header = () => {
   const [video, setVideo] = useState();
   const videoRef = useRef(null);
   const [popupValue, setPopupValue] = useState("");
+  // const [idElement,setIdElement]=useState("")
 
   useEffect(() => {
     if (video) {
@@ -60,6 +60,9 @@ const Header = () => {
     setHide(!hide);
   };
   useEffect(() => {
+    // const headerContent = document.getElementById('google_translate_element');
+    // setIdElement(headerContent)
+    // console.log("headerContentheaderContent",headerContent)
     if (location.hash) {
       const targetElement = document.querySelector(location.hash);
       if (targetElement) {
@@ -69,6 +72,7 @@ const Header = () => {
       }
     }
   }, [location]);
+
 
   return (
     <>
@@ -412,7 +416,7 @@ const Header = () => {
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[55px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
-                    <span>
+                    <span onClick={()=>track("buy evomon gateio")}>
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
@@ -430,7 +434,7 @@ const Header = () => {
                         </p>
                       </Link>
                     </span> */}
-                    <span>
+                    <span onClick={()=>track("buy evomon mexc")}>
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
@@ -441,7 +445,7 @@ const Header = () => {
                         </p>
                       </Link>
                     </span>
-                    <span>
+                    <span onClick={()=>track("buy evomon pancakeswap")}>
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
@@ -506,6 +510,9 @@ const Header = () => {
                   />
                 </a>
               </li>
+              {/* <li className="group">
+             {idElement}fff
+              </li> */}
               {/* <li className="group">
                 <a
                   href="https://callisto.devomon.io/"
@@ -871,7 +878,7 @@ const Header = () => {
                           </svg>
                         </Disclosure.Button>
                         <Disclosure.Panel className="px-4 py-2 text-gray-500 bg-black transition_300 flex flex-col">
-                          <span>
+                          <span onClick={()=>track("buy evomon gateio")}>
                             <Link
                               target="_blank"
                               rel="noopener noreferrer"
@@ -883,7 +890,7 @@ const Header = () => {
                               </p>
                             </Link>
                           </span>
-                          <span>
+                          <span onClick={()=>track("buy evomon mexc")}>
                             <Link
                               target="_blank"
                               rel="noopener noreferrer"
@@ -895,7 +902,7 @@ const Header = () => {
                               </p>
                             </Link>
                           </span>
-                          <span>
+                          <span onClick={()=>track("buy evomon pancakeswap")}>
                             <Link
                               target="_blank"
                               to={"https://devomon.ink/WS-DEVO-PCS"}
