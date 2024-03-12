@@ -303,7 +303,7 @@
     #google_translate_element select {
       right: 65px;
       top: 3px;
-      width: 130px;
+      width: 100px;
     }
     .onwership-slider .slick-track .slick-active {
       transform: unset !important;
