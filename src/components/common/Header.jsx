@@ -73,7 +73,6 @@ const Header = () => {
     }
   }, [location]);
 
-
   return (
     <>
       <nav className="relative z-50">
@@ -416,7 +415,7 @@ const Header = () => {
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[55px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
-                    <span onClick={()=>track("buy evomon gateio")}>
+                    <span onClick={() => track("buy evomon gateio")}>
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
@@ -434,7 +433,7 @@ const Header = () => {
                         </p>
                       </Link>
                     </span> */}
-                    <span onClick={()=>track("buy evomon mexc")}>
+                    <span onClick={() => track("buy evomon mexc")}>
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
@@ -445,7 +444,7 @@ const Header = () => {
                         </p>
                       </Link>
                     </span>
-                    <span onClick={()=>track("buy evomon pancakeswap")}>
+                    <span onClick={() => track("buy evomon pancakeswap")}>
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
@@ -878,7 +877,7 @@ const Header = () => {
                           </svg>
                         </Disclosure.Button>
                         <Disclosure.Panel className="px-4 py-2 text-gray-500 bg-black transition_300 flex flex-col">
-                          <span onClick={()=>track("buy evomon gateio")}>
+                          <span onClick={() => track("buy evomon gateio")}>
                             <Link
                               target="_blank"
                               rel="noopener noreferrer"
@@ -890,7 +889,7 @@ const Header = () => {
                               </p>
                             </Link>
                           </span>
-                          <span onClick={()=>track("buy evomon mexc")}>
+                          <span onClick={() => track("buy evomon mexc")}>
                             <Link
                               target="_blank"
                               rel="noopener noreferrer"
@@ -902,7 +901,7 @@ const Header = () => {
                               </p>
                             </Link>
                           </span>
-                          <span onClick={()=>track("buy evomon pancakeswap")}>
+                          <span onClick={() => track("buy evomon pancakeswap")}>
                             <Link
                               target="_blank"
                               to={"https://devomon.ink/WS-DEVO-PCS"}
