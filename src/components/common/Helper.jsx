@@ -7,7 +7,7 @@ import Twitter from "../../assets/images/webp/twitter.webp";
 import Tiktok from "../../assets/images/webp/tiktok.webp";
 import Medium from "../../assets/images/webp/medium.webp";
 import Twitch from "../../assets/images/webp/twitch.webp";
-import Discord from "../../assets/images/webp/discord.webp"; 
+import Discord from "../../assets/images/webp/discord.webp";
 import OwnerShipImg1 from "../../assets/images/webp/ownership1.webp";
 import OwnerShipImg2 from "../../assets/images/webp/ownership2.webp";
 import OwnerShipImg3 from "../../assets/images/webp/ownership3.webp";
@@ -71,9 +71,9 @@ import anime_character from "../../assets/images/abc7.png";
 import merch_character from "../../assets/images/abc8.png";
 // ==== faq ====
 import latest_news_slider_img from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
-import MerchImage from "../../assets/images/png/Brand_peak.png"
-import evoverse from "../../assets/images/webp/evoverse.webp"
-import dashboard from "../../assets/images/webp/dashboard-coming.webp"
+import MerchImage from "../../assets/images/png/Brand_peak.png";
+import evoverse from "../../assets/images/webp/evoverse.webp";
+import dashboard from "../../assets/images/webp/dashboard-coming.webp";
 
 export const tureOnwership = [
   {
@@ -353,7 +353,7 @@ export const ourPartner = [
       {
         icon: GameLofiHub,
         url: "https://gamefi.org/events/race-for-glory",
-        className:'filter-property',
+        className: "filter-property",
       },
       {
         icon: UnixGaming_logo,
@@ -362,7 +362,7 @@ export const ourPartner = [
       {
         icon: magic,
         url: "https://magic.io/",
-        className:'filter-property',
+        className: "filter-property",
       },
       {
         icon: mystic,
@@ -396,7 +396,7 @@ export const TeamData = [
     url: "https://www.linkedin.com/in/gueven-al/",
     desc: "Güven, a 15-year gaming enthusiast and entrepreneurial leader, excels under pressure with a passion for anime and gaming",
   },
-    {
+  {
     name: "Jeff Nowak",
     img: devomon_team5,
     title: "CEO Maven Capital",
@@ -407,7 +407,7 @@ export const TeamData = [
     name: "Sammy Grund- Advisor",
     img: devomon_team2,
     title: "COO",
-    url:" https://www.linkedin.com/in/sammy-g",
+    url: " https://www.linkedin.com/in/sammy-g",
     desc: "A finance-savvy anime fan with a passion for cryptocurrency, web3, and the Metaverse, eager to contribute to this project's evolution.",
   },
   {
@@ -416,7 +416,7 @@ export const TeamData = [
     title: "Senior Game Dev / Ex Nintendo",
     url: "https://www.linkedin.com/in/wisha-butt-42a646240/",
     desc: "An experienced Senior Game Developer with a focus on RPG development. Committed to crafting compelling narratives and gameplay mechanics.",
-    class:"hidden",
+    class: "hidden",
   },
   {
     name: "Saban Özden",
@@ -431,7 +431,7 @@ export const TeamData = [
     title: "Chief Gaming Officer",
     url: "https://www.linkedin.com/in/serhatyanar/",
     desc: "Martin boasts a track record of eight years as a seasoned game developer, demonstrating exceptional proficiency in Unreal Engine at senior levels.",
-    class:"hidden",
+    class: "hidden",
   },
   {
     name: "Dominik Bialek",
@@ -554,93 +554,99 @@ export const energeticTeamData = [
 ];
 
 // ====================================================== ABOUT CARDS ========================================================
-
 export const AboutCardData = [
   {
     card_bg: gamefi_bg,
     title: "GameFi",
     character_img: gamefi_character,
-    linkValue:"https://callisto.devomon.io/",
-    className: "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[24%] lg:w-[22%] xl:w-[19%] right-[6%]",
+    linkValue: "https://callisto.devomon.io/",
+    className:
+      "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[24%] lg:w-[22%] xl:w-[19%] right-[6%]",
   },
   {
     card_bg: evozone_bg,
     title: "Evozone",
     character_img: evozone_character,
-    className: "w-[90%] xs:w-[60%] sm:w-[55%] md:w-[45%] lg:w-[40%] 2xl:w-[40%] left-[0%]",
-    linkValue:"https://evozone.devomon.io/"
+    className:
+      "w-[90%] xs:w-[60%] sm:w-[55%] md:w-[45%] lg:w-[40%] 2xl:w-[40%] left-[0%]",
+    linkValue: "https://evozone.devomon.io/",
   },
   {
     card_bg: nft_bg,
-    title: "NFT",
+    title: "NFTs",
     character_img: nft_character,
-    className: "w-[40%] xs:w-[30%] sm:w-[28%] md:w-[22%] xl:w-[18%] right-[6.5%]",
-    linkValue:"https://callisto.devomon.io/#evomons"
+    className:
+      "w-[40%] xs:w-[30%] sm:w-[28%] md:w-[22%] xl:w-[18%] right-[6.5%]",
+    linkValue: "https://callisto.devomon.io/#evomons",
   },
   {
     card_bg: dashboard_bg,
     title: "Dashboard",
     character_img: dashboard_character,
-    className: "w-[95%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[45%] xl:w-[40%] xs:!left-[0%] -left-[9%]",
-    popupImage:dashboard,
+    className:
+      "w-[95%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[45%] xl:w-[40%] xs:!left-[0%] -left-[9%]",
+    popupImage: dashboard,
   },
   {
     card_bg: evoVerse_bg,
     title: "EvoVerse",
     character_img: evoVerse_character,
-    className: "w-[45%] min-[576px]:w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[19%] 2xl:w-[19%] min-[576px]:right-[10%] right-0",
-    popupImage:evoverse,
+    className:
+      "w-[45%] min-[576px]:w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[19%] 2xl:w-[19%] min-[576px]:right-[10%] right-0",
+    popupImage: evoverse,
   },
   {
     card_bg: manga_bg,
     title: "Manga",
     character_img: manga_character,
-    className: "w-[50%] min-[576px]:w-[35%] xs:w-[30%] sm:w-[26%] md:w-[23%] lg:w-[22%] xl:w-[20%] 2xl:w-[19%] min-[576px]:left-[8%] -left-[5%]",
-    popupPara:"Coming Soon",
+    className:
+      "w-[50%] min-[576px]:w-[35%] xs:w-[30%] sm:w-[26%] md:w-[23%] lg:w-[22%] xl:w-[20%] 2xl:w-[19%] min-[576px]:left-[8%] -left-[5%]",
+    popupPara: "Coming Soon",
   },
   {
     card_bg: anime_bg,
     title: "Anime",
     character_img: anime_character,
-    className: "w-[53%] min-[576px]:w-[35%] xs:w-[32%] sm:w-[35%] md:w-[30%] lg:w-[26%] xl:w-[22%] 2xl:w-[23%] min-[576px]:right-[8%] right-0",
-    popupPara:"Coming Soon",
-
+    className:
+      "w-[53%] min-[576px]:w-[35%] xs:w-[32%] sm:w-[35%] md:w-[30%] lg:w-[26%] xl:w-[22%] 2xl:w-[23%] min-[576px]:right-[8%] right-0",
+    popupPara: "Coming Soon",
   },
   {
     card_bg: merch_bg,
-    title: "MERCHANDISE",
+    title: "Merchandise",
     character_img: merch_character,
-    popupImage:MerchImage,
-    className: "w-[100%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[53%] lg:w-[45%] xl:w-[43%] -left-[7%] xs:left-[1%]",
+    popupImage: MerchImage,
+    className:
+      "w-[100%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[53%] lg:w-[45%] xl:w-[43%] -left-[7%] xs:left-[1%]",
   },
   {
     card_bg: coming_soon_bg,
     title: "News",
     className: "hidden",
-    linkValue:"https://medium.com/@DevomonOfficial",
+    linkValue: "https://medium.com/@DevomonOfficial",
   },
 ];
 
 // ============================================ Latest news ==============================================
 export const Latest_news_faq_data = [
   {
-     date:"10 Aug, 2023",
+    date: "10 Aug, 2023",
     heading: "Condimentum eros praesent condimentum nunc elementum.",
   },
   {
-     date:"10 Aug, 2023",
+    date: "10 Aug, 2023",
     heading: "Morbi lorem quisque non rutrum quisque blandit tellus.",
   },
   {
-     date:"10 Aug, 2023",
+    date: "10 Aug, 2023",
     heading: "Mattis enim eleifend  vulputate bibendum netus amet.",
   },
   {
-     date:"10 Aug, 2023",
+    date: "10 Aug, 2023",
     heading: "Scelerisque congue proin turpis bibendum duis nulla.",
   },
   {
-     date:"10 Aug, 2023",
+    date: "10 Aug, 2023",
     heading: "Aenean tristique suscipit diam mi gravida aenean non.",
   },
 ];
@@ -699,46 +705,49 @@ export const SideSocialIconData = [
 ];
 export const Dots_data = [
   {
-    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+    dot_class: " w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
   },
   {
-    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+    dot_class: " w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
   },
   {
-    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+    dot_class: " w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
   },
   {
-    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+    dot_class: " w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
   },
   {
-    dot_class:" w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
+    dot_class: " w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
   },
 ];
 
 export const array2 = [
   {
-    date:"10 Aug, 2023",
-    question:"Condimentum eros praesent condimentum nunc elementum.",
+    date: "10 Aug, 2023",
+    question: "Condimentum eros praesent condimentum nunc elementum.",
     answer: "Register, connect your wallet and install the game.",
   },
   {
-    date:"10 Aug, 2023",
-    question:"Morbi lorem quisque non rutrum quisque blandit tellus.",
+    date: "10 Aug, 2023",
+    question: "Morbi lorem quisque non rutrum quisque blandit tellus.",
     answer: "Usually 3, in some cases up to 6.",
   },
   {
-    date:"10 Aug, 2023",
-    question:"Mattis enim eleifend  vulputate bibendum netus amet.",
-    answer:"You can start round-based battles, explore and decorate your island. Communicate with friends.",
+    date: "10 Aug, 2023",
+    question: "Mattis enim eleifend  vulputate bibendum netus amet.",
+    answer:
+      "You can start round-based battles, explore and decorate your island. Communicate with friends.",
   },
   {
-    date:"10 Aug, 2023",
-    question:"Scelerisque congue proin turpis bibendum duis nulla.",
-    answer:"These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
+    date: "10 Aug, 2023",
+    question: "Scelerisque congue proin turpis bibendum duis nulla.",
+    answer:
+      "These include classic types like normal, fire, water, and grass, as well as more specialized types like .",
   },
   {
-    date:"10 Aug, 2023",
-    question:"Aenean tristique suscipit diam mi gravida aenean non.",
-    answer:"When your fire-type evomon battles a plant-type evomon, you will. ",
+    date: "10 Aug, 2023",
+    question: "Aenean tristique suscipit diam mi gravida aenean non.",
+    answer:
+      "When your fire-type evomon battles a plant-type evomon, you will. ",
   },
 ];

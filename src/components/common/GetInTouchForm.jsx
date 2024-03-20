@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
-import {useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import Swal from "sweetalert2";
+import { useLayoutChangerProvider } from "../../context/LanguageProvider";
 
 const GetInTouchForm = ({ status, message, onSubmitted }) => {
+  const { getTranslation, languageHandler } = useLayoutChangerProvider();
   const [formDetail, setFormDetail] = useState({
     firstName: "",
     lastName: "",
@@ -79,7 +81,7 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
                 });
               }}
               required
-              placeholder="first name"
+              placeholder={getTranslation("FIRST NAME")}
               className="form_input text-xs xl:text-sm outline-none border border-1 border-transparent hover:border-blue focus:border-blue  w-full text-white  py-4 px-3.5 placeholder:text-white placeholder:uppercase font-poppins placeholder:opacity-50"
             />
           </div>
@@ -94,7 +96,7 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
                   lastName: e.target.value,
                 });
               }}
-              placeholder="last name"
+              placeholder={getTranslation("LAST NAME")}
               className="form_input text-xs xl:text-sm outline-none border border-1 border-transparent hover:border-blue focus:border-blue w-full text-white  py-4 px-3.5 placeholder:text-white placeholder:uppercase font-poppins placeholder:opacity-50"
             />
           </div>
@@ -111,7 +113,7 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
                   email: e.target.value,
                 });
               }}
-              placeholder="email"
+              placeholder={getTranslation("EMAIL")}
               className="form_input text-xs xl:text-sm w-full outline-none border border-1 border-transparent hover:border-blue focus:border-blue text-white  py-4 px-3.5 placeholder:text-white placeholder:uppercase font-poppins placeholder:opacity-50"
             />
           </div>
@@ -126,7 +128,7 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
                 });
               }}
               required
-              placeholder="Subject"
+              placeholder={getTranslation("SUBJECT")}
               className="form_input text-xs xl:text-sm w-full outline-none border border-1 border-transparent hover:border-blue focus:border-blue text-white  py-4 px-3.5 placeholder:text-white placeholder:uppercase font-poppins placeholder:opacity-50"
             />
           </div>
@@ -144,7 +146,7 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
                   companyName: e.target.value,
                 });
               }}
-              placeholder="Company Name"
+              placeholder={getTranslation("COMPANY NAME")}
               className="form_input text-xs xl:text-sm outline-none border border-1 border-transparent hover:border-blue focus:border-blue text-white w-full  py-4 px-3.5 placeholder:text-white placeholder:uppercase font-poppins placeholder:opacity-50"
             />
           </div>
@@ -160,7 +162,7 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
                   message: e.target.value,
                 });
               }}
-              placeholder="message"
+              placeholder={getTranslation("MESSAGE")}
               rows="4"
               className="form_input py-4 w-full text-white px-3.5 placeholder:uppercase font-poppins resize-none  outline-none border border-1 border-transparent hover:border-blue focus:border-blue placeholder:opacity-50 placeholder:text-white"
             />
@@ -179,7 +181,7 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
           type="submit"
           className=" blue-btn-shadow hover:scale-105 transition-all ease-in-out duration-300 py-[5px] px-[21px] bg-[#2253F5] rounded-[39px] text-[14px] sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins  w-full "
         >
-          {isLoading ? "Loading..." : " Submit"}
+          {isLoading ? "Loading..." : getTranslation("Submit")}
         </button>
       </form>
     </>

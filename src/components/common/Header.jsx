@@ -14,7 +14,7 @@ import discord from "../../assets/images/homepageImages/png/discord.png";
 import twitter from "../../assets/images/homepageImages/png/twitter.png";
 import youtube from "../../assets/images/homepageImages/png/youtube_icon.png";
 import { track } from "@vercel/analytics";
-import {  useLayoutChangerProvider } from "../../context/LanguageProvider";
+import { useLayoutChangerProvider } from "../../context/LanguageProvider";
 const Header = () => {
   const [video, setVideo] = useState();
   const { getTranslation, languageHandler } = useLayoutChangerProvider();
@@ -183,7 +183,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                     >
                       <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
-                        GameFi
+                        {getTranslation("GameFi")}
                       </p>
                     </a>
                     <a
@@ -192,7 +192,7 @@ const Header = () => {
                       href="https://evozone.devomon.io/"
                     >
                       <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-4">
-                        Evozone
+                        {getTranslation("Evozone")}
                       </p>
                     </a>
                     <Link
@@ -201,7 +201,7 @@ const Header = () => {
                       onClick={() => setNav(!Nav)}
                     >
                       <p className=" font-poppins text-xs xl:text-base text-white mb-4 hover:text-[#2253F5] transition-all duration-200">
-                        NFTs
+                        {getTranslation("NFTs")}
                       </p>
                     </Link>
                     <span
@@ -209,27 +209,27 @@ const Header = () => {
                       rel="noopener noreferrer"
                       className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] transition-all duration-200"
                     >
-                      Dashboard{" "}
+                      {getTranslation("Dashboard")}
                     </span>
                     <span onClick={() => clickHandler("EvoVerse")}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
-                        EvoVerse
+                        {getTranslation("EvoVerse")}
                       </p>
                     </span>
                     <a onClick={() => setVideo(!video)}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
-                        Manga
+                        {getTranslation("Manga")}
                       </p>
                     </a>
                     <p
                       onClick={() => clickHandler("Anime")}
                       className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4"
                     >
-                      Anime{" "}
+                      {getTranslation("Anime")}
                     </p>
                     <span onClick={() => clickHandler("Merchandise")}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
-                        Merchandise
+                        {getTranslation("Merchandise")}
                       </p>
                     </span>
                   </div>
@@ -248,14 +248,13 @@ const Header = () => {
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   target="_blank"
                 >
-                  Staking
+                  {getTranslation("Staking")}
                 </Link>
               </li>
 
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[55px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
-                    {" "}
                     <span>
                       <a
                         target="_blank"
@@ -263,7 +262,7 @@ const Header = () => {
                         className="font-normal text-base text-white mb-0 hover:text-[#2253F5] transition-all inline-block duration-200 cursor-pointer font-poppins"
                         rel="noopener noreferrer"
                       >
-                        Whitepaper
+                        {getTranslation("Whitepaper")}
                       </a>
                     </span>
                     <span className="mt-2 xl:mt-3">
@@ -271,7 +270,7 @@ const Header = () => {
                         href="/#contact"
                         className="font-medium text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                       >
-                        Contact
+                        {getTranslation("Contact")}
                       </a>
                     </span>
                     <span className="mt-2 xl:mt-3">
@@ -279,7 +278,7 @@ const Header = () => {
                         to="/roadmap"
                         className="font-medium text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                       >
-                        Roadmap
+                        {getTranslation("Roadmap")}
                       </NavLink>
                     </span>
                     <span className="mt-2 xl:mt-3">
@@ -289,7 +288,7 @@ const Header = () => {
                         to={"https://team.devomon.io"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                          Core Team
+                          {getTranslation("Core Team")}
                         </p>
                       </Link>
                     </span>
@@ -300,7 +299,7 @@ const Header = () => {
                         to={"https://partners.devomon.io"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                          Partners
+                          {getTranslation("Partners")}
                         </p>
                       </Link>
                     </span>
@@ -310,7 +309,7 @@ const Header = () => {
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   href="#"
                 >
-                  Info
+                  {getTranslation("Info")}
                 </a>
                 <HeraderLinkArrow />
               </li>
@@ -320,7 +319,7 @@ const Header = () => {
                   to={"https://medium.com/@DevomonOfficial"}
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                 >
-                  News
+                  {getTranslation("News")}
                 </Link>
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
@@ -333,7 +332,7 @@ const Header = () => {
                         to={"https://devomon.ink/WS-DEVO-GATE"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
-                          GateIO
+                          {getTranslation("GateIO")}
                         </p>
                       </Link>
                     </span>
@@ -345,7 +344,7 @@ const Header = () => {
                         to={"https://devomon.ink/WS-DEVO-MEXC"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
-                          MEXC
+                          {getTranslation("MEXC")}
                         </p>
                       </Link>
                     </span>
@@ -356,7 +355,7 @@ const Header = () => {
                         to={"https://https://devomon.ink/WS-DEVO-PCS"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                          PancakeSwap
+                          {getTranslation("PancakeSwap")}
                         </p>
                       </Link>
                     </span>
@@ -366,17 +365,25 @@ const Header = () => {
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   href="#"
                 >
-                  Buy Evo
+                  {getTranslation("Buy Evo")}
                 </a>
                 <HeraderLinkArrow />
               </li>
             </ul>
-            <select onChange={(e) => languageHandler(e.target.value)}>
-              <option value="English">English</option>
-              <option value="French">French</option>
-              <option value="Japnese">Japnese</option>
-            </select>
             <ul className="gap-4 items-center flex py-2">
+              <select
+                onChange={(e) => languageHandler(e.target.value)}
+                className="w-[95px] sm:w-[115px] rounded-md outline-none font-poppins font-normal text-sm xl:text-base sm:px-1 sm:py-1 text-white bg-black border border-white"
+              >
+                <option value="English">English</option>
+                <option value="French">French</option>
+                <option value="Japnese">Japnese</option>
+                <option value="German">German</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Italian">Italian</option>
+                <option value="Chinese ">Chinese </option>
+                <option value="Turkish">Turkish</option>
+              </select>
               <li className="group">
                 <a
                   href="https://bit.ly/WS-DEVO-X"
@@ -476,7 +483,9 @@ const Header = () => {
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
-                          <span className=" mb-0 font-poppins">D-World</span>
+                          <span className=" mb-0 font-poppins">
+                            {getTranslation("D-World")}
+                          </span>
                           <svg
                             className={`${
                               open
@@ -503,7 +512,7 @@ const Header = () => {
                               rel="noopener noreferrer"
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3 transition-all duration-200">
-                                GameFi
+                                {getTranslation("GameFi")}
                               </p>
                             </a>
                             <a
@@ -512,7 +521,7 @@ const Header = () => {
                               href="https://evozone.devomon.io/"
                             >
                               <p className="font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-3 transition-all duration-200 mb-0">
-                                Evozone
+                                {getTranslation("Evozone")}
                               </p>
                             </a>
                             <Link
@@ -521,7 +530,7 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200">
-                                NFTs
+                                {getTranslation("NFTs")}
                               </p>
                             </Link>
                             <span
@@ -530,7 +539,7 @@ const Header = () => {
                               }}
                               className="font-poppins text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200"
                             >
-                              Dashboard{" "}
+                              {getTranslation("Dashboard")}
                             </span>
                             <span
                               onClick={() => {
@@ -539,7 +548,7 @@ const Header = () => {
                               href="#"
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3 transition-all duration-200">
-                                EvoVerse
+                                {getTranslation("EvoVerse")}
                               </p>
                             </span>
                             <a
@@ -549,7 +558,7 @@ const Header = () => {
                               }}
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3 transition-all duration-200">
-                                Manga
+                                {getTranslation("Manga")}
                               </p>
                             </a>
                             <span
@@ -558,7 +567,7 @@ const Header = () => {
                               }}
                               className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3"
                             >
-                              Anime{" "}
+                              {getTranslation("Anime")}
                             </span>
                             <span
                               onClick={() => {
@@ -566,7 +575,7 @@ const Header = () => {
                               }}
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3 transition-all duration-200">
-                                Merchandise
+                                {getTranslation("Merchandise")}
                               </p>
                             </span>
                           </div>
@@ -586,7 +595,7 @@ const Header = () => {
                             className="font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                             target="_blank"
                           >
-                            Staking
+                            {getTranslation("Staking")}
                           </Link>
                         </Disclosure.Button>
                       </>
@@ -597,7 +606,9 @@ const Header = () => {
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
-                          <span className=" mb-0 font-poppins">Info</span>
+                          <span className=" mb-0 font-poppins">
+                            {getTranslation("Info")}
+                          </span>
                           <svg
                             className={`${
                               open
@@ -624,7 +635,7 @@ const Header = () => {
                               className="font-normal text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all inline-block duration-200 cursor-pointer font-poppins"
                               rel="noopener noreferrer"
                             >
-                              Whitepaper
+                              {getTranslation("Whitepaper")}
                             </a>
                           </span>
                           <span className="mt-3">
@@ -633,7 +644,7 @@ const Header = () => {
                               href="#contact"
                               className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                             >
-                              Contact
+                              {getTranslation("Contact")}
                             </a>
                           </span>
                           <span className="mt-3">
@@ -644,7 +655,7 @@ const Header = () => {
                               to="/roadmap"
                               className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                             >
-                              Roadmap
+                              {getTranslation("Roadmap")}
                             </NavLink>
                           </span>
                           <span className="mt-3">
@@ -655,7 +666,7 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                Core Team
+                                {getTranslation("Core Team")}
                               </p>
                             </Link>
                           </span>
@@ -666,7 +677,7 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                Partners
+                                {getTranslation("Partners")}
                               </p>
                             </Link>
                           </span>
@@ -686,7 +697,7 @@ const Header = () => {
                             }}
                             className=" mb-0 font-poppins"
                           >
-                            News
+                            {getTranslation("News")}
                           </Link>
                         </Disclosure.Button>
                       </>
@@ -696,7 +707,9 @@ const Header = () => {
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
-                          <span className=" mb-0 font-poppins">Buy Evo</span>
+                          <span className=" mb-0 font-poppins">
+                            {getTranslation("Buy Evo")}
+                          </span>
                           <svg
                             className={`${
                               open
@@ -724,7 +737,7 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                GateIO
+                                {getTranslation("GateIO")}
                               </p>
                             </Link>
                           </span>
@@ -736,7 +749,7 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                MEXC
+                                {getTranslation("MEXC")}
                               </p>
                             </Link>
                           </span>
@@ -747,7 +760,7 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                PancakeSwap
+                                {getTranslation("PancakeSwap")}
                               </p>
                             </Link>
                           </span>

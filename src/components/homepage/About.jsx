@@ -1,6 +1,7 @@
 import { useEffect } from "react";
-import twitter from "../../assets/images/homepageImages/png/twitter.png";
+import { useLayoutChangerProvider } from "../../context/LanguageProvider";
 const About = () => {
+  const { getTranslation, languageHandler } = useLayoutChangerProvider();
   useEffect(() => {
     // Load Twitter widgets.js asynchronously
     const script = document.createElement("script");
@@ -20,16 +21,13 @@ const About = () => {
           <div className="flex flex-wrap">
             <div className="w-full px-3">
               <h2 className="font-raleway uppercase font-bold text-center text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">
-                About Devomon
+                {getTranslation("ABOUT DEVOMON")}
               </h2>
               <div className="text-center">
                 <span className="contact_border md:w-[471px] w-full inline-block"></span>
               </div>
               <p className="text-white text-center font-normal font-poppins text-xs sm:text-sm xl:text-base max-w-[600px] mx-auto mt-4 mb-4 ">
-                An anime brand revolutionizing fan engagement worldwide. Beyond
-                gaming, it encompasses manhwas, anime, and more. Expect
-                immersive games, unique merchandise, and a universe that brings
-                together every facet of anime culture.
+                {getTranslation("ABOUT DEVOMON description")}
               </p>
               <video
                 className="w-100 rounded-xl mx-auto object-cover w-[400px] lg:w-[500px]"

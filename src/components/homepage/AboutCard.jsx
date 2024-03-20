@@ -4,8 +4,9 @@ import { useRef, useState } from "react";
 import story_video from "../../assets/video/story_video.mp4";
 import cross_icon from "../../assets/images/svg/cross_icon.svg";
 import { useEffect } from "react";
-
+import { useLayoutChangerProvider } from "../../context/LanguageProvider";
 const AboutCard = () => {
+  const { getTranslation, languageHandler } = useLayoutChangerProvider();
   // VIDEO POPUP JS
   const [video, setVideo] = useState();
   const videoRef = useRef(null);
@@ -107,7 +108,7 @@ const AboutCard = () => {
                     alt="GameFi"
                   />
                   <p className="text-white absolute top-1/2 left-1/2 font-bold uppercase md:text-4xl sm:text-3xl -translate-x-1/2 -translate-y-1/2">
-                    {value.title}
+                    {getTranslation(value.title)}
                   </p>
                   <span className="about_card_underline w-[90px] sm:w-[180px] lg:w-[278px] h-[2px] sm:h-[3px] absolute top-[60%] sm:top-[65%] lg:top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 opacity duration-500 opacity-0"></span>
                   <img

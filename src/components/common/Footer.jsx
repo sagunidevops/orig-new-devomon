@@ -15,8 +15,10 @@ import { useRef } from "react";
 import { priceApi } from "./Api";
 import { PRICE_URL } from "./ApiUrl";
 import { FooterLinkArrow } from "./Icons";
+import { useLayoutChangerProvider } from "../../context/LanguageProvider";
 
 const Footer = () => {
+  const { getTranslation, languageHandler } = useLayoutChangerProvider();
   const [popupValue, setPopupValue] = useState("");
   const [evoPrice, setEvoPrice] = useState("");
 
@@ -217,12 +219,10 @@ const Footer = () => {
             <div className="w-full xl:w-[55%] flex lg:justify-between items-start">
               <div className="mb-2 md:mb-0">
                 <p className="text-[10px] lg:text-[14px] max-w-[300px] md:max-w-[200px] lg:max-w-[240px] opacity-70 text-white">
-                  Experience the captivating journeys and trials, along with the
-                  opportunity to build and enhance robust NFT collections, all
-                  within an engaging and ever-evolving setting.
+                  {getTranslation("footer description")}
                 </p>
                 <p className=" text-[10px] lg:text-sm max-w-[300px] md:max-w-[150px] lg:max-w-[240px] opacity-70 text-white mb-5">
-                  See you on Callisto!
+                  {getTranslation("See you on Callisto!")}
                 </p>
                 <div className="flex gap-2 xl:gap-3 mt-3 md:mt-4">
                   {footerIcons.map((value, index) => {
@@ -266,8 +266,9 @@ const Footer = () => {
                         <span>$EVO </span> <span>{evoPrice}</span>
                       </p>
                       <p className="text-[12px] mt-2 break-all sm:text-xs xl:text-base font-medium text-white opacity-70 ">
-                        Official Contract:
-                        0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba
+                        {getTranslation(
+                          "Official Contract: 0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba"
+                        )}
                       </p>
                     </div>
                   </div>
@@ -294,11 +295,13 @@ const Footer = () => {
                       onClick={priceHandler}
                       className="text-[10px] sm:text-xs xl:text-base font-medium text-white opacity-70 flex gap-4"
                     >
-                      <span>$EVO </span> <span>{evoPrice}</span>
+                      <span>{getTranslation("$EVO 0.00602")} </span>{" "}
+                      <span>{evoPrice}</span>
                     </p>
                     <p className="text-[10px] mt-2 break-all xl:text-base sm:text-xs font-medium text-white opacity-70 ">
-                      Official Contract:
-                      0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba
+                      {getTranslation(
+                        "Official Contract: 0xF2B688b2201979d44FdF18d1d8C641305Cf560Ba"
+                      )}
                     </p>
                   </div>
                 </div>
@@ -316,7 +319,7 @@ const Footer = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          GameFi
+                          {getTranslation("GameFi")}
                         </a>
                         <a
                           target="_blank"
@@ -324,7 +327,7 @@ const Footer = () => {
                           href="https://evozone.devomon.io/"
                         >
                           <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-2">
-                            Evozone
+                            {getTranslation("Evozone")}
                           </p>
                         </a>
                         <Link
@@ -332,7 +335,7 @@ const Footer = () => {
                           target="_blank"
                         >
                           <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
-                            NFTs
+                            {getTranslation("NFTs")}
                           </p>
                         </Link>
                         <span
@@ -340,37 +343,37 @@ const Footer = () => {
                           href=""
                           className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
                         >
-                          Dashboard{" "}
+                          {getTranslation("Dashboard")}
                         </span>
                         <span onClick={() => clickHandler("EvoVerse")} href="#">
                           <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
-                            EvoVerse
+                            {getTranslation("EvoVerse")}
                           </p>
                         </span>
                         <span
                           className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200"
                           onClick={() => setVideo(!video)}
                         >
-                          Manga
+                          {getTranslation("GamMangaeFi")}
                         </span>
                         <spanLink
                           onClick={() => clickHandler("Anime")}
                           className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2"
                         >
-                          Anime{" "}
+                          {getTranslation("Anime")}
                         </spanLink>
                         <span
                           href="#"
                           onClick={() => clickHandler("Merchandise")}
                         >
                           <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200">
-                            Merchandise
+                            {getTranslation("Merchandise")}
                           </p>
                         </span>
                       </div>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
-                      D-World
+                      {getTranslation("D-World")}
                     </p>
                     <FooterLinkArrow />
                   </div>
@@ -380,25 +383,25 @@ const Footer = () => {
                       to="https://bit.ly/WS-DEVO-STAKE"
                       className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200"
                     >
-                      Staking
+                      {getTranslation("Staking")}
                     </Link>
                   </div>
                   {/* <div className="flex cursor-pointer items-center group relative">
                     <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1]">
                       <Link target="_blank" to={"https://team.devomon.io"}>
-                        <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
-                          Core Team
+                        <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">                         
+                          {getTranslation("Core Team")}
                         </p>
                       </Link>
 
                       <Link target="_blank" to={"https://partners.devomon.io"}>
-                        <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2 font-normal font-poppins text-start">
-                          Partners
+                        <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2 font-normal font-poppins text-start">                         
+                          {getTranslation("Partners")}
                         </p>
                       </Link>
                     </div>
-                    <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
-                      Team
+                    <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">                   
+                      {getTranslation("Team")}
                     </p>
                     <FooterLinkArrow />
                   </div> */}
@@ -410,7 +413,7 @@ const Footer = () => {
                         href="https://whitepaper.devomon.io/"
                       >
                         <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
-                          Whitepaper
+                          {getTranslation("Whitepaper")}
                         </p>
                       </a>
 
@@ -418,7 +421,7 @@ const Footer = () => {
                         href="/#contact"
                         className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
                       >
-                        Contact
+                        {getTranslation("Contact")}
                       </a>
                       <NavLink
                         onClick={() => {
@@ -427,22 +430,22 @@ const Footer = () => {
                         to="/roadmap"
                         className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
                       >
-                        Roadmap
+                        {getTranslation("Roadmap")}
                       </NavLink>
                       <Link target="_blank" to={"https://team.devomon.io"}>
                         <p className="text-xs xl:text-base text-white mb-0 mt-2 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
-                          Core Team
+                          {getTranslation("Core Team")}
                         </p>
                       </Link>
 
                       <Link target="_blank" to={"https://partners.devomon.io"}>
                         <p className="text-xs xl:text-base text-white hover:text-[#2253F5] mb-0 mt-2 font-normal font-poppins text-start">
-                          Partners
+                          {getTranslation("Partners")}
                         </p>
                       </Link>
                     </div>
                     <p className="  text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
-                      Info
+                      {getTranslation("Info")}
                     </p>
                     <FooterLinkArrow />
                   </div>
@@ -452,7 +455,7 @@ const Footer = () => {
                       to={"https://medium.com/@DevomonOfficial"}
                       className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200"
                     >
-                      News
+                      {getTranslation("News")}
                     </Link>
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
@@ -463,7 +466,7 @@ const Footer = () => {
                         href="https://devomon.ink/WS-DEVO-GATE"
                       >
                         <p className="text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200 font-normal font-poppins">
-                          GateIO
+                          {getTranslation("GateIO")}
                         </p>
                       </a>
                       <a
@@ -472,7 +475,7 @@ const Footer = () => {
                         href="https://devomon.ink/WS-DEVO-MEXC"
                         className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
                       >
-                        MEXC
+                        {getTranslation("MEXC")}
                       </a>
                       <a
                         target="_blank"
@@ -480,11 +483,11 @@ const Footer = () => {
                         href="https://devomon.ink/WS-DEVO-PCS"
                         className="text-xs xl:text-base text-white hover:text-[#2253F5] font-normal font-poppins block mt-2"
                       >
-                        PancakeSwap
+                        {getTranslation("PancakeSwap")}
                       </a>
                     </div>
                     <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2  group-hover:text-white duration-200">
-                      Buy Evo
+                      {getTranslation("Buy Evo")}
                     </p>
                     <FooterLinkArrow />
                   </div>
@@ -495,7 +498,7 @@ const Footer = () => {
                       onClick={() => clickHandler("Governance")}
                       className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200"
                     >
-                      Governance
+                      {getTranslation("Governance")}
                     </button>
                   </div>
                   {/* <div className="flex cursor-pointer items-center - group">
@@ -508,7 +511,7 @@ const Footer = () => {
                       onClick={() => clickHandler("Contributors")}
                       className="text-xs xl:text-sm text-[#B8BDCA] mb-0 me-2 group-hover:text-white duration-200"
                     >
-                      Contributors
+                      {getTranslation("Contributors")}
                     </button>
                   </div>
                   {/* <div className="flex cursor-pointer items-center - group">
@@ -531,7 +534,7 @@ const Footer = () => {
                   </a>
                   <div className="flex items-center - group">
                     <p className="text-xs xl:text-sm text-[#B8BDCA] mb-0 sm:me-2 font-poppins font-bold">
-                      SaGuNi Tech LLC
+                      {getTranslation("SaGuNi Tech LLC")}
                     </p>
                   </div>
                 </div>
@@ -542,7 +545,7 @@ const Footer = () => {
         <div className="border-t border-[#2253F5] py-3 text-sm opacity-70 relative z-10">
           <div className="container flex flex-col sm:flex-row justify-between">
             <p className="text-center sm:text-start opacity-70 text-white flex items-center gap-1 justify-center">
-              2023 c Saguni.All Rights Reserved
+              {getTranslation("2023 c Saguni.All Rights Reserved")}
             </p>
             <div className="flex justify-between sm:mt-0 mt-2 gap-5 md:mr-11 text-white">
               {/* <Link target="_blank"  
@@ -556,14 +559,14 @@ const Footer = () => {
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="/terms-conditons"
               >
-                Terms and Conditions
+                {getTranslation("Terms and Conditions")}
               </Link>
               <Link
                 target="_blank"
                 className="text-sm opacity-70 transition-all hover:opacity-100 duration-200"
                 to="/privacy-policy"
               >
-                Privacy Policy
+                {getTranslation("Privacy Policy")}
               </Link>
             </div>
           </div>
