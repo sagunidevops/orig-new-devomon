@@ -371,19 +371,21 @@ const Header = () => {
               </li>
             </ul>
             <ul className="gap-4 items-center flex py-2">
-              <select
-                onChange={(e) => languageHandler(e.target.value)}
-                className="w-[95px] sm:w-[115px] rounded-md outline-none font-poppins font-normal text-sm xl:text-base sm:px-1 sm:py-1 text-white bg-black border border-white"
-              >
-                <option value="English">English</option>
-                <option value="French">French</option>
-                <option value="Japnese">Japnese</option>
-                <option value="German">German</option>
-                <option value="Spanish">Spanish</option>
-                <option value="Italian">Italian</option>
-                <option value="Chinese ">Chinese </option>
-                <option value="Turkish">Turkish</option>
-              </select>
+              <div className="bg-black rounded-md border border-white pe-1">
+                <select
+                  onChange={(e) => languageHandler(e.target.value)}
+                  className="w-[95px] sm:w-[115px] rounded-md outline-none font-poppins font-normal text-sm xl:text-base sm:px-1 sm:py-1 text-white bg-black borde cursor-pointer"
+                >
+                  <option value="English">English</option>
+                  <option value="French">French</option>
+                  <option value="Japnese">Japnese</option>
+                  <option value="German">German</option>
+                  <option value="Spanish">Spanish</option>
+                  <option value="Italian">Italian</option>
+                  <option value="Chinese ">Chinese </option>
+                  <option value="Turkish">Turkish</option>
+                </select>
+              </div>
               <li className="group">
                 <a
                   href="https://bit.ly/WS-DEVO-X"
