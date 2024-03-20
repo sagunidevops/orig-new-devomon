@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { Disclosure } from "@headlessui/react";
 import { useEffect, useRef, useState } from "react";
-import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { VscChromeClose } from "react-icons/vsc";
 import { HiMenuAlt3 } from "react-icons/hi";
 import story_video from "../../assets/video/story_video.mp4";
@@ -14,11 +14,12 @@ import discord from "../../assets/images/homepageImages/png/discord.png";
 import twitter from "../../assets/images/homepageImages/png/twitter.png";
 import youtube from "../../assets/images/homepageImages/png/youtube_icon.png";
 import { track } from "@vercel/analytics";
+import {  useLayoutChangerProvider } from "../../context/LanguageProvider";
 const Header = () => {
   const [video, setVideo] = useState();
+  const { getTranslation, languageHandler } = useLayoutChangerProvider();
   const videoRef = useRef(null);
   const [popupValue, setPopupValue] = useState("");
-  // const [idElement,setIdElement]=useState("")
 
   useEffect(() => {
     if (video) {
@@ -31,7 +32,6 @@ const Header = () => {
     }
   }, [video]);
 
-  const history = useNavigate();
   function scrollToTop() {
     window.scrollTo({
       top: 0,
@@ -60,9 +60,6 @@ const Header = () => {
     setHide(!hide);
   };
   useEffect(() => {
-    // const headerContent = document.getElementById('google_translate_element');
-    // setIdElement(headerContent)
-    // console.log("headerContentheaderContent",headerContent)
     if (location.hash) {
       const targetElement = document.querySelector(location.hash);
       if (targetElement) {
@@ -176,23 +173,6 @@ const Header = () => {
         </div>
         <div className="px-4 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 navbar_bg fixed top-0 w-full">
           <div className="flex justify-between items-center relative">
-            {/* <ul>
-              <li className="cursor-pointer flex items-center">
-                <Link
-                  to={"/"}
-                  onClick={() => {
-                    history("/");
-                    scrollToTop();
-                  }}
-                >
-                  <img
-                    className=" sm:w-[70px] xl:w-20 w-11 h-11 sm:h-[70px] xl:h-20"
-                    src={nav_logo}
-                    alt="nav_logo"
-                  />
-                </Link>
-              </li>
-            </ul> */}
             <ul className="xl:gap-[11px] gap-0 items-center hidden lg:flex">
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[55px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
@@ -226,8 +206,6 @@ const Header = () => {
                     </Link>
                     <span
                       onClick={() => clickHandler("Dashboard")}
-                      // href="https://callisto.devomon.io/alpha"
-                      //" target="_blank" rel="noopener noreferrer""
                       rel="noopener noreferrer"
                       className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] transition-all duration-200"
                     >
@@ -254,18 +232,13 @@ const Header = () => {
                         Merchandise
                       </p>
                     </span>
-                    {/* <Link to={"/coming-soon"}>
-                      <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
-                        coming soon
-                      </p>
-                    </Link> */}
                   </div>
                 </div>
                 <a
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   href="#news"
                 >
-                  D-World
+                  {getTranslation("D-World")}
                 </a>
                 <HeraderLinkArrow />
               </li>
@@ -278,48 +251,7 @@ const Header = () => {
                   Staking
                 </Link>
               </li>
-              {/* <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
-                <div className="absolute top-[55px] start-2 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
-                  <div className="flex flex-col">
-                    <span>
-                      <Link
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        to={"https://team.devomon.io"}
-                      >
-                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
-                          Core Team
-                        </p>
-                      </Link>
-                    </span>
-                    <span>
-                      <Link onClick={() => setHide(!hide)}>
-                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
-                          Advisors
-                        </p>
-                      </Link>
-                    </span>
-                    <span>
-                      <Link
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        to={"https://partners.devomon.io"}
-                      >
-                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                          Partners
-                        </p>
-                      </Link>
-                    </span>
-                  </div>
-                </div>
-                <a
-                  className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
-                  href="#"
-                >
-                  Team
-                </a>
-                <HeraderLinkArrow />
-              </li> */}
+
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[55px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
@@ -334,27 +266,6 @@ const Header = () => {
                         Whitepaper
                       </a>
                     </span>
-                    {/* <span className="mt-2 xl:mt-3">
-                      {" "}
-                      <a
-                        target="_blank"
-                        href="https://pitchdeck.devomon.io"
-                        className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
-                        rel="noopener noreferrer"
-                      >
-                        Pitchdeck
-                      </a>
-                    </span> */}
-                    {/* <span className="mt-2 xl:mt-3">
-                      <a
-                        onClick={() => setHide(!hide)}
-                        href="#"
-                        className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
-                        rel="noopener noreferrer"
-                      >
-                        FAQ
-                      </a>
-                    </span> */}
                     <span className="mt-2 xl:mt-3">
                       <a
                         href="/#contact"
@@ -426,13 +337,7 @@ const Header = () => {
                         </p>
                       </Link>
                     </span>
-                    {/* <span>
-                      <Link onClick={() => setHide(!hide)}>
-                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
-                          Advisors
-                        </p>
-                      </Link>
-                    </span> */}
+
                     <span onClick={() => track("buy evomon mexc")}>
                       <Link
                         target="_blank"
@@ -466,6 +371,11 @@ const Header = () => {
                 <HeraderLinkArrow />
               </li>
             </ul>
+            <select onChange={(e) => languageHandler(e.target.value)}>
+              <option value="English">English</option>
+              <option value="French">French</option>
+              <option value="Japnese">Japnese</option>
+            </select>
             <ul className="gap-4 items-center flex py-2">
               <li className="group">
                 <a
@@ -509,26 +419,6 @@ const Header = () => {
                   />
                 </a>
               </li>
-              {/* <li className="group">
-             {idElement}fff
-              </li> */}
-              {/* <li className="group">
-                <a
-                  href="https://callisto.devomon.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#2253F5] flex items-center rounded-full border-4 border-solid border-[#2042B2] pe-2 hover:bg-transparent duration-200"
-                >
-                  <span className="font-poppins font-medium lg:text-[18px] sm:text-[16px] text-[14px] text-white pe-2 ps-4">
-                    PLAY
-                  </span>
-                  <img
-                    className="cursor-pointer lg:w-[40px] w-[32px] lg:h-[40px] h-[32px] hover:scale-[1.05] duration-300 p-[3px]"
-                    src={Callisto_logo}
-                    alt="Callisto_logo"
-                  />
-                </a>
-              </li> */}
             </ul>
             <div
               className="lg:hidden cursor-pointer text-[35px] text-white relative  z-10"
@@ -702,58 +592,7 @@ const Header = () => {
                       </>
                     )}
                   </Disclosure>
-                  {/* <Disclosure className="transition_300 mt-4">
-                    {({ open }) => (
-                      <>
-                        <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
-                          <span className=" mb-0 font-poppins">Team</span>
-                          <svg
-                            className={`${
-                              open
-                                ? "rotate-180 transform duration-300"
-                                : "duration-300"
-                            } h-3 w-3 text-white duration-300`}
-                            width="5"
-                            height="5"
-                            viewBox="0 0 13 10"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M12.5004 0.901438C11.9679 1.35427 9.66923 3.37942 7.94196 4.88886L6.68222 5.99578L5.33157 4.82597C4.59131 4.18446 3.17573 2.95175 2.18871 2.08383C1.2017 1.22848 0.474428 0.649865 0.55235 0.813387C0.643259 0.964331 1.89001 2.83854 3.34456 4.95175C4.78612 7.07754 6.09781 9.02722 6.26664 9.29137C6.42248 9.54295 6.6043 9.75678 6.65625 9.75678C6.76014 9.75678 12.7861 0.939173 12.89 0.649865C12.916 0.574394 12.7342 0.687601 12.5004 0.901438Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </Disclosure.Button>
-                        <Disclosure.Panel className="px-4 py-2 text-gray-500 bg-black transition_300 flex flex-col">
-                          <span>
-                            <Link
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              to={"https://team.devomon.io"}
-                              onClick={() => setNav(!Nav)}
-                            >
-                              <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                Core Team
-                              </p>
-                            </Link>
-                          </span>
 
-                          <span>
-                            <Link
-                              target="_blank"
-                              to={"https://partners.devomon.io"}
-                              onClick={() => setNav(!Nav)}
-                            >
-                              <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                Partners
-                              </p>
-                            </Link>
-                          </span>
-                        </Disclosure.Panel>
-                      </>
-                    )}
-                  </Disclosure> */}
                   <Disclosure className="transition_300 mt-4">
                     {({ open }) => (
                       <>
