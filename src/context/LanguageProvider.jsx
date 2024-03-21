@@ -43,10 +43,12 @@ export const LanguageProvider = ({ children }) => {
   const languageHandler = (value) => {
     console.log("langSelector", value);
     setLangSelector(value);
+    localStorage.setItem("lang", value);
   };
   useEffect(() => {
     getTranslation();
-    console.log("hello");
+    const localValue = localStorage.getItem("lang");
+    setLangSelector(localValue);
   }, [langSelector]);
 
   const value = {

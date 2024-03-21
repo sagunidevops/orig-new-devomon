@@ -20,6 +20,8 @@ const Header = () => {
   const { getTranslation, languageHandler } = useLayoutChangerProvider();
   const videoRef = useRef(null);
   const [popupValue, setPopupValue] = useState("");
+  const localValue = localStorage.getItem("lang");
+  console.log("localValuelocalValue", localValue);
 
   useEffect(() => {
     if (video) {
@@ -417,6 +419,9 @@ const Header = () => {
                   onChange={(e) => languageHandler(e.target.value)}
                   className="w-[90px] sm:w-[115px] rounded-md outline-none font-poppins font-normal text-sm xl:text-base px-1 sm:py-1 text-white bg-black borde cursor-pointer"
                 >
+                  <option value="localValue">
+                    {localValue ? localValue : "English"}
+                  </option>
                   <option value="English">English</option>
                   <option value="French">French</option>
                   <option value="Japnese">Japnese</option>
