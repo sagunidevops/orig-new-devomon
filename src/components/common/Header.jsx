@@ -41,9 +41,9 @@ const Header = () => {
 
   const [Nav, setNav] = useState(1);
   if (Nav) {
-    document.body.style.overflow = "auto";
+    document.documentElement.style.overflow = "auto";
   } else {
-    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
   }
 
   // POPUP JS
@@ -182,7 +182,7 @@ const Header = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
+                      <p className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200">
                         {getTranslation("GameFi")}
                       </p>
                     </a>
@@ -191,7 +191,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                       href="https://evozone.devomon.io/"
                     >
-                      <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-4">
+                      <p className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200">
                         {getTranslation("Evozone")}
                       </p>
                     </a>
@@ -200,35 +200,35 @@ const Header = () => {
                       target="_blank"
                       onClick={() => setNav(!Nav)}
                     >
-                      <p className=" font-poppins text-xs xl:text-base text-white mb-4 hover:text-[#2253F5] transition-all duration-200">
+                      <p className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200">
                         {getTranslation("NFTs")}
                       </p>
                     </Link>
                     <span
                       onClick={() => clickHandler("Dashboard")}
                       rel="noopener noreferrer"
-                      className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] transition-all duration-200"
+                      className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200"
                     >
                       {getTranslation("Dashboard")}
                     </span>
                     <span onClick={() => clickHandler("EvoVerse")}>
-                      <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
+                      <p className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200">
                         {getTranslation("EvoVerse")}
                       </p>
                     </span>
                     <a onClick={() => setVideo(!video)}>
-                      <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
+                      <p className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200">
                         {getTranslation("Manga")}
                       </p>
                     </a>
                     <p
                       onClick={() => clickHandler("Anime")}
-                      className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4"
+                      className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5]"
                     >
                       {getTranslation("Anime")}
                     </p>
                     <span onClick={() => clickHandler("Merchandise")}>
-                      <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
+                      <p className=" font-poppins text-sm lg:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200">
                         {getTranslation("Merchandise")}
                       </p>
                     </span>
@@ -251,7 +251,6 @@ const Header = () => {
                   {getTranslation("Staking")}
                 </Link>
               </li>
-
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[55px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
@@ -259,7 +258,7 @@ const Header = () => {
                       <a
                         target="_blank"
                         href="https://whitepaper.devomon.io/"
-                        className="font-normal text-base text-white mb-0 hover:text-[#2253F5] transition-all inline-block duration-200 cursor-pointer font-poppins"
+                        className="font-normal text-sm lg:text-base text-white mb-0 hover:text-[#2253F5] transition-all inline-block duration-200 cursor-pointer font-poppins"
                         rel="noopener noreferrer"
                       >
                         {getTranslation("Whitepaper")}
@@ -268,7 +267,7 @@ const Header = () => {
                     <span className="mt-2 xl:mt-3">
                       <a
                         href="/#contact"
-                        className="font-medium text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
+                        className="font-medium text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                       >
                         {getTranslation("Contact")}
                       </a>
@@ -276,7 +275,7 @@ const Header = () => {
                     <span className="mt-2 xl:mt-3">
                       <NavLink
                         to="/roadmap"
-                        className="font-medium text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
+                        className="font-medium text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                       >
                         {getTranslation("Roadmap")}
                       </NavLink>
@@ -287,7 +286,7 @@ const Header = () => {
                         rel="noopener noreferrer"
                         to={"https://team.devomon.io"}
                       >
-                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
+                        <p className="font-normal text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
                           {getTranslation("Core Team")}
                         </p>
                       </Link>
@@ -298,7 +297,7 @@ const Header = () => {
                         rel="noopener noreferrer"
                         to={"https://partners.devomon.io"}
                       >
-                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
+                        <p className="font-normal text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
                           {getTranslation("Partners")}
                         </p>
                       </Link>
@@ -331,7 +330,7 @@ const Header = () => {
                         rel="noopener noreferrer"
                         to={"https://devomon.ink/WS-DEVO-GATE"}
                       >
-                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
+                        <p className="font-normal text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-3">
                           {getTranslation("GateIO")}
                         </p>
                       </Link>
@@ -343,7 +342,7 @@ const Header = () => {
                         rel="noopener noreferrer"
                         to={"https://devomon.ink/WS-DEVO-MEXC"}
                       >
-                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
+                        <p className="font-normal text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-3">
                           {getTranslation("MEXC")}
                         </p>
                       </Link>
@@ -354,7 +353,7 @@ const Header = () => {
                         rel="noopener noreferrer"
                         to={"https://https://devomon.ink/WS-DEVO-PCS"}
                       >
-                        <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
+                        <p className="font-normal text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
                           {getTranslation("PancakeSwap")}
                         </p>
                       </Link>
@@ -371,21 +370,6 @@ const Header = () => {
               </li>
             </ul>
             <ul className="gap-4 items-center flex py-2">
-              <div className="bg-black rounded-md border border-white pe-1">
-                <select
-                  onChange={(e) => languageHandler(e.target.value)}
-                  className="w-[95px] sm:w-[115px] rounded-md outline-none font-poppins font-normal text-sm xl:text-base sm:px-1 sm:py-1 text-white bg-black borde cursor-pointer"
-                >
-                  <option value="English">English</option>
-                  <option value="French">French</option>
-                  <option value="Japnese">Japnese</option>
-                  <option value="German">German</option>
-                  <option value="Spanish">Spanish</option>
-                  <option value="Italian">Italian</option>
-                  <option value="Chinese ">Chinese </option>
-                  <option value="Turkish">Turkish</option>
-                </select>
-              </div>
               <li className="group">
                 <a
                   href="https://bit.ly/WS-DEVO-X"
@@ -427,6 +411,21 @@ const Header = () => {
                     className="hover:scale-[1.1] transition-all duration-300 w-[27px] sm:w-[30px]"
                   />
                 </a>
+              </li>
+              <li className="bg-black rounded-md border border-white pe-1">
+                <select
+                  onChange={(e) => languageHandler(e.target.value)}
+                  className="w-[90px] sm:w-[115px] rounded-md outline-none font-poppins font-normal text-sm xl:text-base px-1 sm:py-1 text-white bg-black borde cursor-pointer"
+                >
+                  <option value="English">English</option>
+                  <option value="French">French</option>
+                  <option value="Japnese">Japnese</option>
+                  <option value="German">German</option>
+                  <option value="Spanish">Spanish</option>
+                  <option value="Italian">Italian</option>
+                  <option value="Chinese ">Chinese </option>
+                  <option value="Turkish">Turkish</option>
+                </select>
               </li>
             </ul>
             <div

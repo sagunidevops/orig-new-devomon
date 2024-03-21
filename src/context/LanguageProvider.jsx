@@ -6,7 +6,7 @@ import Italian from "../translation/it.json";
 import French from "../translation/fr.json";
 import Chinese from "../translation/zh.json";
 import Turkish from "../translation/tr.json";
-// import English from "../translation/en.json";
+import English from "../translation/en.json";
 
 import React, { createContext, useContext, useEffect, useState } from "react";
 
@@ -16,7 +16,7 @@ export function useLayoutChangerProvider() {
 }
 
 export const LanguageProvider = ({ children }) => {
-  const [langSelector, setLangSelector] = useState("English");
+  const [langSelector, setLangSelector] = useState("");
 
   const getTranslation = (key) => {
     switch (langSelector) {
@@ -36,7 +36,7 @@ export const LanguageProvider = ({ children }) => {
         return Turkish[key];
       // Add cases for other languages as needed
       default:
-        return key;
+        return English[key];
     }
   };
 

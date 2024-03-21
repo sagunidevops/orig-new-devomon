@@ -309,9 +309,9 @@ const Footer = () => {
             </div>
             <div className="w-full xl:w-[45%] mt-4 lg:mt-5 xl:mt-0 lg:ps-0">
               <div className="flex justify-between md:mt-0">
-                <div className="w-1/4 md:w-1/5 xl:w-1/4 flex flex-col gap-2 xl:ms-10">
+                <div className="w-[32%] md:w-1/5 xl:w-1/4 flex flex-col gap-2 xl:ms-10">
                   <div className="flex cursor-pointer items-center group relative scroll_hidden">
-                    <div className="footer_hover absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3 scroll_hidden">
+                    <div className="footer_hover absolute translate-x-16 bg-[#0d1015] rounded-lg px-2 py-2 sm:py-3 sm:px-3 w-[110px] sm:w-[150px] group-hover:block hidden z-[1] max-h-[154px] overflow-y-auto p-3 scroll_hidden">
                       <div className="flex flex-col">
                         <a
                           className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200"
@@ -354,7 +354,7 @@ const Footer = () => {
                           className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-2 transition-all duration-200"
                           onClick={() => setVideo(!video)}
                         >
-                          {getTranslation("GamMangaeFi")}
+                          {getTranslation("Manga")}
                         </span>
                         <spanLink
                           onClick={() => clickHandler("Anime")}
@@ -406,7 +406,7 @@ const Footer = () => {
                     <FooterLinkArrow />
                   </div> */}
                   <div className="flex cursor-pointer items-center group relative">
-                    <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[11]">
+                    <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg px-2 py-2 sm:py-3 sm:px-3 w-[130px] sm:w-[180px] group-hover:block hidden z-[11]">
                       <a
                         target="_blank"
                         rel="noreferrer"
@@ -459,7 +459,7 @@ const Footer = () => {
                     </Link>
                   </div>
                   <div className="flex cursor-pointer items-center group relative">
-                    <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg py-3 px-3 w-[100px] sm:w-[150px] group-hover:block hidden z-[11]">
+                    <div className="absolute translate-x-16 bg-[#0d1015] rounded-lg px-2 py-2 sm:py-3 sm:px-3 w-[130px] sm:w-[180px] group-hover:block hidden z-[11]">
                       <a
                         target="_blank"
                         rel="noreferrer"
@@ -492,7 +492,7 @@ const Footer = () => {
                     <FooterLinkArrow />
                   </div>
                 </div>
-                <div className="xl:w-1/4 w-1/4 sm:w-1/6 md:w-1/4 lg:w-1/5 flex flex-col gap-3">
+                <div className="xl:w-1/4 w-[32%] sm:w-1/6 md:w-1/4 lg:w-1/5 flex flex-col gap-3">
                   <div className="flex cursor-pointer items-center - group">
                     <button
                       onClick={() => clickHandler("Governance")}
@@ -520,7 +520,7 @@ const Footer = () => {
                     </button>
                   </div> */}
                 </div>
-                <div className="xl:w-5/12 max-[475px]:w-2/5 min-[475px]:w-1/3 md:w-2/5 lg:w-1/2 flex flex-col gap-2">
+                <div className="xl:w-5/12 max-[475px]:w-[36%] min-[475px]:w-1/3 md:w-2/5 lg:w-1/2 flex flex-col gap-2">
                   <a
                     href="https://sagunitech.com/"
                     target="_blank"
