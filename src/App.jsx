@@ -16,9 +16,13 @@ import TermsAndConditionsTexts from "./components/TermsAndConditionsTexts";
 import PrivacyPolicyTexts from "./components/PrivacyPolicyTexts";
 import RoadMap from "./components/RoadMap";
 import { Analytics } from "@vercel/analytics/react";
+import { useLayoutChangerProvider } from "./context/LanguageProvider";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [langSelector, setLangSelector] = useState("");
+  const { getTranslationHandler } = useLayoutChangerProvider();
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -31,13 +35,15 @@ function App() {
     }
   }, [loading]);
 
+  getTranslationHandler("muskan");
   return (
     <>
       <BrowserRouter>
         {loading && <Preloader />}
         <BackToTop />
-        <Header />
-        <Routes>
+        <Header setLangSelector={setLangSelector} />
+        {/* <p className="text-white">{translate("helllo")}</p> */}
+        {/* <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/coming-soon" element={<ComingSoon />} />
           <Route path="/team" element={<Team />} />
@@ -49,9 +55,9 @@ function App() {
             path="/terms-conditons"
             element={<TermsAndConditionsTexts />}
           />
-        </Routes>
-        <Analytics />
-        <Footer />
+        </Routes> */}
+        {/* <Analytics />
+        <Footer /> */}
       </BrowserRouter>
     </>
   );

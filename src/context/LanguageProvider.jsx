@@ -16,47 +16,68 @@ export function useLayoutChangerProvider() {
 }
 
 export const LanguageProvider = ({ children }) => {
-  const [langSelector, setLangSelector] = useState("");
+  const [langSelector, setLangSelector] = useState("en");
+  // console.log("langSelectorlangSelector", langSelector);
 
-  const getTranslation = (key) => {
-    switch (langSelector) {
-      case "Japnese":
-        return Japnese[key];
-      case "German":
-        return German[key];
-      case "Spanish":
-        return Spanish[key];
-      case "Italian":
-        return Italian[key];
-      case "French":
-        return French[key];
-      case "Chinese ":
-        return Chinese[key];
-      case "Turkish":
-        return Turkish[key];
-      // Add cases for other languages as needed
-      default:
-        return English[key];
-    }
-  };
+  // const translate = (key) => {
+  //   switch (langSelector) {
+  //     case "Japnese":
+  //       return Japnese[key];
+  //     case "German":
+  //       return German[key];
+  //     case "Spanish":
+  //       return Spanish[key];
+  //     case "Italian":
+  //       return Italian[key];
+  //     case "French":
+  //       return French[key];
+  //     case "Chinese ":
+  //       return Chinese[key];
+  //     case "Turkish":
+  //       return Turkish[key];
+  //     // Add cases for other languages as needed
+  //     default:
+  //       return English[key];
+  //   }
+  // };
 
   const languageHandler = (value) => {
-    console.log("langSelector", value);
     setLangSelector(value);
-    localStorage.setItem("lang", value);
+    // localStorage.setItem("lang", value);
   };
-  useEffect(() => {
-    getTranslation();
-    const localValue = localStorage.getItem("lang");
-    setLangSelector(localValue);
-  }, [langSelector]);
+  // useEffect(() => {
+  //   translate();
+  //   const localValue = localStorage.getItem("lang");
+  //   setLangSelector(localValue);
+  // }, [langSelector]);
+
+  const translate = async (text) => {
+    const res = await fetch(
+      "https://translation.googleapis.com/language/translate/v2?key=AIzaSyB8GSBqb1eib8Ni61SI8WATweY7imMud7Q",
+
+      {
+        method: "post",
+
+        body: JSON.stringify({
+          q: text,
+          target: langSelector,
+        }),
+      }
+    );
+
+    const data = await res.json();
+    return data.data.translations;
+  };
+  const getTranslationHandler = async (text) => {
+    const x = await translate(text);
+    console.log("dddd", x);
+  };
 
   const value = {
     setLangSelector,
     languageHandler,
-    getTranslation,
+    getTranslationHandler,
   };
-
   return (
     <LanguageContext.Provider value={value}>
       {children}

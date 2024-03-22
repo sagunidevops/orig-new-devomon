@@ -6,7 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import GetInTouchForm from "./../common/GetInTouchForm";
 import { useLayoutChangerProvider } from "../../context/LanguageProvider";
 const TouchForm = ({ contactToRef }) => {
-  const { getTranslation, languageHandler } = useLayoutChangerProvider();
+  const { translate, languageHandler } = useLayoutChangerProvider();
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     let touchformZoom = gsap.timeline({
@@ -43,7 +43,7 @@ const TouchForm = ({ contactToRef }) => {
         <div className="container  relative z-10">
           <div className="">
             <h3 className="font-raleway touchform_zoom uppercase  font-bold text-center  text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-5xl text-white">
-              {getTranslation("GET IN TOUCH")}
+              {translate("GET IN TOUCH")}
             </h3>
             <div className="text-center">
               <span className="contact_border md:w-[471px] w-full inline-block"></span>
