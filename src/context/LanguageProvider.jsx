@@ -16,7 +16,10 @@ export function useLayoutChangerProvider() {
 }
 
 export const LanguageProvider = ({ children }) => {
-  const [langSelector, setLangSelector] = useState("en");
+  const [langSelector, setLangSelector] = useState("ja");
+  const [text, setText] = useState("");
+
+  console.log("langSelectorlangSelector",langSelector)
   // console.log("langSelectorlangSelector", langSelector);
 
   // const translate = (key) => {
@@ -45,11 +48,11 @@ export const LanguageProvider = ({ children }) => {
     setLangSelector(value);
     // localStorage.setItem("lang", value);
   };
-  // useEffect(() => {
-  //   translate();
-  //   const localValue = localStorage.getItem("lang");
-  //   setLangSelector(localValue);
-  // }, [langSelector]);
+  useEffect(() => {
+    translate();
+    const localValue = localStorage.getItem("lang");
+    setLangSelector(localValue);
+  }, [langSelector]);
 
   const translate = async (text) => {
     const res = await fetch(
@@ -66,17 +69,24 @@ export const LanguageProvider = ({ children }) => {
     );
 
     const data = await res.json();
-    return data.data.translations;
+    return data.data.translations[0].translatedText;
+  };
+  const textHandler = (text) => {
+    getTranslationHandler(text);
   };
   const getTranslationHandler = async (text) => {
     const x = await translate(text);
-    console.log("dddd", x);
+    setText(x)
   };
+  useEffect(() => {
+    getTranslationHandler();
+  }, [langSelector]);
 
   const value = {
     setLangSelector,
     languageHandler,
-    getTranslationHandler,
+    textHandler,
+    text,
   };
   return (
     <LanguageContext.Provider value={value}>

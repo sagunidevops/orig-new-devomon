@@ -21,7 +21,7 @@ import { useLayoutChangerProvider } from "./context/LanguageProvider";
 function App() {
   const [loading, setLoading] = useState(true);
   const [langSelector, setLangSelector] = useState("");
-  const { getTranslationHandler } = useLayoutChangerProvider();
+  const { textHandler,text } = useLayoutChangerProvider();
 
   useEffect(() => {
     setTimeout(() => {
@@ -35,12 +35,13 @@ function App() {
     }
   }, [loading]);
 
-  getTranslationHandler("muskan");
   return (
     <>
       <BrowserRouter>
         {loading && <Preloader />}
         <BackToTop />
+        <h2 className="text-white mt-[50px]">{textHandler("Hello")}{text}
+</h2>
         <Header setLangSelector={setLangSelector} />
         {/* <p className="text-white">{translate("helllo")}</p> */}
         {/* <Routes>
