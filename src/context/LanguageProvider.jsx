@@ -19,7 +19,7 @@ export const LanguageProvider = ({ children }) => {
   const [langSelector, setLangSelector] = useState("ja");
   const [text, setText] = useState("");
 
-  console.log("langSelectorlangSelector",langSelector)
+  console.log("langSelectorlangSelector", langSelector);
   // console.log("langSelectorlangSelector", langSelector);
 
   // const translate = (key) => {
@@ -75,8 +75,8 @@ export const LanguageProvider = ({ children }) => {
     getTranslationHandler(text);
   };
   const getTranslationHandler = async (text) => {
+    setText(text);
     const x = await translate(text);
-    setText(x)
   };
   useEffect(() => {
     getTranslationHandler();

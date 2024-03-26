@@ -15,11 +15,10 @@ import twitter from "../../assets/images/homepageImages/png/twitter.png";
 import youtube from "../../assets/images/homepageImages/png/youtube_icon.png";
 import { track } from "@vercel/analytics";
 import { useLayoutChangerProvider } from "../../context/LanguageProvider";
-// import { useLayoutChangerProvider } from "../../context/LanguageProvider";
 const Header = () => {
   const [video, setVideo] = useState();
-  const { translate, languageHandler } =
-    useLayoutChangerProvider();
+  const { textHandler, text } = useLayoutChangerProvider();
+  const { translate, languageHandler } = useLayoutChangerProvider();
   const videoRef = useRef(null);
   const [popupValue, setPopupValue] = useState("");
   const localValue = localStorage.getItem("lang");
@@ -176,7 +175,7 @@ const Header = () => {
         </div>
         <div className="px-4 md:py-0 lg:py-0 xl:py-[0.7px] sm:px-6 xl:px-14 navbar_bg fixed top-0 w-full">
           <div className="flex justify-between items-center relative">
-            {/* <ul className="xl:gap-[11px] gap-0 items-center hidden lg:flex">
+            <ul className="xl:gap-[11px] gap-0 items-center hidden lg:flex">
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
                 <div className="absolute top-[55px] start-3 skew-x-12 bg-[#0d1015df] rounded-lg py-4 px-4 w-[200px] flex-col group-hover:block hidden z-10">
                   <div className="flex flex-col">
@@ -186,7 +185,8 @@ const Header = () => {
                       rel="noopener noreferrer"
                     >
                       <p className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200">
-                        {translate("GameFi")}
+                        {textHandler("GameFi")}
+                        {text}
                       </p>
                     </a>
                     <a
@@ -195,7 +195,8 @@ const Header = () => {
                       href="https://evozone.devomon.io/"
                     >
                       <p className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200">
-                        {translate("Evozone")}
+                        {textHandler("Evozone")}
+                        {text}
                       </p>
                     </a>
                     <Link
@@ -204,7 +205,8 @@ const Header = () => {
                       onClick={() => setNav(!Nav)}
                     >
                       <p className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200">
-                        {translate("NFTs")}
+                        {textHandler("NFTs")}
+                        {text}
                       </p>
                     </Link>
                     <span
@@ -212,27 +214,32 @@ const Header = () => {
                       rel="noopener noreferrer"
                       className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200"
                     >
-                      {translate("Dashboard")}
+                      {textHandler("Dashboard")}
+                      {text}
                     </span>
                     <span onClick={() => clickHandler("EvoVerse")}>
                       <p className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200">
-                        {translate("EvoVerse")}
+                        {textHandler("EvoVerse")}
+                        {text}
                       </p>
                     </span>
                     <a onClick={() => setVideo(!video)}>
                       <p className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200">
-                        {translate("Manga")}
+                        {textHandler("Manga")}
+                        {text}
                       </p>
                     </a>
                     <p
                       onClick={() => clickHandler("Anime")}
                       className=" font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5]"
                     >
-                      {translate("Anime")}
+                      {textHandler("Anime")}
+                      {text}
                     </p>
                     <span onClick={() => clickHandler("Merchandise")}>
                       <p className=" font-poppins text-sm lg:text-base text-white mb-0 hover:text-[#2253F5] transition-all duration-200">
-                        {translate("Merchandise")}
+                        {textHandler("Merchandise")}
+                        {text}
                       </p>
                     </span>
                   </div>
@@ -241,7 +248,8 @@ const Header = () => {
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   href="#news"
                 >
-                  {translate("D-World")}
+                  {textHandler("D-World")}
+                  {text}
                 </a>
                 <HeraderLinkArrow />
               </li>
@@ -251,7 +259,8 @@ const Header = () => {
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   target="_blank"
                 >
-                  {translate("Staking")}
+                  {textHandler("Staking")}
+                  {text}
                 </Link>
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
@@ -264,7 +273,8 @@ const Header = () => {
                         className="font-normal text-sm lg:text-base text-white mb-0 hover:text-[#2253F5] transition-all inline-block duration-200 cursor-pointer font-poppins"
                         rel="noopener noreferrer"
                       >
-                        {translate("Whitepaper")}
+                        {textHandler("Whitepaper")}
+                        {text}
                       </a>
                     </span>
                     <span className="mt-2 xl:mt-3">
@@ -272,7 +282,8 @@ const Header = () => {
                         href="/#contact"
                         className="font-medium text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                       >
-                        {translate("Contact")}
+                        {textHandler("Contact")}
+                        {text}
                       </a>
                     </span>
                     <span className="mt-2 xl:mt-3">
@@ -280,7 +291,8 @@ const Header = () => {
                         to="/roadmap"
                         className="font-medium text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                       >
-                        {translate("Roadmap")}
+                        {textHandler("Roadmap")}
+                        {text}
                       </NavLink>
                     </span>
                     <span className="mt-2 xl:mt-3">
@@ -290,7 +302,8 @@ const Header = () => {
                         to={"https://team.devomon.io"}
                       >
                         <p className="font-normal text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                          {translate("Core Team")}
+                          {textHandler("Core Team")}
+                          {text}
                         </p>
                       </Link>
                     </span>
@@ -301,7 +314,8 @@ const Header = () => {
                         to={"https://partners.devomon.io"}
                       >
                         <p className="font-normal text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                          {translate("Partners")}
+                          {textHandler("Partners")}
+                          {text}
                         </p>
                       </Link>
                     </span>
@@ -311,7 +325,8 @@ const Header = () => {
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   href="#"
                 >
-                  {translate("Info")}
+                  {textHandler("Info")}
+                  {text}
                 </a>
                 <HeraderLinkArrow />
               </li>
@@ -321,7 +336,8 @@ const Header = () => {
                   to={"https://medium.com/@DevomonOfficial"}
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                 >
-                  {translate("News")}
+                  {textHandler("News")}
+                  {text}
                 </Link>
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[55px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
@@ -334,7 +350,8 @@ const Header = () => {
                         to={"https://devomon.ink/WS-DEVO-GATE"}
                       >
                         <p className="font-normal text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-3">
-                          {translate("GateIO")}
+                          {textHandler("GateIO")}
+                          {text}
                         </p>
                       </Link>
                     </span>
@@ -346,7 +363,8 @@ const Header = () => {
                         to={"https://devomon.ink/WS-DEVO-MEXC"}
                       >
                         <p className="font-normal text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-3">
-                          {translate("MEXC")}
+                          {textHandler("MEXC")}
+                          {text}
                         </p>
                       </Link>
                     </span>
@@ -357,7 +375,8 @@ const Header = () => {
                         to={"https://https://devomon.ink/WS-DEVO-PCS"}
                       >
                         <p className="font-normal text-sm lg:text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                          {translate("PancakeSwap")}
+                          {textHandler("PancakeSwap")}
+                          {text}
                         </p>
                       </Link>
                     </span>
@@ -367,13 +386,14 @@ const Header = () => {
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   href="#"
                 >
-                  {translate("Buy Evo")}
+                  {textHandler("Buy Evo")}
+                  {text}
                 </a>
                 <HeraderLinkArrow />
               </li>
-            </ul> */}
+            </ul>
             <ul className="gap-4 items-center flex py-2">
-              {/* <li className="group">
+              <li className="group">
                 <a
                   href="https://bit.ly/WS-DEVO-X"
                   target="_blank"
@@ -414,7 +434,7 @@ const Header = () => {
                     className="hover:scale-[1.1] transition-all duration-300 w-[27px] sm:w-[30px]"
                   />
                 </a>
-              </li> */}
+              </li>
               <li className="bg-black rounded-md border border-white pe-1">
                 <select
                   onChange={(e) => languageHandler(e.target.value)}
@@ -424,10 +444,10 @@ const Header = () => {
                   <option value="fr">French</option>
                   <option value="ja">Japnese</option>
                   <option value="de">German</option>
-                  <option value="sp">Spanish</option>
+                  <option value="es">Spanish</option>
                   <option value="it">Italian</option>
                   <option value="zh">Chinese </option>
-                  <option value="tu">Turkish</option>
+                  <option value="tr">Turkish</option>
                 </select>
               </li>
             </ul>
@@ -444,7 +464,7 @@ const Header = () => {
                   : "left-0 flex fixed flex-col justify-center min-w-full min-h-screen bottom-0 items-center lg:hidden transition-all duration-500 ease-in-out bg-[#000000] gap-7"
               }
             >
-              {/* <div className=" w-full mx-auto min-h-screen flex flex-col relative justify-center">
+              <div className=" w-full mx-auto min-h-screen flex flex-col relative justify-center">
                 <div className="mx-auto w-[210px] max-w-md bg-transparent p-2 overflow-y-auto scroll_hidden max-h-[500px]">
                   <Disclosure className="transition_300">
                     {({ open }) => (
@@ -488,7 +508,8 @@ const Header = () => {
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
                           <span className=" mb-0 font-poppins">
-                            {translate("D-World")}
+                            {textHandler("D-World")}
+                            {text}
                           </span>
                           <svg
                             className={`${
@@ -516,7 +537,8 @@ const Header = () => {
                               rel="noopener noreferrer"
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3 transition-all duration-200">
-                                {translate("GameFi")}
+                                {textHandler("GameFi")}
+                                {text}
                               </p>
                             </a>
                             <a
@@ -525,7 +547,8 @@ const Header = () => {
                               href="https://evozone.devomon.io/"
                             >
                               <p className="font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-3 transition-all duration-200 mb-0">
-                                {translate("Evozone")}
+                                {textHandler("Evozone")}
+                                {text}
                               </p>
                             </a>
                             <Link
@@ -534,7 +557,8 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200">
-                                {translate("NFTs")}
+                                {textHandler("NFTs")}
+                                {text}
                               </p>
                             </Link>
                             <span
@@ -543,7 +567,8 @@ const Header = () => {
                               }}
                               className="font-poppins text-xs xl:text-base text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200"
                             >
-                              {translate("Dashboard")}
+                              {textHandler("Dashboard")}
+                              {text}
                             </span>
                             <span
                               onClick={() => {
@@ -552,7 +577,8 @@ const Header = () => {
                               href="#"
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3 transition-all duration-200">
-                                {translate("EvoVerse")}
+                                {textHandler("EvoVerse")}
+                                {text}
                               </p>
                             </span>
                             <a
@@ -562,7 +588,8 @@ const Header = () => {
                               }}
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3 transition-all duration-200">
-                                {translate("Manga")}
+                                {textHandler("Manga")}
+                                {text}
                               </p>
                             </a>
                             <span
@@ -571,7 +598,8 @@ const Header = () => {
                               }}
                               className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3"
                             >
-                              {translate("Anime")}
+                              {textHandler("Anime")}
+                              {text}
                             </span>
                             <span
                               onClick={() => {
@@ -579,7 +607,8 @@ const Header = () => {
                               }}
                             >
                               <p className="font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-3 transition-all duration-200">
-                                {translate("Merchandise")}
+                                {textHandler("Merchandise")}
+                                {text}
                               </p>
                             </span>
                           </div>
@@ -599,7 +628,8 @@ const Header = () => {
                             className="font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                             target="_blank"
                           >
-                            {translate("Staking")}
+                            {textHandler("Staking")}
+                            {text}
                           </Link>
                         </Disclosure.Button>
                       </>
@@ -611,7 +641,8 @@ const Header = () => {
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
                           <span className=" mb-0 font-poppins">
-                            {translate("Info")}
+                            {textHandler("Info")}
+                            {text}
                           </span>
                           <svg
                             className={`${
@@ -639,7 +670,8 @@ const Header = () => {
                               className="font-normal text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all inline-block duration-200 cursor-pointer font-poppins"
                               rel="noopener noreferrer"
                             >
-                              {translate("Whitepaper")}
+                              {textHandler("Whitepaper")}
+                              {text}
                             </a>
                           </span>
                           <span className="mt-3">
@@ -648,7 +680,8 @@ const Header = () => {
                               href="#contact"
                               className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                             >
-                              {translate("Contact")}
+                              {textHandler("Contact")}
+                              {text}
                             </a>
                           </span>
                           <span className="mt-3">
@@ -659,7 +692,8 @@ const Header = () => {
                               to="/roadmap"
                               className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins"
                             >
-                              {translate("Roadmap")}
+                              {textHandler("Roadmap")}
+                              {text}
                             </NavLink>
                           </span>
                           <span className="mt-3">
@@ -670,7 +704,8 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                {translate("Core Team")}
+                                {textHandler("Core Team")}
+                                {text}
                               </p>
                             </Link>
                           </span>
@@ -681,7 +716,8 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-medium text-[12px] text-white mb-0 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                {translate("Partners")}
+                                {textHandler("Partners")}
+                                {text}
                               </p>
                             </Link>
                           </span>
@@ -701,7 +737,8 @@ const Header = () => {
                             }}
                             className=" mb-0 font-poppins"
                           >
-                            {translate("News")}
+                            {textHandler("News")}
+                            {text}
                           </Link>
                         </Disclosure.Button>
                       </>
@@ -712,7 +749,8 @@ const Header = () => {
                       <>
                         <Disclosure.Button className="flex items-center w-full justify-between bg-transparent px-4 text-left font-medium text-white focus:outline-[0px] focus-visible:ring-opacity-75 transition_300 mt-6">
                           <span className=" mb-0 font-poppins">
-                            {translate("Buy Evo")}
+                            {textHandler("Buy Evo")}
+                            {text}
                           </span>
                           <svg
                             className={`${
@@ -741,7 +779,8 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                {translate("GateIO")}
+                                {textHandler("GateIO")}
+                                {text}
                               </p>
                             </Link>
                           </span>
@@ -753,7 +792,8 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                {translate("MEXC")}
+                                {textHandler("MEXC")}
+                                {text}
                               </p>
                             </Link>
                           </span>
@@ -764,7 +804,8 @@ const Header = () => {
                               onClick={() => setNav(!Nav)}
                             >
                               <p className="font-normal text-[12px] text-white mb-0 mt-3 hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                                {translate("PancakeSwap")}
+                                {textHandler("PancakeSwap")}
+                                {text}
                               </p>
                             </Link>
                           </span>
@@ -773,7 +814,7 @@ const Header = () => {
                     )}
                   </Disclosure>
                 </div>
-              </div> */}
+              </div>
             </ul>
           </div>
         </div>

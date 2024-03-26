@@ -21,7 +21,7 @@ import { useLayoutChangerProvider } from "./context/LanguageProvider";
 function App() {
   const [loading, setLoading] = useState(true);
   const [langSelector, setLangSelector] = useState("");
-  const { textHandler,text } = useLayoutChangerProvider();
+  const { textHandler, text } = useLayoutChangerProvider();
 
   useEffect(() => {
     setTimeout(() => {
@@ -40,8 +40,10 @@ function App() {
       <BrowserRouter>
         {loading && <Preloader />}
         <BackToTop />
-        <h2 className="text-white mt-[50px]">{textHandler("Hello")}{text}
-</h2>
+        <h2 className="text-white mt-[50px]">
+          {textHandler("Hello")}
+          {text}
+        </h2>
         <Header setLangSelector={setLangSelector} />
         {/* <p className="text-white">{translate("helllo")}</p> */}
         {/* <Routes>
