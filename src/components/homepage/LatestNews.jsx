@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css"; // Import slick carousel styles
 import "slick-carousel/slick/slick-theme.css"; // Import slick carousel theme styles
 import { AnimatePresence, motion } from "framer-motion";
 import { LatestNewsArrow } from "../common/Icons";
-import { Dots_data, array2 } from "../common/Helper";
+import { dotsDataList, array2 } from "../common/Helper";
 
 const LatestNews = () => {
   const activeHandler = (index) => {
@@ -70,8 +70,8 @@ const LatestNews = () => {
               />
               <div className="flex gap-4 items-center justify-center absolute bottom-0 left-1/2 -translate-x-[50%] mb-6">
               {  console.log("indexValue",indexValue,count,indexValue === count )}
-              {Dots_data &&
-                  Dots_data.map((item, index) => {
+              {dotsDataList &&
+                  dotsDataList.map((item, index) => {
                     return (
                         <span key={index}
                         className={` ${

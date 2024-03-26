@@ -465,7 +465,7 @@ export const SideSocialIconData = [
     href: "https://twitter.com/OfficialDevomon",
   },
 ];
-export const Dots_data = [
+export const dotsDataList = [
   {
     dot_class: " w-3 md:w-4 h-3 md:h-4 rounded-full inline-block",
   },
