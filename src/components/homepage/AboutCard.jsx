@@ -1,8 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import { AboutCardData } from "../common/Helper";
 import { useRef, useState } from "react";
-import story_video from "../../assets/video/story_video.mp4";
-import cross_icon from "../../assets/images/svg/cross_icon.svg";
+import storyVideo from "../../assets/video/story_video.mp4";
+import crossIcon from "../../assets/images/svg/cross_icon.svg";
 import { useEffect } from "react";
 import { useLayoutChangerProvider } from "../../context/LanguageProvider";
 const AboutCard = () => {
@@ -48,14 +48,14 @@ const AboutCard = () => {
               className=" 
              -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100]"
             >
-              <a
+              <Link
                 onClick={() => {
                   setVideo(false), videoRef.current.pause();
                 }}
                 className="fixed end-[2%] z-50 top-[3%] cursor-pointer max-w-[16px]"
               >
-                <img src={cross_icon} alt="cross_icon" />
-              </a>
+                <img src={crossIcon} alt="cross_icon" />
+              </Link>
               <video
                 ref={videoRef}
                 className="w-100 mx-auto object-cover 
@@ -67,7 +67,7 @@ const AboutCard = () => {
                 controls
                 muted
               >
-                <source src={story_video} type="video/mp4" />
+                <source src={storyVideo} type="video/mp4" />
               </video>
             </div>
             <div
@@ -204,12 +204,6 @@ const AboutCard = () => {
                 fill="white"
               />
             </svg>
-            {/* <img className="w-full h-full rounded-xl" src={modalImage?modalImage.popupImage:""} alt="" />
-          {
-           modalImage&& modalImage.title==="Dashboard"||modalImage&&modalImage.title==="EvoVerse"||modalImage&&modalImage.title==="MERCHANDISE"?"":  <div className="bg-black py-16 px-12 sm:px-24 sm:py-20 rounded-2xl max-w-[320px] flex justify-center items-center popup_shadow">
-            <p className="text-3xl text-white">{modalPara}</p>
-            </div>
-          } */}
             {(modalImage && modalImage.title === "Dashboard") ||
             (modalImage && modalImage.title === "EvoVerse") ||
             (modalImage && modalImage.title === "MERCHANDISE") ? (

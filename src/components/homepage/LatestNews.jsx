@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
-import latest_news_slider_img from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
-import slider_img_1 from "../../assets/images/slider_img_1.png";
-import slider_img_2 from "../../assets/images/slider_img_2.png";
-import slider_img_3 from "../../assets/images/slider_img_3.png";
+import latestNewsSliderImg from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
+import sliderImg1 from "../../assets/images/slider_img_1.png";
+import sliderImg2 from "../../assets/images/slider_img_2.png";
+import sliderImg3 from "../../assets/images/slider_img_3.png";
 import "slick-carousel/slick/slick.css"; // Import slick carousel styles
 import "slick-carousel/slick/slick-theme.css"; // Import slick carousel theme styles
 import { AnimatePresence, motion } from "framer-motion";
-import { LatestNews_arrow } from "../common/Icons";
+import { LatestNewsArrow } from "../common/Icons";
 import { Dots_data, array2 } from "../common/Helper";
 
 const LatestNews = () => {
@@ -21,20 +21,20 @@ const LatestNews = () => {
   const [indexValue, setIndexValue] = useState(0);
   const [array1, setArray1] = useState([
     {
-    image: [latest_news_slider_img],
+    image: [latestNewsSliderImg],
     },
     {
 
-      image: [slider_img_1],
+      image: [sliderImg1],
     },
     {
-      image: [slider_img_2],
+      image: [sliderImg2],
     },
     {
-      image: [slider_img_3],
+      image: [sliderImg3],
     },
     {
-      image: [slider_img_1],
+      image: [sliderImg1],
     },
   ]);
   useEffect(() => {
@@ -104,7 +104,7 @@ const LatestNews = () => {
                       }`}
                     >
                       <span className="p-2 inline-block">
-                        <LatestNews_arrow />
+                        <LatestNewsArrow />
                       </span>
                     </span>
                   </div>
@@ -144,7 +144,7 @@ const LatestNews = () => {
               <div className="xl:text-end text-center mt-5 lg:mt-8 xl:mt-4 pt-3 pb-6 xl:pb-0">
                 <button
                   type="submit"
-                  className=" blue-btn-shadow hover:bg-transparent transition-all ease-in-out duration-300 py-[5px] px-[21px] bg-[#F8C112] border border-[4px] border-[#CEA20C] rounded-[39px] text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins"
+                  className=" blue-btn-shadow hover:bg-transparent transition-all ease-in-out duration-300 py-[5px] px-[21px] bg-[#F8C112] border-[4px] border-[#CEA20C] rounded-[39px] text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins"
                 >
                   Show more
                 </button>

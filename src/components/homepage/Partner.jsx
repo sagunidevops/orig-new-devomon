@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { ourPartner } from "../common/Helper";
+import { Link } from "react-router-dom";
 
 const Partner = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -74,17 +75,17 @@ const Partner = () => {
                     obj.partnericon1.map((item, i) => {
                       return (
                         <div className="parnter_right" key={i}>
-                          <a
+                          <Link
                             target="_blank"
                             rel="noopener noreferrer"
-                            href={item.url}
+                            to={item.url}
                           >
                             <img
                               className="hover:scale-105 max-w-[100px] md:max-w-[200px] sm:h-full w-[200px] max-h-[80px] duration-300 ease-in-out transition-all sm:mt-8 xs:mt-10 mx-4 mt-3"
                               src={item.icon}
                               alt=""
                             />
-                          </a>
+                          </Link>
                         </div>
                       );
                     })}
@@ -95,10 +96,10 @@ const Partner = () => {
                     obj.partnericon2.map((item, i) => {
                       return (
                         <div className="sm:mx-4 mx-2 parnter_left" key={i}>
-                          <a
+                          <Link
                             target="_blank"
                             rel="noopener noreferrer"
-                            href={item.url}
+                            to={item.url}
                           >
                             <img
                               className={`${
@@ -107,7 +108,7 @@ const Partner = () => {
                               src={item.icon}
                               alt=""
                             />
-                          </a>
+                          </Link>
                         </div>
                       );
                     })}
@@ -118,17 +119,17 @@ const Partner = () => {
                     obj.partnericon3.map((item, i) => {
                       return (
                         <div className="sm:mx-4 mx-2 parnter_left " key={i}>
-                          <a
+                          <Link
                             target="_blank"
                             rel="noopener noreferrer"
-                            href={item.url}
+                            to={item.url}
                           >
                             <img
                               className="hover:scale-105 w-[80px] xl:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all filter-property"
                               src={item.icon}
                               alt=""
                             />
-                          </a>
+                          </Link>
                         </div>
                       );
                     })}
@@ -139,10 +140,10 @@ const Partner = () => {
                     obj.partnericon4.map((item, i) => {
                       return (
                         <div className="sm:mx-4 mx-2 parnter_left " key={i}>
-                          <a
+                          <Link
                             target="_blank"
                             rel="noopener noreferrer"
-                            href={item.url}
+                            to={item.url}
                           >
                             <img
                               className={` hover:scale-1 max-w-[80px] sm:max-w-[210px] max-h-[80px] duration-300 ease-in-out transition-all ${
@@ -154,7 +155,7 @@ const Partner = () => {
                               src={item.icon}
                               alt=""
                             />
-                          </a>
+                          </Link>
                         </div>
                       );
                     })}
@@ -163,16 +164,6 @@ const Partner = () => {
             );
           })}
       </div>
-      {/* <img
-        className="absolute bottom-[-60px] xl:bottom-[-20%]  left-0 w-[100px] md:w-[150px] xl:w-[300px] z-[2]"
-        src={Gino}
-        alt="Gino"
-      />
-      <img
-        className="absolute bottom-[-70px] xl:bottom-[-20%]  right-0 w-[120px] md:w-[170px] xl:w-[300px] z-[2]"
-        src={Thunder}
-        alt="thunder"
-      /> */}
     </section>
   );
 };

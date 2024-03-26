@@ -5,6 +5,7 @@ import Tiktok from "../../assets/images/webp/tiktok.webp";
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { Link } from "react-router-dom";
 
 const StreamPartner = ({ streamPartnerRef,advisorRef }) => {
   useEffect(() => {
@@ -87,8 +88,8 @@ const StreamPartner = ({ streamPartnerRef,advisorRef }) => {
                   </p>
                 </div>
                 <div className="flex justify-center items-center mt-2 sm:mt-6">
-                  <a
-                    href="https://www.tiktok.com/@melvinleelewis?_t=8cSA0z7GcPa&_r=1"
+                  <Link
+                    to={"https://www.tiktok.com/@melvinleelewis?_t=8cSA0z7GcPa&_r=1"}
                     target="_blank"
                     rel="noopener noreferrer">
                     <img
@@ -96,7 +97,7 @@ const StreamPartner = ({ streamPartnerRef,advisorRef }) => {
                       src={Tiktok}
                       alt="Tiktok"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-col justify-between team_zoom">
@@ -113,8 +114,8 @@ const StreamPartner = ({ streamPartnerRef,advisorRef }) => {
                   </p>
                 </div>
                 <div className="flex justify-center items-center mt-2 sm:mt-6">
-                  <a
-                    href="https://www.tiktok.com/@bartmann?_t=8cSA0MSvZUJ&_r=1"
+                  <Link
+                    to={"https://www.tiktok.com/@bartmann?_t=8cSA0MSvZUJ&_r=1"}
                     target="_blank"
                     rel="noopener noreferrer">
                     <img
@@ -122,18 +123,18 @@ const StreamPartner = ({ streamPartnerRef,advisorRef }) => {
                       src={Tiktok}
                       alt="Tiktok"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-col items-center team_zoom justify-between">
-              <div className= "border border-4 lg:border-8 border-yellow-600 border-solid w-[200px] lg:w-[250px] h-[200px] lg:h-[300px] flex justify-center items-center">
+              <div className= "border-4 lg:border-8 border-yellow-600 border-solid w-[200px] lg:w-[250px] h-[200px] lg:h-[300px] flex justify-center items-center">
                   <p className="font-raleway whitespace-normal break-words uppercase font-bold text-center text-[100px] xl:text-[160px] text-yellow-600">
                     ?
                   </p>
               </div>
               <div className="flex justify-center items-center mt-4 sm:mt-6">
-                  <a
-                    href="https://www.tiktok.com/@bartmann?_t=8cSA0MSvZUJ&_r=1"
+                  <Link
+                    to={"https://www.tiktok.com/@bartmann?_t=8cSA0MSvZUJ&_r=1"}
                     target="_blank"
                     rel="noopener noreferrer">
                     <img
@@ -141,7 +142,7 @@ const StreamPartner = ({ streamPartnerRef,advisorRef }) => {
                       src={Tiktok}
                       alt="Tiktok"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
