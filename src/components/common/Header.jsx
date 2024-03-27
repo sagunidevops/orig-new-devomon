@@ -369,6 +369,7 @@ const Header = () => {
             <li className="bg-black rounded-md border border-white pe-1">
               <select
                 onChange={(e) => languageHandler(e.target.value)}
+                value={langSelector}
                 className="w-[90px] sm:w-[115px] rounded-md outline-none font-poppins font-normal text-sm xl:text-base px-1 sm:py-1 text-white bg-black borde cursor-pointer"
               >
                 {localValue === langSelector ? (
