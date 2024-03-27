@@ -55,6 +55,7 @@ export const LanguageProvider = ({ children }) => {
     setLangSelector,
     languageHandler,
     getTranslation,
+    langSelector,
   };
 
   return (

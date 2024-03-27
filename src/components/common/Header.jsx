@@ -15,11 +15,11 @@ import { useLayoutChangerProvider } from "../../context/LanguageProvider";
 import { HeaderIconsList } from "./Helper";
 const Header = () => {
   const [video, setVideo] = useState();
-  const { getTranslation, languageHandler } = useLayoutChangerProvider();
+  const { getTranslation, langSelector, languageHandler } =
+    useLayoutChangerProvider();
   const videoRef = useRef(null);
   const [popupValue, setPopupValue] = useState("");
   const localValue = localStorage.getItem("lang");
-  console.log("localValuelocalValue", localValue);
 
   useEffect(() => {
     if (video) {
@@ -371,11 +371,11 @@ const Header = () => {
                 onChange={(e) => languageHandler(e.target.value)}
                 className="w-[90px] sm:w-[115px] rounded-md outline-none font-poppins font-normal text-sm xl:text-base px-1 sm:py-1 text-white bg-black borde cursor-pointer"
               >
-                {localValue === "English" ? (
+                {localValue === langSelector ? (
                   ""
                 ) : (
                   <option value="localValue">
-                    {localValue ? localValue : "English"}
+                    {localValue ? localValue : langSelector}
                   </option>
                 )}
 
