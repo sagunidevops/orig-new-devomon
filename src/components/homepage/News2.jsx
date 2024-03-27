@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-import latest_news_slider_img from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
-import { Faq_arrow } from "../common/Icons";
+import latestNewsSliderImg from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
+import { FaqArrow } from "../common/Icons";
 import moment from "moment";
 import NewsSkellton from "../common/NewsSkellton";
 const News2 = ({ newsDataValue, loading }) => {
@@ -16,7 +16,7 @@ const News2 = ({ newsDataValue, loading }) => {
             <div className="flex flex-col xl:flex-row items-center rounded-[12px] sm:w-10/12 lg:w-[45%] 2xl:w-[42.5%] px-3 md:px-0 relative mt-4 md:mt-9 xl:mt-0 h-full">
               <img
                 className="w-full rounded-[23px] h-full"
-                src={latest_news_slider_img}
+                src={latestNewsSliderImg}
                 alt="latest_news_slider_img"
               />
             </div>
@@ -48,7 +48,7 @@ const News2 = ({ newsDataValue, loading }) => {
                                   </p>
                                 </div>
                                 <div>
-                                  <Faq_arrow />
+                                  <FaqArrow />
                                 </div>
                               </div>
                             </div>

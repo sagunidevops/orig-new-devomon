@@ -1,11 +1,9 @@
-import { TeamData } from "../common/Helper"
-import { LinkedIcon } from "../common/Icons"
-import imdb_icon from "../../assets/images/svg/imdb_icon.svg";
+import { TeamData } from "../common/Helper";
+import { LinkedIcon } from "../common/Icons";
+import imdbIcon from "../../assets/images/svg/imdb_icon.svg";
+import { Link } from "react-router-dom";
 
 const Team = () => {
-  // function countWords(str) {
-  //   return str.split(/\s+/).filter(word => word !== '').length;
-  // }
 
   return (
     <>
@@ -24,32 +22,41 @@ const Team = () => {
                 <div key={index}>
                   <div className="">
                     <div className="flex sm:flex-col md:flex-row  items-center sm:items-start md:items-center gap-4 hover:scale-105 duration-300 transition-all ease-in-out">
-                      <img className="max-w-[70px] md:max-w-[90px] lg:max-w-[117px] img_shadow" src={data.img} alt="team image" />
+                      <img
+                        className="max-w-[70px] md:max-w-[90px] lg:max-w-[117px] img_shadow"
+                        src={data.img}
+                        alt="team image"
+                      />
                       <div>
                         <div className="flex items-center mb-2">
-                          <a
-                            href={data.url}
+                          <Link
+                            to={data.url}
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedinAndIMD"
                             aria-describedby="LinkedinAndIMD"
                             className={`hover:scale-105  duration-300 ease-in-out transition-all ${data.class}`}
-                            >
+                          >
                             {" "}
                             {index === 6 ? (
-                              <img className="max-w-[30px]" src={imdb_icon} alt="imdb" />
+                              <img
+                                className="max-w-[30px]"
+                                src={imdbIcon}
+                                alt="imdb"
+                              />
                             ) : (
                               <LinkedIcon />
                             )}
-                          </a>
+                          </Link>
                           <div className="ms-[11px]">
-                            <h3 className="font-raleway font-bold text-[#23CAFF] leading-5 text-sm lg:text-base">{data.name}</h3>
-                            <p className="font-raleway font-medium text-[#2253F5] leading-5 text-sm">{data.title}</p>
+                            <h3 className="font-raleway font-bold text-[#23CAFF] leading-5 text-sm lg:text-base">
+                              {data.name}
+                            </h3>
+                            <p className="font-raleway font-medium text-[#2253F5] leading-5 text-sm">
+                              {data.title}
+                            </p>
                           </div>
                         </div>
-                        {/* <p className={`text-white font-light font-poppins text-sm custom-scrollbar pe-2 ${countWords(data.desc) > 20 ? 'overflow-y-auto max-h-[80px] sm:max-h-[42px] md:max-h-[80px]' : ''}`}>
-                          {data.desc}
-                        </p> */}
                         <p className="text-white font-light font-poppins text-sm custom-scrollbar pe-2 overflow-y-auto max-h-[80px] sm:max-h-[42px] md:max-h-[80px]">
                           {data.desc}
                         </p>
@@ -62,7 +69,7 @@ const Team = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;

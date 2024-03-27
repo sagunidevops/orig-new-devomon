@@ -4,8 +4,9 @@ import Slider from "react-slick";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { CallistoBattle } from "../common/Helper";
-import right_arrow from "../../assets/images/png/right_arrow.png";
-import left_arrow from "../../assets/images/png/left_arrow.png";
+import rightArrow from "../../assets/images/png/right_arrow.png";
+import leftArrow from "../../assets/images/png/left_arrow.png";
+import { Link } from "react-router-dom";
 
 const Nft = ({ NftRef }) => {
   useEffect(() => {
@@ -150,7 +151,7 @@ const Nft = ({ NftRef }) => {
               >
                 <img
                   className="max-w-[35px]"
-                  src={left_arrow}
+                  src={leftArrow}
                   alt="left_arrow"
                 />
               </button>
@@ -160,21 +161,21 @@ const Nft = ({ NftRef }) => {
               >
                 <img
                   className="max-w-[35px]"
-                  src={right_arrow}
+                  src={rightArrow}
                   alt="right_arrow"
                 />
               </button>
             </div>
           </div>
           <div className="flex justify-center mt-6">
-            <a
-              href="https://evozone.devomon.io/"
+            <Link
+              to={"https://evozone.devomon.io/"}
               target="_blank"
               rel="noopener noreferrer"
               className=" blue-btn-shadow hover:scale-105 transition-all ease-in-out duration-300 py-[5px] px-[21px] bg-[#F8C112] border border-[4px] border-[#CEA20C] rounded-[39px] text-sm sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins"
             >
               View all
-            </a>
+            </Link>
           </div>
         </div>
       </section>

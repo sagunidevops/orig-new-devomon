@@ -1,12 +1,12 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/webp/logo.webp";
-import heading_img_1 from "../../assets/images/homepageImages/png/title_01_apple_chancery.png";
-import heading_img_2 from "../../assets/images/homepageImages/png/title_02_apple_chancery.png";
+import headingImg1 from "../../assets/images/homepageImages/png/title_01_apple_chancery.png";
+import headingImg2 from "../../assets/images/homepageImages/png/title_02_apple_chancery.png";
 import subtitle from "../../assets/images/homepageImages/png/subtitle_archangelsk.png";
-import play_button_hero from "../../assets/images/homepageImages/png/play_button.png";
-import story_button from "../../assets/images/homepageImages/png/story_button.png";
-import gamefi_button from "../../assets/images/homepageImages/png/gamefi_button.png";
+import playButtonHero from "../../assets/images/homepageImages/png/play_button.png";
+import storyButton from "../../assets/images/homepageImages/png/story_button.png";
+import gamefiButton from "../../assets/images/homepageImages/png/gamefi_button.png";
 
 const Hero1 = () => {
   return (
@@ -27,12 +27,12 @@ const Hero1 = () => {
             <div className="text-center max-w-[400px] sm:max-w-full mx-auto">
               {/* Heading images */}
               <img
-                src={heading_img_1}
+                src={headingImg1}
                 alt="heading"
                 className="max-w-[500px] md:max-w-[600px] mx-auto w-full"
               />
               <img
-                src={heading_img_2}
+                src={headingImg2}
                 alt="heading"
                 className="max-w-[400px] md:max-w-[500px] mx-auto w-full"
               />
@@ -52,7 +52,7 @@ const Hero1 = () => {
                   className="cursor-pointer"
                 >
                   <img
-                    src={story_button}
+                    src={storyButton}
                     alt="story"
                     className="max-w-[200px] md:max-w-[250px] w-full"
                   />
@@ -63,7 +63,7 @@ const Hero1 = () => {
                   to={"https://www.youtube.com/watch?v=YPP4wEnvzsI"}
                 >
                   <img
-                    src={play_button_hero}
+                    src={playButtonHero}
                     alt="play"
                     className="max-w-[70px] md:max-w-[100px] w-full"
                   />
@@ -74,7 +74,7 @@ const Hero1 = () => {
                   className="cursor-pointer"
                 >
                   <img
-                    src={gamefi_button}
+                    src={gamefiButton}
                     alt="gamefi"
                     className="max-w-[200px] md:max-w-[250px] w-full"
                   />

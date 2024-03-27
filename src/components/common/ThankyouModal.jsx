@@ -11,14 +11,14 @@ const ThankyouModal = ({
 
   return (
     <>
-      {" "}
       <Transition appear show={isOpenThankYouModal} as={Fragment}>
         <Dialog
           as="div"
           className="relative z-[99999999]"
           onClose={() => {
             setIsOpenThankYouModal(false);
-          }}>
+          }}
+        >
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -26,7 +26,8 @@ const ThankyouModal = ({
             enterTo="opacity-100"
             leave="ease-in duration-200"
             leaveFrom="opacity-100"
-            leaveTo="opacity-0">
+            leaveTo="opacity-0"
+          >
             <div className="fixed inset-0 bg-[#0D1014CC]" />
           </Transition.Child>
 
@@ -35,7 +36,8 @@ const ThankyouModal = ({
               className="flex min-h-full items-center justify-center text-center"
               onClick={() => {
                 setIsOpenThankYouModal(false);
-              }}>
+              }}
+            >
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -43,19 +45,22 @@ const ThankyouModal = ({
                 enterTo="opacity-100 scale-100"
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 scale-100"
-                leaveTo="opacity-0 scale-95">
+                leaveTo="opacity-0 scale-95"
+              >
                 <Dialog.Panel className="    transition-all">
                   <div
                     className={` max-w-[90%]  sm:max-w-[600px]  bg-[#0D1014] text-center py-9 px-3 sm:px-10 md:px-14 z-10 relative rounded-xl mx-auto text-white  ${
                       pathName && pathName === "/"
                         ? "popup_shadow"
                         : "popup_shadow_two"
-                    }`}>
+                    }`}
+                  >
                     <div
                       className="absolute top-5 right-4 cursor-pointer"
                       onClick={() => {
                         setIsOpenThankYouModal(false);
-                      }}>
+                      }}
+                    >
                       <CrossIcon />
                     </div>
 
@@ -78,7 +83,8 @@ const ThankyouModal = ({
                         onClick={() => {
                           setIsOpenThankYouModal(false);
                         }}
-                        className="border-4 border-[#cea104] bg-[#fcb90a] h-[30px] sm:h-[40px] xl:h-[50px] flex items-center px-2 sm:px-[25px] lg:px-[28px] rounded-full  text-white font-bold  font-Comic text-[10px] sm:text-sm xl:text-xl ease-in-out duration-200 whitespace-nowrap hover:scale-105">
+                        className="border-4 border-[#cea104] bg-[#fcb90a] h-[30px] sm:h-[40px] xl:h-[50px] flex items-center px-2 sm:px-[25px] lg:px-[28px] rounded-full  text-white font-bold  font-Comic text-[10px] sm:text-sm xl:text-xl ease-in-out duration-200 whitespace-nowrap hover:scale-105"
+                      >
                         Ok
                       </button>
                     </div>
