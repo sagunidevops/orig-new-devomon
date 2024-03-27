@@ -16,7 +16,7 @@ export function useLayoutChangerProvider() {
 }
 
 export const LanguageProvider = ({ children }) => {
-  const [langSelector, setLangSelector] = useState("ja");
+  const [langSelector, setLangSelector] = useState("en");
   const [text, setText] = useState("");
 
   console.log("langSelectorlangSelector", langSelector);
@@ -63,7 +63,7 @@ export const LanguageProvider = ({ children }) => {
 
         body: JSON.stringify({
           q: text,
-          target: langSelector,
+          target: langSelector?langSelector:"en",
         }),
       }
     );
@@ -75,8 +75,10 @@ export const LanguageProvider = ({ children }) => {
     getTranslationHandler(text);
   };
   const getTranslationHandler = async (text) => {
-    setText(text);
     const x = await translate(text);
+    console.log("xx",x)
+    setText(x);
+    return x
   };
   useEffect(() => {
     getTranslationHandler();
