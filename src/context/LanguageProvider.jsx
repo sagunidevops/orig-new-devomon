@@ -1,5 +1,5 @@
 // LanguageContext.js
-import Japnese from "../translation/ja.json";
+import Japanese from "../translation/ja.json";
 import German from "../translation/de.json";
 import Spanish from "../translation/es.json";
 import Italian from "../translation/it.json";
@@ -20,8 +20,8 @@ export const LanguageProvider = ({ children }) => {
 
   const getTranslation = (key) => {
     switch (langSelector) {
-      case "Japnese":
-        return Japnese[key];
+      case "Japanese":
+        return Japanese[key];
       case "German":
         return German[key];
       case "Spanish":

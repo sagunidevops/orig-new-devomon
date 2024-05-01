@@ -382,7 +382,7 @@ const Header = () => {
 
                 <option value="English">English</option>
                 <option value="French">French</option>
-                <option value="Japnese">Japnese</option>
+                <option value="Japanese">Japanese</option>
                 <option value="German">German</option>
                 <option value="Spanish">Spanish</option>
                 <option value="Italian">Italian</option>
