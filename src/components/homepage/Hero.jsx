@@ -7,10 +7,132 @@ import subtitle from "../../assets/images/homepageImages/png/subtitle_archangels
 import playButtonHero from "../../assets/images/homepageImages/png/play_button.png";
 import storyButton from "../../assets/images/homepageImages/png/story_button.png";
 import gamefiButton from "../../assets/images/homepageImages/png/gamefi_button.png";
+import crossIcon from "../../assets/images/svg/cross_icon.svg";
+import googlePlay from "../../assets/images/homepageImages/png/google_play_button.png";
+import textFlight from "../../assets/images/homepageImages/png/apple_testflight_button.png";
+import tabMasterLogo from "../../assets/images/homepageImages/png/tabmaster_logo.png";
+import { heroVideoList } from "../common/Helper";
 
-const Hero1 = () => {
+const Hero = () => {
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(null);
+  const handleVideoClick = (index) => {
+    setCurrentVideoIndex(index);
+  };
+
+  const [popupVideo, setPopupVideo] = useState(null);
+  const openPopup = (popupType) => {
+    setPopupVideo(popupType);
+  };
+
+  const closePopup = () => {
+    setPopupVideo(null);
+  };
+  if (popupVideo) {
+    document.documentElement.style.overflow = "hidden";
+  } else {
+    document.documentElement.style.overflow = "auto";
+  }
   return (
     <>
+      {/* popup */}
+      <div
+        onClick={closePopup}
+        className={`w-full h-screen flex justify-center items-center fixed top-0 start-0 bg-black bg-opacity-90 z-[51] ${
+          popupVideo ? "block" : "hidden"
+        }`}
+      ></div>
+      <div
+        className={`-translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] flex gap-5 items-center flex-col w-full md:w-auto px-2 ${
+          popupVideo === "apps" ? "block" : "hidden"
+        }`}
+      >
+        <Link
+          onClick={closePopup}
+          className="fixed end-[3%] z-50 top-[-100%] cursor-pointer max-w-[22px]"
+        >
+          <img src={crossIcon} alt="crossIcon" />
+        </Link>
+        <Link target="_blank" to={"https://bit.ly/Devomon-tabmasters-websiteLink"} rel="noopener noreferrer">
+          <img
+            src={tabMasterLogo}
+            alt="logo"
+            className="max-w-[150px] lg:max-w-[185px] hover:scale-[1.04] transition-all duration-300 ease-in-out border border-white border-opacity-60 rounded-lg bg-black"
+          />
+        </Link>
+        <div className="flex gap-5 justify-center">
+          <Link
+            target="_blank"
+            to={"https://bit.ly/WS-DEVO-PLAY"}
+            rel="noopener noreferrer"
+          >
+            <img
+              src={googlePlay}
+              alt="logo"
+              className="max-w-[150px] lg:max-w-[185px] w-full hover:scale-[1.04] transition-all duration-300 ease-in-out"
+            />
+          </Link>
+          <Link
+            target="_blank"
+            to={"https://bit.ly/WS-DEVO-IOS"}
+            rel="noopener noreferrer"
+          >
+            <img
+              src={textFlight}
+              alt="logo"
+              className="max-w-[150px] lg:max-w-[185px] w-full hover:scale-[1.04] transition-all duration-300 ease-in-out"
+            />
+          </Link>
+        </div>
+      </div>
+      <div
+        className={`-translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] max-w-[964px] w-full h-full ${
+          popupVideo === "video-links" ? "block" : "hidden"
+        }`}
+      >
+        <Link
+          onClick={closePopup}
+          className="fixed end-2 z-50 top-3 cursor-pointer max-w-[18px]"
+        >
+          <img src={crossIcon} alt="crossIcon" />
+        </Link>
+        <div className="flex flex-wrap justify-center h-full overflow-auto video-scrollbar py-5">
+          {heroVideoList.map((obj, index) => (
+            <div className="w-full md:w-5/12 px-2 mt-4" key={index}>
+              <div className="border border-white">
+                <div className="relative h-[180px] md:h-[220px]">
+                  {currentVideoIndex === index ? (
+                    <iframe
+                      width="100%"
+                      height="220"
+                      src={`${obj.videoUrl}`}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      className="h-full w-full max-w-[454px]"
+                    ></iframe>
+                  ) : (
+                    <div
+                      className="absolute top-0 left-0 w-full h-full bg-black cursor-pointer"
+                      onClick={() => handleVideoClick(index)}
+                    >
+                      <img
+                        src={`https://img.youtube.com/vi/${obj.videoThemnail}/hqdefault.jpg`}
+                        alt="Video Thumbnail"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  )}
+                </div>
+                <p className="text-white text-lg font-medium text-center p-3">
+                  {obj.title}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
       <section className="min-h-screen relative h-screen hero_section">
         <div className="bg-[#1E3EA81A] relative overflow-x-hidden h-full">
           {/* Logo with a link to the homepage */}
@@ -57,22 +179,14 @@ const Hero1 = () => {
                     className="max-w-[200px] md:max-w-[250px] w-full"
                   />
                 </Link>
-                <Link
-                  className="cursor-pointer"
-                  target="_blank"
-                  to={"https://www.youtube.com/watch?v=YPP4wEnvzsI"}
-                >
+                <Link onClick={() => openPopup("apps")}>
                   <img
                     src={playButtonHero}
                     alt="play"
                     className="max-w-[70px] md:max-w-[100px] w-full"
                   />
                 </Link>
-                <Link
-                  to={"https://callisto.devomon.io/"}
-                  target="_blank"
-                  className="cursor-pointer"
-                >
+                <Link onClick={() => openPopup("video-links")}>
                   <img
                     src={gamefiButton}
                     alt="gamefi"
@@ -104,4 +218,4 @@ const Hero1 = () => {
   );
 };
 
-export default Hero1;
+export default Hero;

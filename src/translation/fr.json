@@ -3,10 +3,10 @@
   "GameFi": "GameFi",
   "Anime": "Anime",
   "Merchandise": "Marchandise",
-  "Manga": "Mangas",
+  "Manga": "Webtoon",
   "EvoVerse": "EvoVerse",
-  "Dashboard": "Tableau de bord",
-  "NFTs": "NFT",
+  "Dashboard": "Maître des onglets",
+  "NFTs": "Posséder des actifs",
   "Evozone": "Évozone",
   "Staking": "Jalonnement",
   "Info": "Info",
@@ -48,7 +48,7 @@
   "Governance": "Gouvernance",
   "Contributors": "Contributrice",
   "SaGuNi Tech LLC": "SaGuNi Tech LLC",
-  "2023 c Saguni.All Rights Reserved": "2023 c Saguni.Tous droits réservés",
+  "Saguni.All Rights Reserved": " Tous droits réservés par Saguni Studio.",
   "Terms and Conditions": "Termes et conditions",
   "Privacy Policy": "politique de confidentialité"
 }

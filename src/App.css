@@ -12,6 +12,9 @@
     background-color: #0d1014;
     scroll-behavior: smooth !important;
   }
+  .video-scrollbar::-webkit-scrollbar {
+    width: 0;
+  }
 
   @font-face {
     font-family: notosans;

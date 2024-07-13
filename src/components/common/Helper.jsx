@@ -512,3 +512,30 @@ export const array2 = [
       "When your fire-type evomon battles a plant-type evomon, you will. ",
   },
 ];
+export const heroVideoList = [
+  {
+    title: "Tabmaster",
+    videoUrl: "https://www.youtube.com/embed/bqliplRSmqw?si=5JZeP2zGaFm09MNJ",
+    videoThemnail: "bqliplRSmqw",
+  },
+  {
+    title: "Brand",
+    videoUrl: "https://www.youtube.com/embed/KmoAPWsrpRU?si=mQAE6RX9niSGXPUq",
+    videoThemnail: "KmoAPWsrpRU",
+  },
+  {
+    title: "Gameplay",
+    videoUrl: "https://www.youtube.com/embed/oQPB2mamJKY?si=y2AQBTpC7NgkjJm2",
+    videoThemnail: "oQPB2mamJKY",
+  },
+  {
+    title: "EvoVerse",
+    videoUrl: "https://www.youtube.com/embed/SkPiiKX39WQ?si=2EUt-I_w7xBx2wCq",
+    videoThemnail: "SkPiiKX39WQ",
+  },
+  {
+    title: "Theme Song",
+    videoUrl: "https://www.youtube.com/embed/YPP4wEnvzsI?si=U4kvfYM0IbesIL3V",
+    videoThemnail: "YPP4wEnvzsI",
+  },
+];

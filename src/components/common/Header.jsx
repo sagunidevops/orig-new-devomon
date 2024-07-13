@@ -141,7 +141,18 @@ const Header = () => {
             {popupValue === "Dashboard" ? (
               <img className="rounded-xl w-full" src={dashboard} />
             ) : popupValue === "EvoVerse" ? (
-              <img className="rounded-xl w-full" src={evoverse} />
+              // <img className="rounded-xl w-full" src={evoverse} />
+              <iframe
+                width="80%"
+                height="450px"
+                src="https://www.youtube.com/embed/SkPiiKX39WQ?si=uqkGWr33jchB4wAb"
+                title="YouTube video player"
+                frameborder="0"
+                autoPlay
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                className="mx-auto w-full lg:w-[80%] h-[300px] md:h-[450px] object-cover"
+              ></iframe>
             ) : popupValue === "Merchandise" ? (
               <div className="relative p-[20px] custom-xsm:p-0">
                 <img

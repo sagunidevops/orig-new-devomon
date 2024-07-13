@@ -3,10 +3,10 @@
   "GameFi": "GameFi",
   "Anime": "anime",
   "Merchandise": "Eşya",
-  "Manga": "manga",
+  "Manga": "Web çizgi filmi",
   "EvoVerse": "EvoVerse",
-  "Dashboard": "Gösterge Paneli",
-  "NFTs": "NFTler",
+  "Dashboard": "Sekme Yöneticisi",
+  "NFTs": "Kendi Varlıkları",
   "Evozone": "Evozon",
   "Staking": "Staking",
   "Info": "Bilgi",
@@ -48,7 +48,7 @@
   "Governance": "Yönetim",
   "Contributors": "Katkıda Bulunanlar",
   "SaGuNi Tech LLC": "SaGuNi Tech LLC",
-  "2023 c Saguni.All Rights Reserved": "2023 c Saguni.Tüm Hakları Saklıdır",
+  "Saguni.All Rights Reserved": " Tüm hakları Saguni Studio'ya aittir.",
   "Terms and Conditions": "Şartlar ve koşullar",
   "Privacy Policy": "Gizlilik Politikası"
 }

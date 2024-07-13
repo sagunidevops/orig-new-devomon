@@ -13,7 +13,6 @@ const AboutCard = () => {
   const [hide, setHide] = useState(false);
   const [modalImage, setModalImage] = useState();
   const [modalPara, setModalPara] = useState();
-  console.log(modalImage ? modalImage.popupImage : "");
   useEffect(() => {
     if (video || hide) {
       document.body.style.overflow = "hidden";
@@ -206,6 +205,7 @@ const AboutCard = () => {
             </svg>
             {(modalImage && modalImage.title === "Dashboard") ||
             (modalImage && modalImage.title === "EvoVerse") ||
+            (modalImage && modalImage.title === "Merchandise") ||
             (modalImage && modalImage.title === "MERCHANDISE") ? (
               <img
                 className={`rounded-xl ${

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import footerLogo from "../../assets/images/svg/footer_logo.svg";
 import priceLogo from "../../assets/images/svg/price_logo.svg";
-import saguniLogo from "../../assets/images/svg/SaguniLogo.svg";
+import saguniLogo from "../../assets/images/png/saguni_studios.png";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import storyVideo from "../../assets/video/story_video.mp4";
 import crossIcon from "../../assets/images/svg/cross_icon.svg";
@@ -71,7 +71,8 @@ const Footer = () => {
     // Clean up interval when the component unmounts or refreshes
     return () => clearInterval(interval);
   }, []);
-
+  //  CURRENT YEAR
+  const currentYear = new Date().getFullYear();
   return (
     <section className=" bg-[#1E3EA81A] pt-12 relative overflow-x-hidden">
       <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
@@ -143,7 +144,18 @@ const Footer = () => {
             {popupValue === "Dashboard" ? (
               <img className="rounded-xl w-full" src={dashboard} />
             ) : popupValue === "EvoVerse" ? (
-              <img className="rounded-xl w-full" src={evoverse} />
+              // <img className="rounded-xl w-full" src={evoverse} />
+              <iframe
+                width="80%"
+                height="450px"
+                src="https://www.youtube.com/embed/SkPiiKX39WQ?si=uqkGWr33jchB4wAb"
+                title="YouTube video player"
+                frameborder="0"
+                autoPlay
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                className="mx-auto w-full lg:w-[80%] h-[300px] md:h-[450px] object-cover"
+              ></iframe>
             ) : popupValue === "Merchandise" ? (
               <div className="relative p-[20px] custom-xsm:p-0">
                 <img
@@ -492,7 +504,8 @@ const Footer = () => {
       <div className="border-t border-[#2253F5] py-3 text-sm opacity-70 relative z-10">
         <div className="container flex flex-col sm:flex-row justify-between">
           <p className="text-center sm:text-start opacity-70 text-white flex items-center gap-1 justify-center">
-            {getTranslation("2023 c Saguni.All Rights Reserved")}
+            Devomon &copy; {currentYear},
+            {getTranslation("Saguni.All Rights Reserved")}
           </p>
           <div className="flex justify-between sm:mt-0 mt-2 gap-5 md:mr-11 text-white">
             <Link
