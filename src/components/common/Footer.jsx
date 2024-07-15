@@ -71,6 +71,18 @@ const Footer = () => {
     // Clean up interval when the component unmounts or refreshes
     return () => clearInterval(interval);
   }, []);
+
+  const [playing, setPlaying] = useState(false);
+  const iframeRef = useRef(null);
+  const handlePause = () => {
+    setHide(false);
+    setPlaying(false);
+    iframeRef.current.contentWindow.postMessage(
+      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+      "*"
+    );
+  };
+
   //  CURRENT YEAR
   const currentYear = new Date().getFullYear();
   return (
@@ -127,9 +139,7 @@ const Footer = () => {
               ""
             ) : (
               <img
-                onClick={() => {
-                  setHide(false);
-                }}
+                onClick={handlePause}
                 className={`absolute z-50 bi bi-x-lg cursor-pointer ${
                   popupValue === "Dashboard" ||
                   popupValue === "EvoVerse" ||
@@ -146,16 +156,14 @@ const Footer = () => {
             ) : popupValue === "EvoVerse" ? (
               // <img className="rounded-xl w-full" src={evoverse} />
               <iframe
+                ref={iframeRef}
                 width="80%"
                 height="450px"
-                src="https://www.youtube.com/embed/SkPiiKX39WQ?si=uqkGWr33jchB4wAb"
-                title="YouTube video player"
-                frameborder="0"
-                autoPlay
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-                className="mx-auto w-full lg:w-[80%] h-[300px] md:h-[450px] object-cover"
-              ></iframe>
+                src={`https://www.youtube.com/embed/SkPiiKX39WQ?enablejsapi=1&autoplay=0`}
+                frameBorder="0"
+                allowFullScreen
+                className="mx-auto w-full xl:w-[80%] h-[300px] md:h-[450px] object-cover"
+              />
             ) : popupValue === "Merchandise" ? (
               <div className="relative p-[20px] custom-xsm:p-0">
                 <img

@@ -20,7 +20,6 @@ const Header = () => {
   const videoRef = useRef(null);
   const [popupValue, setPopupValue] = useState("");
   const localValue = localStorage.getItem("lang");
-
   useEffect(() => {
     if (video) {
       document.body.style.overflow = "hidden";
@@ -70,6 +69,23 @@ const Header = () => {
     }
   }, [location]);
 
+  const [playing, setPlaying] = useState(false);
+  const iframeRef = useRef(null);
+  const handlePlay = () => {
+    setPlaying(true);
+    iframeRef.current.contentWindow.postMessage(
+      '{"event":"command","func":"' + "playVideo" + '","args":""}',
+      "*"
+    );
+  };
+  const handlePause = () => {
+    setHide(false);
+    setPlaying(false);
+    iframeRef.current.contentWindow.postMessage(
+      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+      "*"
+    );
+  };
   return (
     <nav className="relative z-50">
       <div className="bg-[#1E3EA81A] relative overflow-x-hidden">
@@ -124,9 +140,7 @@ const Header = () => {
               ""
             ) : (
               <img
-                onClick={() => {
-                  setHide(false);
-                }}
+                onClick={handlePause}
                 className={`absolute z-50 bi bi-x-lg cursor-pointer ${
                   popupValue === "Dashboard" ||
                   popupValue === "EvoVerse" ||
@@ -143,15 +157,14 @@ const Header = () => {
             ) : popupValue === "EvoVerse" ? (
               // <img className="rounded-xl w-full" src={evoverse} />
               <iframe
+                ref={iframeRef}
                 width="80%"
                 height="450px"
-                src="https://www.youtube.com/embed/SkPiiKX39WQ?si=uqkGWr33jchB4wAb"
-                title="YouTube video player"
+                src={`https://www.youtube.com/embed/SkPiiKX39WQ?enablejsapi=1&autoplay=0`}
                 frameBorder="0"
-                referrerpolicy="strict-origin-when-cross-origin"
                 allowFullScreen
-                className="mx-auto w-full lg:w-[80%] h-[300px] md:h-[450px] object-cover"
-              ></iframe>
+                className="mx-auto w-full xl:w-[80%] h-[300px] md:h-[450px] object-cover"
+              />
             ) : popupValue === "Merchandise" ? (
               <div className="relative p-[20px] custom-xsm:p-0">
                 <img

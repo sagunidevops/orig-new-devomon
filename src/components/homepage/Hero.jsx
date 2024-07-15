@@ -38,7 +38,7 @@ const Hero = () => {
       {/* popup */}
       <div
         onClick={closePopup}
-        className={`w-full h-screen flex justify-center items-center fixed top-0 start-0 bg-black bg-opacity-90 z-[51] ${
+        className={`w-full h-screen flex justify-center items-center fixed top-0 start-0 bg-black bg-opacity-80 z-[51] ${
           popupVideo ? "block" : "hidden"
         }`}
       ></div>
