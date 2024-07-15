@@ -12,13 +12,13 @@ import googlePlay from "../../assets/images/homepageImages/png/google_play_butto
 import textFlight from "../../assets/images/homepageImages/png/apple_testflight_button.png";
 import tabMasterLogo from "../../assets/images/homepageImages/png/tabmaster_logo.png";
 import { heroVideoList } from "../common/Helper";
+import { PlayIconVideo } from "../common/Icons";
 
 const Hero = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(null);
   const handleVideoClick = (index) => {
     setCurrentVideoIndex(index);
   };
-
   const [popupVideo, setPopupVideo] = useState(null);
   const openPopup = (popupType) => {
     setPopupVideo(popupType);
@@ -26,6 +26,7 @@ const Hero = () => {
 
   const closePopup = () => {
     setPopupVideo(null);
+    setCurrentVideoIndex(null);
   };
   if (popupVideo) {
     document.documentElement.style.overflow = "hidden";
@@ -52,7 +53,11 @@ const Hero = () => {
         >
           <img src={crossIcon} alt="crossIcon" />
         </Link>
-        <Link target="_blank" to={"https://bit.ly/Devomon-tabmasters-websiteLink"} rel="noopener noreferrer">
+        <Link
+          target="_blank"
+          to={"https://bit.ly/Devomon-tabmasters-websiteLink"}
+          rel="noopener noreferrer"
+        >
           <img
             src={tabMasterLogo}
             alt="logo"
@@ -122,6 +127,9 @@ const Hero = () => {
                         alt="Video Thumbnail"
                         className="w-full h-full object-cover"
                       />
+                      <span className="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2">
+                        <PlayIconVideo />
+                      </span>
                     </div>
                   )}
                 </div>

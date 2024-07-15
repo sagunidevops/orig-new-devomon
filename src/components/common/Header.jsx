@@ -147,10 +147,9 @@ const Header = () => {
                 height="450px"
                 src="https://www.youtube.com/embed/SkPiiKX39WQ?si=uqkGWr33jchB4wAb"
                 title="YouTube video player"
-                frameborder="0"
-                autoPlay
+                frameBorder="0"
                 referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                allowFullScreen
                 className="mx-auto w-full lg:w-[80%] h-[300px] md:h-[450px] object-cover"
               ></iframe>
             ) : popupValue === "Merchandise" ? (
@@ -205,7 +204,7 @@ const Header = () => {
                   <Link
                     to={"https://callisto.devomon.io/#evomons"}
                     target="_blank"
-                    onClick={() => setNav(!Nav)}
+                    // onClick={() => setNav(!Nav)}
                     className="font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200"
                   >
                     {getTranslation("NFTs")}

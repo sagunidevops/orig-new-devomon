@@ -205,8 +205,7 @@ const AboutCard = () => {
             </svg>
             {(modalImage && modalImage.title === "Dashboard") ||
             (modalImage && modalImage.title === "EvoVerse") ||
-            (modalImage && modalImage.title === "Merchandise") ||
-            (modalImage && modalImage.title === "MERCHANDISE") ? (
+            (modalImage && modalImage.title === "Merchandise") ? (
               <img
                 className={`rounded-xl ${
                   modalImage && modalImage.title === "MERCHANDISE"
