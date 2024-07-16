@@ -54,7 +54,7 @@ const Hero = () => {
       >
         <Link
           onClick={closePopup}
-          className="fixed end-5 z-50 top-5 cursor-pointer max-w-[22px]"
+          className="fixed end-6 z-50 top-5 cursor-pointer max-w-[22px]"
         >
           <img src={heroPopupCross} alt="crossIcon" />
         </Link>
@@ -114,10 +114,10 @@ const Hero = () => {
           popupVideo === "video-links" ? "block" : "hidden"
         }`}
       >
-        <div className="p-3 sm:p-10 bg-black rounded-lg">
+        <div className="p-3 sm:p-10 bg-black rounded-lg shadow-shadowPopup">
           <Link
             onClick={closePopup}
-            className="fixed end-[5%] z-50 top-[3%] cursor-pointer max-w-[18px]"
+            className="fixed end-6 z-50 top-5 cursor-pointer max-w-[18px]"
           >
             <img src={heroPopupCross} alt="crossIcon" />
           </Link>

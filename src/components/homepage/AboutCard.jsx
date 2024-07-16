@@ -36,7 +36,6 @@ const AboutCard = () => {
   };
 
   const history = useNavigate();
-
   return (
     <>
       <div className=" relative z-[11]">
@@ -122,7 +121,9 @@ const AboutCard = () => {
         })}
       </div>
       {/* Pop-up */}
-      <div className={`relative overflow-x-hidden ${hide ? "" : "hidden"}`}>
+      <div
+        className={`relative overflow-x-hidden z-50 ${hide ? "" : "hidden"}`}
+      >
         <div className="text-white whitespace-nowrap min-w-[90%] xl:min-w-[70%] min-h-[90%] xl:min-h-[70%] 2xl:min-h-0 2xl:min-w-0 2xl:max-w-[100%] 2xl:max-h-[100%] rounded-xl -translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] text-center text-xl font-bold p-[15px] custom-xsm:p-[40px] lg:p-[96px] mt-[48px] flex justify-center items-center">
           <div className="relative">
             <svg
@@ -206,15 +207,26 @@ const AboutCard = () => {
             {(modalImage && modalImage.title === "Dashboard") ||
             (modalImage && modalImage.title === "EvoVerse") ||
             (modalImage && modalImage.title === "Merchandise") ? (
-              <img
-                className={`rounded-xl ${
-                  modalImage && modalImage.title === "MERCHANDISE"
-                    ? "w-[310px] custom-xsm:w-full custom-xsm:h-full sm:w-[500px] sm:h-[500px] 3xl:w-[600px] 3xl:h-[600px]"
-                    : "w-full h-full"
-                }`}
-                src={modalImage ? modalImage.popupImage : ""}
-                alt=""
-              />
+              modalImage.title === "EvoVerse" ? (
+                <iframe
+                  width="100%"
+                  height="450px"
+                  src={`https://www.youtube.com/embed/SkPiiKX39WQ?enablejsapi=1&autoplay=0`}
+                  frameBorder="0"
+                  allowFullScreen
+                  className="w-full sm:w-[560px] lg:w-[768px] h-[300px] md:h-[500px]"
+                />
+              ) : (
+                <img
+                  className={`rounded-xl ${
+                    modalImage && modalImage.title === "Merchandise"
+                      ? "w-[310px] custom-xsm:w-full custom-xsm:h-full sm:w-[500px] sm:h-[500px] 3xl:w-[600px] 3xl:h-[600px]"
+                      : "w-full h-full"
+                  }`}
+                  src={modalImage ? modalImage.popupImage : ""}
+                  alt="images"
+                />
+              )
             ) : (
               <div className="bg-black py-16 px-12 sm:px-24 sm:py-20 rounded-2xl max-w-[320px] flex justify-center items-center popup_shadow">
                 <p className="text-3xl text-white">{modalPara}</p>

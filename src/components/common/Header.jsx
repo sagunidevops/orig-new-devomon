@@ -1,18 +1,17 @@
 /* eslint-disable no-unused-vars */
 import { Disclosure } from "@headlessui/react";
+import { track } from "@vercel/analytics";
 import { useEffect, useRef, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
-import { VscChromeClose } from "react-icons/vsc";
 import { HiMenuAlt3 } from "react-icons/hi";
-import storyVideo from "../../assets/video/story_video.mp4";
+import { VscChromeClose } from "react-icons/vsc";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import MerchImage from "../../assets/images/png/Brand_peak.png";
 import crossIcon from "../../assets/images/svg/cross_icon.svg";
 import dashboard from "../../assets/images/webp/dashboard-coming.webp";
-import MerchImage from "../../assets/images/png/Brand_peak.png";
-import evoverse from "../../assets/images/webp/evoverse.webp";
-import { HeraderLinkArrow } from "./Icons";
-import { track } from "@vercel/analytics";
+import storyVideo from "../../assets/video/story_video.mp4";
 import { useLayoutChangerProvider } from "../../context/LanguageProvider";
 import { HeaderIconsList } from "./Helper";
+import { HeraderLinkArrow } from "./Icons";
 const Header = () => {
   const [video, setVideo] = useState();
   const { getTranslation, langSelector, languageHandler } =
