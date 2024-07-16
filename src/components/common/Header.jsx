@@ -145,7 +145,7 @@ const Header = () => {
                   popupValue === "Dashboard" ||
                   popupValue === "EvoVerse" ||
                   popupValue === "Merchandise"
-                    ? "top-[5%] end-[6%] custom-xsm:top-[5%] custom-xsm:end-[5%] max-w-[20px] sm:max-w-[40px]"
+                    ? "top-[-10%] end-[3%] max-w-[22px] sm:max-w-[40px]"
                     : "max-w-[20px] end-[5%] custom-xsm:end-4 top-[12%]"
                 }`}
                 src={crossIcon}
@@ -163,7 +163,7 @@ const Header = () => {
                 src={`https://www.youtube.com/embed/SkPiiKX39WQ?enablejsapi=1&autoplay=0`}
                 frameBorder="0"
                 allowFullScreen
-                className="mx-auto w-full xl:w-[80%] h-[300px] md:h-[450px] object-cover"
+                className="mx-auto w-full 2xl:w-[80%] h-[300px] md:h-[450px] object-cover"
               />
             ) : popupValue === "Merchandise" ? (
               <div className="relative p-[20px] custom-xsm:p-0">
@@ -222,13 +222,15 @@ const Header = () => {
                   >
                     {getTranslation("NFTs")}
                   </Link>
-                  <span
-                    onClick={() => clickHandler("Dashboard")}
+                  <Link
+                    to={"https://bit.ly/Devomon-tabmasters-websiteLink"}
+                    target="_blank"
+                    // onClick={() => clickHandler("Dashboard")}
                     rel="noopener noreferrer"
                     className="font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200"
                   >
                     {getTranslation("Dashboard")}
-                  </span>
+                  </Link>
                   <span
                     onClick={() => clickHandler("EvoVerse")}
                     className="font-poppins text-sm lg:text-base text-white mb-2 xl:mb-3 hover:text-[#2253F5] transition-all duration-200"
@@ -517,14 +519,16 @@ const Header = () => {
                           >
                             {getTranslation("NFTs")}
                           </Link>
-                          <span
-                            onClick={() => {
-                              clickHandler("Dashboard"), setNav(!Nav);
-                            }}
+                          <Link
+                            // onClick={() => {
+                            //   clickHandler("Dashboard"), setNav(!Nav);
+                            // }}
+                            to={"https://bit.ly/Devomon-tabmasters-websiteLink"}
+                            target="_blank"
                             className="font-poppins text-xs xl:text-base text-white mt-3 hover:text-[#2253F5] transition-all duration-200"
                           >
                             {getTranslation("Dashboard")}
-                          </span>
+                          </Link>
                           <Link
                             onClick={() => {
                               clickHandler("EvoVerse"), setNav(!Nav);

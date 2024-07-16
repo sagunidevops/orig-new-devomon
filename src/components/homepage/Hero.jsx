@@ -38,55 +38,57 @@ const Hero = () => {
       {/* popup */}
       <div
         onClick={closePopup}
-        className={`w-full h-screen flex justify-center items-center fixed top-0 start-0 bg-black bg-opacity-80 z-[51] ${
+        className={`w-full h-screen flex justify-center items-center fixed top-0 start-0 bg-black bg-opacity-30 z-[51] ${
           popupVideo ? "block" : "hidden"
         }`}
       ></div>
       <div
-        className={`-translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] flex gap-5 items-center flex-col w-full md:w-auto px-2 ${
+        className={`-translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] w-full md:w-auto px-2 ${
           popupVideo === "apps" ? "block" : "hidden"
         }`}
       >
         <Link
           onClick={closePopup}
-          className="fixed end-[3%] z-50 top-[-100%] cursor-pointer max-w-[22px]"
+          className="fixed end-[4%] z-50 top-[4%] cursor-pointer max-w-[22px]"
         >
           <img src={crossIcon} alt="crossIcon" />
         </Link>
-        <Link
-          target="_blank"
-          to={"https://bit.ly/Devomon-tabmasters-websiteLink"}
-          rel="noopener noreferrer"
-        >
-          <img
-            src={tabMasterLogo}
-            alt="logo"
-            className="max-w-[150px] lg:max-w-[185px] hover:scale-[1.04] transition-all duration-300 ease-in-out border border-white border-opacity-60 rounded-lg bg-black"
-          />
-        </Link>
-        <div className="flex gap-5 justify-center">
+        <div className="flex gap-5 items-center flex-col bg-black p-20 rounded-lg">
           <Link
             target="_blank"
-            to={"https://bit.ly/WS-DEVO-PLAY"}
+            to={"https://bit.ly/Devomon-tabmasters-websiteLink"}
             rel="noopener noreferrer"
           >
             <img
-              src={googlePlay}
+              src={tabMasterLogo}
               alt="logo"
-              className="max-w-[150px] lg:max-w-[185px] w-full hover:scale-[1.04] transition-all duration-300 ease-in-out"
+              className="max-w-[150px] lg:max-w-[185px] hover:scale-[1.04] transition-all duration-300 ease-in-out border border-white border-opacity-60 rounded-lg bg-black"
             />
           </Link>
-          <Link
-            target="_blank"
-            to={"https://bit.ly/WS-DEVO-IOS"}
-            rel="noopener noreferrer"
-          >
-            <img
-              src={textFlight}
-              alt="logo"
-              className="max-w-[150px] lg:max-w-[185px] w-full hover:scale-[1.04] transition-all duration-300 ease-in-out"
-            />
-          </Link>
+          <div className="flex gap-5 justify-center">
+            <Link
+              target="_blank"
+              to={"https://bit.ly/WS-DEVO-PLAY"}
+              rel="noopener noreferrer"
+            >
+              <img
+                src={googlePlay}
+                alt="logo"
+                className="max-w-[150px] lg:max-w-[185px] w-full hover:scale-[1.04] transition-all duration-300 ease-in-out"
+              />
+            </Link>
+            <Link
+              target="_blank"
+              to={"https://bit.ly/WS-DEVO-IOS"}
+              rel="noopener noreferrer"
+            >
+              <img
+                src={textFlight}
+                alt="logo"
+                className="max-w-[150px] lg:max-w-[185px] w-full hover:scale-[1.04] transition-all duration-300 ease-in-out"
+              />
+            </Link>
+          </div>
         </div>
       </div>
       <div
@@ -96,11 +98,11 @@ const Hero = () => {
       >
         <Link
           onClick={closePopup}
-          className="fixed end-2 z-50 top-3 cursor-pointer max-w-[18px]"
+          className="fixed end-[3%] z-50 top-[3%] cursor-pointer max-w-[18px]"
         >
           <img src={crossIcon} alt="crossIcon" />
         </Link>
-        <div className="flex flex-wrap justify-center h-full overflow-auto video-scrollbar py-5">
+        <div className="flex flex-wrap justify-center h-full overflow-auto video-scrollbar py-2 bg-black rounded-lg">
           {heroVideoList.map((obj, index) => (
             <div className="w-full md:w-5/12 px-2 mt-4" key={index}>
               <div className="border border-white">
