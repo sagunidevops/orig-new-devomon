@@ -1,19 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import heroPopupCross from "../../assets/images/homepageImages/svg/cross_hero_icon.svg";
-const Popup = () => {
-  const [popupVideo, setPopupVideo] = useState(null);
-  const openPopup = (popupType) => {
-    setPopupVideo(popupType);
-  };
-
-  const closePopup = () => {
-    setPopupVideo(null);
-  };
-  if (popupVideo) {
-    document.documentElement.style.overflow = "hidden";
-  } else {
-    document.documentElement.style.overflow = "auto";
-  }
+const Popup = ({
+  popupData,
+  closePopup,
+  popupVideo,
+  popupName,
+  parentClass,
+}) => {
   return (
     <>
       <div
@@ -23,8 +17,8 @@ const Popup = () => {
         }`}
       ></div>
       <div
-        className={`-translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] w-full sm:w-auto px-2 ${
-          popupVideo === "apps" ? "block" : "hidden"
+        className={`-translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] w-full sm:w-auto px-2 ${parentClass} ${
+          popupVideo === popupName ? "block" : "hidden"
         }`}
       >
         <div className="p-3 sm:p-10 bg-black rounded-lg shadow-shadowPopup">
@@ -34,6 +28,7 @@ const Popup = () => {
           >
             <img src={heroPopupCross} alt="crossIcon" />
           </Link>
+          {popupData}
         </div>
       </div>
     </>

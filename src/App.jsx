@@ -19,16 +19,17 @@ import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  if (loading) {
+    document.querySelector("body").style.overflow = "hidden";
+    document.querySelector("body").style.height = "100vh";
+  } else {
+    document.querySelector("body").style.overflow = "auto";
+    document.querySelector("body").style.height = "auto";
+  }
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-      1;
     }, 4000);
-    if (loading) {
-      document.body.classList.add("overflow_hidden");
-    } else {
-      document.body.classList.remove("overflow_hidden");
-    }
   }, [loading]);
 
   return (

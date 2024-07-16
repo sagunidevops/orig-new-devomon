@@ -15,12 +15,12 @@ const AboutCard = () => {
   const [modalPara, setModalPara] = useState();
   useEffect(() => {
     if (video || hide) {
-      document.body.style.overflow = "hidden";
+      document.querySelector("html").style.overflow = "hidden";
       if (videoRef.current) {
         videoRef.current.pause();
       }
     } else {
-      document.body.style.overflow = "auto";
+      document.querySelector("html").style.overflow = "auto";
     }
   }, [video, hide]);
 
@@ -120,6 +120,7 @@ const AboutCard = () => {
           );
         })}
       </div>
+
       {/* Pop-up */}
       <div
         className={`relative overflow-x-hidden z-50 ${hide ? "" : "hidden"}`}

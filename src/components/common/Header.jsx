@@ -47,9 +47,9 @@ const Header = () => {
   // POPUP JS
   const [hide, setHide] = useState();
   if (hide) {
-    document.body.style.overflow = "hidden";
+    document.querySelector("html").style.overflow = "hidden";
   } else {
-    document.body.style.overflow = "auto";
+    document.querySelector("html").style.overflow = "auto";
   }
 
   const location = useLocation();
