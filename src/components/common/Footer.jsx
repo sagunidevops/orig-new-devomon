@@ -131,7 +131,7 @@ const Footer = () => {
                popupValue === "Dashboard" ||
                popupValue === "EvoVerse" ||
                popupValue === "Merchandise"
-                 ? "max-w-[700px] 3xl:max-w-[1200px] px-4 w-full"
+                 ? "max-w-[700px] 3xl:max-w-[1200px] px-3 w-full"
                  : "bg-black popup_shadow py-12 px-16"
              }`}
           >
@@ -157,12 +157,12 @@ const Footer = () => {
               // <img className="rounded-xl w-full" src={evoverse} />
               <iframe
                 ref={iframeRef}
-                width="80%"
+                width="100%"
                 height="450px"
                 src={`https://www.youtube.com/embed/SkPiiKX39WQ?enablejsapi=1&autoplay=0`}
                 frameBorder="0"
                 allowFullScreen
-                className="mx-auto w-full 2xl:w-[80%] h-[300px] md:h-[450px] object-cover"
+                className="mx-auto w-full h-[300px] md:h-[450px] 2xl:h-[500px] object-cover"
               />
             ) : popupValue === "Merchandise" ? (
               <div className="relative p-[20px] custom-xsm:p-0">

@@ -8,14 +8,19 @@ import playButtonHero from "../../assets/images/homepageImages/png/play_button.p
 import storyButton from "../../assets/images/homepageImages/png/story_button.png";
 import gamefiButton from "../../assets/images/homepageImages/png/gamefi_button.png";
 import crossIcon from "../../assets/images/svg/cross_icon.svg";
-import googlePlay from "../../assets/images/homepageImages/png/google_play_button.png";
-import textFlight from "../../assets/images/homepageImages/png/apple_testflight_button.png";
+import heroPopupCross from "../../assets/images/homepageImages/svg/cross_hero_icon.svg";
+import appLogoHero from "../../assets/images/homepageImages/png/app_logo_hero.png";
 import tabMasterLogo from "../../assets/images/homepageImages/png/tabmaster_logo.png";
 import { heroVideoList } from "../common/Helper";
 import { PlayIconVideo } from "../common/Icons";
 
 const Hero = () => {
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(null);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(1);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlayClick = () => {
+    setIsPlaying(true);
+  };
   const handleVideoClick = (index) => {
     setCurrentVideoIndex(index);
   };
@@ -26,7 +31,7 @@ const Hero = () => {
 
   const closePopup = () => {
     setPopupVideo(null);
-    setCurrentVideoIndex(null);
+    setIsPlaying(false);
   };
   if (popupVideo) {
     document.documentElement.style.overflow = "hidden";
@@ -43,104 +48,130 @@ const Hero = () => {
         }`}
       ></div>
       <div
-        className={`-translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] w-full md:w-auto px-2 ${
+        className={`-translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] w-full sm:w-auto px-2 ${
           popupVideo === "apps" ? "block" : "hidden"
         }`}
       >
         <Link
           onClick={closePopup}
-          className="fixed end-[4%] z-50 top-[4%] cursor-pointer max-w-[22px]"
+          className="fixed end-5 z-50 top-5 cursor-pointer max-w-[22px]"
         >
-          <img src={crossIcon} alt="crossIcon" />
+          <img src={heroPopupCross} alt="crossIcon" />
         </Link>
-        <div className="flex gap-5 items-center flex-col bg-black p-20 rounded-lg">
-          <Link
-            target="_blank"
-            to={"https://bit.ly/Devomon-tabmasters-websiteLink"}
-            rel="noopener noreferrer"
-          >
-            <img
-              src={tabMasterLogo}
-              alt="logo"
-              className="max-w-[150px] lg:max-w-[185px] hover:scale-[1.04] transition-all duration-300 ease-in-out border border-white border-opacity-60 rounded-lg bg-black"
-            />
-          </Link>
-          <div className="flex gap-5 justify-center">
-            <Link
-              target="_blank"
-              to={"https://bit.ly/WS-DEVO-PLAY"}
-              rel="noopener noreferrer"
-            >
-              <img
-                src={googlePlay}
-                alt="logo"
-                className="max-w-[150px] lg:max-w-[185px] w-full hover:scale-[1.04] transition-all duration-300 ease-in-out"
-              />
-            </Link>
+        <div className="flex justify-between gap-3 sm:gap-5 bg-black px-4 sm:px-20 py-16 rounded-xl shadow-shadowPopup">
+          <div className="text-center">
             <Link
               target="_blank"
               to={"https://bit.ly/WS-DEVO-IOS"}
               rel="noopener noreferrer"
             >
               <img
-                src={textFlight}
+                src={appLogoHero}
                 alt="logo"
-                className="max-w-[150px] lg:max-w-[185px] w-full hover:scale-[1.04] transition-all duration-300 ease-in-out"
+                className="max-w-[111px] w-full sm:w-auto"
               />
+              <span className="uppercase text-white font-raleway text-center mt-3 inline-block font-bold text-sm sm:text-base">
+                Apple store
+              </span>
+            </Link>
+          </div>
+          <div className="text-center">
+            <Link
+              target="_blank"
+              to={"https://bit.ly/WS-DEVO-PLAY"}
+              rel="noopener noreferrer"
+            >
+              <img
+                src={appLogoHero}
+                alt="logo"
+                className="max-w-[111px] w-full sm:w-auto"
+              />
+              <span className="uppercase text-white font-raleway inline-block text-center mt-3 font-bold text-sm sm:text-base">
+                play store
+              </span>
+            </Link>
+          </div>
+          <div className="text-center">
+            <Link
+              target="_blank"
+              to={"https://bit.ly/Devomon-tabmasters-websiteLink"}
+              rel="noopener noreferrer"
+            >
+              <img
+                src={tabMasterLogo}
+                alt="logo"
+                className="max-w-[140px] w-full sm:w-auto"
+              />
+              <span className="uppercase text-white font-raleway inline-block text-center mt-3 font-bold text-sm sm:text-base">
+                tap game
+              </span>
             </Link>
           </div>
         </div>
       </div>
       <div
-        className={`-translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] max-w-[964px] w-full h-full ${
+        className={`-translate-x-1/2 -translate-y-1/2 fixed top-1/2 start-1/2 z-[100] max-w-[812px] px-2 w-full ${
           popupVideo === "video-links" ? "block" : "hidden"
         }`}
       >
-        <Link
-          onClick={closePopup}
-          className="fixed end-[3%] z-50 top-[3%] cursor-pointer max-w-[18px]"
-        >
-          <img src={crossIcon} alt="crossIcon" />
-        </Link>
-        <div className="flex flex-wrap justify-center h-full overflow-auto video-scrollbar py-2 bg-black rounded-lg">
-          {heroVideoList.map((obj, index) => (
-            <div className="w-full md:w-5/12 px-2 mt-4" key={index}>
-              <div className="border border-white">
-                <div className="relative h-[180px] md:h-[220px]">
-                  {currentVideoIndex === index ? (
-                    <iframe
-                      width="100%"
-                      height="220"
-                      src={`${obj.videoUrl}`}
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                      className="h-full w-full max-w-[454px]"
-                    ></iframe>
-                  ) : (
-                    <div
-                      className="absolute top-0 left-0 w-full h-full bg-black cursor-pointer"
-                      onClick={() => handleVideoClick(index)}
-                    >
-                      <img
-                        src={`https://img.youtube.com/vi/${obj.videoThemnail}/hqdefault.jpg`}
-                        alt="Video Thumbnail"
-                        className="w-full h-full object-cover"
-                      />
-                      <span className="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2">
-                        <PlayIconVideo />
-                      </span>
-                    </div>
-                  )}
+        <div className="p-3 sm:p-10 bg-black rounded-lg">
+          <Link
+            onClick={closePopup}
+            className="fixed end-[5%] z-50 top-[3%] cursor-pointer max-w-[18px]"
+          >
+            <img src={heroPopupCross} alt="crossIcon" />
+          </Link>
+          <div className="relative max-w-[690px] mx-auto w-full h-[300px] md:h-[390px] cursor-pointer rounded-xl">
+            {isPlaying ? (
+              <iframe
+                width="100%"
+                height="100%"
+                src={heroVideoList[currentVideoIndex].videoUrl}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="w-full h-full object-cover rounded-xl"
+              ></iframe>
+            ) : (
+              <>
+                <img
+                  src={`https://img.youtube.com/vi/${heroVideoList[currentVideoIndex].videoThemnail}/hqdefault.jpg`}
+                  alt="Video Thumbnail"
+                  className="w-full h-full object-cover absolute top-0 start-0 rounded-xl"
+                />
+                <span
+                  className="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer"
+                  onClick={handlePlayClick}
+                >
+                  <PlayIconVideo />
+                </span>
+              </>
+            )}
+          </div>
+          <div className="flex mt-4 lg:mt-10 gap-4 sm:gap-6 overflow-x-auto">
+            {heroVideoList.map((obj, index) => {
+              return (
+                <div
+                  className="relative min-w-[170px] sm:min-w-[247px] cursor-pointer"
+                  key={index}
+                  onClick={() => handleVideoClick(index)}
+                >
+                  <img
+                    src={`https://img.youtube.com/vi/${obj.videoThemnail}/hqdefault.jpg`}
+                    alt="Video Thumbnail"
+                    className={`object-cover w-full h-[100px] md:h-[137px] rounded ${
+                      currentVideoIndex == index && "border-2 border-[#2253F5]"
+                    }`}
+                  />
+                  <p className="text-white text-base font-bold pt-3">
+                    {obj.title}
+                  </p>
                 </div>
-                <p className="text-white text-lg font-medium text-center p-3">
-                  {obj.title}
-                </p>
-              </div>
-            </div>
-          ))}
+              );
+            })}
+          </div>
         </div>
       </div>
       <section className="min-h-screen relative h-screen hero_section">
