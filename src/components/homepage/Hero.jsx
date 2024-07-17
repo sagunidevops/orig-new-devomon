@@ -13,9 +13,14 @@ import { heroVideoList } from "../common/Helper";
 import { PlayIconVideo } from "../common/Icons";
 import Popup from "../common/Popup";
 
-const Hero = ({ openPopup, closePopup, popupVideo }) => {
+const Hero = ({
+  openPopup,
+  closePopup,
+  popupVideo,
+  setIsPlaying,
+  isPlaying,
+}) => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(1);
-  const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlayClick = () => {
     setIsPlaying(true);

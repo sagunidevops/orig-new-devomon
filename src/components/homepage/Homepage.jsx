@@ -6,12 +6,14 @@ import { useState } from "react";
 
 const Homepage = () => {
   const [popupVideo, setPopupVideo] = useState(null);
+  const [isPlaying, setIsPlaying] = useState(false);
   const openPopup = (popupType) => {
     setPopupVideo(popupType);
   };
 
   const closePopup = () => {
     setPopupVideo(null);
+    setIsPlaying(false);
   };
   if (popupVideo) {
     document.documentElement.style.overflow = "hidden";
@@ -20,9 +22,21 @@ const Homepage = () => {
   }
   return (
     <>
-      <Hero closePopup={closePopup} openPopup={openPopup} setPopupVideo={setPopupVideo} popupVideo={popupVideo} />
+      <Hero
+        closePopup={closePopup}
+        openPopup={openPopup}
+        setPopupVideo={setPopupVideo}
+        popupVideo={popupVideo}
+        isPlaying={isPlaying}
+        setIsPlaying={setIsPlaying}
+      />
       <About />
-      <AboutCard closePopup={closePopup} openPopup={openPopup} setPopupVideo={setPopupVideo} popupVideo={popupVideo} />
+      <AboutCard
+        closePopup={closePopup}
+        openPopup={openPopup}
+        setPopupVideo={setPopupVideo}
+        popupVideo={popupVideo}
+      />
       <TouchForm />
     </>
   );
