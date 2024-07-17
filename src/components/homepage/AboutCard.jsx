@@ -84,6 +84,7 @@ const AboutCard = () => {
               target={
                 value.title === "GameFi" ||
                 value.title === "Evozone" ||
+                value.title === "Dashboard" ||
                 value.title === "NFT" ||
                 value.title === "News"
                   ? "_blank"
@@ -205,8 +206,7 @@ const AboutCard = () => {
                 fill="white"
               />
             </svg>
-            {(modalImage && modalImage.title === "Dashboard") ||
-            (modalImage && modalImage.title === "EvoVerse") ||
+            {(modalImage && modalImage.title === "EvoVerse") ||
             (modalImage && modalImage.title === "Merchandise") ? (
               modalImage.title === "EvoVerse" ? (
                 <iframe

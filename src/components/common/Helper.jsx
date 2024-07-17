@@ -378,9 +378,9 @@ export const AboutCardData = [
     card_bg: dashboardBg,
     title: "Dashboard",
     character_img: dashboardCharacter,
+    linkValue: "https://t.me/devomontabmasterbot#wsit",
     className:
       "w-[95%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[45%] xl:w-[40%] xs:!left-[0%] -left-[9%]",
-    popupImage: dashboard,
   },
   {
     card_bg: evoVerseBg,
