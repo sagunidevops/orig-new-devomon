@@ -22,12 +22,12 @@ const Popup = ({
         }`}
       >
         <div className="p-3 sm:p-10 bg-black rounded-lg shadow-shadowPopup">
-          <Link
+          <span
             onClick={closePopup}
             className="fixed end-6 z-50 top-5 cursor-pointer max-w-[18px]"
           >
             <img src={heroPopupCross} alt="crossIcon" />
-          </Link>
+          </span>
           {popupData}
         </div>
       </div>

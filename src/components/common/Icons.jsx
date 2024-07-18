@@ -187,3 +187,19 @@ export const PlayIconVideo = () => {
     </svg>
   );
 };
+export const ArrowIcon = () => {
+  return (
+    <svg
+      width="17"
+      height="21"
+      viewBox="0 0 15 19"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.2964 7.75003L3.10028 14.6792L0.702148 12.3684L5.50012 7.75003L0.702148 3.13167L3.10028 0.820855L10.2964 7.75003Z"
+        fill="#DCDCDC"
+      />
+    </svg>
+  );
+};

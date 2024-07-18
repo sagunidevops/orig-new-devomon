@@ -10,7 +10,7 @@ import headingImg1 from "../../assets/images/homepageImages/png/title_01_apple_c
 import headingImg2 from "../../assets/images/homepageImages/png/title_02_apple_chancery.png";
 import Logo from "../../assets/images/webp/logo.webp";
 import { heroVideoList } from "../common/Helper";
-import { PlayIconVideo } from "../common/Icons";
+import { ArrowIcon, PlayIconVideo } from "../common/Icons";
 import Popup from "../common/Popup";
 
 const Hero = ({
@@ -21,13 +21,6 @@ const Hero = ({
   isPlaying,
 }) => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(1);
-
-  const handlePlayClick = () => {
-    setIsPlaying(true);
-  };
-  const handleVideoClick = (index) => {
-    setCurrentVideoIndex(index);
-  };
 
   return (
     <>
@@ -92,7 +85,7 @@ const Hero = ({
         closePopup={closePopup}
         popupName="video-links"
         popupVideo={popupVideo}
-        parentClass="max-w-[812px] w-full"
+        parentClass="max-w-[620px] md:max-w-[750px] lg:max-w-[812px] w-full"
         popupData={
           <>
             <div className="relative max-w-[690px] mx-auto w-full h-[300px] md:h-[390px] cursor-pointer rounded-xl">
@@ -117,7 +110,7 @@ const Hero = ({
                   />
                   <span
                     className="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer"
-                    onClick={handlePlayClick}
+                    onClick={() => setIsPlaying(true)}
                   >
                     <PlayIconVideo />
                   </span>
@@ -130,7 +123,8 @@ const Hero = ({
                   <div
                     className="relative min-w-[170px] sm:min-w-[247px] cursor-pointer"
                     key={index}
-                    onClick={() => handleVideoClick(index)}
+                    onClick={() => setCurrentVideoIndex(index)}
+                    id={index === 0 ? "tab-master" : (index === 4 ? "theme-song" : undefined)}
                   >
                     <img
                       src={`https://img.youtube.com/vi/${obj.videoThemnail}/hqdefault.jpg`}
@@ -146,6 +140,14 @@ const Hero = ({
                   </div>
                 );
               })}
+            </div>
+            <div className="flex justify-between">
+              <Link to="#tab-master" className="rotate-180">
+                <ArrowIcon />
+              </Link>
+              <Link to="#theme-song">
+                <ArrowIcon />
+              </Link>
             </div>
           </>
         }

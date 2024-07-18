@@ -66,7 +66,7 @@ const TeamCard = ({ obj, index }) => {
         </div>
 
         <div
-          className={` text-xs opacity-70 text-white font-normal font-poppins sm:text-sm mt-2 md:mt-4`}
+          className={`text-xs opacity-70 text-white font-normal font-poppins sm:text-sm mt-2 md:mt-4`}
         >
           <p>{obj.desc}</p>
         </div>
