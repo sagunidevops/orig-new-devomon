@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import appLogoHero from "../../assets/images/homepageImages/png/app_logo_hero.png";
+import googlePlay from "../../assets/images/homepageImages/png/google_play_button.png";
+import textFlight from "../../assets/images/homepageImages/png/apple_testflight_button.png";
 import gamefiButton from "../../assets/images/homepageImages/png/gamefi_button.png";
 import playButtonHero from "../../assets/images/homepageImages/png/play_button.png";
 import storyButton from "../../assets/images/homepageImages/png/story_button.png";
@@ -29,8 +31,8 @@ const Hero = ({
         popupName="apps"
         popupVideo={popupVideo}
         popupData={
-          <div className="flex justify-between gap-3 sm:gap-5">
-            <div className="text-center">
+          <div className="flex justify-center flex-col items-center gap-4 sm:gap-5">
+            {/* <div className="text-center">
               <Link
                 target="_blank"
                 to={"https://bit.ly/WS-DEVO-IOS"}
@@ -61,8 +63,8 @@ const Hero = ({
                   play store
                 </span>
               </Link>
-            </div>
-            <div className="text-center">
+            </div> */}
+            {/* <div className="text-center">
               <Link
                 target="_blank"
                 to={"https://bit.ly/Devomon-tabmasters-websiteLink"}
@@ -76,6 +78,41 @@ const Hero = ({
                 <span className="uppercase text-white font-raleway inline-block text-center mt-3 font-bold text-sm sm:text-base">
                   tap game
                 </span>
+              </Link>
+            </div> */}
+            <Link
+              target="_blank"
+              to={"https://bit.ly/Devomon-tabmasters-websiteLink"}
+              rel="noopener noreferrer"
+            >
+              <img
+                src={tabMasterLogo}
+                alt="logo"
+                className="max-w-[150px] lg:max-w-[185px] hover:scale-[1.04] transition-all duration-300 ease-in-out border border-white border-opacity-60 rounded-lg bg-black"
+              />
+            </Link>
+            <div className="flex gap-5 justify-center">
+              <Link
+                target="_blank"
+                to={"https://bit.ly/WS-DEVO-PLAY"}
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={googlePlay}
+                  alt="logo"
+                  className="max-w-[150px] lg:max-w-[185px] w-full hover:scale-[1.04] transition-all duration-300 ease-in-out"
+                />
+              </Link>
+              <Link
+                target="_blank"
+                to={"https://bit.ly/WS-DEVO-IOS"}
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={textFlight}
+                  alt="logo"
+                  className="max-w-[150px] lg:max-w-[185px] w-full hover:scale-[1.04] transition-all duration-300 ease-in-out"
+                />
               </Link>
             </div>
           </div>
@@ -124,7 +161,13 @@ const Hero = ({
                     className="relative min-w-[170px] sm:min-w-[247px] cursor-pointer"
                     key={index}
                     onClick={() => setCurrentVideoIndex(index)}
-                    id={index === 0 ? "tab-master" : (index === 4 ? "theme-song" : undefined)}
+                    id={
+                      index === 0
+                        ? "tab-master"
+                        : index === 4
+                        ? "theme-song"
+                        : undefined
+                    }
                   >
                     <img
                       src={`https://img.youtube.com/vi/${obj.videoThemnail}/hqdefault.jpg`}
