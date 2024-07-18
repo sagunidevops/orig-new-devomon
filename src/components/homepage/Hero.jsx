@@ -84,12 +84,14 @@ const Hero = ({
               target="_blank"
               to={"https://bit.ly/Devomon-tabmasters-websiteLink"}
               rel="noopener noreferrer"
+              className="group relative after:content-[''] after:w-full after:h-full after:bg-black after:bg-opacity-0 after:z-10 after:absolute after:top-0 after:start-0 hover:after:bg-opacity-80 after:transition-all after:duration-300 after:ease-in-out"
             >
               <img
                 src={tabMasterLogo}
                 alt="logo"
-                className="max-w-[150px] lg:max-w-[185px] hover:scale-[1.04] transition-all duration-300 ease-in-out border border-white border-opacity-60 rounded-lg bg-black"
+                className="max-w-[150px] lg:max-w-[185px] border border-white border-opacity-60 rounded-lg bg-black"
               />
+              <span className="absolute top-1/2 start-0 text-center font-raleway w-full -translate-y-1/2 text-base lg:text-xl text-white z-20 font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">Tap Game</span>
             </Link>
             <div className="flex gap-5 justify-center">
               <Link
