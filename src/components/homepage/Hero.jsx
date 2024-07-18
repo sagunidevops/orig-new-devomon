@@ -85,7 +85,7 @@ const Hero = ({
               to={"https://bit.ly/Devomon-tabmasters-websiteLink"}
               rel="noopener noreferrer"
               className="group relative after:content-[''] after:w-full after:h-full after:bg-black after:bg-opacity-0 after:z-10 after:absolute after:top-0 after:start-0 hover:after:bg-opacity-60 after:transition-all after:duration-300 after:ease-in-out"
-            >
+            > 
               <img
                 src={tabMasterLogo}
                 alt="logo"
