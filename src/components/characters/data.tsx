@@ -39,7 +39,7 @@ export const playableCharacters: PlayableCharacter[] = [
     element: "Ice",
     description: "A mysterious sorceress with a deep bond to the power of ice and memories long forgotten.",
     personality: "Graceful, composed, and fiercely intelligent. Nonomi uses her mastery over frost to protect those she cares about, freezing time itself when danger approaches. A quiet force whose presence brings both calm and awe.",
-    image: "/images/devomon-main-logo.png",
+    image: "/images/nonomi.png",
     elementIcon: <Snowflake className="w-5 h-5 text-cyan-400" />,
     elementColor: "cyan-400",
     videoUrl: "CASOcGTEUeQ", // Nonomi showcase video
