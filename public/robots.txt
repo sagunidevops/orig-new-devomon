@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://devomon.com/sitemap.xml
+
+# Disallow admin or development paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
