@@ -1,6 +1,5 @@
 {
-  "/voidborn/page": "app/voidborn/page.js",
+  "/page": "app/page.js",
   "/callisto/page": "app/callisto/page.js",
-  "/news/page": "app/news/page.js",
-  "/faq/page": "app/faq/page.js"
+  "/voidborn/page": "app/voidborn/page.js"
 }

@@ -93,17 +93,19 @@ export function CharacterSidebar({
               }`}>
                 <div className="flex items-center gap-4">
                   {/* Character Portrait */}
-                  <div className="relative w-20 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-black/20">
+                  <div className="relative w-20 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-black/20 flex items-center justify-center">
                     <ImageWithFallback
                       src={character.image}
                       alt={character.name}
+                      width={80}
+                      height={96}
                       className={`${
                         character.type === 'Evomon'
-                          ? 'absolute bottom-[2px] right-[2px] w-auto h-[75%] object-contain'
+                          ? 'w-auto h-[75%] object-contain'
                           : `w-full h-full object-cover ${
                               // Human Characters - head/shoulders focus
                               character.id === 'uruda' || character.id === 'aerdyn' || character.id === 'yuto' || character.id === 'nonomi'
-                                ? 'object-top object-center'
+                                ? 'object-top'
                                 : 'object-center'
                             }`
                       }`}

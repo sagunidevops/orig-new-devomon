@@ -48,7 +48,7 @@ export function VoidbornStory() {
                 {/* Glow effect */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/20 via-purple-400/10 to-transparent rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-700"></div>
 
-                <Image src="/images/devomon-main-logo.png" alt="Voidborn Webtoon Panel" width={600} height={600} className="relative z-10 object-contain drop-shadow-2xl group-hover:scale-[1.02] transition-all duration-500 ease-out rounded-2xl" />
+                <Image src="/images/voidborn-right.jpg" alt="Voidborn Webtoon Panel" width={600} height={600} className="relative z-10 object-contain drop-shadow-2xl group-hover:scale-[1.02] transition-all duration-500 ease-out rounded-2xl" />
               </div>
             </div>
           </div>

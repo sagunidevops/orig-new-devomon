@@ -15,7 +15,7 @@ export function VoidbornHero() {
         {/* Voidborn Logo - with better spacing */}
         <div className="mb-8 relative">
           <div className="absolute -inset-32 bg-purple-500/20 rounded-full blur-3xl opacity-70"></div>
-          <Image src="/images/devomon-main-logo.png" alt="Devomon Voidborn" width={384} height={384} className="mx-auto drop-shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500" />
+          <Image src="/images/voidborn.png" alt="Devomon Voidborn" width={384} height={384} className="mx-auto drop-shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500" />
         </div>
 
         <div className="max-w-4xl mx-auto mb-8">

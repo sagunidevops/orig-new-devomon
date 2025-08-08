@@ -49,7 +49,7 @@ export function VoidbornCharacters() {
   return (
     <section className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-2xl mb-20">
+        <div className="max-w-2xl mb-8">
           <div className="flex justify-start">
             <h2 className="text-3xl font-bold mb-6 text-purple-400">Character Overview</h2>
           </div>
@@ -83,12 +83,19 @@ export function VoidbornCharacters() {
             {/* Character Image - Right Side */}
             <div className="flex justify-center items-center lg:justify-end lg:order-2 order-1 mb-8 lg:mb-0">
               {character.image ? (
-                <div className="relative group">
+                <div className="relative group max-w-sm w-full">
                   {/* Multi-layered glow effect */}
                   <div className={`absolute -inset-6 bg-gradient-to-r from-${character.color}/25 via-${character.color}/15 to-transparent rounded-3xl blur-3xl group-hover:blur-[40px] transition-all duration-700`}></div>
                   <div className={`absolute -inset-2 bg-gradient-to-br from-${character.color}/10 to-transparent rounded-2xl blur-lg group-hover:blur-xl transition-all duration-500`}></div>
 
-                  <Image src={character.image} alt={character.name} width={500} height={500} className={`relative z-10 object-contain drop-shadow-2xl group-hover:scale-[1.02] transition-all duration-500 ease-out ${character.name === "Flokimon" ? "scale-[0.7]" : ""}`} />
+                  <div className="relative w-full h-96 overflow-hidden">
+                    <Image 
+                      src={character.image} 
+                      alt={character.name} 
+                      fill
+                      className={`relative z-10 object-contain drop-shadow-2xl group-hover:scale-[1.02] transition-all duration-500 ease-out ${character.name === "Flokimon" ? "scale-[0.7]" : ""}`} 
+                    />
+                  </div>
                 </div>
               ) : (
                 <div className={`w-80 h-80 bg-gradient-to-br from-${character.color}/20 to-${character.color}/5 rounded-3xl flex items-center justify-center border-2 border-${character.color}/30`}>
