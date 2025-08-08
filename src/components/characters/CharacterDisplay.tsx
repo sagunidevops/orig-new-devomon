@@ -20,6 +20,10 @@ export function CharacterDisplay({ character, onVideoOpen, onNavigatePrevious, o
           <ImageWithFallback
             src={character.image}
             alt={character.name}
+            width={800}
+            height={600}
+            quality={95}
+            priority
             className={`${
               character.type === 'Evomon'
                 ? 'absolute bottom-5 right-5 w-auto h-[70%] object-contain'

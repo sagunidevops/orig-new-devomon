@@ -11,7 +11,7 @@ export function CallistoHero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Light Overlay */}
       <div className="absolute inset-0 z-0">
-        <Image src="/images/devomon-main-logo.png" alt="Devomon Callisto Background" fill className="object-cover" />
+        <Image src="/images/hero-background.png" alt="Devomon Callisto Background" fill className="object-cover" />
         {/* Light overlays to preserve artwork visibility */}
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/40"></div>

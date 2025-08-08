@@ -16,7 +16,7 @@ export function VoidbornCharacters() {
       description: "Once had a family — a daughter, a peaceful life. It was all taken when the Constellations chose others and abandoned his world. Died betrayed, watching everything burn, unheard by the stars he once prayed to.",
       keyTraits: ["Carries the weight of two lives", "Sees the Guide as a reminder of his lost daughter", "No living ties — only fractured echoes"],
       color: "purple-500",
-      image: "/images/devomon-main-logo.png",
+      image: "/images/yuto.png",
     },
     {
       name: "Crimson Ringmistress",
@@ -24,7 +24,7 @@ export function VoidbornCharacters() {
       description: "Once the beloved voice of grand celebrations, admired by thousands. Her voice was violently stolen by those who envied her popularity. Left broken and mute until she found a darker path.",
       keyTraits: ["Voice restored but carries torment", "Embraced the shadows for revenge", "Every word reminds the world of its cruelty"],
       color: "purple-500",
-      image: "/images/devomon-main-logo.png",
+      image: "/images/mistress.png",
     },
     {
       name: "Flokimon",
@@ -32,7 +32,7 @@ export function VoidbornCharacters() {
       description: "Formed during a collapsing world, became Yuto's first and only bond after revival. Unlike others, he didn't fear the 'Void-class' — he chose it.",
       keyTraits: ["Bond forged by shared silence and survival", "Chosen through trust, not system code", "Will stand until his last evolution or breath"],
       color: "purple-500",
-      image: "/images/devomon-main-logo.png",
+      image: "/images/flokimon.png",
     },
   ];
 
