@@ -27,19 +27,19 @@ export function CharacterDisplay({ character, onVideoOpen, onNavigatePrevious, o
             className={`${
               character.type === 'Evomon'
                 ? 'absolute bottom-5 right-5 w-auto h-[70%] object-contain'
-                : `w-full h-full object-cover ${
-                    // Uruda - epic right positioning (reference implementation)
+                : `w-full h-full object-contain ${
+                    // Uruda - right side positioning
                     character.id === 'uruda'
-                      ? 'object-right object-top'
-                      // Yuto - same height as Uruda but even more right-oriented  
+                      ? 'object-right'
+                      // Yuto - custom horizontal positioning  
                       : character.id === 'yuto'
-                      ? 'object-[85%] object-top'
-                      // Aerdyn - standard right positioning
+                      ? 'object-[85%_center]'
+                      // Aerdyn - right side positioning
                       : character.id === 'aerdyn'
-                      ? 'object-right object-top'
-                      // Nonomi - similar epic positioning like Uruda
+                      ? 'object-right'
+                      // Nonomi - right side positioning
                       : character.id === 'nonomi'
-                      ? 'object-right object-top'
+                      ? 'object-right'
                       : 'object-center'
                   }`
             }`}
