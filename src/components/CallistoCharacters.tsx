@@ -46,24 +46,24 @@ export function CallistoCharacters() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-background to-secondary/20">
+    <section className="py-12 md:py-20 bg-gradient-to-br from-background to-secondary/20">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 text-cyan-400">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-cyan-400">
             Playable Characters
           </h2>
-          <p className="text-base text-gray-300 max-w-2xl mx-auto mb-3">
+          <p className="text-sm md:text-base text-gray-300 max-w-2xl mx-auto mb-3 px-4">
             Meet the heroes and Evomons of Callisto - each with unique powers and abilities
           </p>
-          <p className="text-sm text-purple-400 font-medium">
+          <p className="text-xs md:text-sm text-purple-400 font-medium">
             More than 25 characters are in development
           </p>
         </div>
 
         {/* Gaming-Style Character Selection */}
         <div className="relative max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-12">
+          <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-12">
             
             {/* Main Character Display */}
             <CharacterDisplay 

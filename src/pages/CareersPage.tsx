@@ -62,6 +62,7 @@ export default function CareersPage() {
     phone: "",
     coverLetter: "",
     cv: null as File | null,
+    dataStorageAgreed: false,
   });
 
   const handleJobSelect = (jobId: string) => {
@@ -73,11 +74,26 @@ export default function CareersPage() {
       phone: "",
       coverLetter: "",
       cv: null,
+      dataStorageAgreed: false,
     });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email || !emailRegex.test(formData.email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+    
+    // Check privacy agreement
+    if (!formData.dataStorageAgreed) {
+      alert('Please agree to our data storage policy.');
+      return;
+    }
+    
     const job = jobListings.find((j) => j.id === selectedJob);
     console.log("Application submitted for:", job?.title, formData);
     alert(`Application submitted for ${job?.title}!`);
@@ -88,6 +104,7 @@ export default function CareersPage() {
       phone: "",
       coverLetter: "",
       cv: null,
+      dataStorageAgreed: false,
     });
   };
 
@@ -260,6 +277,26 @@ export default function CareersPage() {
                         Cover Letter *
                       </label>
                       <textarea required rows={6} value={formData.coverLetter} onChange={(e) => setFormData((prev) => ({ ...prev, coverLetter: e.target.value }))} className="w-full px-4 py-3 bg-input-background border border-border rounded-lg focus:border-primary focus:outline-none transition-colors resize-none" placeholder={`Tell us why you want to join the Devomon team as a ${selectedJobData?.title} and what makes you the perfect fit for this role...`} />
+                    </div>
+
+                    {/* Privacy Agreement Checkbox */}
+                    <div>
+                      <label className="flex items-start gap-3 cursor-pointer text-sm">
+                        <input 
+                          type="checkbox" 
+                          required
+                          checked={formData.dataStorageAgreed}
+                          onChange={(e) => setFormData((prev) => ({ ...prev, dataStorageAgreed: e.target.checked }))}
+                          className="mt-1 accent-primary"
+                        />
+                        <span>
+                          I agree to you storing my details so you can respond and keep in touch. See our{" "}
+                          <Link href="https://www.devomon.io/privacy" target="_blank" className="text-primary hover:text-primary/80 underline">
+                            Privacy Policy
+                          </Link>{" "}
+                          <span className="text-red-400">*</span>
+                        </span>
+                      </label>
                     </div>
 
                     {/* Submit Button */}
