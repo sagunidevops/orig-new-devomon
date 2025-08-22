@@ -21,6 +21,7 @@ export function PreRegisterModal({ isOpen, onClose }: PreRegisterModalProps) {
     privacy: false,
     age: false,
     updates: false,
+    dataStorage: false,
   });
   const [platforms, setPlatforms] = useState({
     pc: false,
@@ -43,7 +44,14 @@ export function PreRegisterModal({ isOpen, onClose }: PreRegisterModalProps) {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!email || !agreements.terms || !agreements.privacy || !agreements.age) {
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailRegex.test(email)) {
+      setSubmitError("Please enter a valid email address.");
+      return;
+    }
+
+    if (!agreements.terms || !agreements.privacy || !agreements.age || !agreements.dataStorage) {
       setSubmitError("Please fill in all required fields.");
       return;
     }
@@ -64,6 +72,7 @@ export function PreRegisterModal({ isOpen, onClose }: PreRegisterModalProps) {
       formData.append("terms_accepted", "true");
       formData.append("privacy_accepted", "true");
       formData.append("age_confirmed", "true");
+      formData.append("data_storage_agreed", "true");
       formData.append("newsletter_subscribed", agreements.updates ? "true" : "false");
       formData.append("preferred_platforms", selectedPlatforms);
       formData.append("registration_date", new Date().toISOString());
@@ -148,7 +157,7 @@ export function PreRegisterModal({ isOpen, onClose }: PreRegisterModalProps) {
 
   const handleReset = () => {
     setEmail("");
-    setAgreements({ terms: false, privacy: false, age: false, updates: false });
+    setAgreements({ terms: false, privacy: false, age: false, updates: false, dataStorage: false });
     setPlatforms({ pc: false, mobile: false, console: false });
     setShowSuccess(false);
     setIsSubmitting(false);
@@ -156,12 +165,13 @@ export function PreRegisterModal({ isOpen, onClose }: PreRegisterModalProps) {
     onClose();
   };
 
-  const isFormValid = email && agreements.terms && agreements.privacy && agreements.age;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const isFormValid = email && emailRegex.test(email) && agreements.terms && agreements.privacy && agreements.age && agreements.dataStorage;
 
   if (showSuccess) {
     return (
       <Dialog open={isOpen} onOpenChange={handleReset}>
-        <DialogContent className="max-w-2xl mx-auto bg-background border-2 border-primary/30 rounded-none shadow-2xl shadow-primary/20 overflow-hidden [&>button]:hidden">
+        <DialogContent className="max-w-2xl mx-auto bg-background border-2 border-primary/30 rounded-none shadow-2xl shadow-primary/20 max-h-[90vh] overflow-y-auto [&>button]:hidden">
           <DialogHeader className="sr-only">
             <DialogTitle>Pre-Registration Successful</DialogTitle>
             <DialogDescription>Your pre-registration for Devomon has been completed successfully.</DialogDescription>
@@ -260,7 +270,7 @@ export function PreRegisterModal({ isOpen, onClose }: PreRegisterModalProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-2xl mx-auto bg-background border-2 border-primary/30 rounded-none shadow-2xl shadow-primary/20 overflow-hidden [&>button]:hidden">
+      <DialogContent className="max-w-2xl mx-auto bg-background border-2 border-primary/30 rounded-none shadow-2xl shadow-primary/20 max-h-[90vh] overflow-y-auto [&>button]:hidden">
         <DialogHeader className="sr-only">
           <DialogTitle>Pre-Registration Form</DialogTitle>
           <DialogDescription>Sign up for pre-registration to receive updates about Devomon.</DialogDescription>
@@ -352,6 +362,17 @@ export function PreRegisterModal({ isOpen, onClose }: PreRegisterModalProps) {
                   <span className="text-accent font-semibold">Optional NEWSLETTER:</span> Get the latest news, updates and exclusive content about Devomon.
                 </label>
               </div>
+
+              <div className="flex items-start space-x-4 p-4 border border-primary/20 bg-card/30 hover:bg-card/50 transition-all">
+                <Checkbox id="dataStorage" checked={agreements.dataStorage} onCheckedChange={() => handleAgreementChange("dataStorage")} className="mt-1 border-primary/50 data-[state=checked]:bg-primary data-[state=checked]:border-primary" required />
+                <label htmlFor="dataStorage" className="text-white text-sm leading-relaxed cursor-pointer">
+                  I agree to you storing my details so you can respond and keep in touch. See our{" "}
+                  <Link href="https://www.devomon.io/privacy" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:text-accent transition-colors inline-flex items-center gap-1 underline decoration-primary/50 hover:decoration-accent/80" onClick={(e) => e.stopPropagation()}>
+                    Privacy Policy
+                    <ExternalLink className="w-3 h-3" />
+                  </Link>
+                </label>
+              </div>
             </div>
 
             {/* Platform Selection with Gaming Icons */}
@@ -405,6 +426,7 @@ export function PreRegisterModal({ isOpen, onClose }: PreRegisterModalProps) {
             <input type="hidden" name="terms_accepted" value={agreements.terms ? "true" : "false"} />
             <input type="hidden" name="privacy_accepted" value={agreements.privacy ? "true" : "false"} />
             <input type="hidden" name="age_confirmed" value={agreements.age ? "true" : "false"} />
+            <input type="hidden" name="data_storage_agreed" value={agreements.dataStorage ? "true" : "false"} />
             <input type="hidden" name="newsletter_subscribed" value={agreements.updates ? "true" : "false"} />
             <input
               type="hidden"

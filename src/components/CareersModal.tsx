@@ -16,7 +16,8 @@ export function CareersModal({ isOpen, onClose }: CareersModalProps) {
     phone: '',
     role: '',
     coverLetter: '',
-    cv: null as File | null
+    cv: null as File | null,
+    dataStorageAgreed: false
   });
 
   const [dragActive, setDragActive] = useState(false);
@@ -38,7 +39,8 @@ export function CareersModal({ isOpen, onClose }: CareersModalProps) {
         phone: '',
         role: '',
         coverLetter: '',
-        cv: null
+        cv: null,
+        dataStorageAgreed: false
       });
       setDragActive(false);
       setIsSubmitting(false);
@@ -47,6 +49,20 @@ export function CareersModal({ isOpen, onClose }: CareersModalProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email || !emailRegex.test(formData.email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+    
+    // Check privacy agreement
+    if (!formData.dataStorageAgreed) {
+      alert('Please agree to our data storage policy.');
+      return;
+    }
+    
     setIsSubmitting(true);
 
     // Set form attributes for UseBasin submission
@@ -70,7 +86,8 @@ export function CareersModal({ isOpen, onClose }: CareersModalProps) {
       phone: '',
       role: '',
       coverLetter: '',
-      cv: null
+      cv: null,
+      dataStorageAgreed: false
     });
     setDragActive(false);
     setIsSubmitting(false);
@@ -292,6 +309,27 @@ export function CareersModal({ isOpen, onClose }: CareersModalProps) {
               className="w-full px-4 py-3 bg-gray-900/50 border border-purple-500/30 rounded-lg focus:border-purple-400 focus:outline-none transition-colors text-white placeholder-gray-500 resize-none"
               placeholder="Tell us why you want to join the Devomon team and what makes you the perfect fit for this role..."
             />
+          </div>
+
+          {/* Privacy Agreement Checkbox */}
+          <div>
+            <label className="flex items-start gap-3 cursor-pointer text-sm text-gray-300">
+              <input 
+                type="checkbox" 
+                name="data_storage_agreed"
+                required
+                checked={formData.dataStorageAgreed}
+                onChange={(e) => setFormData(prev => ({ ...prev, dataStorageAgreed: e.target.checked }))}
+                className="mt-1 accent-purple-500"
+              />
+              <span>
+                I agree to you storing my details so you can respond and keep in touch. See our{" "}
+                <a href="https://www.devomon.io/privacy" target="_blank" className="text-purple-400 hover:text-purple-300 underline">
+                  Privacy Policy
+                </a>{" "}
+                <span className="text-red-400">*</span>
+              </span>
+            </label>
           </div>
 
           {/* Submit Button */}

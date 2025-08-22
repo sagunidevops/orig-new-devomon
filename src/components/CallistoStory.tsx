@@ -10,7 +10,7 @@ export function CallistoStory() {
 
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8 text-purple-400">
+          <h2 className="text-3xl font-bold mb-8 text-cyan-400">
             A World in the Shadow of Stars
           </h2>
           

@@ -150,6 +150,15 @@ export default function SupportPage() {
           form.addEventListener('submit', async function(e) {
             e.preventDefault();
             
+            // Email validation
+            const emailInput = document.getElementById('email');
+            const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+            if (!emailInput.value || !emailRegex.test(emailInput.value)) {
+              statusElement.textContent = 'Please enter a valid email address.';
+              statusElement.className = 'form-status error';
+              return;
+            }
+            
             // Update status to sending
             statusElement.textContent = 'Sending message...';
             statusElement.className = 'form-status sending';
@@ -323,6 +332,18 @@ export default function SupportPage() {
                       ></textarea>
                     </div>
                     
+                    <div class="form-group">
+                      <label style="display: flex; align-items: flex-start; gap: 8px; cursor: pointer; font-size: 13px; line-height: 1.4;">
+                        <input 
+                          type="checkbox" 
+                          name="data_storage_agreed" 
+                          required 
+                          style="margin-top: 2px; accent-color: #8b5cf6; width: 16px; height: 16px; flex-shrink: 0;"
+                        />
+                        <span style="flex: 1;">I agree to you storing my details so you can respond and keep in touch. See our <a href="https://www.devomon.io/privacy" target="_blank" style="color: #8b5cf6; text-decoration: underline;">Privacy Policy</a> <span class="required">*</span></span>
+                      </label>
+                    </div>
+                    
                     <!-- reCAPTCHA handled automatically by UseBasin -->
                     
                     <button type="submit" class="submit-btn">
@@ -341,14 +362,6 @@ export default function SupportPage() {
               <div className="mt-8 pt-6 border-t border-border/50 text-center">
                 <h3 className="font-semibold mb-4">Other Ways to Reach Us</h3>
                 <div className="flex flex-col gap-3">
-                  <a 
-                    href="mailto:contact@devomon.io"
-                    className="flex items-center justify-center gap-2 px-4 py-3 bg-muted/20 hover:bg-accent/20 hover:text-accent transition-all duration-300 rounded-lg text-sm font-medium"
-                  >
-                    <Send className="w-4 h-4" />
-                    contact@devomon.io
-                  </a>
-                  
                   <Link 
                     href="/faq"
                     className="flex items-center justify-center gap-2 px-4 py-3 bg-muted/20 hover:bg-accent/20 hover:text-accent transition-all duration-300 rounded-lg text-sm font-medium"

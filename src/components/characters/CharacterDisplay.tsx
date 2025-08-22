@@ -47,25 +47,25 @@ export function CharacterDisplay({ character, onVideoOpen, onNavigatePrevious, o
         </div>
         
         {/* Navigation Arrows */}
-        <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
+        <div className="absolute top-1/2 left-2 md:left-4 transform -translate-y-1/2 z-20">
           <Button
             onClick={onNavigatePrevious}
             variant="ghost"
             size="lg"
-            className="bg-black/40 hover:bg-black/60 border-2 border-purple-400/60 text-purple-400 backdrop-blur-sm w-12 h-12 p-0"
+            className="bg-black/40 hover:bg-black/60 border-2 border-purple-400/60 text-purple-400 backdrop-blur-sm w-14 h-14 md:w-12 md:h-12 p-0 touch-manipulation"
           >
-            <ChevronLeft className="w-6 h-6" />
+            <ChevronLeft className="w-6 h-6 md:w-5 md:h-5" />
           </Button>
         </div>
         
-        <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
+        <div className="absolute top-1/2 right-2 md:right-4 transform -translate-y-1/2 z-20">
           <Button
             onClick={onNavigateNext}
             variant="ghost"
             size="lg"
-            className="bg-black/40 hover:bg-black/60 border-2 border-purple-400/60 text-purple-400 backdrop-blur-sm w-12 h-12 p-0"
+            className="bg-black/40 hover:bg-black/60 border-2 border-purple-400/60 text-purple-400 backdrop-blur-sm w-14 h-14 md:w-12 md:h-12 p-0 touch-manipulation"
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-6 h-6 md:w-5 md:h-5" />
           </Button>
         </div>
         
@@ -85,7 +85,7 @@ export function CharacterDisplay({ character, onVideoOpen, onNavigatePrevious, o
         
         {/* Character Info Overlay */}
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-8">
-          <div className="flex items-end justify-between">
+          <div className="flex items-end justify-between px-12">
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-3">
                 {/* Element Icon - No background box */}
@@ -119,17 +119,17 @@ export function CharacterDisplay({ character, onVideoOpen, onNavigatePrevious, o
                 )}
               </div>
               
-              <h3 className="text-4xl font-bold text-white mb-4">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
                 {character.name}
               </h3>
               
-              <p className="text-gray-300 text-lg leading-relaxed mb-4 max-w-2xl">
+              <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-3 max-w-2xl">
                 {character.description}
               </p>
               
               {character.personality && (
                 <div className="border-l-4 border-purple-400/50 pl-4">
-                  <p className="text-gray-400 leading-relaxed max-w-2xl">
+                  <p className="text-gray-400 text-sm leading-relaxed max-w-2xl">
                     {character.personality}
                   </p>
                 </div>
