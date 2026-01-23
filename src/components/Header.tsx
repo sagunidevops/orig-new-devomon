@@ -103,8 +103,8 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Voidborn
-              */}
             </Link>
+            */}
             <Link 
               href="/news" 
               className={`block hover:text-primary transition-colors ${pathname === '/news' ? 'text-primary' : ''}`}
