@@ -27,12 +27,13 @@ export function Header() {
           >
             Callisto
           </Link>
+          {/*
           <Link 
             href="/voidborn" 
             className={`hover:text-primary transition-colors ${pathname === '/voidborn' ? 'text-primary' : ''}`}
           >
             Voidborn
-          </Link>
+          </Link> */}
           <Link 
             href="/news" 
             className={`hover:text-primary transition-colors ${pathname === '/news' ? 'text-primary' : ''}`}
@@ -95,12 +96,14 @@ export function Header() {
             >
               Callisto
             </Link>
+            {/*
             <Link 
               href="/voidborn" 
               className={`block hover:text-primary transition-colors ${pathname === '/voidborn' ? 'text-primary' : ''}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Voidborn
+              */}
             </Link>
             <Link 
               href="/news" 
